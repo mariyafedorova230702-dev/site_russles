@@ -25,80 +25,93 @@
                 <input id="catalogSearch" type="search" placeholder="Например: OSB, брусок, доска">
             </div>
 
-            <div class="catalog-controls-head">
-                <strong>Фильтры по характеристикам</strong>
-                <button type="button" class="catalog-reset-button" id="catalogReset">Сбросить фильтры</button>
-            </div>
+            <button
+                type="button"
+                class="catalog-mobile-filter-toggle"
+                id="catalogMobileFilterToggle"
+                aria-controls="catalogFilterPanel"
+                aria-expanded="false"
+            >
+                <span>Фильтры и категории</span>
+                <strong>Открыть</strong>
+            </button>
 
-            <div class="catalog-select-filters">
-                <label>
-                    Толщина
-                    <select id="catalogThickness" data-filter="thickness">
-                        <option value="">Любая</option>
-                        {% for option in filter_options.thickness %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+            <div class="catalog-filter-panel" id="catalogFilterPanel">
+                <div class="catalog-controls-head">
+                    <strong>Фильтры по характеристикам</strong>
+                    <button type="button" class="catalog-reset-button" id="catalogReset">Сбросить фильтры</button>
+                </div>
 
-                <label>
-                    Ширина
-                    <select id="catalogWidth" data-filter="width">
-                        <option value="">Любая</option>
-                        {% for option in filter_options.width %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+                <div class="catalog-select-filters">
+                    <label>
+                        Толщина
+                        <select id="catalogThickness" data-filter="thickness">
+                            <option value="">Любая</option>
+                            {% for option in filter_options.thickness %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
 
-                <label>
-                    Длина
-                    <select id="catalogLength" data-filter="length">
-                        <option value="">Любая</option>
-                        {% for option in filter_options.length %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+                    <label>
+                        Ширина
+                        <select id="catalogWidth" data-filter="width">
+                            <option value="">Любая</option>
+                            {% for option in filter_options.width %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
 
-                <label>
-                    Порода
-                    <select id="catalogWood" data-filter="wood">
-                        <option value="">Любая</option>
-                        {% for option in filter_options.wood_type %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+                    <label>
+                        Длина
+                        <select id="catalogLength" data-filter="length">
+                            <option value="">Любая</option>
+                            {% for option in filter_options.length %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
 
-                <label>
-                    Сорт
-                    <select id="catalogGrade" data-filter="grade">
-                        <option value="">Любой</option>
-                        {% for option in filter_options.grade %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+                    <label>
+                        Порода
+                        <select id="catalogWood" data-filter="wood">
+                            <option value="">Любая</option>
+                            {% for option in filter_options.wood_type %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
 
-                <label>
-                    Единица
-                    <select id="catalogUnit" data-filter="unit">
-                        <option value="">Любая</option>
-                        {% for option in filter_options.unit %}
-                        <option value="{{ option|lower }}">{{ option }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
-            </div>
+                    <label>
+                        Сорт
+                        <select id="catalogGrade" data-filter="grade">
+                            <option value="">Любой</option>
+                            {% for option in filter_options.grade %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
 
-            <div class="catalog-filters" aria-label="Фильтр по категориям">
-                <button type="button" class="catalog-filter active" data-category="all">Все товары</button>
-                {% for category in categories %}
-                <button type="button" class="catalog-filter" data-category="{{ category|lower }}">
-                    {{ category }}
-                </button>
-                {% endfor %}
+                    <label>
+                        Единица
+                        <select id="catalogUnit" data-filter="unit">
+                            <option value="">Любая</option>
+                            {% for option in filter_options.unit %}
+                            <option value="{{ option|lower }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                </div>
+
+                <div class="catalog-filters" aria-label="Фильтр по категориям">
+                    <button type="button" class="catalog-filter active" data-category="all">Все товары</button>
+                    {% for category in categories %}
+                    <button type="button" class="catalog-filter" data-category="{{ category|lower }}">
+                        {{ category }}
+                    </button>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 

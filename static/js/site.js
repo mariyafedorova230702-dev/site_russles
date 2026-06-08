@@ -20,4 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => setMenuOpen(false));
     });
+
+    document.addEventListener("click", (event) => {
+        if (!menu.classList.contains("is-open")) {
+            return;
+        }
+
+        if (!event.target.closest(".site-header")) {
+            setMenuOpen(false);
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            setMenuOpen(false);
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 981px)").matches) {
+            setMenuOpen(false);
+        }
+    });
 });

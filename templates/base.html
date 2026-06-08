@@ -101,6 +101,25 @@
     Напишите нам
 </a>
 
+<nav class="mobile-app-nav" aria-label="Быстрая мобильная навигация">
+    <a href="{{ url_for('home') }}">
+        <span aria-hidden="true">⌂</span>
+        Главная
+    </a>
+    <a href="{{ url_for('catalog') }}">
+        <span aria-hidden="true">▦</span>
+        Каталог
+    </a>
+    <a href="tel:+77766546565">
+        <span aria-hidden="true">☎</span>
+        Звонок
+    </a>
+    <a href="https://wa.me/77766546565" target="_blank" rel="noopener">
+        <span aria-hidden="true">W</span>
+        WhatsApp
+    </a>
+</nav>
+
 <footer class="footer" id="contacts">
     <div class="container">
         <h2>Мы на связи</h2>

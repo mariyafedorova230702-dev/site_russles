@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const countElement = document.getElementById("catalogCount");
     const emptyMessage = document.getElementById("catalogEmpty");
     const viewButtons = document.querySelectorAll(".catalog-view-button");
+    const mobileFilterToggle = document.getElementById("catalogMobileFilterToggle");
+    const filterPanel = document.getElementById("catalogFilterPanel");
     const params = new URLSearchParams(window.location.search);
     const viewStorageKey = "rus-les-catalog-view";
 
@@ -18,6 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function normalize(value) {
         return String(value || "").trim().toLowerCase();
+    }
+
+    function setFilterPanelOpen(isOpen) {
+        if (!mobileFilterToggle || !filterPanel) {
+            return;
+        }
+
+        filterPanel.classList.toggle("is-open", isOpen);
+        mobileFilterToggle.setAttribute("aria-expanded", String(isOpen));
+
+        const label = mobileFilterToggle.querySelector("strong");
+        if (label) {
+            label.textContent = isOpen ? "Скрыть" : "Открыть";
+        }
     }
 
     function getSavedView() {
@@ -156,6 +172,10 @@ document.addEventListener("DOMContentLoaded", () => {
             filterButtons.forEach((item) => item.classList.remove("active"));
             button.classList.add("active");
 
+            if (window.matchMedia("(max-width: 720px)").matches) {
+                setFilterPanelOpen(false);
+            }
+
             scheduleFilters();
         });
     });
@@ -174,6 +194,12 @@ document.addEventListener("DOMContentLoaded", () => {
     viewButtons.forEach((button) => {
         button.addEventListener("click", () => applyView(button.dataset.view));
     });
+
+    if (mobileFilterToggle && filterPanel) {
+        mobileFilterToggle.addEventListener("click", () => {
+            setFilterPanelOpen(!filterPanel.classList.contains("is-open"));
+        });
+    }
 
     if (resetButton) {
         resetButton.addEventListener("click", () => {
@@ -201,6 +227,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    applyView(getSavedView());
+    applyView(getSavedView() || (window.matchMedia("(max-width: 520px)").matches ? "list" : "grid"));
     applyFilters();
 });
