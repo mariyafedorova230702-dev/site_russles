@@ -174,7 +174,7 @@
                         <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
                         <div class="catalog-card-actions">
                             <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">Подробнее</a>
-                            <a href="https://wa.me/77766546565?text={{ whatsapp_message|urlencode }}" target="_blank" rel="noopener" class="catalog-whatsapp-button">WhatsApp</a>
+                            <a href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message|urlencode }}" target="_blank" rel="noopener" class="catalog-whatsapp-button">WhatsApp</a>
                         </div>
                     </div>
                 </div>

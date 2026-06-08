@@ -17,7 +17,7 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "12345").strip()
 SITE_URL = os.getenv("SITE_URL", "").rstrip("/")
 GOOGLE_SITE_VERIFICATION = os.getenv("GOOGLE_SITE_VERIFICATION", "").strip()
 SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
-WHATSAPP_NUMBER = "77766546565"
+WHATSAPP_NUMBER = "77772002742"
 WHATSAPP_BASIC_MESSAGE = (
     "Здравствуйте! Хочу узнать наличие и цену на пиломатериалы. "
     "Подскажите, пожалуйста."
@@ -335,7 +335,7 @@ def build_local_business_jsonld() -> dict:
         "url": absolute_url(url_for("home")),
         "logo": absolute_url(url_for("static", filename="images/logo.png")),
         "image": absolute_url(url_for("static", filename="images/hero.png")),
-        "telephone": "+7 776 654 65 65",
+        "telephone": "+7 777 200 27 42",
         "email": "russianwood@inbox.ru",
         "address": {
             "@type": "PostalAddress",
@@ -415,6 +415,7 @@ def inject_navigation_data():
     seo_indexable = not request.path.startswith("/admin")
     return {
         "navigation_categories": CATEGORIES,
+        "whatsapp_number": WHATSAPP_NUMBER,
         "whatsapp_url": f"https://wa.me/{WHATSAPP_NUMBER}?text={quote(WHATSAPP_BASIC_MESSAGE, safe='')}",
         "whatsapp_custom_order_url": f"https://wa.me/{WHATSAPP_NUMBER}?text={quote(WHATSAPP_CUSTOM_ORDER_MESSAGE, safe='')}",
         "seo_indexable": seo_indexable,

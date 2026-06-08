@@ -150,7 +150,8 @@ function updateProductState(syncQuantity = false) {
         );
     }
 
-    whatsappButton.href = `https://wa.me/77766546565?text=${encodeURIComponent(message.join("\n"))}`;
+    const whatsappNumber = whatsappButton.dataset.whatsappNumber || "77772002742";
+    whatsappButton.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message.join("\n"))}`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
