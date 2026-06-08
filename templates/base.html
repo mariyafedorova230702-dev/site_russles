@@ -21,7 +21,7 @@
     {% endif %}
     {% block structured_data %}{% endblock %}
 </head>
-<body>
+<body class="page-{{ request.endpoint|default('unknown', true)|replace('_', '-') }}">
 
 <header class="site-header">
     <div class="container header-inner">
@@ -102,11 +102,11 @@
 </a>
 
 <nav class="mobile-app-nav" aria-label="Быстрая мобильная навигация">
-    <a href="{{ url_for('home') }}">
+    <a href="{{ url_for('home') }}" {% if request.endpoint == 'home' %}class="active"{% endif %}>
         <span aria-hidden="true">⌂</span>
         Главная
     </a>
-    <a href="{{ url_for('catalog') }}">
+    <a href="{{ url_for('catalog') }}" {% if request.endpoint in ['catalog', 'category_page', 'product'] %}class="active"{% endif %}>
         <span aria-hidden="true">▦</span>
         Каталог
     </a>

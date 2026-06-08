@@ -32,6 +32,11 @@ img {
     max-width: 100%;
 }
 
+section[id],
+footer[id] {
+    scroll-margin-top: 100px;
+}
+
 .container {
     width: 92%;
     max-width: 1180px;
@@ -2227,6 +2232,7 @@ img {
 
     body {
         padding-bottom: calc(86px + env(safe-area-inset-bottom));
+        overflow-x: hidden;
     }
 
     .site-header {
@@ -2342,6 +2348,10 @@ img {
         gap: 12px;
     }
 
+    .info-item > div:last-child {
+        min-width: 0;
+    }
+
     .info-icon {
         width: 38px;
         height: 38px;
@@ -2413,6 +2423,31 @@ img {
         color: white;
     }
 
+    .mobile-app-nav a.active {
+        background: var(--green-dark);
+        color: white;
+    }
+
+    .mobile-app-nav a.active span {
+        background: rgba(255, 255, 255, 0.16);
+        color: white;
+    }
+
+    .page-catalog .info-strip,
+    .page-product .info-strip,
+    .page-category-page .info-strip,
+    .page-admin .info-strip,
+    .page-admin-login .info-strip,
+    .page-admin-edit-product .info-strip {
+        display: none;
+    }
+
+    .page-admin .mobile-app-nav,
+    .page-admin-login .mobile-app-nav,
+    .page-admin-edit-product .mobile-app-nav {
+        display: none;
+    }
+
     .hero-new-grid,
     .home-categories-grid,
     .material-help-grid,
@@ -2435,6 +2470,20 @@ img {
     .about-modern-grid,
     .contacts-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-new-grid,
+    .hero-new-grid > *,
+    .custom-grid,
+    .custom-grid > *,
+    .product-detail-grid,
+    .product-detail-grid > *,
+    .category-landing-hero,
+    .category-landing-hero > *,
+    .category-hero-grid,
+    .category-hero-grid > * {
+        min-width: 0;
+        max-width: 100%;
     }
 
     .quick-categories-grid {
@@ -2505,6 +2554,11 @@ img {
     .hero-new-description {
         font-size: 17px;
         line-height: 1.55;
+    }
+
+    .hero-new h1,
+    .hero-new-description {
+        overflow-wrap: anywhere;
     }
 
     .hero-new-actions {
@@ -2657,9 +2711,7 @@ img {
     }
 
     .whatsapp-product-button {
-        position: sticky;
-        bottom: calc(92px + env(safe-area-inset-bottom));
-        z-index: 12;
+        position: static;
         border-radius: 18px;
         box-shadow: 0 16px 34px rgba(37, 211, 102, 0.28);
     }
@@ -2698,25 +2750,18 @@ img {
 
     .hero-stats {
         display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: minmax(150px, 1fr);
-        grid-template-columns: none;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
         margin-top: 22px;
-        overflow-x: auto;
-        padding-bottom: 2px;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-    }
-
-    .hero-stats::-webkit-scrollbar {
-        display: none;
     }
 
     .hero-stats div {
         padding: 14px;
         border-radius: 18px;
-        scroll-snap-align: start;
+    }
+
+    .hero-stats div:last-child {
+        grid-column: 1 / -1;
     }
 
     .hero-stats strong {
@@ -2803,7 +2848,7 @@ img {
     }
 
     .info-grid {
-        grid-auto-columns: minmax(230px, 86vw);
+        grid-auto-columns: 100%;
     }
 
     .hero-new h1 {
@@ -2836,6 +2881,32 @@ img {
         letter-spacing: 0;
     }
 
+    .home-categories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .home-category-card {
+        min-width: 0;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .home-category-thumb {
+        height: 92px;
+        margin: -12px -12px 11px;
+    }
+
+    .home-category-card strong {
+        font-size: 17px;
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+    }
+
+    .home-category-card > span:last-child {
+        display: none;
+    }
+
     .home-category-card,
     .material-help-link,
     .process-card,
@@ -2856,6 +2927,25 @@ img {
     .product-detail-info h1 {
         font-size: 30px;
         line-height: 1.16;
+    }
+
+    .page-catalog .catalog-section,
+    .page-product .product-page,
+    .page-category-page .category-landing {
+        padding-top: 30px;
+    }
+
+    .catalog-heading {
+        margin-bottom: 24px;
+    }
+
+    .catalog-heading p:last-child {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .catalog-controls {
+        margin-bottom: 20px;
     }
 
     .catalog-controls-head,
@@ -2940,6 +3030,30 @@ img {
     .catalog-grid--list .catalog-whatsapp-button {
         min-height: 36px;
         font-size: 11px;
+    }
+
+    .product-detail-image {
+        height: 280px;
+        border-radius: 22px;
+    }
+
+    .product-detail-info {
+        padding: 18px;
+        border-radius: 22px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .contact-card {
+        min-width: 0;
+        padding: 16px 10px;
+    }
+
+    .contact-card p {
+        overflow-wrap: anywhere;
     }
 
     .about-stat-card {
