@@ -1754,7 +1754,10 @@ img {
 
 .about-modern {
     padding: 78px 0;
-    background: var(--green-dark);
+    background:
+        radial-gradient(circle at 8% 18%, rgba(185, 121, 66, 0.2), transparent 30%),
+        radial-gradient(circle at 88% 72%, rgba(168, 216, 180, 0.16), transparent 26%),
+        var(--green-dark);
     color: white;
 }
 
@@ -1769,6 +1772,14 @@ img {
     color: #a8d8b4;
 }
 
+.about-modern-intro {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 54px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
 .about-modern h2 {
     color: white;
 }
@@ -1778,6 +1789,102 @@ img {
     line-height: 1.75;
     font-size: 20px;
     margin: 0;
+}
+
+.about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.about-stat-card {
+    min-height: 132px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px;
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+}
+
+.about-stat-card strong {
+    color: white;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.about-stat-card span {
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.about-modern-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.about-value-card {
+    min-height: 278px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    background: #fffdf8;
+    color: var(--green-dark);
+    padding: 24px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+}
+
+.about-value-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--green-soft);
+    color: var(--green);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.about-value-card h3 {
+    margin: 0 0 12px;
+    color: var(--green-dark);
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.about-value-card p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.about-warehouse-note {
+    display: grid;
+    grid-template-columns: 1.4fr auto auto;
+    gap: 14px;
+    align-items: center;
+    margin-top: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 18px 20px;
+}
+
+.about-warehouse-note strong {
+    color: white;
+    line-height: 1.45;
+}
+
+.about-warehouse-note span {
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 /* ===== FOOTER ===== */
@@ -2183,6 +2290,10 @@ img {
     .calculator-card,
     .custom-grid,
     .process-grid,
+    .about-modern-intro,
+    .about-stats-grid,
+    .about-modern-cards,
+    .about-warehouse-note,
     .about-modern-grid,
     .contacts-grid {
         grid-template-columns: 1fr;
@@ -2360,6 +2471,19 @@ img {
         grid-row: auto;
     }
 
+    .about-modern-intro {
+        gap: 20px;
+    }
+
+    .about-stat-card,
+    .about-value-card {
+        min-height: auto;
+    }
+
+    .about-warehouse-note span {
+        white-space: normal;
+    }
+
     .social {
         display: none;
     }
@@ -2478,5 +2602,27 @@ img {
     .catalog-grid--list .catalog-whatsapp-button {
         min-height: 36px;
         font-size: 11px;
+    }
+
+    .about-stat-card {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .about-stat-card strong {
+        font-size: 30px;
+    }
+
+    .about-value-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .about-value-card h3 {
+        font-size: 20px;
+    }
+
+    .about-value-card p {
+        font-size: 15px;
     }
 }
