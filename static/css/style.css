@@ -808,6 +808,18 @@ footer[id] {
     font-size: 15px;
     font-weight: 800;
     padding: 0 12px;
+    opacity: 1;
+    -webkit-text-fill-color: currentColor;
+}
+
+.catalog-select-filters select option,
+.catalog-results-bar select option {
+    background: #fffdf8;
+    color: var(--green-dark);
+}
+
+.catalog-select-filters select.is-placeholder {
+    color: rgba(16, 39, 25, 0.68);
 }
 
 .catalog-filters {

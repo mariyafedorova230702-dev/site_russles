@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return activePurpose.split("|").map(normalize).filter(Boolean);
     }
 
+    function updateSelectState(select) {
+        select.classList.toggle("is-placeholder", normalize(select.value) === "");
+    }
+
     function setFilterPanelOpen(isOpen) {
         if (!mobileFilterToggle || !filterPanel) {
             return;
@@ -187,7 +191,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    selectFilters.forEach((select) => select.addEventListener("change", scheduleFilters));
+    selectFilters.forEach((select) => {
+        updateSelectState(select);
+        select.addEventListener("change", () => {
+            updateSelectState(select);
+            scheduleFilters();
+        });
+    });
 
     if (sortSelect) {
         sortSelect.addEventListener("change", scheduleFilters);
@@ -219,6 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             selectFilters.forEach((select) => {
                 select.value = "";
+                updateSelectState(select);
             });
 
             if (sortSelect) {
