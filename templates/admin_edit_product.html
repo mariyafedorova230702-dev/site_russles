@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Редактирование товара — Русский Лес{% endblock %}
+
+{% block content %}
+
+<section class="admin-page">
+    <div class="container">
+        <div class="admin-header">
+            <div>
+                <p class="eyebrow">Админка</p>
+                <h1>Редактировать товар</h1>
+                <p>{{ product.name }}</p>
+            </div>
+
+            <a href="{{ url_for('admin') }}" class="admin-secondary-button">Назад</a>
+        </div>
+
+        <form method="post" class="admin-edit-form">
+            <div class="admin-edit-grid">
+                <label>
+                    Название
+                    <input type="text" name="name" value="{{ product.name }}" required>
+                </label>
+
+                <label>
+                    Категория
+                    <input type="text" name="category" value="{{ product.category }}" required>
+                </label>
+
+                <label>
+                    Порода
+                    <input type="text" name="wood_type" value="{{ product.wood_type|default('', true) }}">
+                </label>
+
+                <label>
+                    Сорт
+                    <input type="text" name="grade" value="{{ product.grade|default('', true) }}">
+                </label>
+
+                <label>
+                    Толщина
+                    <input type="text" name="thickness" value="{{ product.thickness|default('', true) }}">
+                </label>
+
+                <label>
+                    Ширина
+                    <input type="text" name="width" value="{{ product.width|default('', true) }}">
+                </label>
+
+                <label>
+                    Длина
+                    <input type="text" name="length" value="{{ product.length|default('', true) }}">
+                </label>
+
+                <label>
+                    Наличие
+                    <input type="text" name="availability" value="{{ product.availability|default('уточнить', true) }}">
+                </label>
+
+                <label>
+                    Фото
+                    <input type="text" name="image" value="{{ product.image|default('images/hero.png', true) }}">
+                </label>
+
+                <label>
+                    Цена
+                    <input type="number" name="base_price" value="{{ product.base_price }}" min="0" step="1" required>
+                </label>
+
+                <label>
+                    Единица измерения
+                    <input type="text" name="unit" value="{{ product.unit }}" required>
+                </label>
+            </div>
+
+            <label class="admin-wide-field">
+                Описание
+                <textarea name="description" rows="5">{{ product.description }}</textarea>
+            </label>
+
+            {% if product.variants %}
+            <div class="admin-variants">
+                <h2>Варианты</h2>
+                {% for variant in product.variants %}
+                <div class="admin-variant-row">
+                    <label>
+                        Название варианта
+                        <input type="text" name="variant_name" value="{{ variant.name }}">
+                    </label>
+                    <label>
+                        Цена
+                        <input type="number" name="variant_price" value="{{ variant.price }}" min="0" step="1">
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="admin-actions">
+                <button type="submit" class="admin-button">Сохранить</button>
+                <a href="{{ url_for('admin') }}" class="admin-secondary-button">Отмена</a>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Русский Лес{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block meta_description %}Русский Лес — склад пиломатериалов в Алматы. OSB, фанера, доска, брус, вагонка, планкен и изделия из дерева.{% endblock %}">
+    {% if seo_indexable %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {% else %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
+    {% if google_site_verification %}
+    <meta name="google-site-verification" content="{{ google_site_verification }}">
+    {% endif %}
+
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% if local_business_jsonld %}
+    <script type="application/ld+json">{{ local_business_jsonld|tojson }}</script>
+    {% endif %}
+    {% block structured_data %}{% endblock %}
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo-img" aria-label="Русский Лес — главная">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Русский Лес" decoding="async">
+        </a>
+
+        <nav class="main-nav">
+            <a href="{{ url_for('home') }}">Главная</a>
+            <a href="{{ url_for('catalog') }}">Каталог</a>
+            <a href="{{ url_for('home') }}#wood-products">Изделия из дерева</a>
+            <a href="{{ url_for('home') }}#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <form class="header-search" action="{{ url_for('catalog') }}" method="get">
+            <input type="search" name="q" placeholder="Поиск товара">
+            <button type="submit">Найти</button>
+        </form>
+
+        <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="header-whatsapp">
+            WhatsApp
+        </a>
+    </div>
+</header>
+
+<section class="info-strip">
+    <div class="container info-grid">
+        <div class="info-item">
+            <div class="info-icon">🚚</div>
+            <div>
+                <strong>Быстрая погрузка</strong>
+                <p>Пн–Пт 08:00–17:00, Сб до 14:00</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">📦</div>
+            <div>
+                <strong>Более 300 позиций</strong>
+                <p>в наличии на складе</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">☎</div>
+            <div>
+                <strong>Позвонить: +7 776 654 65 65</strong>
+                <p>+7 777 200 27 42</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<a class="social whatsapp" href="https://wa.me/77766546565" target="_blank" rel="noopener">W</a>
+<a class="social instagram" href="https://www.instagram.com/russian__wood/" target="_blank" rel="noopener">I</a>
+
+<a class="chat-button" href="https://wa.me/77766546565" target="_blank" rel="noopener">
+    Напишите нам
+</a>
+
+<footer class="footer" id="contacts">
+    <div class="container">
+        <h2>Мы на связи</h2>
+
+        <div class="contacts-grid">
+            <div class="contact-card">
+                <h3>Телефон</h3>
+                <p>+7 727 329 06 56</p>
+                <p>+7 727 381 93 37</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Мобильный</h3>
+                <p>+7 776 654 65 65</p>
+                <p>+7 700 466 60 66</p>
+                <p>+7 777 200 27 42</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>WhatsApp</h3>
+                <p>+7 776 654 65 65</p>
+                <p>+7 700 466 60 66</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Instagram</h3>
+                <p>@russian__wood</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>E-mail</h3>
+                <p>russianwood@inbox.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

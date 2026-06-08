@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block title %}Каталог пиломатериалов в Алматы — Русский Лес{% endblock %}
+{% block meta_description %}Каталог пиломатериалов в Алматы: выберите материал, размеры, породу, сорт и единицу измерения. Уточните наличие и цену на складе Русский Лес.{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">{{ breadcrumb_jsonld|tojson }}</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="catalog-section">
+    <div class="container">
+        <div class="catalog-heading">
+            <p class="eyebrow">Каталог</p>
+            <h1>Каталог пиломатериалов</h1>
+            <p>
+                Выберите нужный материал, посмотрите варианты и отправьте запрос
+                в WhatsApp. Мы уточним наличие на складе и подготовим расчёт.
+            </p>
+        </div>
+
+        <div class="catalog-controls">
+            <div class="catalog-search">
+                <label for="catalogSearch">Поиск по названию</label>
+                <input id="catalogSearch" type="search" placeholder="Например: OSB, брусок, доска">
+            </div>
+
+            <div class="catalog-controls-head">
+                <strong>Фильтры по характеристикам</strong>
+                <button type="button" class="catalog-reset-button" id="catalogReset">Сбросить фильтры</button>
+            </div>
+
+            <div class="catalog-select-filters">
+                <label>
+                    Толщина
+                    <select id="catalogThickness" data-filter="thickness">
+                        <option value="">Любая</option>
+                        {% for option in filter_options.thickness %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+
+                <label>
+                    Ширина
+                    <select id="catalogWidth" data-filter="width">
+                        <option value="">Любая</option>
+                        {% for option in filter_options.width %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+
+                <label>
+                    Длина
+                    <select id="catalogLength" data-filter="length">
+                        <option value="">Любая</option>
+                        {% for option in filter_options.length %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+
+                <label>
+                    Порода
+                    <select id="catalogWood" data-filter="wood">
+                        <option value="">Любая</option>
+                        {% for option in filter_options.wood_type %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+
+                <label>
+                    Сорт
+                    <select id="catalogGrade" data-filter="grade">
+                        <option value="">Любой</option>
+                        {% for option in filter_options.grade %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+
+                <label>
+                    Единица
+                    <select id="catalogUnit" data-filter="unit">
+                        <option value="">Любая</option>
+                        {% for option in filter_options.unit %}
+                        <option value="{{ option|lower }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+            </div>
+
+            <div class="catalog-filters" aria-label="Фильтр по категориям">
+                <button type="button" class="catalog-filter active" data-category="all">Все товары</button>
+                {% for category in categories %}
+                <button type="button" class="catalog-filter" data-category="{{ category|lower }}">
+                    {{ category }}
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="catalog-results-bar">
+            <p id="catalogCount" aria-live="polite">Найдено товаров: {{ products|length }}</p>
+            <div class="catalog-results-actions">
+                <label>
+                    Сортировка
+                    <select id="catalogSort">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-asc">Сначала дешевле</option>
+                        <option value="price-desc">Сначала дороже</option>
+                        <option value="name-asc">По названию</option>
+                        <option value="availability">Сначала в наличии</option>
+                    </select>
+                </label>
+
+                <div class="catalog-view-switcher" role="group" aria-label="Вид каталога">
+                    <button type="button" class="catalog-view-button active" data-view="grid" aria-pressed="true" title="Крупная сетка">
+                        <span aria-hidden="true">▦</span>
+                        <span>Сетка</span>
+                    </button>
+                    <button type="button" class="catalog-view-button" data-view="compact" aria-pressed="false" title="Компактная сетка">
+                        <span aria-hidden="true">⊞</span>
+                        <span>Компактно</span>
+                    </button>
+                    <button type="button" class="catalog-view-button" data-view="list" aria-pressed="false" title="Список">
+                        <span aria-hidden="true">☰</span>
+                        <span>Список</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+            {% for product in products %}
+            {% set first_variant = product.variants[0] if product.variants else none %}
+            {% set card_price = first_variant.price if first_variant else product.base_price %}
+{% set card_variant = first_variant.name if first_variant else product.variant_label|default("Стандарт", true) %}
+{% set whatsapp_message %}Здравствуйте! Хочу узнать наличие и цену:
+{{ product.display_name }}
+Вариант: {{ card_variant }}
+Цена на сайте: {{ card_price }} ₸{% endset %}
+
+            <article
+                class="catalog-card"
+                data-category="{{ product.category|lower }}"
+                data-name="{{ product.display_name|lower }}"
+                data-purpose="{{ product.purpose|default([], true)|join(' ')|lower }}"
+                data-thickness="{{ product.thickness|default('', true)|lower }}"
+                data-width="{{ product.width|default('', true)|lower }}"
+                data-length="{{ product.length|default('', true)|lower }}"
+                data-wood="{{ product.wood_type|default('', true)|lower }}"
+                data-grade="{{ product.grade|default('', true)|lower }}"
+                data-unit="{{ product.unit|default('', true)|lower }}"
+                data-price="{{ card_price }}"
+                data-availability="{{ product.availability|default('уточнить', true)|lower }}"
+                data-index="{{ loop.index0 }}"
+                data-search="{{ (product.name ~ ' ' ~ product.description ~ ' ' ~ product.category ~ ' ' ~ product.purpose|default([], true)|join(' ') ~ ' ' ~ product.wood_type|default('', true) ~ ' ' ~ product.grade|default('', true) ~ ' ' ~ product.thickness|default('', true) ~ ' ' ~ product.width|default('', true) ~ ' ' ~ product.length|default('', true))|lower }}"
+            >
+                <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-image">
+                    <img
+                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)|card_image) }}"
+                        alt="{{ product.display_name }}"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </a>
+
+                <div class="catalog-card-body">
+                    <span class="catalog-card-category">{{ product.category }}</span>
+                    <h2>
+                        {{ product.catalog_name }}
+                        {% if product.dimension_label %}
+                        <span class="catalog-card-size">{{ product.dimension_label }}</span>
+                        {% endif %}
+                    </h2>
+                    <p>{{ product.description }}</p>
+
+                    <div class="catalog-card-bottom">
+                        <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        <div class="catalog-card-actions">
+                            <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">
+                                Подробнее
+                            </a>
+                            <a
+                                href="https://wa.me/77766546565?text={{ whatsapp_message|urlencode }}"
+                                target="_blank"
+                                rel="noopener"
+                                class="catalog-whatsapp-button"
+                            >
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <p class="catalog-empty" id="catalogEmpty" hidden>
+            По вашему запросу товары не найдены. Попробуйте изменить поиск или выбрать другую категорию.
+        </p>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/catalog.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.seo_name }} — Русский Лес{% endblock %}
+{% block meta_description %}{{ product.seo_name }}. {{ product.description }} Цена от {{ product.base_price }} ₸ / {{ product.unit }}. Уточните наличие на складе в Алматы.{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">{{ product_jsonld|tojson }}</script>
+<script type="application/ld+json">{{ breadcrumb_jsonld|tojson }}</script>
+{% endblock %}
+
+{% block content %}
+
+{% set initial_variant = product.variants[0] if product.variants else none %}
+{% set initial_price = initial_variant.price if initial_variant else product.base_price %}
+{% set initial_variant_name = initial_variant.name if initial_variant else product.variant_label|default("Стандарт", true) %}
+
+<section class="product-page">
+    <div class="container product-detail-grid">
+        <div class="product-detail-image">
+            <img
+                src="{{ url_for('static', filename=product.image) }}"
+                alt="{{ product.display_name }}"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+            >
+        </div>
+
+        <div class="product-detail-info">
+            <a href="{{ url_for('catalog') }}" class="back-link">← Вернуться в каталог</a>
+
+            <span class="product-detail-category">{{ product.category }}</span>
+            <h1>
+                {{ product.catalog_name }}
+                {% if product.dimension_label %}
+                <span class="product-title-size">{{ product.dimension_label }}</span>
+                {% endif %}
+            </h1>
+            <p class="product-detail-description">{{ product.description }}</p>
+
+            {% if product.characteristics %}
+            <div class="product-specs">
+                <h2>Характеристики</h2>
+                <dl>
+                    {% for label, value in product.characteristics.items() %}
+                    <div>
+                        <dt>{{ label }}</dt>
+                        <dd>{{ value }}</dd>
+                    </div>
+                    {% endfor %}
+                </dl>
+            </div>
+            {% endif %}
+
+            {% if product.variants %}
+            <label class="variant-label" for="productVariant">Выберите вариант</label>
+            <select
+                id="productVariant"
+                class="variant-select"
+                data-product-name="{{ product.display_name }}"
+                data-default-variant="{{ initial_variant_name }}"
+                data-default-price="{{ initial_price }}"
+                data-product-unit="{{ product.unit }}"
+                data-product-category="{{ product.category|lower }}"
+                data-product-width="{{ product.width|default('', true) }}"
+                data-product-length="{{ product.length|default('', true) }}"
+            >
+                {% for variant in product.variants %}
+                <option value="{{ variant.name }}" data-price="{{ variant.price }}">
+                    {{ variant.name }} — {{ "{:,}".format(variant.price).replace(",", " ") }} ₸
+                </option>
+                {% endfor %}
+            </select>
+            {% else %}
+            <div
+                id="productVariant"
+                data-product-name="{{ product.display_name }}"
+                data-default-variant="{{ initial_variant_name }}"
+                data-default-price="{{ initial_price }}"
+                data-product-unit="{{ product.unit }}"
+                data-product-category="{{ product.category|lower }}"
+                data-product-width="{{ product.width|default('', true) }}"
+                data-product-length="{{ product.length|default('', true) }}"
+            ></div>
+            {% endif %}
+
+            <label class="quantity-label" for="productQuantity">Количество</label>
+            <div class="quantity-control">
+                <input
+                    id="productQuantity"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    inputmode="decimal"
+                    placeholder="Например: 10"
+                >
+                <span>{{ product.unit }}</span>
+            </div>
+
+            {% if product.category in ["доска", "доска пола", "террасная доска", "вагонка"] and product.width %}
+            <div class="product-material-calculator" id="productMaterialCalculator">
+                <h2>Расчёт материала по доскам</h2>
+                <p>Укажите количество досок и фактическую длину. Калькулятор посчитает площадь и погонные метры.</p>
+
+                <div class="material-calculator-inputs">
+                    <label>
+                        Количество досок
+                        <input id="productBoardCount" type="number" min="1" step="1" inputmode="numeric" placeholder="Например: 20">
+                    </label>
+                    <label>
+                        Длина одной доски, м
+                        <input id="productBoardLength" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Например: 3">
+                    </label>
+                </div>
+
+                <div class="material-calculator-result" id="materialCalculationResult" hidden>
+                    <div>
+                        <span>Погонные метры</span>
+                        <strong id="materialLinearMeters">0 п/м</strong>
+                    </div>
+                    <div>
+                        <span>Площадь</span>
+                        <strong id="materialSquareMeters">0 м²</strong>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="product-price">
+                <span>Цена</span>
+                <strong id="productPrice">{{ "{:,}".format(initial_price).replace(",", " ") }} ₸</strong>
+                <small>/ {{ product.unit }}</small>
+            </div>
+
+            <div class="product-total">
+                <span>Предварительная сумма</span>
+                <strong id="productTotal">Укажите количество</strong>
+                <small id="productTotalFormula">Количество × цена за {{ product.unit }}</small>
+            </div>
+
+            <a
+                id="whatsappProductButton"
+                class="whatsapp-product-button"
+                href="https://wa.me/77766546565"
+                target="_blank"
+                rel="noopener"
+            >
+                Узнать наличие в WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/product.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category_meta.title }} — Русский Лес{% endblock %}
+{% block meta_description %}{{ category_meta.description }} Узнайте наличие, размеры и актуальные цены на складе Русский Лес в Алматы.{% endblock %}
+{% block structured_data %}
+<script type="application/ld+json">{{ breadcrumb_jsonld|tojson }}</script>
+{% endblock %}
+
+{% block content %}
+
+{% set ns = namespace(purposes=[]) %}
+{% for product in products %}
+    {% for purpose in product.purpose|default([], true) %}
+        {% if purpose not in ns.purposes %}
+            {% set ns.purposes = ns.purposes + [purpose] %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<section class="category-landing">
+    <div class="container">
+        <div class="category-landing-hero">
+            <div class="category-landing-copy">
+                <p class="eyebrow">Категория</p>
+                <h1>{{ category_meta.title }}</h1>
+                <p>
+                    {{ category_meta.description }}
+                    На складе можно уточнить наличие, размеры, сорт и актуальную цену.
+                </p>
+
+                <div class="category-landing-actions">
+                    <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="primary-button">
+                        Уточнить наличие
+                    </a>
+                    <a href="{{ url_for('catalog') }}" class="ghost-button">Смотреть общий каталог</a>
+                </div>
+            </div>
+
+            <div class="category-hero-image">
+                <img
+                    src="{{ url_for('static', filename=category_meta.image|default('images/hero.png', true)) }}"
+                    alt="{{ category_meta.title }}"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                >
+            </div>
+        </div>
+
+        <div class="category-purpose-panel">
+            <div>
+                <p class="eyebrow">Подходит для</p>
+                <h2>Где используют этот материал</h2>
+            </div>
+
+            <div class="category-purpose-list">
+                {% if ns.purposes %}
+                    {% for purpose in ns.purposes %}
+                    <a href="{{ url_for('catalog') }}?purpose={{ purpose|urlencode }}" class="category-purpose-chip">
+                        {{ purpose }}
+                    </a>
+                    {% endfor %}
+                {% else %}
+                <span class="category-purpose-chip">для строительства</span>
+                <span class="category-purpose-chip">для отделки</span>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="category-products-head">
+            <div>
+                <p class="eyebrow">В наличии</p>
+                <h2>Товары категории</h2>
+            </div>
+            <a href="{{ url_for('catalog') }}?category={{ category|lower|urlencode }}" class="admin-secondary-button">
+                В каталог
+            </a>
+        </div>
+
+        <div class="catalog-grid category-products-grid">
+            {% for product in products %}
+            {% set first_variant = product.variants[0] if product.variants else none %}
+            {% set card_price = first_variant.price if first_variant else product.base_price %}
+{% set card_variant = first_variant.name if first_variant else product.variant_label|default("Стандарт", true) %}
+{% set whatsapp_message %}Здравствуйте! Хочу узнать наличие и цену:
+{{ product.display_name }}
+Вариант: {{ card_variant }}
+Цена на сайте: {{ card_price }} ₸{% endset %}
+
+            <article
+                class="catalog-card"
+                data-category="{{ product.category|lower }}"
+                data-name="{{ product.display_name|lower }}"
+                data-purpose="{{ product.purpose|default([], true)|join(' ')|lower }}"
+                data-search="{{ (product.name ~ ' ' ~ product.description ~ ' ' ~ product.category ~ ' ' ~ product.purpose|default([], true)|join(' ') ~ ' ' ~ product.wood_type|default('', true) ~ ' ' ~ product.grade|default('', true) ~ ' ' ~ product.thickness|default('', true) ~ ' ' ~ product.width|default('', true) ~ ' ' ~ product.length|default('', true))|lower }}"
+            >
+                <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-image">
+                    <img
+                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)|card_image) }}"
+                        alt="{{ product.display_name }}"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </a>
+
+                <div class="catalog-card-body">
+                    <span class="catalog-card-category">{{ product.category }}</span>
+                    <h2>
+                        {{ product.catalog_name }}
+                        {% if product.dimension_label %}
+                        <span class="catalog-card-size">{{ product.dimension_label }}</span>
+                        {% endif %}
+                    </h2>
+                    <p>{{ product.description }}</p>
+
+                    <div class="catalog-card-bottom">
+                        <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        <div class="catalog-card-actions">
+                            <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">
+                                Подробнее
+                            </a>
+                            <a
+                                href="https://wa.me/77766546565?text={{ whatsapp_message|urlencode }}"
+                                target="_blank"
+                                rel="noopener"
+                                class="catalog-whatsapp-button"
+                            >
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% if not products %}
+        <p class="catalog-empty">
+            В этой категории пока нет товаров в JSON. Запустите импорт прайса или выберите другую категорию.
+        </p>
+        {% endif %}
+
+        <div class="category-order-panel">
+            <div class="category-order-copy">
+                <p class="eyebrow">Как заказать</p>
+                <h2>Согласуем наличие, размер и цену перед отгрузкой</h2>
+            </div>
+
+            <div class="category-order-steps">
+                <div>
+                    <span>01</span>
+                    <strong>Выберите товар</strong>
+                    <p>Откройте карточку или отправьте запрос по категории.</p>
+                </div>
+                <div>
+                    <span>02</span>
+                    <strong>Напишите в WhatsApp</strong>
+                    <p>Уточним остатки, размеры, сорт и цену на складе.</p>
+                </div>
+                <div>
+                    <span>03</span>
+                    <strong>Приезжайте на склад</strong>
+                    <p>Покажем материал и подготовим отгрузку.</p>
+                </div>
+            </div>
+
+            <div class="category-order-actions">
+                <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="primary-button">
+                    Уточнить наличие
+                </a>
+                <a href="{{ url_for('catalog') }}" class="ghost-button">Общий каталог</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Админка — Русский Лес{% endblock %}
+
+{% block content %}
+
+<section class="admin-page">
+    <div class="container">
+        <div class="admin-header">
+            <div>
+                <p class="eyebrow">Админка</p>
+                <h1>Товары</h1>
+                <p>Изменения сохраняются напрямую в <code>data/products.json</code>.</p>
+            </div>
+
+            <a href="{{ url_for('admin_logout') }}" class="admin-secondary-button">Выйти</a>
+        </div>
+
+        <div class="admin-table-wrap">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Фото</th>
+                        <th>Название</th>
+                        <th>Категория</th>
+                        <th>Цена</th>
+                        <th>Ед.</th>
+                        <th>Наличие</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product.id }}</td>
+                        <td>
+                            <img
+                                class="admin-product-thumb"
+                                src="{{ url_for('static', filename=product.image|default('images/hero.png', true)|card_image) }}"
+                                alt="{{ product.name }}"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </td>
+                        <td>
+                            <strong>{{ product.name }}</strong>
+                            <span>{{ product.slug }}</span>
+                        </td>
+                        <td>{{ product.category }}</td>
+                        <td>{{ "{:,}".format(product.base_price).replace(",", " ") }} ₸</td>
+                        <td>{{ product.unit }}</td>
+                        <td>{{ product.availability|default("уточнить", true) }}</td>
+                        <td>
+                            <a href="{{ url_for('admin_edit_product', slug=product.slug) }}" class="admin-small-button">
+                                Изменить
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {% if not products %}
+        <p class="admin-empty">Товаров пока нет. Проверьте файл <code>data/products.json</code>.</p>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}
