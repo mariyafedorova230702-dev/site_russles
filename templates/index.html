@@ -16,7 +16,7 @@
             </p>
 
             <div class="hero-new-actions">
-                <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="primary-button">
+                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="primary-button">
                     Узнать цену в WhatsApp
                 </a>
                 <a href="{{ url_for('catalog') }}" class="ghost-button">Каталог</a>
@@ -109,34 +109,26 @@
                 <h2>Поможем подобрать материал</h2>
                 <span>
                     Не знаете, какой материал выбрать? Подберите по задаче — для бани,
-                    фасада, пола, террасы, каркаса или мебели.
+                    фасада, пола, террасы или внутренней отделки стен.
                 </span>
             </div>
 
             <div class="material-help-grid">
                 <a href="{{ url_for('catalog') }}?purpose={{ 'для бани'|urlencode }}" class="material-help-link">
                     <strong>Для бани</strong>
-                    <span>Вагонка, полок и отделка для парной</span>
+                    <span>Осина, липа, кедр: вагонка, полок и уголок</span>
                 </a>
                 <a href="{{ url_for('catalog') }}?purpose={{ 'для фасада'|urlencode }}" class="material-help-link">
                     <strong>Для фасада</strong>
                     <span>Планкен, блок-хаус и имитация бруса</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для пола'|urlencode }}" class="material-help-link">
-                    <strong>Для пола</strong>
-                    <span>Доска пола, OSB и листовые материалы</span>
+                <a href="{{ url_for('catalog') }}?purpose={{ 'для пола|для террасы'|urlencode }}" class="material-help-link">
+                    <strong>Для пола и террас</strong>
+                    <span>Половой шпунт, террасная доска, планкен и доска пола</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для террасы'|urlencode }}" class="material-help-link">
-                    <strong>Для террасы</strong>
-                    <span>Террасная доска и материалы для настила</span>
-                </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для каркаса'|urlencode }}" class="material-help-link">
-                    <strong>Для каркаса</strong>
-                    <span>Брус, брусок, OSB и строительная доска</span>
-                </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для мебели'|urlencode }}" class="material-help-link">
-                    <strong>Для мебели</strong>
-                    <span>Мебельный щит и столярные материалы</span>
+                <a href="{{ url_for('catalog') }}?purpose={{ 'для стен|для отделки'|urlencode }}" class="material-help-link">
+                    <strong>Для отделки стен внутри</strong>
+                    <span>Имитация бруса и вагонка для внутренней отделки</span>
                 </a>
             </div>
         </div>
@@ -202,7 +194,7 @@
                 Обсудим задачу, подберём материал, посчитаем стоимость и сроки.
             </p>
 
-            <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="primary-button">
+            <a href="{{ whatsapp_custom_order_url }}" target="_blank" rel="noopener" class="primary-button">
                 Обсудить заказ
             </a>
         </div>

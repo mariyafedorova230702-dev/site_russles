@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return String(value || "").trim().toLowerCase();
     }
 
+    function getActivePurposes() {
+        return activePurpose.split("|").map(normalize).filter(Boolean);
+    }
+
     function setFilterPanelOpen(isOpen) {
         if (!mobileFilterToggle || !filterPanel) {
             return;
@@ -122,11 +126,14 @@ document.addEventListener("DOMContentLoaded", () => {
         filterFrame = null;
         const query = normalize(searchInput ? searchInput.value : "");
         const values = getFilterValues();
+        const activePurposes = getActivePurposes();
         let visibleCount = 0;
 
         cards.forEach((card) => {
             const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
-            const matchesPurpose = !activePurpose || (card.dataset.purpose || "").includes(activePurpose);
+            const matchesPurpose = activePurposes.length === 0 || activePurposes.some((purpose) => {
+                return (card.dataset.purpose || "").includes(purpose);
+            });
             const matchesSearch = !query || (card.dataset.search || card.dataset.name || "").includes(query);
             const matchesSelects = Object.entries(values).every(([field, value]) => {
                 return !value || (card.dataset[field] || "") === value;

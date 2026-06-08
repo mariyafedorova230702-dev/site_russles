@@ -55,7 +55,7 @@
                 <button type="submit">Найти</button>
             </form>
 
-            <a href="https://wa.me/77766546565" target="_blank" rel="noopener" class="header-whatsapp">
+            <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="header-whatsapp">
                 WhatsApp
             </a>
         </div>
@@ -94,10 +94,10 @@
     {% block content %}{% endblock %}
 </main>
 
-<a class="social whatsapp" href="https://wa.me/77766546565" target="_blank" rel="noopener">W</a>
+<a class="social whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">W</a>
 <a class="social instagram" href="https://www.instagram.com/russian__wood/" target="_blank" rel="noopener">I</a>
 
-<a class="chat-button" href="https://wa.me/77766546565" target="_blank" rel="noopener">
+<a class="chat-button" href="{{ whatsapp_url }}" target="_blank" rel="noopener">
     Напишите нам
 </a>
 
@@ -114,7 +114,7 @@
         <span aria-hidden="true">☎</span>
         Звонок
     </a>
-    <a href="https://wa.me/77766546565" target="_blank" rel="noopener">
+    <a href="{{ whatsapp_url }}" target="_blank" rel="noopener">
         <span aria-hidden="true">W</span>
         WhatsApp
     </a>
