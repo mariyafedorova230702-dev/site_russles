@@ -1672,7 +1672,7 @@ img {
 
 .custom-grid {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns: 0.82fr 1.18fr;
     gap: 58px;
     align-items: center;
 }
@@ -1694,18 +1694,20 @@ img {
 
 .custom-gallery {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    grid-template-rows: 220px 220px;
-    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 158px;
+    gap: 14px;
 }
 
 .gallery-card {
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 14px 34px rgba(16, 39, 25, 0.08);
+    background: #f4f0e7;
 }
 
 .gallery-card.big {
+    grid-column: span 2;
     grid-row: span 2;
 }
 
@@ -2722,14 +2724,28 @@ img {
     }
 
     .custom-gallery {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(240px, 78vw);
+        grid-template-columns: none;
+        grid-template-rows: none;
+        gap: 12px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .custom-gallery::-webkit-scrollbar {
+        display: none;
     }
 
     .gallery-card,
     .gallery-card.big {
         height: 260px;
+        grid-column: auto;
         grid-row: auto;
+        scroll-snap-align: start;
     }
 
     .about-modern-intro {
