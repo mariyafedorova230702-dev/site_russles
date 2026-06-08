@@ -69,6 +69,50 @@ img {
     display: block;
 }
 
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.header-menu-toggle {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+
+.header-menu-toggle span {
+    width: 21px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--green-dark);
+    transition: 0.2s;
+}
+
+.header-menu-toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.header-menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-menu-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 .main-nav {
     display: flex;
     gap: 22px;
@@ -131,6 +175,9 @@ img {
 
 .header-whatsapp,
 .header-phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: var(--green-dark);
     color: var(--white);
     padding: 13px 20px;
@@ -184,6 +231,21 @@ img {
     margin: 5px 0 0;
     color: rgba(255,255,255,0.68);
     font-size: 14px;
+}
+
+.info-phone-list {
+    display: grid;
+    gap: 5px;
+}
+
+.info-phone-list a {
+    display: block;
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
 }
 
 /* ===== HERO NEW ===== */
@@ -2042,11 +2104,37 @@ img {
 
 @media (max-width: 980px) {
     .header-inner {
-        min-height: auto;
-        padding: 18px 0;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 18px;
+        min-height: 68px;
+        padding: 10px 0;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 14px;
+    }
+
+    .header-menu-toggle {
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .header-menu {
+        width: 100%;
+        flex: 0 0 100%;
+        display: grid;
+        gap: 14px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-6px);
+        transition: max-height 0.28s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
+    }
+
+    .header-menu.is-open {
+        max-height: 520px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        padding: 8px 0 10px;
     }
 
     .header-search {
@@ -2069,10 +2157,14 @@ img {
         overflow-wrap: anywhere;
     }
 
-    .header-whatsapp,
-    .header-phone,
     .logo-img {
-        align-self: flex-start;
+        align-self: center;
+    }
+
+    .header-whatsapp {
+        align-self: stretch;
+        justify-content: center;
+        text-align: center;
     }
 
     .info-grid,
