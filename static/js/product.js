@@ -37,6 +37,8 @@ function getProductElements() {
         materialResult: document.getElementById("materialCalculationResult"),
         linearMetersElement: document.getElementById("materialLinearMeters"),
         squareMetersElement: document.getElementById("materialSquareMeters"),
+        shadeButtons: Array.from(document.querySelectorAll(".product-shade-button")),
+        selectedShadeName: document.getElementById("selectedShadeName"),
     };
 }
 
@@ -51,6 +53,11 @@ function getVariantState(variantControl) {
     }
 
     return { name, price };
+}
+
+function getSelectedShade(shadeButtons) {
+    const selectedButton = shadeButtons.find((button) => button.classList.contains("active"));
+    return selectedButton ? selectedButton.dataset.shade : "";
 }
 
 function updateMaterialCalculation(elements, syncQuantity = false) {
@@ -110,6 +117,7 @@ function updateProductState(syncQuantity = false) {
         totalElement,
         totalFormula,
         whatsappButton,
+        shadeButtons,
     } = elements;
 
     if (!variantControl || !priceElement || !totalElement || !whatsappButton) {
@@ -130,6 +138,7 @@ function updateProductState(syncQuantity = false) {
             websitePrice: "Сайттағы баға",
             preliminaryTotal: "Алдын ала сома",
             materialCalculation: "Материал есебі",
+            shade: "Реңк",
         }
         : {
             notSpecified: "не указано",
@@ -141,11 +150,13 @@ function updateProductState(syncQuantity = false) {
             websitePrice: "Цена на сайте",
             preliminaryTotal: "Предварительная сумма",
             materialCalculation: "Расчёт материала",
+            shade: "Оттенок",
         };
     const variant = getVariantState(variantControl);
     const materialCalculation = updateMaterialCalculation(elements, syncQuantity);
     const quantity = quantityInput ? parseNumber(quantityInput.value) : 0;
     const quantityText = quantity > 0 ? `${formatNumber(quantity)} ${productUnit}` : labels.notSpecified;
+    const shade = getSelectedShade(shadeButtons);
 
     priceElement.textContent = formatPrice(variant.price);
 
@@ -161,9 +172,16 @@ function updateProductState(syncQuantity = false) {
         labels.greeting,
         productName,
         `${labels.variant}: ${variant.name}`,
+    ];
+
+    if (shade) {
+        message.push(`${labels.shade}: ${shade}`);
+    }
+
+    message.push(
         `${labels.quantity}: ${quantityText}`,
         `${labels.websitePrice}: ${formatPrice(variant.price)} / ${productUnit}`,
-    ];
+    );
 
     if (quantity > 0) {
         message.push(`${labels.preliminaryTotal}: ${formatPrice(quantity * variant.price)}`);
@@ -186,6 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
         quantityInput,
         boardCountInput,
         boardLengthInput,
+        shadeButtons,
+        selectedShadeName,
     } = elements;
 
     if (!variantControl) {
@@ -199,6 +219,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (quantityInput) {
         quantityInput.addEventListener("input", () => updateProductState());
     }
+
+    shadeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            shadeButtons.forEach((item) => {
+                const isSelected = item === button;
+                item.classList.toggle("active", isSelected);
+                item.setAttribute("aria-checked", String(isSelected));
+            });
+
+            if (selectedShadeName) {
+                selectedShadeName.textContent = button.dataset.shade || "";
+            }
+
+            updateProductState();
+        });
+    });
 
     if (boardLengthInput) {
         boardLengthInput.value = getExactLength(variantControl.dataset.productLength);

@@ -9423,5 +9423,79 @@
     "id": 267,
     "slug": "pilomaterial-obreznoy-90x90x6000-1-3-sort-90-mm-90-mm-6-m",
     "popular": false
+  },
+  {
+    "id": 268,
+    "slug": "akvateks-balzam-maslo-dlya-drevesiny",
+    "name": "Акватекс Бальзам. Масло для древесины",
+    "catalog_name": "Акватекс Бальзам. Масло для древесины",
+    "dimension_label": "",
+    "display_name": "Акватекс Бальзам. Масло для древесины",
+    "category": "покрытия",
+    "wood_type": "",
+    "grade": "",
+    "thickness": "",
+    "width": "",
+    "length": "",
+    "purpose": [
+      "для защиты древесины",
+      "для наружных работ",
+      "для внутренних работ"
+    ],
+    "availability": "уточнить",
+    "description": "Натуральное масло для декоративной обработки и защиты древесины внутри и снаружи помещений.",
+    "image": "images/akvateks-balzam.png",
+    "shade_reference_image": "images/akvateks-balzam-ottenki.jpg",
+    "base_price": 7620,
+    "unit": "шт",
+    "note": "Фактический оттенок зависит от породы древесины и количества слоёв.",
+    "variant_label": "0,75 л",
+    "variants": [
+      {
+        "name": "0,75 л",
+        "price": 7620
+      },
+      {
+        "name": "2,2 л",
+        "price": 20900
+      }
+    ],
+    "shades": [
+      {
+        "name": "Бесцветный",
+        "color": "#c9a66b"
+      },
+      {
+        "name": "Дуб",
+        "color": "#a87736"
+      },
+      {
+        "name": "Лиственница",
+        "color": "#bf8843"
+      },
+      {
+        "name": "Махагон",
+        "color": "#9a552f"
+      },
+      {
+        "name": "Тик",
+        "color": "#9c6b32"
+      },
+      {
+        "name": "Палисандр",
+        "color": "#674a35"
+      },
+      {
+        "name": "Эбеновое дерево",
+        "color": "#3d3c39"
+      }
+    ],
+    "characteristics": {
+      "Единица": "шт",
+      "Объём": "0,75 л / 2,2 л",
+      "Применение": "внутри и снаружи помещений",
+      "Основа": "натуральное масло"
+    },
+    "popular": true
   }
 ]

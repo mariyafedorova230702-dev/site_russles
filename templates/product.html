@@ -15,7 +15,7 @@
 
 <section class="product-page">
     <div class="container product-detail-grid">
-        <div class="product-detail-image">
+        <div class="product-detail-image{% if product.category == 'покрытия' %} product-detail-image--contain{% endif %}">
             <img
                 src="{{ url_for('static', filename=product.image) }}"
                 alt="{{ product.display_name }}"
@@ -81,6 +81,45 @@
                 data-product-width="{{ product.width|default('', true) }}"
                 data-product-length="{{ product.length|default('', true) }}"
             ></div>
+            {% endif %}
+
+            {% if product.shades %}
+            <div class="product-shades" id="productShades">
+                <div class="product-shades-heading">
+                    <label>{{ t('product.shade') }}</label>
+                    <strong id="selectedShadeName">{{ product.shades[0].name }}</strong>
+                </div>
+
+                <div class="product-shade-grid" role="radiogroup" aria-label="{{ t('product.shade') }}">
+                    {% for shade in product.shades %}
+                    <button
+                        type="button"
+                        class="product-shade-button{% if loop.first %} active{% endif %}"
+                        data-shade="{{ shade.name }}"
+                        role="radio"
+                        aria-checked="{{ 'true' if loop.first else 'false' }}"
+                        title="{{ shade.name }}"
+                    >
+                        <span style="--shade-color: {{ shade.color }}"></span>
+                        <small>{{ shade.name }}</small>
+                    </button>
+                    {% endfor %}
+                </div>
+
+                <p>{{ t('product.shade_note') }}</p>
+
+                {% if product.shade_reference_image %}
+                <details class="product-shade-reference">
+                    <summary>{{ t('product.real_shades') }}</summary>
+                    <img
+                        src="{{ url_for('static', filename=product.shade_reference_image) }}"
+                        alt="{{ t('product.real_shades') }} — {{ product.name }}"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </details>
+                {% endif %}
+            </div>
             {% endif %}
 
             <label class="quantity-label" for="productQuantity">{{ t('product.quantity') }}</label>

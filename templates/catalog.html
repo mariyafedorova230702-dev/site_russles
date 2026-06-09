@@ -11,9 +11,19 @@
 <section class="catalog-section">
     <div class="container">
         <div class="catalog-heading">
-            <p class="eyebrow">{{ t('nav.catalog') }}</p>
-            <h1>{{ t('catalog.title') }}</h1>
-            <p>{{ t('catalog.intro') }}</p>
+            <div>
+                <p class="eyebrow">{{ t('nav.catalog') }}</p>
+                <h1>{{ t('catalog.title') }}</h1>
+                <p>{{ t('catalog.intro') }}</p>
+            </div>
+
+            <a href="{{ url_for('download_price_list') }}" class="price-download-button" download>
+                <span aria-hidden="true">↓</span>
+                <span>
+                    <strong>{{ t('catalog.download_price') }}</strong>
+                    <small>{{ t('catalog.download_price_hint') }}</small>
+                </span>
+            </a>
         </div>
 
         <div class="catalog-controls">

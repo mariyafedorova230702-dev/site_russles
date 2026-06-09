@@ -1,12 +1,16 @@
 import json
 import os
 import re
+from datetime import date
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
 from uuid import uuid4
 from xml.etree import ElementTree
 
-from flask import Flask, Response, abort, redirect, render_template, request, session, url_for
+from flask import Flask, Response, abort, redirect, render_template, request, send_file, session, url_for
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from werkzeug.utils import secure_filename
 
 
@@ -155,9 +159,14 @@ TRANSLATIONS = {
         "catalog.compact": "Компактно",
         "catalog.list": "Список",
         "catalog.empty": "По вашему запросу товары не найдены. Попробуйте изменить поиск или выбрать другую категорию.",
+        "catalog.download_price": "Скачать прайс Excel",
+        "catalog.download_price_hint": "Актуальные товары и цены в одной таблице",
         "product.back": "Вернуться в каталог",
         "product.specs": "Характеристики",
         "product.variant": "Выберите вариант",
+        "product.shade": "Выберите оттенок",
+        "product.shade_note": "Оттенок на древесине зависит от породы, подготовки поверхности и количества слоёв.",
+        "product.real_shades": "Реальные образцы оттенков",
         "product.quantity": "Количество",
         "product.quantity_placeholder": "Например: 10",
         "product.board_calculation": "Расчёт материала по доскам",
@@ -307,9 +316,14 @@ TRANSLATIONS = {
         "catalog.compact": "Ықшам",
         "catalog.list": "Тізім",
         "catalog.empty": "Сұрауыңыз бойынша тауар табылмады. Іздеуді өзгертіңіз немесе басқа санатты таңдаңыз.",
+        "catalog.download_price": "Excel прайсын жүктеу",
+        "catalog.download_price_hint": "Өзекті тауарлар мен бағалар бір кестеде",
         "product.back": "Каталогқа оралу",
         "product.specs": "Сипаттамалар",
         "product.variant": "Нұсқаны таңдаңыз",
+        "product.shade": "Реңкті таңдаңыз",
+        "product.shade_note": "Ағаштағы реңк ағаш түріне, бетті дайындауға және қабат санына байланысты.",
+        "product.real_shades": "Реңктердің нақты үлгілері",
         "product.quantity": "Саны",
         "product.quantity_placeholder": "Мысалы: 10",
         "product.board_calculation": "Тақтай материалын есептеу",
@@ -369,8 +383,8 @@ CATEGORIES = [
     {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.jpg"},
     {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.PNG"},
     {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.jpg"},
-    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/hero.png"},
-    {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/hero.png"},
+    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.jpg"},
+    {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/akvateks-balzam.png"},
 ]
 
 CATEGORY_PAGES = [
@@ -647,6 +661,115 @@ def save_product_image(file, product_slug: str) -> str:
     return f"images/products/{filename}"
 
 
+def excel_safe_text(value) -> str:
+    text = str(value or "")
+    return f"'{text}" if text.startswith(("=", "+", "-", "@")) else text
+
+
+def build_price_workbook(products: list[dict]) -> BytesIO:
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Прайс"
+    generated_date = date.today().strftime("%d.%m.%Y")
+
+    sheet.merge_cells("A1:M1")
+    sheet["A1"] = "Русский Лес — прайс пиломатериалов"
+    sheet["A1"].font = Font(size=18, bold=True, color="FFFFFF")
+    sheet["A1"].fill = PatternFill("solid", fgColor="102719")
+    sheet["A1"].alignment = Alignment(horizontal="left", vertical="center")
+    sheet.row_dimensions[1].height = 30
+
+    sheet.merge_cells("A2:M2")
+    sheet["A2"] = (
+        f"Сформировано: {generated_date} · Склад: {WAREHOUSE_ADDRESS} · "
+        "Перед покупкой уточняйте наличие и актуальную цену."
+    )
+    sheet["A2"].font = Font(size=10, color="66736A")
+    sheet["A2"].alignment = Alignment(wrap_text=True, vertical="center")
+    sheet.row_dimensions[2].height = 30
+
+    headers = [
+        "ID",
+        "Категория",
+        "Название товара",
+        "Вариант",
+        "Порода",
+        "Сорт",
+        "Толщина",
+        "Ширина",
+        "Длина",
+        "Цена, ₸",
+        "Единица",
+        "Наличие",
+        "Примечание",
+    ]
+    header_row = 4
+    for column, header in enumerate(headers, start=1):
+        cell = sheet.cell(row=header_row, column=column, value=header)
+        cell.font = Font(bold=True, color="FFFFFF")
+        cell.fill = PatternFill("solid", fgColor="1F5F35")
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+    row_number = header_row + 1
+    sorted_products = sorted(
+        products,
+        key=lambda product: (
+            normalize_category(product.get("category")),
+            normalize_category(product.get("display_name") or product.get("name")),
+        ),
+    )
+    for product in sorted_products:
+        variants = product.get("variants") or [
+            {
+                "name": product.get("variant_label") or build_variant_label(product),
+                "price": product.get("base_price", 0),
+            }
+        ]
+        for variant in variants:
+            values = [
+                product.get("id", ""),
+                product.get("category", ""),
+                product.get("display_name") or product.get("name", ""),
+                variant.get("name", ""),
+                product.get("wood_type", ""),
+                product.get("grade", ""),
+                product.get("thickness", ""),
+                product.get("width", ""),
+                product.get("length", ""),
+                variant.get("price", product.get("base_price", 0)),
+                product.get("unit", ""),
+                product.get("availability", "уточнить"),
+                product.get("note", ""),
+            ]
+            for column, value in enumerate(values, start=1):
+                if column != 10:
+                    value = excel_safe_text(value)
+                cell = sheet.cell(row=row_number, column=column, value=value)
+                cell.alignment = Alignment(vertical="top", wrap_text=True)
+                if row_number % 2 == 0:
+                    cell.fill = PatternFill("solid", fgColor="F4F7F3")
+            sheet.cell(row=row_number, column=10).number_format = '#,##0" ₸"'
+            row_number += 1
+
+    thin_border = Border(bottom=Side(style="thin", color="DFE7DF"))
+    for row in sheet.iter_rows(min_row=header_row, max_row=max(header_row, row_number - 1), min_col=1, max_col=13):
+        for cell in row:
+            cell.border = thin_border
+
+    widths = [9, 20, 42, 22, 18, 12, 14, 14, 14, 16, 13, 16, 28]
+    for index, width in enumerate(widths, start=1):
+        sheet.column_dimensions[chr(64 + index)].width = width
+
+    sheet.freeze_panes = "A5"
+    sheet.auto_filter.ref = f"A4:M{max(header_row, row_number - 1)}"
+    sheet.sheet_view.showGridLines = False
+
+    output = BytesIO()
+    workbook.save(output)
+    output.seek(0)
+    return output
+
+
 def build_variant_label(product: dict) -> str:
     parts = [
         product.get("thickness", ""),
@@ -894,6 +1017,19 @@ def robots():
         ]
     )
     return Response(content, mimetype="text/plain")
+
+
+@app.route("/price-list.xlsx")
+def download_price_list():
+    output = build_price_workbook(load_products())
+    filename = f"russkiy-les-price-{date.today().isoformat()}.xlsx"
+    return send_file(
+        output,
+        as_attachment=True,
+        download_name=filename,
+        mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        max_age=0,
+    )
 
 
 @app.route("/")
