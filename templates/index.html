@@ -9,34 +9,40 @@
     <div class="container hero-new-grid">
         <div class="hero-new-text">
             <p class="eyebrow">Русский Лес</p>
-            <h1>Склад пиломатериалов в Алматы</h1>
-            <p class="hero-new-description">
-                OSB, фанера, доска, брус, брусок, вагонка, планкен, покрытия
-                и изделия из дерева в наличии на складе.
-            </p>
+            <h1>{{ t('hero.title') }}</h1>
+            <p class="hero-new-description">{{ t('hero.description') }}</p>
 
-            <div class="hero-new-actions">
-                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="primary-button">
-                    Узнать цену в WhatsApp
+            <div class="hero-conversion">
+                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="hero-primary-action">
+                    <span>
+                        <small>{{ t('hero.whatsapp_hint') }}</small>
+                        <strong>{{ t('hero.price') }}</strong>
+                    </span>
+                    <b aria-hidden="true">→</b>
                 </a>
-                <a href="{{ url_for('catalog') }}" class="ghost-button">Каталог</a>
-                <a href="https://2gis.kz/almaty/search/%D0%90%D0%B9%D1%88%D0%B0%20%D0%91%D0%B8%D0%B1%D0%B8%20387%D0%90" target="_blank" rel="noopener" class="wood-button">
-                    Построить маршрут
-                </a>
+
+                <div class="hero-secondary-actions">
+                    <a href="{{ url_for('catalog') }}">
+                        {{ t('hero.catalog') }} <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener">
+                        {{ t('hero.map') }} <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
             </div>
 
             <div class="hero-stats">
                 <div>
                     <strong>300+</strong>
-                    <span>позиций на складе</span>
+                    <span>{{ t('hero.positions') }}</span>
                 </div>
                 <div>
-                    <strong>Быстро</strong>
-                    <span>погрузка со склада</span>
+                    <strong>{{ t('hero.fast') }}</strong>
+                    <span>{{ t('hero.loading') }}</span>
                 </div>
                 <div>
-                    <strong>м² · п/м · шт</strong>
-                    <span>считаем в нужной единице</span>
+                    <strong>м² · м³ · п/м · шт</strong>
+                    <span>{{ t('hero.units') }}</span>
                 </div>
             </div>
         </div>
@@ -53,13 +59,13 @@
             </div>
 
             <div class="floating-card top-card">
-                <span>В наличии</span>
+                <span>{{ t('hero.available') }}</span>
                 <strong>OSB, фанера, брус, доска</strong>
             </div>
 
             <div class="floating-card bottom-card">
-                <span>Адрес</span>
-                <strong>Айша Биби 387А</strong>
+                <span>{{ t('hero.address') }}</span>
+                <strong>{{ warehouse_address }}</strong>
             </div>
         </div>
     </div>
@@ -78,8 +84,8 @@
 <section class="home-categories-section">
     <div class="container">
         <div class="section-heading">
-            <p>Основные категории</p>
-            <h2>Материалы для стройки, отделки и ухода за деревом</h2>
+            <p>{{ t('section.categories') }}</p>
+            <h2>{{ t('section.categories_title') }}</h2>
         </div>
 
         <div class="home-categories-grid">
@@ -105,30 +111,27 @@
     <div class="container">
         <div class="material-help-card">
             <div class="section-heading">
-                <p>Подбор материала</p>
-                <h2>Поможем подобрать материал</h2>
-                <span>
-                    Не знаете, какой материал выбрать? Подберите по задаче — для бани,
-                    фасада, пола, террасы или внутренней отделки стен.
-                </span>
+                <p>{{ t('section.selection') }}</p>
+                <h2>{{ t('section.selection_title') }}</h2>
+                <span>{{ t('section.selection_text') }}</span>
             </div>
 
             <div class="material-help-grid">
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для бани'|urlencode }}" class="material-help-link">
-                    <strong>Для бани</strong>
-                    <span>Осина, липа, кедр: вагонка, полок и уголок</span>
+                <a href="{{ url_for('catalog') }}?materials={{ 'вагонка|полок|уголок'|urlencode }}&woods={{ 'осина|липа|кедр'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.bath') }}</strong>
+                    <span>{{ t('purpose.bath_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для фасада'|urlencode }}" class="material-help-link">
-                    <strong>Для фасада</strong>
-                    <span>Планкен, блок-хаус и имитация бруса</span>
+                <a href="{{ url_for('catalog') }}?materials={{ 'планкен|блок-хаус|блок хаус|имитация бруса'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.facade') }}</strong>
+                    <span>{{ t('purpose.facade_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для пола|для террасы'|urlencode }}" class="material-help-link">
-                    <strong>Для пола и террас</strong>
-                    <span>Половой шпунт, террасная доска, планкен и доска пола</span>
+                <a href="{{ url_for('catalog') }}?materials={{ 'половой шпунт|террасная доска|планкен|доска пола'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.floor') }}</strong>
+                    <span>{{ t('purpose.floor_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?purpose={{ 'для стен|для отделки'|urlencode }}" class="material-help-link">
-                    <strong>Для отделки стен внутри</strong>
-                    <span>Имитация бруса и вагонка для внутренней отделки</span>
+                <a href="{{ url_for('catalog') }}?materials={{ 'имитация бруса|вагонка'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.walls') }}</strong>
+                    <span>{{ t('purpose.walls_text') }}</span>
                 </a>
             </div>
         </div>
@@ -138,8 +141,8 @@
 <section class="featured-section">
     <div class="container">
         <div class="section-heading">
-            <p>Популярное</p>
-            <h2>Товары, которые чаще всего спрашивают</h2>
+            <p>{{ t('section.popular') }}</p>
+            <h2>{{ t('section.popular_title') }}</h2>
         </div>
 
         <div class="catalog-grid home-products-grid">
@@ -171,9 +174,9 @@
                     </h2>
                     <p>{{ product.description }}</p>
                     <div class="catalog-card-bottom">
-                        <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        <strong>{{ t('product.from') }} {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
                         <div class="catalog-card-actions">
-                            <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">Подробнее</a>
+                            <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">{{ t('product.details') }}</a>
                             <a href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message|urlencode }}" target="_blank" rel="noopener" class="catalog-whatsapp-button">WhatsApp</a>
                         </div>
                     </div>
@@ -187,39 +190,75 @@
 <section class="custom-section" id="wood-products">
     <div class="container custom-grid">
         <div class="custom-text">
-            <p class="eyebrow">Изделия из дерева</p>
-            <h2>Изделия под заказ для участка, дома и зоны отдыха</h2>
-            <p>
-                Беседки, навесы, лавки, столы, садовые конструкции и декоративные элементы.
-                Обсудим задачу, подберём материал, посчитаем стоимость и сроки.
-            </p>
+            <p class="eyebrow">{{ t('custom.eyebrow') }}</p>
+            <h2>{{ t('custom.title') }}</h2>
+            <p>{{ t('custom.text') }}</p>
 
             <a href="{{ whatsapp_custom_order_url }}" target="_blank" rel="noopener" class="primary-button">
-                Обсудить заказ
+                {{ t('custom.action') }}
             </a>
         </div>
 
-        <div class="custom-gallery">
-            <div class="gallery-card big">
-                <img src="{{ url_for('static', filename='images/беседка17.jpg') }}" alt="Беседка из дерева под заказ" loading="lazy" decoding="async">
+        <div class="custom-carousel" data-carousel aria-label="Примеры изделий из дерева">
+            <div class="custom-carousel-stage" data-carousel-stage>
+                <figure class="custom-carousel-slide active" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/беседка17.jpg') }}" alt="Беседка из дерева под заказ" loading="lazy" decoding="async">
+                    <figcaption>Беседки для участка и зоны отдыха</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/беседка.jpg') }}" alt="Деревянная беседка для участка" loading="lazy" decoding="async">
+                    <figcaption>Открытые деревянные беседки</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/беседка1.jpg') }}" alt="Беседка для зоны отдыха" loading="lazy" decoding="async">
+                    <figcaption>Беседки по индивидуальному проекту</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/Будка6.jpg') }}" alt="Деревянная будка под заказ" loading="lazy" decoding="async">
+                    <figcaption>Будки из дерева под заказ</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/будка22.jpg') }}" alt="Будка из дерева для участка" loading="lazy" decoding="async">
+                    <figcaption>Практичные изделия для участка</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/Туалет15.jpg') }}" alt="Деревянный туалет для дачи" loading="lazy" decoding="async">
+                    <figcaption>Хозяйственные постройки из дерева</figcaption>
+                </figure>
+                <figure class="custom-carousel-slide" data-carousel-slide>
+                    <img src="{{ url_for('static', filename='images/Туалет6.jpeg') }}" alt="Уличный туалет из дерева" loading="lazy" decoding="async">
+                    <figcaption>Дачные конструкции под заказ</figcaption>
+                </figure>
+
+                <div class="custom-carousel-controls">
+                    <button type="button" data-carousel-prev aria-label="Предыдущее фото">←</button>
+                    <span><b data-carousel-current>1</b> / 7</span>
+                    <button type="button" data-carousel-next aria-label="Следующее фото">→</button>
+                </div>
             </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/беседка.jpg') }}" alt="Деревянная беседка для участка" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/беседка1.jpg') }}" alt="Беседка для зоны отдыха" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/Будка6.jpg') }}" alt="Деревянная будка под заказ" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/будка22.jpg') }}" alt="Будка из дерева для участка" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/Туалет15.jpg') }}" alt="Деревянный туалет для дачи" loading="lazy" decoding="async">
-            </div>
-            <div class="gallery-card">
-                <img src="{{ url_for('static', filename='images/Туалет6.jpeg') }}" alt="Уличный туалет из дерева" loading="lazy" decoding="async">
+
+            <div class="custom-carousel-thumbs" aria-label="Выбор фотографии">
+                <button type="button" class="active" data-carousel-thumb aria-label="Показать фото 1">
+                    <img src="{{ url_for('static', filename='images/беседка17.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 2">
+                    <img src="{{ url_for('static', filename='images/беседка.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 3">
+                    <img src="{{ url_for('static', filename='images/беседка1.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 4">
+                    <img src="{{ url_for('static', filename='images/Будка6.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 5">
+                    <img src="{{ url_for('static', filename='images/будка22.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 6">
+                    <img src="{{ url_for('static', filename='images/Туалет15.jpg') }}" alt="" decoding="async">
+                </button>
+                <button type="button" data-carousel-thumb aria-label="Показать фото 7">
+                    <img src="{{ url_for('static', filename='images/Туалет6.jpeg') }}" alt="" decoding="async">
+                </button>
             </div>
         </div>
     </div>
@@ -228,33 +267,33 @@
 <section class="process-section">
     <div class="container">
         <div class="section-heading">
-            <p>Как работаем</p>
-            <h2>Простой путь от вопроса до отгрузки</h2>
+            <p>{{ t('process.eyebrow') }}</p>
+            <h2>{{ t('process.title') }}</h2>
         </div>
 
         <div class="process-grid">
             <div class="process-card">
                 <span>01</span>
-                <h3>Пишите или звоните</h3>
-                <p>Расскажите, какой материал нужен и для какой задачи.</p>
+                <h3>{{ t('process.one_title') }}</h3>
+                <p>{{ t('process.one_text') }}</p>
             </div>
 
             <div class="process-card">
                 <span>02</span>
-                <h3>Подбираем вариант</h3>
-                <p>Сориентируем по наличию, размеру, толщине, сорту и цене.</p>
+                <h3>{{ t('process.two_title') }}</h3>
+                <p>{{ t('process.two_text') }}</p>
             </div>
 
             <div class="process-card">
                 <span>03</span>
-                <h3>Считаем заказ</h3>
-                <p>Посчитаем по м², погонным метрам, штукам или объёму.</p>
+                <h3>{{ t('process.three_title') }}</h3>
+                <p>{{ t('process.three_text') }}</p>
             </div>
 
             <div class="process-card">
                 <span>04</span>
-                <h3>Отгружаем</h3>
-                <p>Можно приехать на склад, посмотреть материал и забрать заказ.</p>
+                <h3>{{ t('process.four_title') }}</h3>
+                <p>{{ t('process.four_text') }}</p>
             </div>
         </div>
     </div>
@@ -264,94 +303,73 @@
     <div class="container">
         <div class="about-modern-intro">
             <div>
-                <p class="eyebrow">О компании</p>
-                <h2>«Русский Лес» — склад пиломатериалов с большим выбором и живой консультацией</h2>
+                <p class="eyebrow">{{ t('about.eyebrow') }}</p>
+                <h2>{{ t('about.title') }}</h2>
             </div>
 
-            <p>
-                Мы помогаем подобрать материал для строительства, отделки, бани,
-                фасада, террасы и изделий из дерева. Клиент может приехать на склад,
-                посмотреть пиломатериал лично и выбрать нужную сортность, длину и качество.
-            </p>
+            <p>{{ t('about.text') }}</p>
         </div>
 
-        <div class="about-stats-grid">
-            <div class="about-stat-card">
-                <strong>300+</strong>
-                <span>позиций на складе</span>
+        <div class="about-company-grid">
+            <div class="about-company-story">
+                <span class="about-company-year">24</span>
+                <div>
+                    <strong>{{ t('about.years') }}</strong>
+                    <p>{{ t('about.history') }}</p>
+                </div>
+
+                <div class="about-company-stats">
+                    <div>
+                        <strong>300+</strong>
+                        <span>{{ t('about.stock') }}</span>
+                    </div>
+                    <div>
+                        <strong>{{ t('about.direct') }}</strong>
+                        <span>{{ t('about.regions') }}</span>
+                    </div>
+                </div>
             </div>
-            <div class="about-stat-card">
-                <strong>24 года</strong>
-                <span>на рынке Казахстана</span>
-            </div>
-            <div class="about-stat-card">
-                <strong>Напрямую</strong>
-                <span>с российскими производителями</span>
+
+            <div class="about-proof-list">
+                <article>
+                    <span aria-hidden="true">✓</span>
+                    <div>
+                        <h3>{{ t('about.inspect') }}</h3>
+                        <p>{{ t('about.inspect_text') }}</p>
+                    </div>
+                </article>
+                <article>
+                    <span aria-hidden="true">✓</span>
+                    <div>
+                        <h3>{{ t('about.storage') }}</h3>
+                        <p>{{ t('about.storage_text') }}</p>
+                    </div>
+                </article>
+                <article>
+                    <span aria-hidden="true">✓</span>
+                    <div>
+                        <h3>{{ t('about.help') }}</h3>
+                        <p>{{ t('about.help_text') }}</p>
+                    </div>
+                </article>
+                <article>
+                    <span aria-hidden="true">✓</span>
+                    <div>
+                        <h3>{{ t('about.loading') }}</h3>
+                        <p>{{ t('about.loading_text') }}</p>
+                    </div>
+                </article>
             </div>
         </div>
 
-        <div class="about-modern-cards">
-            <article class="about-value-card">
-                <span aria-hidden="true">📦</span>
-                <h3>Большой ассортимент</h3>
-                <p>
-                    На складе всегда большой выбор пиломатериалов для строительства
-                    и отделки. Мы стараемся поддерживать ассортимент так, чтобы клиент
-                    мог найти всё необходимое по дереву в одном месте.
-                </p>
-            </article>
-
-            <article class="about-value-card">
-                <span aria-hidden="true">🏆</span>
-                <h3>Опыт и репутация</h3>
-                <p>
-                    Более двух десятилетий мы поставляем пиломатериалы для строительства
-                    и отделки. Нас хорошо знают мастера и строительные компании ещё со
-                    времён нашей базы на Ташкентской-Мира.
-                </p>
-            </article>
-
-            <article class="about-value-card">
-                <span aria-hidden="true">🪵</span>
-                <h3>Правильное хранение</h3>
-                <p>
-                    Мы уделяем большое внимание хранению древесины, чтобы материал
-                    сохранял форму, геометрию и внешний вид.
-                </p>
-            </article>
-
-            <article class="about-value-card">
-                <span aria-hidden="true">🤝</span>
-                <h3>Проверенные поставщики</h3>
-                <p>
-                    Закупаем древесину напрямую в северных регионах России без посредников
-                    и работаем с поставщиками, у которых материал соответствует заявленной сортности.
-                </p>
-            </article>
-
-            <article class="about-value-card">
-                <span aria-hidden="true">👀</span>
-                <h3>Можно посмотреть материал</h3>
-                <p>
-                    Мы рекомендуем приезжать на склад и лично осматривать пиломатериал.
-                    Так проще выбрать нужный размер, сорт и качество древесины.
-                </p>
-            </article>
-
-            <article class="about-value-card">
-                <span aria-hidden="true">🚚</span>
-                <h3>Быстрая погрузка</h3>
-                <p>
-                    После покупки помогаем сразу загрузить материал, чтобы клиент мог
-                    быстро забрать заказ и продолжить работу.
-                </p>
-            </article>
-        </div>
-
-        <div class="about-warehouse-note">
-            <strong>В наличии: вагонка, брус, доска, планкен, мебельный щит и другие пиломатериалы.</strong>
-            <span>Адрес склада: Айша Биби 387А</span>
-            <span>Перерыв на обед: с 12:00 до 13:00</span>
+        <div class="about-visit-strip">
+            <div>
+                <strong>{{ t('about.visit') }}</strong>
+                <span>{{ warehouse_address }} · Пн–Пт 08:00–17:00 · Сб до 14:00 · обед 12:00–13:00</span>
+            </div>
+            <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener">
+                {{ t('about.map') }} <span aria-hidden="true">↗</span>
+            </a>
         </div>
     </div>
 </section>

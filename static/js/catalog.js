@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let activeCategory = normalize(params.get("category") || "all");
     let activePurpose = normalize(params.get("purpose") || "");
+    let activeMaterials = normalize(params.get("materials") || "");
+    let activeWoods = normalize(params.get("woods") || "");
     let filterFrame = null;
 
     function normalize(value) {
@@ -24,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getActivePurposes() {
         return activePurpose.split("|").map(normalize).filter(Boolean);
+    }
+
+    function getActiveTerms(value) {
+        return value.split("|").map(normalize).filter(Boolean);
     }
 
     function updateSelectState(select) {
@@ -40,7 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const label = mobileFilterToggle.querySelector("strong");
         if (label) {
-            label.textContent = isOpen ? "Скрыть" : "Открыть";
+            label.textContent = isOpen
+                ? (mobileFilterToggle.dataset.hideLabel || "Скрыть")
+                : (mobileFilterToggle.dataset.openLabel || "Открыть");
         }
     }
 
@@ -111,6 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function formatCount(count) {
+        if (document.documentElement.lang === "kk") {
+            const foundLabel = countElement ? countElement.dataset.foundLabel : "Табылды";
+            const productsLabel = countElement ? countElement.dataset.productsLabel : "тауар";
+            return `${foundLabel}: ${count} ${productsLabel}`;
+        }
+
         const lastTwoDigits = count % 100;
         const lastDigit = count % 10;
         let word = "товаров";
@@ -131,18 +145,32 @@ document.addEventListener("DOMContentLoaded", () => {
         const query = normalize(searchInput ? searchInput.value : "");
         const values = getFilterValues();
         const activePurposes = getActivePurposes();
+        const materialTerms = getActiveTerms(activeMaterials);
+        const woodTerms = getActiveTerms(activeWoods);
         let visibleCount = 0;
 
         cards.forEach((card) => {
+            const searchableText = card.dataset.search || card.dataset.name || "";
             const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
             const matchesPurpose = activePurposes.length === 0 || activePurposes.some((purpose) => {
                 return (card.dataset.purpose || "").includes(purpose);
             });
-            const matchesSearch = !query || (card.dataset.search || card.dataset.name || "").includes(query);
+            const matchesMaterials = materialTerms.length === 0 || materialTerms.some((term) => {
+                return searchableText.includes(term);
+            });
+            const matchesWoods = woodTerms.length === 0 || woodTerms.some((term) => {
+                return searchableText.includes(term);
+            });
+            const matchesSearch = !query || searchableText.includes(query);
             const matchesSelects = Object.entries(values).every(([field, value]) => {
                 return !value || (card.dataset[field] || "") === value;
             });
-            const isVisible = matchesCategory && matchesPurpose && matchesSearch && matchesSelects;
+            const isVisible = matchesCategory
+                && matchesPurpose
+                && matchesMaterials
+                && matchesWoods
+                && matchesSearch
+                && matchesSelects;
 
             card.hidden = !isVisible;
 
@@ -222,6 +250,8 @@ document.addEventListener("DOMContentLoaded", () => {
         resetButton.addEventListener("click", () => {
             activeCategory = "all";
             activePurpose = "";
+            activeMaterials = "";
+            activeWoods = "";
 
             if (searchInput) {
                 searchInput.value = "";

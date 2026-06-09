@@ -4,7 +4,8 @@ function parseNumber(value) {
 }
 
 function formatNumber(value, maximumFractionDigits = 2) {
-    return new Intl.NumberFormat("ru-RU", {
+    const locale = document.documentElement.lang === "kk" ? "kk-KZ" : "ru-RU";
+    return new Intl.NumberFormat(locale, {
         maximumFractionDigits,
     }).format(Number(value));
 }
@@ -117,10 +118,34 @@ function updateProductState(syncQuantity = false) {
 
     const productName = variantControl.dataset.productName || "";
     const productUnit = variantControl.dataset.productUnit || "";
+    const isKazakh = whatsappButton.dataset.language === "kk";
+    const labels = isKazakh
+        ? {
+            notSpecified: "көрсетілмеген",
+            enterQuantity: "Санын көрсетіңіз",
+            quantity: "Саны",
+            pricePer: "бірлік бағасы",
+            greeting: "Сәлеметсіз бе! Қолжетімділігі мен бағасын білгім келеді:",
+            variant: "Нұсқа",
+            websitePrice: "Сайттағы баға",
+            preliminaryTotal: "Алдын ала сома",
+            materialCalculation: "Материал есебі",
+        }
+        : {
+            notSpecified: "не указано",
+            enterQuantity: "Укажите количество",
+            quantity: "Количество",
+            pricePer: "цена за",
+            greeting: "Здравствуйте! Хочу узнать наличие и цену:",
+            variant: "Вариант",
+            websitePrice: "Цена на сайте",
+            preliminaryTotal: "Предварительная сумма",
+            materialCalculation: "Расчёт материала",
+        };
     const variant = getVariantState(variantControl);
     const materialCalculation = updateMaterialCalculation(elements, syncQuantity);
     const quantity = quantityInput ? parseNumber(quantityInput.value) : 0;
-    const quantityText = quantity > 0 ? `${formatNumber(quantity)} ${productUnit}` : "не указано";
+    const quantityText = quantity > 0 ? `${formatNumber(quantity)} ${productUnit}` : labels.notSpecified;
 
     priceElement.textContent = formatPrice(variant.price);
 
@@ -128,25 +153,25 @@ function updateProductState(syncQuantity = false) {
         totalElement.textContent = formatPrice(quantity * variant.price);
         totalFormula.textContent = `${formatNumber(quantity)} ${productUnit} × ${formatPrice(variant.price)} / ${productUnit}`;
     } else {
-        totalElement.textContent = "Укажите количество";
-        totalFormula.textContent = `Количество × цена за ${productUnit}`;
+        totalElement.textContent = labels.enterQuantity;
+        totalFormula.textContent = `${labels.quantity} × ${labels.pricePer} ${productUnit}`;
     }
 
     const message = [
-        "Здравствуйте! Хочу узнать наличие и цену:",
+        labels.greeting,
         productName,
-        `Вариант: ${variant.name}`,
-        `Количество: ${quantityText}`,
-        `Цена на сайте: ${formatPrice(variant.price)} / ${productUnit}`,
+        `${labels.variant}: ${variant.name}`,
+        `${labels.quantity}: ${quantityText}`,
+        `${labels.websitePrice}: ${formatPrice(variant.price)} / ${productUnit}`,
     ];
 
     if (quantity > 0) {
-        message.push(`Предварительная сумма: ${formatPrice(quantity * variant.price)}`);
+        message.push(`${labels.preliminaryTotal}: ${formatPrice(quantity * variant.price)}`);
     }
 
     if (materialCalculation) {
         message.push(
-            `Расчёт материала: ${formatNumber(materialCalculation.boardCount)} шт × ${formatNumber(materialCalculation.boardLength)} м = ${formatNumber(materialCalculation.linearMeters)} п/м = ${formatNumber(materialCalculation.squareMeters)} м²`,
+            `${labels.materialCalculation}: ${formatNumber(materialCalculation.boardCount)} шт × ${formatNumber(materialCalculation.boardLength)} м = ${formatNumber(materialCalculation.linearMeters)} п/м = ${formatNumber(materialCalculation.squareMeters)} м²`,
         );
     }
 

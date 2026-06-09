@@ -11,18 +11,15 @@
 <section class="catalog-section">
     <div class="container">
         <div class="catalog-heading">
-            <p class="eyebrow">Каталог</p>
-            <h1>Каталог пиломатериалов</h1>
-            <p>
-                Выберите нужный материал, посмотрите варианты и отправьте запрос
-                в WhatsApp. Мы уточним наличие на складе и подготовим расчёт.
-            </p>
+            <p class="eyebrow">{{ t('nav.catalog') }}</p>
+            <h1>{{ t('catalog.title') }}</h1>
+            <p>{{ t('catalog.intro') }}</p>
         </div>
 
         <div class="catalog-controls">
             <div class="catalog-search">
-                <label for="catalogSearch">Поиск по названию</label>
-                <input id="catalogSearch" type="search" placeholder="Например: OSB, брусок, доска">
+                <label for="catalogSearch">{{ t('catalog.search') }}</label>
+                <input id="catalogSearch" type="search" placeholder="{{ t('catalog.search_placeholder') }}">
             </div>
 
             <button
@@ -31,22 +28,24 @@
                 id="catalogMobileFilterToggle"
                 aria-controls="catalogFilterPanel"
                 aria-expanded="false"
+                data-open-label="{{ t('catalog.open') }}"
+                data-hide-label="{{ t('catalog.hide') }}"
             >
-                <span>Фильтры и категории</span>
-                <strong>Открыть</strong>
+                <span>{{ t('catalog.filters_categories') }}</span>
+                <strong>{{ t('catalog.open') }}</strong>
             </button>
 
             <div class="catalog-filter-panel" id="catalogFilterPanel">
                 <div class="catalog-controls-head">
-                    <strong>Фильтры по характеристикам</strong>
-                    <button type="button" class="catalog-reset-button" id="catalogReset">Сбросить фильтры</button>
+                    <strong>{{ t('catalog.filters') }}</strong>
+                    <button type="button" class="catalog-reset-button" id="catalogReset">{{ t('catalog.reset') }}</button>
                 </div>
 
                 <div class="catalog-select-filters">
                     <label>
-                        Толщина
+                        {{ t('catalog.thickness') }}
                         <select id="catalogThickness" data-filter="thickness">
-                            <option value="">Любая</option>
+                            <option value="">{{ t('catalog.any_f') }}</option>
                             {% for option in filter_options.thickness %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -54,9 +53,9 @@
                     </label>
 
                     <label>
-                        Ширина
+                        {{ t('catalog.width') }}
                         <select id="catalogWidth" data-filter="width">
-                            <option value="">Любая</option>
+                            <option value="">{{ t('catalog.any_f') }}</option>
                             {% for option in filter_options.width %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -64,9 +63,9 @@
                     </label>
 
                     <label>
-                        Длина
+                        {{ t('catalog.length') }}
                         <select id="catalogLength" data-filter="length">
-                            <option value="">Любая</option>
+                            <option value="">{{ t('catalog.any_f') }}</option>
                             {% for option in filter_options.length %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -74,9 +73,9 @@
                     </label>
 
                     <label>
-                        Порода
+                        {{ t('catalog.wood') }}
                         <select id="catalogWood" data-filter="wood">
-                            <option value="">Любая</option>
+                            <option value="">{{ t('catalog.any_f') }}</option>
                             {% for option in filter_options.wood_type %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -84,9 +83,9 @@
                     </label>
 
                     <label>
-                        Сорт
+                        {{ t('catalog.grade') }}
                         <select id="catalogGrade" data-filter="grade">
-                            <option value="">Любой</option>
+                            <option value="">{{ t('catalog.any_m') }}</option>
                             {% for option in filter_options.grade %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -94,9 +93,9 @@
                     </label>
 
                     <label>
-                        Единица
+                        {{ t('catalog.unit') }}
                         <select id="catalogUnit" data-filter="unit">
-                            <option value="">Любая</option>
+                            <option value="">{{ t('catalog.any_f') }}</option>
                             {% for option in filter_options.unit %}
                             <option value="{{ option|lower }}">{{ option }}</option>
                             {% endfor %}
@@ -105,7 +104,7 @@
                 </div>
 
                 <div class="catalog-filters" aria-label="Фильтр по категориям">
-                    <button type="button" class="catalog-filter active" data-category="all">Все товары</button>
+                    <button type="button" class="catalog-filter active" data-category="all">{{ t('catalog.all') }}</button>
                     {% for category in categories %}
                     <button type="button" class="catalog-filter" data-category="{{ category|lower }}">
                         {{ category }}
@@ -116,31 +115,36 @@
         </div>
 
         <div class="catalog-results-bar">
-            <p id="catalogCount" aria-live="polite">Найдено товаров: {{ products|length }}</p>
+            <p
+                id="catalogCount"
+                aria-live="polite"
+                data-found-label="{{ t('catalog.found') }}"
+                data-products-label="{{ t('catalog.products') }}"
+            >{{ t('catalog.found') }}: {{ products|length }} {{ t('catalog.products') }}</p>
             <div class="catalog-results-actions">
                 <label>
-                    Сортировка
+                    {{ t('catalog.sort') }}
                     <select id="catalogSort">
-                        <option value="default">По умолчанию</option>
-                        <option value="price-asc">Сначала дешевле</option>
-                        <option value="price-desc">Сначала дороже</option>
-                        <option value="name-asc">По названию</option>
-                        <option value="availability">Сначала в наличии</option>
+                        <option value="default">{{ t('catalog.default') }}</option>
+                        <option value="price-asc">{{ t('catalog.cheaper') }}</option>
+                        <option value="price-desc">{{ t('catalog.expensive') }}</option>
+                        <option value="name-asc">{{ t('catalog.name') }}</option>
+                        <option value="availability">{{ t('catalog.availability') }}</option>
                     </select>
                 </label>
 
-                <div class="catalog-view-switcher" role="group" aria-label="Вид каталога">
-                    <button type="button" class="catalog-view-button active" data-view="grid" aria-pressed="true" title="Крупная сетка">
+                <div class="catalog-view-switcher" role="group" aria-label="{{ t('catalog.view') }}">
+                    <button type="button" class="catalog-view-button active" data-view="grid" aria-pressed="true" title="{{ t('catalog.grid') }}">
                         <span aria-hidden="true">▦</span>
-                        <span>Сетка</span>
+                        <span>{{ t('catalog.grid') }}</span>
                     </button>
-                    <button type="button" class="catalog-view-button" data-view="compact" aria-pressed="false" title="Компактная сетка">
+                    <button type="button" class="catalog-view-button" data-view="compact" aria-pressed="false" title="{{ t('catalog.compact') }}">
                         <span aria-hidden="true">⊞</span>
-                        <span>Компактно</span>
+                        <span>{{ t('catalog.compact') }}</span>
                     </button>
-                    <button type="button" class="catalog-view-button" data-view="list" aria-pressed="false" title="Список">
+                    <button type="button" class="catalog-view-button" data-view="list" aria-pressed="false" title="{{ t('catalog.list') }}">
                         <span aria-hidden="true">☰</span>
-                        <span>Список</span>
+                        <span>{{ t('catalog.list') }}</span>
                     </button>
                 </div>
             </div>
@@ -192,10 +196,10 @@
                     <p>{{ product.description }}</p>
 
                     <div class="catalog-card-bottom">
-                        <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        <strong>{{ t('product.from') }} {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
                         <div class="catalog-card-actions">
                             <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">
-                                Подробнее
+                                {{ t('product.details') }}
                             </a>
                             <a
                                 href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message|urlencode }}"
@@ -213,7 +217,7 @@
         </div>
 
         <p class="catalog-empty" id="catalogEmpty" hidden>
-            По вашему запросу товары не найдены. Попробуйте изменить поиск или выбрать другую категорию.
+            {{ t('catalog.empty') }}
         </p>
     </div>
 </section>

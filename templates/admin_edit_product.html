@@ -16,7 +16,49 @@
             <a href="{{ url_for('admin') }}" class="admin-secondary-button">Назад</a>
         </div>
 
-        <form method="post" class="admin-edit-form">
+        <form method="post" enctype="multipart/form-data" class="admin-edit-form">
+            {% if upload_error %}
+            <p class="admin-alert">{{ upload_error }}</p>
+            {% endif %}
+
+            <div class="admin-image-editor">
+                <div class="admin-image-preview">
+                    <img
+                        id="adminImagePreview"
+                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)) }}"
+                        alt="Текущее фото товара"
+                    >
+                </div>
+
+                <div class="admin-image-fields">
+                    <div>
+                        <strong>Фото товара</strong>
+                        <p>Загрузите новое фото в формате JPG, PNG или WEBP размером до 10 МБ.</p>
+                    </div>
+
+                    <label class="admin-file-field">
+                        Выбрать фото
+                        <input
+                            id="adminImageFile"
+                            type="file"
+                            name="image_file"
+                            accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                        >
+                        <span id="adminImageFileName">Файл не выбран</span>
+                    </label>
+
+                    <label>
+                        Путь к текущему фото
+                        <input type="text" name="image" value="{{ product.image|default('images/hero.png', true) }}">
+                    </label>
+
+                    <p class="admin-upload-note">
+                        После выбора фото нажмите «Сохранить». На Render без постоянного диска
+                        загруженные файлы могут исчезнуть после перезапуска или нового деплоя.
+                    </p>
+                </div>
+            </div>
+
             <div class="admin-edit-grid">
                 <label>
                     Название
@@ -56,11 +98,6 @@
                 <label>
                     Наличие
                     <input type="text" name="availability" value="{{ product.availability|default('уточнить', true) }}">
-                </label>
-
-                <label>
-                    Фото
-                    <input type="text" name="image" value="{{ product.image|default('images/hero.png', true) }}">
                 </label>
 
                 <label>
@@ -105,4 +142,8 @@
     </div>
 </section>
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/admin_product.js') }}"></script>
 {% endblock %}

@@ -21,18 +21,18 @@
     <div class="container">
         <div class="category-landing-hero">
             <div class="category-landing-copy">
-                <p class="eyebrow">Категория</p>
+                <p class="eyebrow">{{ t('category.eyebrow') }}</p>
                 <h1>{{ category_meta.title }}</h1>
                 <p>
                     {{ category_meta.description }}
-                    На складе можно уточнить наличие, размеры, сорт и актуальную цену.
+                    {{ t('category.extra') }}
                 </p>
 
                 <div class="category-landing-actions">
                     <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="primary-button">
-                        Уточнить наличие
+                        {{ t('category.check') }}
                     </a>
-                    <a href="{{ url_for('catalog') }}" class="ghost-button">Смотреть общий каталог</a>
+                    <a href="{{ url_for('catalog') }}" class="ghost-button">{{ t('category.all_catalog') }}</a>
                 </div>
             </div>
 
@@ -49,8 +49,8 @@
 
         <div class="category-purpose-panel">
             <div>
-                <p class="eyebrow">Подходит для</p>
-                <h2>Где используют этот материал</h2>
+                <p class="eyebrow">{{ t('category.suitable') }}</p>
+                <h2>{{ t('category.uses') }}</h2>
             </div>
 
             <div class="category-purpose-list">
@@ -69,11 +69,11 @@
 
         <div class="category-products-head">
             <div>
-                <p class="eyebrow">В наличии</p>
-                <h2>Товары категории</h2>
+                <p class="eyebrow">{{ t('category.available') }}</p>
+                <h2>{{ t('category.products') }}</h2>
             </div>
             <a href="{{ url_for('catalog') }}?category={{ category|lower|urlencode }}" class="admin-secondary-button">
-                В каталог
+                {{ t('category.to_catalog') }}
             </a>
         </div>
 
@@ -114,10 +114,10 @@
                     <p>{{ product.description }}</p>
 
                     <div class="catalog-card-bottom">
-                        <strong>от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        <strong>{{ t('product.from') }} {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
                         <div class="catalog-card-actions">
                             <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">
-                                Подробнее
+                                {{ t('product.details') }}
                             </a>
                             <a
                                 href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message|urlencode }}"
@@ -142,33 +142,33 @@
 
         <div class="category-order-panel">
             <div class="category-order-copy">
-                <p class="eyebrow">Как заказать</p>
-                <h2>Согласуем наличие, размер и цену перед отгрузкой</h2>
+                <p class="eyebrow">{{ t('category.order') }}</p>
+                <h2>{{ t('category.order_title') }}</h2>
             </div>
 
             <div class="category-order-steps">
                 <div>
                     <span>01</span>
-                    <strong>Выберите товар</strong>
-                    <p>Откройте карточку или отправьте запрос по категории.</p>
+                    <strong>{{ t('category.step_one') }}</strong>
+                    <p>{{ t('category.step_one_text') }}</p>
                 </div>
                 <div>
                     <span>02</span>
-                    <strong>Напишите в WhatsApp</strong>
-                    <p>Уточним остатки, размеры, сорт и цену на складе.</p>
+                    <strong>{{ t('category.step_two') }}</strong>
+                    <p>{{ t('category.step_two_text') }}</p>
                 </div>
                 <div>
                     <span>03</span>
-                    <strong>Приезжайте на склад</strong>
-                    <p>Покажем материал и подготовим отгрузку.</p>
+                    <strong>{{ t('category.step_three') }}</strong>
+                    <p>{{ t('category.step_three_text') }}</p>
                 </div>
             </div>
 
             <div class="category-order-actions">
                 <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="primary-button">
-                    Уточнить наличие
+                    {{ t('category.check') }}
                 </a>
-                <a href="{{ url_for('catalog') }}" class="ghost-button">Общий каталог</a>
+                <a href="{{ url_for('catalog') }}" class="ghost-button">{{ t('category.general_catalog') }}</a>
             </div>
         </div>
     </div>

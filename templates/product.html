@@ -26,7 +26,7 @@
         </div>
 
         <div class="product-detail-info">
-            <a href="{{ url_for('catalog') }}" class="back-link">← Вернуться в каталог</a>
+            <a href="{{ url_for('catalog') }}" class="back-link">← {{ t('product.back') }}</a>
 
             <span class="product-detail-category">{{ product.category }}</span>
             <h1>
@@ -39,7 +39,7 @@
 
             {% if product.characteristics %}
             <div class="product-specs">
-                <h2>Характеристики</h2>
+                <h2>{{ t('product.specs') }}</h2>
                 <dl>
                     {% for label, value in product.characteristics.items() %}
                     <div>
@@ -52,7 +52,7 @@
             {% endif %}
 
             {% if product.variants %}
-            <label class="variant-label" for="productVariant">Выберите вариант</label>
+            <label class="variant-label" for="productVariant">{{ t('product.variant') }}</label>
             <select
                 id="productVariant"
                 class="variant-select"
@@ -83,7 +83,7 @@
             ></div>
             {% endif %}
 
-            <label class="quantity-label" for="productQuantity">Количество</label>
+            <label class="quantity-label" for="productQuantity">{{ t('product.quantity') }}</label>
             <div class="quantity-control">
                 <input
                     id="productQuantity"
@@ -91,34 +91,34 @@
                     min="0"
                     step="0.01"
                     inputmode="decimal"
-                    placeholder="Например: 10"
+                    placeholder="{{ t('product.quantity_placeholder') }}"
                 >
                 <span>{{ product.unit }}</span>
             </div>
 
             {% if product.category in ["доска", "доска пола", "террасная доска", "вагонка"] and product.width %}
             <div class="product-material-calculator" id="productMaterialCalculator">
-                <h2>Расчёт материала по доскам</h2>
-                <p>Укажите количество досок и фактическую длину. Калькулятор посчитает площадь и погонные метры.</p>
+                <h2>{{ t('product.board_calculation') }}</h2>
+                <p>{{ t('product.board_calculation_text') }}</p>
 
                 <div class="material-calculator-inputs">
                     <label>
-                        Количество досок
-                        <input id="productBoardCount" type="number" min="1" step="1" inputmode="numeric" placeholder="Например: 20">
+                        {{ t('product.board_count') }}
+                        <input id="productBoardCount" type="number" min="1" step="1" inputmode="numeric" placeholder="{{ t('product.quantity_placeholder') }}">
                     </label>
                     <label>
-                        Длина одной доски, м
+                        {{ t('product.board_length') }}
                         <input id="productBoardLength" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Например: 3">
                     </label>
                 </div>
 
                 <div class="material-calculator-result" id="materialCalculationResult" hidden>
                     <div>
-                        <span>Погонные метры</span>
+                        <span>{{ t('product.linear') }}</span>
                         <strong id="materialLinearMeters">0 п/м</strong>
                     </div>
                     <div>
-                        <span>Площадь</span>
+                        <span>{{ t('product.area') }}</span>
                         <strong id="materialSquareMeters">0 м²</strong>
                     </div>
                 </div>
@@ -126,15 +126,15 @@
             {% endif %}
 
             <div class="product-price">
-                <span>Цена</span>
+                <span>{{ t('product.price') }}</span>
                 <strong id="productPrice">{{ "{:,}".format(initial_price).replace(",", " ") }} ₸</strong>
                 <small>/ {{ product.unit }}</small>
             </div>
 
             <div class="product-total">
-                <span>Предварительная сумма</span>
-                <strong id="productTotal">Укажите количество</strong>
-                <small id="productTotalFormula">Количество × цена за {{ product.unit }}</small>
+                <span>{{ t('product.total') }}</span>
+                <strong id="productTotal">{{ t('product.enter_quantity') }}</strong>
+                <small id="productTotalFormula">{{ t('product.total_formula') }} {{ product.unit }}</small>
             </div>
 
             <a
@@ -142,10 +142,11 @@
                 class="whatsapp-product-button"
                 href="{{ whatsapp_url }}"
                 data-whatsapp-number="{{ whatsapp_number }}"
+                data-language="{{ lang }}"
                 target="_blank"
                 rel="noopener"
             >
-                Узнать наличие в WhatsApp
+                {{ t('product.whatsapp') }}
             </a>
         </div>
     </div>
