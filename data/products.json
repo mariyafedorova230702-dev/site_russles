@@ -34,7 +34,8 @@
     },
     "id": 1,
     "slug": "vagonka-evro-sosna-s-c-12-5-mm-96-mm-2-5-2-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Вагонка евро сосна С — 12.5 мм × 96 мм × 2.5-2 м"
   },
   {
     "source_row": 6,
@@ -71,7 +72,8 @@
     },
     "id": 2,
     "slug": "vagonka-evro-sosna-av-ab-12-5-mm-96-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВ — 12.5 мм × 96 мм × 2.5 м"
   },
   {
     "source_row": 7,
@@ -108,7 +110,8 @@
     },
     "id": 3,
     "slug": "vagonka-shtil-sosna-av-ab-11-mm-118-mm-2-98-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 11 мм × 118 мм × 2.98 м"
   },
   {
     "source_row": 8,
@@ -145,7 +148,8 @@
     },
     "id": 4,
     "slug": "vagonka-shtil-sosna-avs-ab-11-5-mm-118-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВС — 11.5 мм × 118 мм × 4 м"
   },
   {
     "source_row": 9,
@@ -182,7 +186,8 @@
     },
     "id": 5,
     "slug": "vagonka-evro-sosna-av-ab-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВ — 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 10,
@@ -219,7 +224,8 @@
     },
     "id": 6,
     "slug": "vagonka-evro-sosna-s-c-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна С — 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 11,
@@ -256,7 +262,8 @@
     },
     "id": 7,
     "slug": "vagonka-shtil-sosna-s-c-14-mm-90-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна С — 14 мм × 90 мм × 2.7 м"
   },
   {
     "source_row": 12,
@@ -293,7 +300,8 @@
     },
     "id": 8,
     "slug": "vagonka-evro-sosna-avs-ab-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВС — 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 13,
@@ -330,7 +338,8 @@
     },
     "id": 9,
     "slug": "vagonka-shtil-sosna-av-ab-12-5-mm-110-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 12.5 мм × 110 мм × 2.5 м"
   },
   {
     "source_row": 14,
@@ -367,7 +376,8 @@
     },
     "id": 10,
     "slug": "vagonka-shtil-sosna-s-c-12-5-mm-121-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна С — 12.5 мм × 121 мм × 3 м"
   },
   {
     "source_row": 15,
@@ -404,7 +414,8 @@
     },
     "id": 11,
     "slug": "vagonka-shtil-sosna-av-ab-12-5-mm-121-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 12.5 мм × 121 мм × 4 м"
   },
   {
     "source_row": 16,
@@ -441,7 +452,8 @@
     },
     "id": 12,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 17,
@@ -478,7 +490,8 @@
     },
     "id": 13,
     "slug": "vagonka-shtil-sosna-vs-bc-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна ВС — 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 18,
@@ -515,7 +528,8 @@
     },
     "id": 14,
     "slug": "vagonka-soft-layn-sosna-s-c-14-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка софт лайн сосна С — 14 мм × 120 мм × 4 м"
   },
   {
     "source_row": 19,
@@ -552,7 +566,8 @@
     },
     "id": 15,
     "slug": "vagonka-shtil-sosna-sort-s-c-14-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна сорт С — 14 мм × 146 мм × 4 м"
   },
   {
     "source_row": 20,
@@ -589,7 +604,8 @@
     },
     "id": 16,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 14 мм × 146 мм × 4 м"
   },
   {
     "source_row": 21,
@@ -626,7 +642,8 @@
     },
     "id": 17,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-145-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 14 мм × 145 мм × 3 м"
   },
   {
     "source_row": 22,
@@ -663,7 +680,8 @@
     },
     "id": 18,
     "slug": "vagonka-shtil-sosna-av-ab-16-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ — 16 мм × 146 мм × 3 м"
   },
   {
     "source_row": 23,
@@ -700,7 +718,8 @@
     },
     "id": 19,
     "slug": "vagonka-shtil-sosna-a-a-14-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна А — 14 мм × 90 мм × 3 м"
   },
   {
     "source_row": 24,
@@ -737,7 +756,8 @@
     },
     "id": 20,
     "slug": "vagonka-shtil-sosna-ekstra-ekstra-14-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна экстра — 14 мм × 90 мм × 3 м"
   },
   {
     "source_row": 25,
@@ -774,7 +794,8 @@
     },
     "id": 21,
     "slug": "vagonka-shtil-sosna-a-a-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна А — 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 27,
@@ -811,7 +832,8 @@
     },
     "id": 22,
     "slug": "vagonka-shtil-list-nica-v-b-14-mm-90-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль лист ница В — 14 мм × 90 мм × 2.7 м"
   },
   {
     "source_row": 29,
@@ -848,7 +870,8 @@
     },
     "id": 23,
     "slug": "vagonka-shtil-kedr-av-ab-12-5-mm-110-mm-2-2-2-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль кедр АВ — 12.5 мм × 110 мм × 2-2.2-2.5 м"
   },
   {
     "source_row": 30,
@@ -885,7 +908,8 @@
     },
     "id": 24,
     "slug": "vagonka-shtil-kedr-v-b-12-5-mm-110-mm-2-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль кедр В — 12.5 мм × 110 мм × 2-2.5 м"
   },
   {
     "source_row": 31,
@@ -922,7 +946,8 @@
     },
     "id": 25,
     "slug": "polok-kedr-av-ab-28-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок кедр АВ — 28 мм × 90 мм × 3 м — арт. 25"
   },
   {
     "source_row": 33,
@@ -959,7 +984,8 @@
     },
     "id": 26,
     "slug": "vagonka-lipa-sort-a-a-15-mm-96-mm-2-4-2-6-2-7-2-8-2-9-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка липа, сорт А — 15 мм × 96 мм × 2.4-2.6-2.7-2.8-2.9 м"
   },
   {
     "source_row": 34,
@@ -996,7 +1022,8 @@
     },
     "id": 27,
     "slug": "vagonka-lipa-sort-e-ekstra-15-mm-96-mm-2-1-2-2-2-3-2-7-2-8-2-9-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка липа, сорт Э — 15 мм × 96 мм × 2.1-2.2-2.3-2.7-2.8-2.9-3 м"
   },
   {
     "source_row": 35,
@@ -1033,7 +1060,8 @@
     },
     "id": 28,
     "slug": "nalichnik-lipa-sort-e-ekstra-15-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа сорт Э — 15 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 36,
@@ -1069,7 +1097,8 @@
     },
     "id": 29,
     "slug": "galtel-lipa-15-mm-35-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа — 15 мм × 35 мм × 2.5 м"
   },
   {
     "source_row": 37,
@@ -1105,7 +1134,8 @@
     },
     "id": 30,
     "slug": "ugolok-lipa-lipa-25-mm-25-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа липа — 25 мм × 25 мм × 2.5 м"
   },
   {
     "source_row": 39,
@@ -1141,7 +1171,8 @@
     },
     "id": 31,
     "slug": "imitaciya-brusa-s-sosna-c-16-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса С сосна — 16 мм × 145 мм × 6 м"
   },
   {
     "source_row": 40,
@@ -1177,7 +1208,8 @@
     },
     "id": 32,
     "slug": "imitaciya-brusa-av-sosna-ab-16-mm-145-mm-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса АВ сосна — 16 мм × 145 мм × 5.4 м"
   },
   {
     "source_row": 41,
@@ -1212,7 +1244,8 @@
     },
     "id": 33,
     "slug": "imitaciya-brusa-v-list-ca-b-18-mm-130-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса В лист ца — 18 мм × 130 мм × 3 м"
   },
   {
     "source_row": 42,
@@ -1248,7 +1281,8 @@
     },
     "id": 34,
     "slug": "imitaciya-brusa-av-sosna-ab-20-mm-145-mm-5-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса АВ сосна — 20 мм × 145 мм × 5.4-6 м"
   },
   {
     "source_row": 43,
@@ -1284,7 +1318,8 @@
     },
     "id": 35,
     "slug": "imitaciya-brusa-s-sosna-c-20-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса С сосна — 20 мм × 145 мм × 6 м"
   },
   {
     "source_row": 44,
@@ -1320,7 +1355,8 @@
     },
     "id": 36,
     "slug": "imitaciya-brusa-vs-sosna-bc-20-mm-116-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса ВС сосна — 20 мм × 116 мм × 4 м"
   },
   {
     "source_row": 45,
@@ -1356,7 +1392,8 @@
     },
     "id": 37,
     "slug": "imitaciya-brusa-vs-sosna-bc-20-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса ВС сосна — 20 мм × 146 мм × 4 м"
   },
   {
     "source_row": 50,
@@ -1391,7 +1428,8 @@
     },
     "id": 38,
     "slug": "blok-haus-av-ab-28-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус АВ — 28 мм × 146 мм × 4 м"
   },
   {
     "source_row": 51,
@@ -1426,7 +1464,8 @@
     },
     "id": 39,
     "slug": "blok-haus-v-b-30-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус В — 30 мм × 120 мм × 3 м"
   },
   {
     "source_row": 52,
@@ -1461,7 +1500,8 @@
     },
     "id": 40,
     "slug": "blok-haus-s-c-30-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус С — 30 мм × 120 мм × 3 м"
   },
   {
     "source_row": 54,
@@ -1496,7 +1536,8 @@
     },
     "id": 41,
     "slug": "planken-sosna-av-ab-14-mm-96-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Планкен сосна АВ — 14 мм × 96 мм × 4 м"
   },
   {
     "source_row": 55,
@@ -1531,7 +1572,8 @@
     },
     "id": 42,
     "slug": "planken-sosna-av-ab-20-mm-95-mm-2-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен сосна АВ — 20 мм × 95 мм × 2-3-4 м"
   },
   {
     "source_row": 56,
@@ -1566,7 +1608,8 @@
     },
     "id": 43,
     "slug": "planken-sosna-av-ab-20-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен сосна АВ — 20 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 57,
@@ -1601,7 +1644,8 @@
     },
     "id": 44,
     "slug": "planken-termo-sosna-velvet-s-c-12-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна вельвет С — 12 мм × 120 мм × 4 м"
   },
   {
     "source_row": 58,
@@ -1636,7 +1680,8 @@
     },
     "id": 45,
     "slug": "planken-termo-sosna-vs-bc-20-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна ВС — 20 мм × 120 мм × 4 м"
   },
   {
     "source_row": 59,
@@ -1670,7 +1715,8 @@
     },
     "id": 46,
     "slug": "planken-termo-sosna-20-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна — 20 мм × 145 мм × 4 м"
   },
   {
     "source_row": 60,
@@ -1705,7 +1751,8 @@
     },
     "id": 47,
     "slug": "planken-skoshennyy-sosna-av-ab-20-mm-145-mm-2-4-5-1-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный сосна АВ — 20 мм × 145 мм × 2-4-5.1-6 м"
   },
   {
     "source_row": 61,
@@ -1740,7 +1787,8 @@
     },
     "id": 48,
     "slug": "planken-skoshennyy-sosna-av-ab-28-mm-68-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный сосна АВ — 28 мм × 68 мм × 2 м"
   },
   {
     "source_row": 63,
@@ -1775,7 +1823,8 @@
     },
     "id": 49,
     "slug": "planken-skoshennyy-list-ca-av-ab-20-mm-145-mm-1-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный лист ца АВ — 20 мм × 145 мм × 1-1.5 м"
   },
   {
     "source_row": 64,
@@ -1810,7 +1859,8 @@
     },
     "id": 50,
     "slug": "planken-listvennica-v-b-20-mm-90-mm-2-7-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В — 20 мм × 90 мм × 2.7-3-4 м"
   },
   {
     "source_row": 65,
@@ -1845,7 +1895,8 @@
     },
     "id": 51,
     "slug": "planken-listvennica-s-c-20-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница С — 20 мм × 96 мм × 4 м"
   },
   {
     "source_row": 66,
@@ -1880,7 +1931,8 @@
     },
     "id": 52,
     "slug": "planken-listvennica-s-c-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница С — 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 67,
@@ -1915,7 +1967,8 @@
     },
     "id": 53,
     "slug": "planken-listvennica-v-b-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В — 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 68,
@@ -1950,7 +2003,8 @@
     },
     "id": 54,
     "slug": "planken-listvennica-av-ab-20-mm-110-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ — 20 мм × 110 мм × 3-4 м"
   },
   {
     "source_row": 69,
@@ -1985,7 +2039,8 @@
     },
     "id": 55,
     "slug": "planken-listvennica-av-ab-20-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ — 20 мм × 120 мм × 3 м"
   },
   {
     "source_row": 70,
@@ -2020,7 +2075,8 @@
     },
     "id": 56,
     "slug": "planken-listvennica-v-b-20-mm-140-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В — 20 мм × 140 мм × 3 м"
   },
   {
     "source_row": 71,
@@ -2055,7 +2111,8 @@
     },
     "id": 57,
     "slug": "planken-listvennica-av-ab-28-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ — 28 мм × 140 мм × 6 м"
   },
   {
     "source_row": 73,
@@ -2090,7 +2147,8 @@
     },
     "id": 58,
     "slug": "polok-osina-sort-s-c-28-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок осина, сорт С — 28 мм × 90 мм × 4 м"
   },
   {
     "source_row": 74,
@@ -2125,7 +2183,8 @@
     },
     "id": 59,
     "slug": "polok-lipa-v-b-26-mm-90-mm-1-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа В — 26 мм × 90 мм × 1-1.5 м"
   },
   {
     "source_row": 75,
@@ -2160,7 +2219,8 @@
     },
     "id": 60,
     "slug": "polok-lipa-v-b-26-mm-90-mm-1-9-2-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа В — 26 мм × 90 мм × 1.9-2-2.5 м"
   },
   {
     "source_row": 76,
@@ -2195,7 +2255,8 @@
     },
     "id": 61,
     "slug": "polok-lipa-av-ab-26-mm-90-mm-1-9-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа АВ — 26 мм × 90 мм × 1.9-2.4 м"
   },
   {
     "source_row": 77,
@@ -2230,7 +2291,8 @@
     },
     "id": 62,
     "slug": "polok-lipa-a-a-26-mm-90-mm-2-1-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа А — 26 мм × 90 мм × 2.1-2.7 м"
   },
   {
     "source_row": 78,
@@ -2265,7 +2327,8 @@
     },
     "id": 63,
     "slug": "polok-lipa-e-ekstra-26-mm-90-mm-2-6-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа Э — 26 мм × 90 мм × 2.6-2.7 м"
   },
   {
     "source_row": 79,
@@ -2299,7 +2362,8 @@
     },
     "id": 64,
     "slug": "polok-lipa-termo-26-mm-90-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа термо — 26 мм × 90 мм × 2.2 м"
   },
   {
     "source_row": 80,
@@ -2334,7 +2398,8 @@
     },
     "id": 65,
     "slug": "polok-listvennica-v-b-28-mm-68-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок лиственница В — 28 мм × 68 мм × 4 м"
   },
   {
     "source_row": 81,
@@ -2369,7 +2434,8 @@
     },
     "id": 66,
     "slug": "polok-kedr-av-ab-28-mm-90-mm-3-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок кедр АВ — 28 мм × 90 мм × 3 м — арт. 66"
   },
   {
     "source_row": 83,
@@ -2404,7 +2470,8 @@
     },
     "id": 67,
     "slug": "polovoy-shpunt-sosna-sort-s-c-24-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт С — 24 мм × 96 мм × 4 м"
   },
   {
     "source_row": 84,
@@ -2439,7 +2506,8 @@
     },
     "id": 68,
     "slug": "polovoy-shpunt-sosna-sort-v-b-27-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт В — 27 мм × 100 мм × 3 м"
   },
   {
     "source_row": 85,
@@ -2474,7 +2542,8 @@
     },
     "id": 69,
     "slug": "polovoy-shpunt-sosna-sort-av-ab-28-mm-146-mm-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт АВ — 28 мм × 146 мм × 4-6 м"
   },
   {
     "source_row": 86,
@@ -2509,7 +2578,8 @@
     },
     "id": 70,
     "slug": "polovoy-shpunt-sosna-sort-s-c-28-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт С — 28 мм × 146 мм × 3 м"
   },
   {
     "source_row": 87,
@@ -2544,7 +2614,8 @@
     },
     "id": 71,
     "slug": "polovoy-shpunt-sosna-sort-s-c-36-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт С — 36 мм × 146 мм × 4 м"
   },
   {
     "source_row": 89,
@@ -2579,7 +2650,8 @@
     },
     "id": 72,
     "slug": "polovoy-shpunt-sosna-sort-avs-ab-35-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт АВС — 35 мм × 145 мм × 6 м"
   },
   {
     "source_row": 90,
@@ -2614,7 +2686,8 @@
     },
     "id": 73,
     "slug": "polovoy-shpunt-sosna-sort-av-ab-35-mm-125-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт АВ — 35 мм × 125 мм × 6 м"
   },
   {
     "source_row": 91,
@@ -2649,7 +2722,8 @@
     },
     "id": 74,
     "slug": "polovoy-shpunt-sosna-sort-av-ab-35-mm-145-mm-4-5-1-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт АВ — 35 мм × 145 мм × 4-5.1-5.4 м"
   },
   {
     "source_row": 92,
@@ -2684,7 +2758,8 @@
     },
     "id": 75,
     "slug": "polovoy-shpunt-sosna-sort-av-ab-35-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт АВ — 35 мм × 145 мм × 6 м"
   },
   {
     "source_row": 93,
@@ -2719,7 +2794,8 @@
     },
     "id": 76,
     "slug": "polovoy-shpunt-sosna-sort-s-c-40-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна, сорт С — 40 мм × 146 мм × 3 м"
   },
   {
     "source_row": 99,
@@ -2754,7 +2830,8 @@
     },
     "id": 77,
     "slug": "terrasnaya-doska-velvet-sosna-s-c-20-mm-120-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Террасная доска вельвет сосна С — 20 мм × 120 мм × 4 м"
   },
   {
     "source_row": 100,
@@ -2789,7 +2866,8 @@
     },
     "id": 78,
     "slug": "terrasnaya-doska-palubnaya-sosna-vs-bc-27-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная сосна ВС — 27 мм × 140 мм × 6 м"
   },
   {
     "source_row": 101,
@@ -2824,7 +2902,8 @@
     },
     "id": 79,
     "slug": "terras-doska-palubnaya-sosna-s-c-26-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террас. доска палубная сосна С — 26 мм × 140 мм × 4 м"
   },
   {
     "source_row": 102,
@@ -2859,7 +2938,8 @@
     },
     "id": 80,
     "slug": "terras-doska-palubnaya-termo-sosna-s-c-26-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террас. доска палубная термо сосна С — 26 мм × 140 мм × 4 м"
   },
   {
     "source_row": 103,
@@ -2894,7 +2974,8 @@
     },
     "id": 81,
     "slug": "terrasnaya-doska-vilvet-sosna-s-c-28-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска Вильвет сосна С — 28 мм × 145 мм × 4 м"
   },
   {
     "source_row": 104,
@@ -2929,7 +3010,8 @@
     },
     "id": 82,
     "slug": "terrasnaya-doska-palubnaya-sosna-av-ab-35-mm-145-mm-5-1-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная сосна АВ — 35 мм × 145 мм × 5.1-5.4 м"
   },
   {
     "source_row": 106,
@@ -2964,7 +3046,8 @@
     },
     "id": 83,
     "slug": "terrasnaya-doska-palubnaya-listv-s-c-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная листв С — 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 107,
@@ -2999,7 +3082,8 @@
     },
     "id": 84,
     "slug": "terrasnaya-doska-palubnaya-listv-v-b-28-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная листв В — 28 мм × 140 мм × 6 м"
   },
   {
     "source_row": 108,
@@ -3034,7 +3118,8 @@
     },
     "id": 85,
     "slug": "terrasnaya-doska-palubnaya-listv-v-b-27-mm-142-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная листв В — 27 мм × 142 мм × 2.7-3 м"
   },
   {
     "source_row": 109,
@@ -3069,7 +3154,8 @@
     },
     "id": 86,
     "slug": "terrasnaya-doska-palubnaya-listv-av-ab-27-mm-142-mm-5-1-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная листв АВ — 27 мм × 142 мм × 5.1 м"
   },
   {
     "source_row": 110,
@@ -3103,7 +3189,8 @@
     },
     "id": 87,
     "slug": "terrassaya-doska-termo-sosna-42-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террассая доска термо сосна — 42 мм × 140 мм × 4 м"
   },
   {
     "source_row": 111,
@@ -3138,7 +3225,8 @@
     },
     "id": 88,
     "slug": "terrasnaya-doska-palubnaya-listv-av-ab-45-mm-142-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная листв АВ — 45 мм × 142 мм × 6 м"
   },
   {
     "source_row": 113,
@@ -3173,7 +3261,8 @@
     },
     "id": 89,
     "slug": "strog-kalibr-doshchechka-sosna-profil-14-mm-96-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Строг., калибр. дощечка сосна профил — 14 мм × 96 мм × 4 м"
   },
   {
     "source_row": 114,
@@ -3208,7 +3297,8 @@
     },
     "id": 90,
     "slug": "strog-kalib-doshchechka-osina-profil-20-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калиб.дощечка осина профил — 20 мм × 90 мм × 4 м"
   },
   {
     "source_row": 115,
@@ -3243,7 +3333,8 @@
     },
     "id": 91,
     "slug": "strogannaya-kalib-doshchechka-sort-av-ab-20-mm-95-mm-2-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб дощечка, сорт АВ — 20 мм × 95 мм × 2-3-4 м"
   },
   {
     "source_row": 116,
@@ -3278,7 +3369,8 @@
     },
     "id": 92,
     "slug": "strog-kalibr-doshchechka-termo-sosna-20-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 20 мм × 120 мм × 4 м — арт. 92"
   },
   {
     "source_row": 117,
@@ -3313,7 +3405,8 @@
     },
     "id": 93,
     "slug": "strog-kalibr-doshchechka-termo-sosna-20-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 20 мм × 145 мм × 4 м"
   },
   {
     "source_row": 118,
@@ -3347,7 +3440,8 @@
     },
     "id": 94,
     "slug": "strogannaya-kalib-doshchechka-18-mm-130-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб. Дощечка — 18 мм × 130 мм × 2 м"
   },
   {
     "source_row": 119,
@@ -3382,7 +3476,8 @@
     },
     "id": 95,
     "slug": "strogannaya-kalib-doshchechka-prof-av-ab-20-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб. дощечка проф АВ — 20 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 120,
@@ -3417,7 +3512,8 @@
     },
     "id": 96,
     "slug": "strogannaya-kalib-doshchechka-v-b-20-mm-146-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб дощечка В — 20 мм × 146 мм × 3-4 м"
   },
   {
     "source_row": 121,
@@ -3452,7 +3548,8 @@
     },
     "id": 97,
     "slug": "strogannaya-kalib-doshchechka-profil-av-ab-20-mm-155-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб дощечка профил АВ — 20 мм × 155 мм × 3 м"
   },
   {
     "source_row": 122,
@@ -3488,7 +3585,8 @@
     },
     "id": 98,
     "slug": "strog-kalibr-doshchechka-osina-s-c-28-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр. дощечка, осина С — 28 мм × 90 мм × 4 м"
   },
   {
     "source_row": 123,
@@ -3523,7 +3621,8 @@
     },
     "id": 99,
     "slug": "strogannaya-kalibr-doshchechka-s-c-30-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. дощечка С — 30 мм × 105 мм × 4 м"
   },
   {
     "source_row": 124,
@@ -3558,7 +3657,8 @@
     },
     "id": 100,
     "slug": "strogannaya-kalibr-doshchechka-av-ab-30-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. дощечка АВ — 30 мм × 105 мм × 4 м"
   },
   {
     "source_row": 125,
@@ -3593,7 +3693,8 @@
     },
     "id": 101,
     "slug": "strogannaya-kalibr-doshchechka-s-c-30-mm-110-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. дощечка С — 30 мм × 110 мм × 3 м"
   },
   {
     "source_row": 126,
@@ -3628,7 +3729,8 @@
     },
     "id": 102,
     "slug": "strogannaya-kalibr-doshchechka-av-ab-30-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. дощечка АВ — 30 мм × 120 мм × 4 м"
   },
   {
     "source_row": 127,
@@ -3663,7 +3765,8 @@
     },
     "id": 103,
     "slug": "strogannaya-kalib-doshchechka-profil-avs-ab-35-mm-145-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб дощечка профил АВС — 35 мм × 145 мм × 3 м"
   },
   {
     "source_row": 128,
@@ -3698,7 +3801,8 @@
     },
     "id": 104,
     "slug": "strog-kalib-doshchechka-profil-av-ab-35-mm-145-mm-5-1-5-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калиб дощечка профил АВ — 35 мм × 145 мм × 5.1-5.4-6 м"
   },
   {
     "source_row": 129,
@@ -3732,7 +3836,8 @@
     },
     "id": 105,
     "slug": "strogannaya-kalibr-doshchechka-profil-40-mm-96-mm-3-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. Дощечка профил — 40 мм × 96 мм × 3-4-6 м"
   },
   {
     "source_row": 130,
@@ -3766,7 +3871,8 @@
     },
     "id": 106,
     "slug": "strogannaya-kalib-doshchechka-profil-40-mm-120-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калиб дощечка профил — 40 мм × 120 мм × 3-4 м"
   },
   {
     "source_row": 131,
@@ -3800,7 +3906,8 @@
     },
     "id": 107,
     "slug": "strogannaya-kalibr-doshchechka-profil-40-mm-146-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. дощечка профил — 40 мм × 146 мм × 3-4 м"
   },
   {
     "source_row": 132,
@@ -3835,7 +3942,8 @@
     },
     "id": 108,
     "slug": "strog-kalibr-doshchechka-sort-av-ab-45-mm-95-mm-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка, сорт АВ — 45 мм × 95 мм × 5.4 м"
   },
   {
     "source_row": 133,
@@ -3870,7 +3978,8 @@
     },
     "id": 109,
     "slug": "strog-kalibr-doshchechka-sort-s-c-45-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр.дощечка, сорт С — 45 мм × 105 мм × 3 м"
   },
   {
     "source_row": 134,
@@ -3906,7 +4015,8 @@
     },
     "id": 110,
     "slug": "strogannaya-kalibr-doshchechka-sosna-a-a-45-mm-105-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка сосна A — 45 мм × 105 мм × 2.85 м"
   },
   {
     "source_row": 135,
@@ -3942,7 +4052,8 @@
     },
     "id": 111,
     "slug": "strogannaya-kalibr-doshchechka-sosna-av-ab-45-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка сосна АВ — 45 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 136,
@@ -3977,7 +4088,8 @@
     },
     "id": 112,
     "slug": "strogannaya-kalibr-klenn-bereza-45-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр. кленн береза — 45 мм × 120 мм × 3 м"
   },
   {
     "source_row": 137,
@@ -4012,7 +4124,8 @@
     },
     "id": 113,
     "slug": "strog-kalibr-doshchechka-av-ab-45-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр. дощечка АВ — 45 мм × 145 мм × 6 м"
   },
   {
     "source_row": 138,
@@ -4046,7 +4159,8 @@
     },
     "id": 114,
     "slug": "strog-kalibr-doshchechka-48-mm-170-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр. дощечка — 48 мм × 170 мм × 3 м"
   },
   {
     "source_row": 139,
@@ -4081,7 +4195,8 @@
     },
     "id": 115,
     "slug": "strog-kalibr-doshchechka-av-ab-45-mm-190-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр. дощечка АВ — 45 мм × 190 мм × 6 м"
   },
   {
     "source_row": 141,
@@ -4116,7 +4231,8 @@
     },
     "id": 116,
     "slug": "strog-kalibr-doshchechka-termo-sosna-20-mm-120-mm-4-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 20 мм × 120 мм × 4 м — арт. 116"
   },
   {
     "source_row": 142,
@@ -4151,7 +4267,8 @@
     },
     "id": 117,
     "slug": "strog-kalibr-doshch-termo-sosna-20-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. Дощ., термо сосна — 20 мм × 145 мм × 4 м — арт. 117"
   },
   {
     "source_row": 143,
@@ -4187,7 +4304,8 @@
     },
     "id": 118,
     "slug": "strog-kalibr-doshchechka-sort-s-termo-sosna-c-26-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка, сорт С, термо сосна — 26 мм × 140 мм × 4 м — арт. 118"
   },
   {
     "source_row": 144,
@@ -4222,7 +4340,8 @@
     },
     "id": 119,
     "slug": "strog-kalibr-doshchechka-termo-sosna-42-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 42 мм × 140 мм × 4 м — арт. 119"
   },
   {
     "source_row": 145,
@@ -4258,7 +4377,8 @@
     },
     "id": 120,
     "slug": "brusok-sort-av-termo-sosna-ab-40-mm-60-mm-3-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Брусок, сорт АВ термо сосна — 40 мм × 60 мм × 3 м — арт. 120"
   },
   {
     "source_row": 147,
@@ -4294,7 +4414,8 @@
     },
     "id": 121,
     "slug": "strog-kalibr-doshchechka-prof-v-listv-b-20-mm-90-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр.дощечка проф В листв — 20 мм × 90 мм × 3-4 м"
   },
   {
     "source_row": 148,
@@ -4330,7 +4451,8 @@
     },
     "id": 122,
     "slug": "strog-kalibr-doshchechka-listv-s-c-20-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг.калибр дощечка, листв С — 20 мм × 96 мм × 4 м"
   },
   {
     "source_row": 149,
@@ -4366,7 +4488,8 @@
     },
     "id": 123,
     "slug": "strog-kalibr-doshchechka-prof-vs-listv-bc-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр.дощечка проф ВС листв — 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 150,
@@ -4402,7 +4525,8 @@
     },
     "id": 124,
     "slug": "strog-kalibr-doshchechka-prof-av-listv-ab-20-mm-110-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр.дощечка проф АВ листв — 20 мм × 110 мм × 3 м"
   },
   {
     "source_row": 151,
@@ -4438,7 +4562,8 @@
     },
     "id": 125,
     "slug": "strog-kalibr-doshchechka-prof-v-listv-b-20-mm-140-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр.дощечка проф В листв — 20 мм × 140 мм × 3 м"
   },
   {
     "source_row": 152,
@@ -4474,7 +4599,8 @@
     },
     "id": 126,
     "slug": "strog-kalibr-kleenoslostaya-v-listv-b-30-mm-105-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг, калибр клеенослостая В листв — 30 мм × 105 мм × 2.7-3 м"
   },
   {
     "source_row": 153,
@@ -4510,7 +4636,8 @@
     },
     "id": 127,
     "slug": "strogannaya-kalibr-doshchechka-s-listv-c-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка С листв — 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 154,
@@ -4546,7 +4673,8 @@
     },
     "id": 128,
     "slug": "strogannaya-kalibr-doshchechka-v-listv-b-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка В листв — 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 155,
@@ -4582,7 +4710,8 @@
     },
     "id": 129,
     "slug": "strogannaya-kalibr-doshchechka-av-listv-ab-27-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка АВ листв — 27 мм × 145 мм × 4 м"
   },
   {
     "source_row": 156,
@@ -4618,7 +4747,8 @@
     },
     "id": 130,
     "slug": "strogannaya-kalibr-doshchechka-v-listv-b-45-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка В листв — 45 мм × 105 мм × 4 м"
   },
   {
     "source_row": 157,
@@ -4654,7 +4784,8 @@
     },
     "id": 131,
     "slug": "strogannaya-kalibr-doshchechka-s-listv-c-45-mm-145-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка С листв — 45 мм × 145 мм × 3.6 м"
   },
   {
     "source_row": 158,
@@ -4690,7 +4821,8 @@
     },
     "id": 132,
     "slug": "strogannaya-kalibr-doshchechka-s-listv-c-45-mm-155-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка С листв — 45 мм × 155 мм × 2.7 м"
   },
   {
     "source_row": 159,
@@ -4726,7 +4858,8 @@
     },
     "id": 133,
     "slug": "strogannaya-kalibr-doshchechka-listv-av-ab-45-mm-142-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка листв АВ — 45 мм × 142 мм × 6 м"
   },
   {
     "source_row": 160,
@@ -4761,7 +4894,8 @@
     },
     "id": 134,
     "slug": "strogannaya-kalibr-doshchechka-listv-45-mm-140-mm-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная, калибр.дощечка листв — 45 мм × 140 мм × 1.5 м"
   },
   {
     "source_row": 162,
@@ -4796,7 +4930,8 @@
     },
     "id": 135,
     "slug": "strog-kalibr-doshchechka-termo-sosna-20-mm-120-mm-4-m-3",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 20 мм × 120 мм × 4 м — арт. 135"
   },
   {
     "source_row": 163,
@@ -4831,7 +4966,8 @@
     },
     "id": 136,
     "slug": "strog-kalibr-doshch-termo-sosna-20-mm-145-mm-4-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. Дощ., термо сосна — 20 мм × 145 мм × 4 м — арт. 136"
   },
   {
     "source_row": 164,
@@ -4867,7 +5003,8 @@
     },
     "id": 137,
     "slug": "strog-kalibr-doshchechka-sort-s-termo-sosna-c-26-mm-140-mm-4-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка, сорт С, термо сосна — 26 мм × 140 мм × 4 м — арт. 137"
   },
   {
     "source_row": 165,
@@ -4902,7 +5039,8 @@
     },
     "id": 138,
     "slug": "strog-kalibr-doshchechka-termo-sosna-42-mm-140-mm-4-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строг., калибр. дощечка термо сосна — 42 мм × 140 мм × 4 м — арт. 138"
   },
   {
     "source_row": 166,
@@ -4938,7 +5076,8 @@
     },
     "id": 139,
     "slug": "brusok-sort-av-termo-sosna-ab-40-mm-60-mm-3-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок, сорт АВ термо сосна — 40 мм × 60 мм × 3 м — арт. 139"
   },
   {
     "source_row": 168,
@@ -4973,7 +5112,8 @@
     },
     "id": 140,
     "slug": "brusok-strogannyy-10-mm-30-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 10 мм × 30 мм × 2.7-3 м"
   },
   {
     "source_row": 169,
@@ -5008,7 +5148,8 @@
     },
     "id": 141,
     "slug": "brusok-strogannyy-10-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 10 мм × 45 мм × 3 м"
   },
   {
     "source_row": 170,
@@ -5043,7 +5184,8 @@
     },
     "id": 142,
     "slug": "brusok-strogannyy-15-mm-30-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 15 мм × 30 мм × 3 м"
   },
   {
     "source_row": 171,
@@ -5078,7 +5220,8 @@
     },
     "id": 143,
     "slug": "brusok-strogannyy-20-mm-30-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 20 мм × 30 мм × 2 м"
   },
   {
     "source_row": 172,
@@ -5113,7 +5256,8 @@
     },
     "id": 144,
     "slug": "brusok-strogannyy-16-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 16 мм × 45 мм × 3 м"
   },
   {
     "source_row": 173,
@@ -5148,7 +5292,8 @@
     },
     "id": 145,
     "slug": "brusok-strogannyy-18-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 18 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 174,
@@ -5183,7 +5328,8 @@
     },
     "id": 146,
     "slug": "brusok-strogannyy-21-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 21 мм × 45 мм × 3 м"
   },
   {
     "source_row": 175,
@@ -5218,7 +5364,8 @@
     },
     "id": 147,
     "slug": "brusok-strogannyy-20-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 20 мм × 45 мм × 3 м"
   },
   {
     "source_row": 176,
@@ -5253,7 +5400,8 @@
     },
     "id": 148,
     "slug": "brusok-strogannyy-24-mm-48-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 24 мм × 48 мм × 3 м"
   },
   {
     "source_row": 177,
@@ -5288,7 +5436,8 @@
     },
     "id": 149,
     "slug": "brusok-rombovidnyy-1-sort-28-mm-68-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок ромбовидный 1 сорт — 28 мм × 68 мм × 2 м"
   },
   {
     "source_row": 178,
@@ -5323,7 +5472,8 @@
     },
     "id": 150,
     "slug": "brusok-strogannyy-1-sort-30-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 1 сорт — 30 мм × 40 мм × 3 м"
   },
   {
     "source_row": 179,
@@ -5358,7 +5508,8 @@
     },
     "id": 151,
     "slug": "brusok-strogannyy-3-sort-30-mm-40-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 3 сорт — 30 мм × 40 мм × 3-4 м"
   },
   {
     "source_row": 180,
@@ -5394,7 +5545,8 @@
     },
     "id": 152,
     "slug": "brusok-strogannyy-sort-av-ab-35-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт АВ — 35 мм × 45 мм × 3 м"
   },
   {
     "source_row": 181,
@@ -5430,7 +5582,8 @@
     },
     "id": 153,
     "slug": "brusok-strogannyy-sort-av-ab-40-mm-40-mm-2-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт АВ — 40 мм × 40 мм × 2-3-6 м"
   },
   {
     "source_row": 182,
@@ -5465,7 +5618,8 @@
     },
     "id": 154,
     "slug": "brusok-kleennyy-40-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок клеенный — 40 мм × 40 мм × 3 м"
   },
   {
     "source_row": 183,
@@ -5501,7 +5655,8 @@
     },
     "id": 155,
     "slug": "brusok-strogannyy-av-ab-40-mm-50-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ — 40 мм × 50 мм × 3 м"
   },
   {
     "source_row": 184,
@@ -5537,7 +5692,8 @@
     },
     "id": 156,
     "slug": "brusok-strogannyy-av-sort-ab-40-mm-60-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ сорт — 40 мм × 60 мм × 2-3 м"
   },
   {
     "source_row": 185,
@@ -5572,7 +5728,8 @@
     },
     "id": 157,
     "slug": "brusok-strogannyy-3-sort-40-mm-60-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 3 сорт — 40 мм × 60 мм × 3-4 м"
   },
   {
     "source_row": 186,
@@ -5607,7 +5764,8 @@
     },
     "id": 158,
     "slug": "brusok-termo-40-mm-60-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок термо — 40 мм × 60 мм × 2-3 м"
   },
   {
     "source_row": 187,
@@ -5642,7 +5800,8 @@
     },
     "id": 159,
     "slug": "brusok-strogannyy-45-mm-60-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный — 45 мм × 60 мм × 3-4 м"
   },
   {
     "source_row": 188,
@@ -5678,7 +5837,8 @@
     },
     "id": 160,
     "slug": "brusok-strogannyy-sort-s-c-45-mm-45-mm-2-5-3m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт С — 45 мм × 45 мм × 2.5-3м"
   },
   {
     "source_row": 189,
@@ -5714,7 +5874,8 @@
     },
     "id": 161,
     "slug": "brusok-strogannyy-sort-av-ab-45-mm-45-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт АВ — 45 мм × 45 мм × 3-4 м"
   },
   {
     "source_row": 190,
@@ -5750,7 +5911,8 @@
     },
     "id": 162,
     "slug": "brusok-strogannyy-av-sort-ab-50-mm-50-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, АВ сорт — 50 мм × 50 мм × 2-3 м"
   },
   {
     "source_row": 191,
@@ -5786,7 +5948,8 @@
     },
     "id": 163,
     "slug": "brusok-strogannyy-sort-av-ab-50-mm-65-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт АВ — 50 мм × 65 мм × 3 м"
   },
   {
     "source_row": 192,
@@ -5822,7 +5985,8 @@
     },
     "id": 164,
     "slug": "brusok-strogannyy-s-sort-c-75-mm-75-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, С сорт — 75 мм × 75 мм × 2.85 м"
   },
   {
     "source_row": 193,
@@ -5858,7 +6022,8 @@
     },
     "id": 165,
     "slug": "brusok-strogannyy-profil-av-sort-ab-50-mm-70-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, профил, АВ сорт — 50 мм × 70 мм × 2-3 м"
   },
   {
     "source_row": 194,
@@ -5894,7 +6059,8 @@
     },
     "id": 166,
     "slug": "brusok-strogannyy-sort-av-ab-50-mm-80-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный, сорт АВ — 50 мм × 80 мм × 3 м"
   },
   {
     "source_row": 196,
@@ -5929,7 +6095,8 @@
     },
     "id": 167,
     "slug": "bruc-strogannyy-kleenyy-sort-a-a-85-mm-90-mm-2-5-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Бруc строганный клееный сорт А — 85 мм × 90 мм × 2.5 м"
   },
   {
     "source_row": 197,
@@ -5963,7 +6130,8 @@
     },
     "id": 168,
     "slug": "bruc-strogannyy-kleenyy-80-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Бруc строганный клееный — 80 мм × 100 мм × 3 м"
   },
   {
     "source_row": 198,
@@ -5997,7 +6165,8 @@
     },
     "id": 169,
     "slug": "bruc-strogannyy-kleenyy-90-mm-90-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Бруc строганный клееный — 90 мм × 90 мм × 2.7-3 м"
   },
   {
     "source_row": 199,
@@ -6032,7 +6201,8 @@
     },
     "id": 170,
     "slug": "brus-strogannyy-kleenyy-sort-s-c-105-mm-105-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный сорт С — 105 мм × 105 мм × 2.85 м"
   },
   {
     "source_row": 200,
@@ -6067,7 +6237,8 @@
     },
     "id": 171,
     "slug": "brus-strogannyy-kleenyy-sort-a-a-105-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный сорт A — 105 мм × 105 мм × 3 м"
   },
   {
     "source_row": 201,
@@ -6102,7 +6273,8 @@
     },
     "id": 172,
     "slug": "brus-strog-kleenyy-sort-s-c-105-mm-120-mm-3-65-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строг. клееный, сорт С — 105 мм × 120 мм × 3.65 м"
   },
   {
     "source_row": 202,
@@ -6137,7 +6309,8 @@
     },
     "id": 173,
     "slug": "brus-strog-kleenyy-sort-s-c-135-mm-190-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строг. клееный, сорт С — 135 мм × 190 мм × 3 м"
   },
   {
     "source_row": 203,
@@ -6172,7 +6345,8 @@
     },
     "id": 174,
     "slug": "brus-strogannyy-kleenyy-sort-v-b-120-mm-120-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный, сорт В — 120 мм × 120 мм × 2.85 м"
   },
   {
     "source_row": 204,
@@ -6207,7 +6381,8 @@
     },
     "id": 175,
     "slug": "brus-strogannyy-kleenyy-sort-v-b-85-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный, сорт В — 85 мм × 145 мм × 6 м"
   },
   {
     "source_row": 205,
@@ -6242,7 +6417,8 @@
     },
     "id": 176,
     "slug": "brus-strogannyy-kleenyy-sort-v-b-90-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный, сорт В — 90 мм × 145 мм × 6 м"
   },
   {
     "source_row": 206,
@@ -6277,7 +6453,8 @@
     },
     "id": 177,
     "slug": "brus-strogannyy-kleenyy-sort-v-b-90-mm-195-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный, сорт В — 90 мм × 195 мм × 6 м"
   },
   {
     "source_row": 207,
@@ -6312,7 +6489,8 @@
     },
     "id": 178,
     "slug": "brus-strogannyy-kleenyy-sort-v-b-140-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный клееный, сорт В — 140 мм × 140 мм × 6 м"
   },
   {
     "source_row": 209,
@@ -6347,7 +6525,8 @@
     },
     "id": 179,
     "slug": "brusok-strogannyy-listv-16-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный листв — 16 мм × 40 мм × 3 м"
   },
   {
     "source_row": 210,
@@ -6382,7 +6561,8 @@
     },
     "id": 180,
     "slug": "brusok-strogannyy-listv-18-mm-45-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный листв — 18 мм × 45 мм × 4 м"
   },
   {
     "source_row": 211,
@@ -6417,7 +6597,8 @@
     },
     "id": 181,
     "slug": "brusok-strogannyy-listv-18-mm-60-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный листв — 18 мм × 60 мм × 4 м"
   },
   {
     "source_row": 212,
@@ -6452,7 +6633,8 @@
     },
     "id": 182,
     "slug": "brusok-strogannyy-listv-24-mm-48-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный листв — 24 мм × 48 мм × 4 м"
   },
   {
     "source_row": 213,
@@ -6487,7 +6669,8 @@
     },
     "id": 183,
     "slug": "brus-strogannyy-listv-45-mm-51-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный, листв — 45 мм × 51 мм × 4 м"
   },
   {
     "source_row": 214,
@@ -6522,7 +6705,8 @@
     },
     "id": 184,
     "slug": "brus-strogannyy-listv-45-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный, листв — 45 мм × 105 мм × 4 м"
   },
   {
     "source_row": 215,
@@ -6557,7 +6741,8 @@
     },
     "id": 185,
     "slug": "brus-strogannyy-kleennyy-listv-120-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус строганный, клеенный листв — 120 мм × 120 мм × 3 м"
   },
   {
     "source_row": 219,
@@ -6590,7 +6775,8 @@
     },
     "id": 186,
     "slug": "shpatik-10x10x2-5-10-mm-10-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Шпатик , 5 — 10 мм × 10 мм × 2.5 м"
   },
   {
     "source_row": 220,
@@ -6624,7 +6810,8 @@
     },
     "id": 187,
     "slug": "nashchelnik-sosna-gribok-10-mm-30-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник сосна грибок — 10 мм × 30 мм × 2.5 м"
   },
   {
     "source_row": 221,
@@ -6658,7 +6845,8 @@
     },
     "id": 188,
     "slug": "nashchelnik-sosna-10-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник сосна — 10 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 222,
@@ -6691,7 +6879,8 @@
     },
     "id": 189,
     "slug": "nashchelnik-raskladka-ploskiy-10-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник раскладка плоский — 10 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 223,
@@ -6725,7 +6914,8 @@
     },
     "id": 190,
     "slug": "galtel-osina-celnaya-13-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель осина цельная — 13 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 224,
@@ -6759,7 +6949,8 @@
     },
     "id": 191,
     "slug": "galtel-sosna-13-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель сосна — 13 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 225,
@@ -6793,7 +6984,8 @@
     },
     "id": 192,
     "slug": "galtel-sosna-13-mm-31-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель сосна — 13 мм × 31 мм × 2.5 м"
   },
   {
     "source_row": 226,
@@ -6827,7 +7019,8 @@
     },
     "id": 193,
     "slug": "galtel-plintus-sosna-13-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель плинтус сосна — 13 мм × 45 мм × 3 м"
   },
   {
     "source_row": 227,
@@ -6861,7 +7054,8 @@
     },
     "id": 194,
     "slug": "galtel-plintus-sosna-13-mm-55-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель плинтус сосна — 13 мм × 55 мм × 3 м"
   },
   {
     "source_row": 228,
@@ -6895,7 +7089,8 @@
     },
     "id": 195,
     "slug": "galtel-lipa-25-mm-35-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа — 25 мм × 35 мм × 2.5 м"
   },
   {
     "source_row": 229,
@@ -6929,7 +7124,8 @@
     },
     "id": 196,
     "slug": "galtel-lipa-termo-14-mm-30-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа термо — 14 мм × 30 мм × 2.5 м"
   },
   {
     "source_row": 230,
@@ -6963,7 +7159,8 @@
     },
     "id": 197,
     "slug": "galtel-lipa-termo-14-mm-45-mm-1-8-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа термо — 14 мм × 45 мм × 1.8 м"
   },
   {
     "source_row": 231,
@@ -6997,7 +7194,8 @@
     },
     "id": 198,
     "slug": "ugolok-lipa-termo-22-mm-22-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа термо — 22 мм × 22 мм × 2.5 м"
   },
   {
     "source_row": 232,
@@ -7031,7 +7229,8 @@
     },
     "id": 199,
     "slug": "ugolok-lipa-25-mm-25-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа — 25 мм × 25 мм × 2.5 м"
   },
   {
     "source_row": 233,
@@ -7065,7 +7264,8 @@
     },
     "id": 200,
     "slug": "ugolok-sosna-30-mm-30-mm-2-5-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна — 30 мм × 30 мм × 2.5-3 м"
   },
   {
     "source_row": 234,
@@ -7099,7 +7299,8 @@
     },
     "id": 201,
     "slug": "ugolok-sosna-40-mm-40-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна — 40 мм × 40 мм × 2.5 м"
   },
   {
     "source_row": 235,
@@ -7133,7 +7334,8 @@
     },
     "id": 202,
     "slug": "ugolok-sosna-40-mm-70-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна — 40 мм × 70 мм × 2.5 м"
   },
   {
     "source_row": 236,
@@ -7167,7 +7369,8 @@
     },
     "id": 203,
     "slug": "ugolok-sosna-60-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна — 60 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 237,
@@ -7200,7 +7403,8 @@
     },
     "id": 204,
     "slug": "plintus-volna-60mm-13-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус волна 60мм — 13 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 238,
@@ -7234,7 +7438,8 @@
     },
     "id": 205,
     "slug": "plintus-evro-60mm-s-vystupom-c-13-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус евро 60мм с выступом — 13 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 239,
@@ -7268,7 +7473,8 @@
     },
     "id": 206,
     "slug": "nalichnik-sosna-shir-70mm-13-mm-70-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник сосна шир. 70мм — 13 мм × 70 мм × 2.2 м"
   },
   {
     "source_row": 240,
@@ -7302,7 +7508,8 @@
     },
     "id": 207,
     "slug": "nalichnik-sosna-shir-90mm-13-mm-90-mm-2-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник сосна шир. 90мм — 13 мм × 90 мм × 2.2-3 м"
   },
   {
     "source_row": 241,
@@ -7336,7 +7543,8 @@
     },
     "id": 208,
     "slug": "nalichnik-lipa-termo-14-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа термо — 14 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 242,
@@ -7370,7 +7578,8 @@
     },
     "id": 209,
     "slug": "nalichnik-lipa-shir-70mm-15-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа шир. 70мм — 15 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 244,
@@ -7406,7 +7615,8 @@
     },
     "id": 210,
     "slug": "shchit-celnolamelnyy-sosna-sort-av-ab-18-mm-600-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сосна сорт АВ — 18 мм × 600 мм × 2 м"
   },
   {
     "source_row": 245,
@@ -7442,7 +7652,8 @@
     },
     "id": 211,
     "slug": "shchit-celnolamelnyy-sosna-sort-v-b-18-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сосна сорт В — 18 мм × 600 мм × 3 м"
   },
   {
     "source_row": 246,
@@ -7478,7 +7689,8 @@
     },
     "id": 212,
     "slug": "shchit-srashchennyy-listvennica-sort-a-a-18-mm-600-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный лиственница, сорт А — 18 мм × 600 мм × 2.5 м"
   },
   {
     "source_row": 247,
@@ -7514,7 +7726,8 @@
     },
     "id": 213,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-18-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 18 мм × 600 мм × 3 м"
   },
   {
     "source_row": 248,
@@ -7550,7 +7763,8 @@
     },
     "id": 214,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-18-mm-600-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 18 мм × 600 мм × 3.5 м"
   },
   {
     "source_row": 249,
@@ -7585,7 +7799,8 @@
     },
     "id": 215,
     "slug": "shchit-celnolamelnyy-sort-av-ab-18-mm-800-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 18 мм × 800 мм × 2.5 м"
   },
   {
     "source_row": 250,
@@ -7621,7 +7836,8 @@
     },
     "id": 216,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-18-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 18 мм × 800 мм × 3 м"
   },
   {
     "source_row": 251,
@@ -7656,7 +7872,8 @@
     },
     "id": 217,
     "slug": "shchit-celnolamelnyy-sort-av-ab-18-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 18 мм × 800 мм × 3 м"
   },
   {
     "source_row": 252,
@@ -7692,7 +7909,8 @@
     },
     "id": 218,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-18-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 18 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 253,
@@ -7727,7 +7945,8 @@
     },
     "id": 219,
     "slug": "shchit-celnolamelnyy-sort-av-ab-18-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 18 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 254,
@@ -7763,7 +7982,8 @@
     },
     "id": 220,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-18-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 18 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 255,
@@ -7799,7 +8019,8 @@
     },
     "id": 221,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-28-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 28 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 256,
@@ -7834,7 +8055,8 @@
     },
     "id": 222,
     "slug": "shchit-celnolamelnyy-sort-v-b-28-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт В — 28 мм × 800 мм × 3 м"
   },
   {
     "source_row": 257,
@@ -7870,7 +8092,8 @@
     },
     "id": 223,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-28-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 28 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 258,
@@ -7905,7 +8128,8 @@
     },
     "id": 224,
     "slug": "shchit-celnolamelnyy-sort-av-ab-28-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 28 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 259,
@@ -7940,7 +8164,8 @@
     },
     "id": 225,
     "slug": "shchit-celnolamelnyy-sort-v-b-40-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт В — 40 мм × 600 мм × 3 м"
   },
   {
     "source_row": 260,
@@ -7975,7 +8200,8 @@
     },
     "id": 226,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 600 мм × 3 м"
   },
   {
     "source_row": 261,
@@ -8010,7 +8236,8 @@
     },
     "id": 227,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-800-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 800 мм × 2 м"
   },
   {
     "source_row": 262,
@@ -8046,7 +8273,8 @@
     },
     "id": 228,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-40-mm-800-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 40 мм × 800 мм × 2 м"
   },
   {
     "source_row": 263,
@@ -8082,7 +8310,8 @@
     },
     "id": 229,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-40-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 40 мм × 800 мм × 3 м"
   },
   {
     "source_row": 264,
@@ -8117,7 +8346,8 @@
     },
     "id": 230,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 800 мм × 3 м"
   },
   {
     "source_row": 265,
@@ -8153,7 +8383,8 @@
     },
     "id": 231,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-40-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 40 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 266,
@@ -8189,7 +8420,8 @@
     },
     "id": 232,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-40-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 40 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 267,
@@ -8224,7 +8456,8 @@
     },
     "id": 233,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-1220-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 1220 мм × 2 м"
   },
   {
     "source_row": 268,
@@ -8259,7 +8492,8 @@
     },
     "id": 234,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 269,
@@ -8294,7 +8528,8 @@
     },
     "id": 235,
     "slug": "shchit-celnolamelnyy-sort-av-ab-40-mm-1220-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламельный, сорт АВ — 40 мм × 1220 мм × 3 м"
   },
   {
     "source_row": 270,
@@ -8330,7 +8565,8 @@
     },
     "id": 236,
     "slug": "shchit-srashchennyy-sosna-sort-av-ab-40-mm-1220-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт АВ — 40 мм × 1220 мм × 3 м"
   },
   {
     "source_row": 271,
@@ -8366,7 +8602,8 @@
     },
     "id": 237,
     "slug": "shchit-srashchennyy-sosna-sort-e-ekstra-40-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна, сорт Э — 40 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 273,
@@ -8402,7 +8639,8 @@
     },
     "id": 238,
     "slug": "osb-3-ekolog-klass-e1-nsh-6-mm-1250-mm-2-5-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "OSB 3, эколог.класс Е1, НШ — 6 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 274,
@@ -8438,7 +8676,8 @@
     },
     "id": 239,
     "slug": "osb-3-ekolog-klass-e1-nsh-8-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3, эколог.класс Е1, НШ — 8 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 275,
@@ -8474,7 +8713,8 @@
     },
     "id": 240,
     "slug": "osb-3-ekolog-klass-e1-nsh-12-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3, эколог.класс Е1, НШ — 12 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 276,
@@ -8510,7 +8750,8 @@
     },
     "id": 241,
     "slug": "osb-3-ekolog-klass-e1-nsh-15-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3, эколог.класс Е1, НШ — 15 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 278,
@@ -8531,7 +8772,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/products/laminirovannaya-fanera-2-4-15-mm-1220-mm-2-44-m-e07db06f8b.png",
     "base_price": 17300,
     "unit": "шт",
     "note": "17шт",
@@ -8546,7 +8787,8 @@
     },
     "id": 242,
     "slug": "laminirovannaya-fanera-2-4-15-mm-1220-mm-2-44-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Ламинированная фанера 2/4 — 15 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 279,
@@ -8567,7 +8809,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 8700,
     "unit": "шт",
     "note": "65шт",
@@ -8583,7 +8825,8 @@
     },
     "id": 243,
     "slug": "fsf-bereza-sh2-sort-1-2-v-vv-e-0-5-1-2-6-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза, Ш2, сорт 1/2, В/ВВ, Е 0, 5 — 6 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 280,
@@ -8604,7 +8847,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 10600,
     "unit": "шт",
     "note": "37шт",
@@ -8620,7 +8863,8 @@
     },
     "id": 244,
     "slug": "fsf-bereza-sh2-sort-1-2-v-vv-e-0-5-1-2-9-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза, Ш2, сорт 1/2, В/ВВ, Е 0, 5 — 9 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 281,
@@ -8641,7 +8885,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 12600,
     "unit": "шт",
     "note": "33шт",
@@ -8657,7 +8901,8 @@
     },
     "id": 245,
     "slug": "fsf-bereza-sh2-sort-1-2-v-vv-e-0-5-1-2-12-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза, Ш2, сорт 1/2, В/ВВ, Е 0, 5 — 12 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 282,
@@ -8678,7 +8923,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 16400,
     "unit": "шт",
     "note": "22шт",
@@ -8694,7 +8939,8 @@
     },
     "id": 246,
     "slug": "fsf-bereza-sh2-sort-1-2-v-vv-e-0-5-1-2-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза, Ш2, сорт 1/2, В/ВВ, Е 0, 5 — 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 283,
@@ -8715,7 +8961,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 19000,
     "unit": "шт",
     "note": "22шт",
@@ -8730,7 +8976,8 @@
     },
     "id": 247,
     "slug": "fanera-bereza-lbffxfsf-8x4-f-f-sort-1-1-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ЛБФФ*ФСФ, 8*4, F|F, сорт 1/1 — 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 284,
@@ -8751,7 +8998,7 @@
     ],
     "availability": "в наличии",
     "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
-    "image": "images/hero.png",
+    "image": "images/fanera.PNG",
     "base_price": 24200,
     "unit": "шт",
     "note": "19шт",
@@ -8766,7 +9013,8 @@
     },
     "id": 248,
     "slug": "fanera-bereza-lbffxfsf-8x4-f-f-sort-1-1-21-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ЛБФФ*ФСФ, 8*4, F|F, сорт 1/1 — 21 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 286,
@@ -8802,7 +9050,8 @@
     },
     "id": 249,
     "slug": "stupen-sosna-av-ab-40-mm-300-mm-1-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ — 40 мм × 300 мм × 1 м"
   },
   {
     "source_row": 287,
@@ -8838,7 +9087,8 @@
     },
     "id": 250,
     "slug": "stupen-sosna-v-b-40-mm-300-mm-1-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна, В — 40 мм × 300 мм × 1.2 м"
   },
   {
     "source_row": 288,
@@ -8874,7 +9124,8 @@
     },
     "id": 251,
     "slug": "stupen-bereza-av-ab-40-mm-300-mm-1-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень береза АВ — 40 мм × 300 мм × 1.2 м"
   },
   {
     "source_row": 289,
@@ -8910,7 +9161,8 @@
     },
     "id": 252,
     "slug": "stupen-sosna-av-srashchennaya-ab-40-mm-350-mm-1-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ сращенная — 40 мм × 350 мм × 1.2 м"
   },
   {
     "source_row": 290,
@@ -8946,7 +9198,8 @@
     },
     "id": 253,
     "slug": "stupen-sosna-av-srashchennaya-ab-40-mm-400-mm-1-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ сращенная — 40 мм × 400 мм × 1.2 м"
   },
   {
     "source_row": 292,
@@ -8979,7 +9232,8 @@
     },
     "id": 254,
     "slug": "stoleshnica-kruglaya-bereza-termo-28-mm",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница круглая, береза, термо — 28 мм"
   },
   {
     "source_row": 293,
@@ -9012,7 +9266,8 @@
     },
     "id": 255,
     "slug": "stoleshnica-kruglaya-bereza-28-mm",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница круглая, береза — 28 мм"
   },
   {
     "source_row": 294,
@@ -9047,7 +9302,8 @@
     },
     "id": 256,
     "slug": "stoleshnica-pryamougol-bereza-termo-28-mm-800-mm-1-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница прямоугол., береза, термо — 28 мм × 800 мм × 1.6 м"
   },
   {
     "source_row": 295,
@@ -9082,7 +9338,8 @@
     },
     "id": 257,
     "slug": "stoleshnica-oval-bereza-28-mm-700-mm-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница овал, береза — 28 мм × 700 мм × 1.5 м"
   },
   {
     "source_row": 298,
@@ -9116,7 +9373,8 @@
     },
     "id": 258,
     "slug": "pilomaterial-obreznoy-23x190x6000-23-mm-190-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 23 мм × 190 мм × 6 м"
   },
   {
     "source_row": 299,
@@ -9150,7 +9408,8 @@
     },
     "id": 259,
     "slug": "pilomaterial-obreznoy-25x100x6000-25-mm-100-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 25 мм × 100 мм × 6 м"
   },
   {
     "source_row": 300,
@@ -9184,7 +9443,8 @@
     },
     "id": 260,
     "slug": "pilomaterial-obreznoy-25x140x6000-25-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 25 мм × 140 мм × 6 м"
   },
   {
     "source_row": 301,
@@ -9218,7 +9478,8 @@
     },
     "id": 261,
     "slug": "pilomaterial-obreznoy-25x150x6000-25-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 25 мм × 150 мм × 6 м"
   },
   {
     "source_row": 302,
@@ -9252,7 +9513,8 @@
     },
     "id": 262,
     "slug": "pilomaterial-obreznoy-50x100x6000-2-3-sort-50-mm-100-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной 2 3 сорт — 50 мм × 100 мм × 6 м"
   },
   {
     "source_row": 303,
@@ -9286,7 +9548,8 @@
     },
     "id": 263,
     "slug": "pilomaterial-obreznoy-50x150x6000-2-3-sort-50-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной 2 3 сорт — 50 мм × 150 мм × 6 м"
   },
   {
     "source_row": 304,
@@ -9320,7 +9583,8 @@
     },
     "id": 264,
     "slug": "pilomaterial-obreznoy-50x150x6000-1-2-sort-50-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной 1 2 сорт — 50 мм × 150 мм × 6 м"
   },
   {
     "source_row": 305,
@@ -9354,7 +9618,8 @@
     },
     "id": 265,
     "slug": "pilomaterial-obreznoy-50x200x4000-50-mm-200-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 50 мм × 200 мм × 4 м"
   },
   {
     "source_row": 306,
@@ -9388,7 +9653,8 @@
     },
     "id": 266,
     "slug": "pilomaterial-obreznoy-50x200x6000-50-mm-200-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной — 50 мм × 200 мм × 6 м"
   },
   {
     "source_row": 307,
@@ -9422,7 +9688,8 @@
     },
     "id": 267,
     "slug": "pilomaterial-obreznoy-90x90x6000-1-3-sort-90-mm-90-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной 1 3 сорт — 90 мм × 90 мм × 6 м"
   },
   {
     "id": 268,
@@ -9496,6 +9763,7 @@
       "Применение": "внутри и снаружи помещений",
       "Основа": "натуральное масло"
     },
-    "popular": true
+    "popular": true,
+    "seo_name": "Акватекс Бальзам. Масло для древесины"
   }
 ]

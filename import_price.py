@@ -345,6 +345,8 @@ def image_for_product(name: str, category: str, wood_type: str = "") -> str:
         return "images/vagonka.PNG"
     if category == "OSB":
         return "images/OSB.PNG"
+    if category == "фанера":
+        return "images/fanera.PNG"
     if category == "клееный брус":
         return "images/kleenyy-brus.png"
     if category == "планкен" and wood_type == "лиственница":

@@ -368,6 +368,7 @@ CARD_IMAGE_MAP = {
     "images/lipa_vagonka.jpg": "images/cards/lipa_vagonka.jpg",
     "images/evro_vagonka.jpg": "images/cards/evro_vagonka.jpg",
     "images/planken_listvinica.jpg": "images/cards/planken_listvinica.jpg",
+    "images/fanera.PNG": "images/cards/fanera.jpg",
 }
 
 DIMENSIONS_IN_NAME_PATTERN = re.compile(
@@ -376,7 +377,7 @@ DIMENSIONS_IN_NAME_PATTERN = re.compile(
 )
 
 CATEGORIES = [
-    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/hero.png"},
+    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.PNG"},
     {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.PNG"},
     {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.jpg"},
     {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.png"},
@@ -407,7 +408,7 @@ CATEGORY_PAGES = [
         "category": "фанера",
         "title": "Фанера в Алматы",
         "description": "Фанера для черновых работ, опалубки, мебели и строительных задач.",
-        "image": "images/hero.png",
+        "image": "images/fanera.PNG",
     },
     {
         "slug": "brus",
