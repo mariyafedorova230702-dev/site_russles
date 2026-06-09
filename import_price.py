@@ -195,6 +195,8 @@ def detect_category(name: str, section: str = "") -> str:
         return "полок для бани"
     if "брусок" in haystack:
         return "брусок"
+    if "клеен" in haystack and "брус" in haystack:
+        return "клееный брус"
     if "брус" in haystack:
         return "брус"
     if "фанера" in haystack or "фсф" in haystack or "фк" in haystack:
@@ -272,7 +274,7 @@ def determine_purpose(category: str) -> list[str]:
         return ["для фасада"]
     if category == "террасная доска":
         return ["для террасы"]
-    if category in {"брус", "брусок"}:
+    if category in {"брус", "клееный брус", "брусок"}:
         return ["для каркаса", "для обрешётки"]
     if category in {"фанера", "OSB"}:
         return ["для черновых работ", "для опалубки", "для каркаса"]
@@ -307,6 +309,7 @@ def build_description(category: str, wood_type: str) -> str:
         "планкен": f"Планкен{wood} для фасада, ограждений и декоративной отделки.",
         "террасная доска": f"Террасная доска{wood} для настилов, крыльца и открытых зон.",
         "брусок": f"Строганный брусок{wood} для каркаса, обрешётки и столярных работ.",
+        "клееный брус": f"Строганный клееный брус{wood} для конструкций, столярных работ и интерьера.",
         "брус": f"Брус{wood} для каркасов, стоек, балок и строительных конструкций.",
         "фанера": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
         "OSB": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
@@ -344,7 +347,7 @@ def image_for_product(name: str, category: str, wood_type: str = "") -> str:
         return "images/planken_listvinica.jpg"
     if category in category_images:
         return category_images[category]
-    if category in {"брус", "брусок", "доска"}:
+    if category in {"брус", "клееный брус", "брусок", "доска"}:
         return "images/Brusok-sosna.jpg"
     return "images/hero.png"
 
@@ -537,6 +540,7 @@ def mark_popular_products(products: list[dict]) -> None:
         "фанера",
         "вагонка",
         "брусок",
+        "клееный брус",
         "брус",
         "доска",
         "планкен",

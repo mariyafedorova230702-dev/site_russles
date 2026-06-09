@@ -379,7 +379,7 @@ CATEGORIES = [
     {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/hero.png"},
     {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/hero.png"},
     {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.jpg"},
-    {"name": "Брус", "slug": "brus", "category": "брус", "description": "Материал для каркасов и перекрытий", "image": "images/Brusok-sosna.jpg"},
+    {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/Brusok-sosna.jpg"},
     {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.jpg"},
     {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.PNG"},
     {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.jpg"},
@@ -411,9 +411,9 @@ CATEGORY_PAGES = [
     },
     {
         "slug": "brus",
-        "category": "брус",
-        "title": "Брус в Алматы",
-        "description": "Брус для каркасов, стоек, балок и строительных конструкций.",
+        "category": "клееный брус",
+        "title": "Клееный брус в Алматы",
+        "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
         "image": "images/Brusok-sosna.jpg",
     },
     {
