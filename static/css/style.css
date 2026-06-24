@@ -4144,3 +4144,136 @@ footer[id] {
         border-radius: 18px;
     }
 }
+
+/* =============================================
+   DESIGN UPGRADE — FONTS, ANIMATIONS, REVEALS
+   ============================================= */
+
+/* --- Fonts --- */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+}
+
+.hero-new h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.05;
+    font-style: italic;
+}
+
+/* --- Hero background: richer warm gradient + subtle wood grain --- */
+.hero-new {
+    background:
+        repeating-linear-gradient(
+            72deg,
+            transparent,
+            transparent 38px,
+            rgba(185, 121, 66, 0.025) 38px,
+            rgba(185, 121, 66, 0.025) 40px
+        ),
+        radial-gradient(ellipse 60% 55% at 75% 15%, rgba(185, 121, 66, 0.28) 0%, transparent 100%),
+        radial-gradient(ellipse 38% 38% at 10% 92%, rgba(31, 95, 53, 0.16) 0%, transparent 100%),
+        linear-gradient(155deg, #fef9ee 0%, #f5f0e3 58%, #ecf3ee 100%);
+}
+
+/* Floating cards: warm top accent */
+.floating-card {
+    border-top: 3px solid var(--wood);
+}
+
+/* --- Hero entrance animations --- */
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes hero-fade-up {
+        from { opacity: 0; transform: translateY(22px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes hero-float {
+        0%, 100% { transform: translateY(0); }
+        50%       { transform: translateY(-11px); }
+    }
+
+    .hero-new .eyebrow          { animation: hero-fade-up 0.55s ease both; animation-delay: 0.05s; }
+    .hero-new h1                { animation: hero-fade-up 0.6s  ease both; animation-delay: 0.15s; }
+    .hero-new .hero-new-description { animation: hero-fade-up 0.6s ease both; animation-delay: 0.25s; }
+    .hero-conversion            { animation: hero-fade-up 0.6s  ease both; animation-delay: 0.35s; }
+    .hero-stats                 { animation: hero-fade-up 0.6s  ease both; animation-delay: 0.45s; }
+    .hero-visual                { animation: hero-fade-up 0.7s  ease both; animation-delay: 0.1s; }
+
+    .top-card    { animation: hero-float 5.5s ease-in-out infinite; }
+    .bottom-card { animation: hero-float 5.5s ease-in-out infinite; animation-delay: -2.75s; }
+}
+
+/* --- Scroll reveal --- */
+.reveal,
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-stagger > * {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.reveal.is-visible,
+.reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.04s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.13s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.22s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.31s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.40s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.49s; }
+
+/* --- Enhanced hover on category cards --- */
+.home-category-card {
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.home-category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px rgba(16, 39, 25, 0.13);
+    border-color: rgba(185, 121, 66, 0.28);
+}
+
+.home-category-thumb img {
+    transition: transform 0.45s ease;
+}
+
+.home-category-card:hover .home-category-thumb img {
+    transform: scale(1.06);
+}
+
+/* --- Process cards — warmer look --- */
+.process-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(16, 39, 25, 0.1);
+}
+
+/* --- Section headings: Playfair italic eyebrow line --- */
+.section-heading p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 700;
+}
+

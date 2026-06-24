@@ -88,7 +88,7 @@
             <h2>{{ t('section.categories_title') }}</h2>
         </div>
 
-        <div class="home-categories-grid">
+        <div class="home-categories-grid reveal-stagger">
             {% for category in categories %}
             <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}" class="home-category-card">
                 <span class="home-category-thumb">
@@ -116,7 +116,7 @@
                 <span>{{ t('section.selection_text') }}</span>
             </div>
 
-            <div class="material-help-grid">
+            <div class="material-help-grid reveal-stagger">
                 <a href="{{ url_for('catalog') }}?materials={{ 'вагонка|полок|уголок'|urlencode }}&woods={{ 'осина|липа|кедр'|urlencode }}" class="material-help-link">
                     <strong>{{ t('purpose.bath') }}</strong>
                     <span>{{ t('purpose.bath_text') }}</span>
@@ -271,7 +271,7 @@
             <h2>{{ t('process.title') }}</h2>
         </div>
 
-        <div class="process-grid">
+        <div class="process-grid reveal-stagger">
             <div class="process-card">
                 <span>01</span>
                 <h3>{{ t('process.one_title') }}</h3>
@@ -301,7 +301,7 @@
 
 <section class="about-modern" id="about">
     <div class="container">
-        <div class="about-modern-intro">
+        <div class="about-modern-intro reveal">
             <div>
                 <p class="eyebrow">{{ t('about.eyebrow') }}</p>
                 <h2>{{ t('about.title') }}</h2>
@@ -310,7 +310,7 @@
             <p>{{ t('about.text') }}</p>
         </div>
 
-        <div class="about-company-grid">
+        <div class="about-company-grid reveal">
             <div class="about-company-story">
                 <span class="about-company-year">24</span>
                 <div>

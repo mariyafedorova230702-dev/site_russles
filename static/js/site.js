@@ -119,4 +119,56 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(0, false);
         startAutoplay();
     });
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Scroll reveal
+    if (!reduceMotion) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+        document.querySelectorAll(".reveal, .reveal-stagger").forEach((el) => {
+            revealObserver.observe(el);
+        });
+    }
+
+    // Animated counter
+    if (!reduceMotion) {
+        function animateCounter(el, target, suffix) {
+            const duration = 1600;
+            const startTime = performance.now();
+            function step(now) {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(eased * target) + suffix;
+                if (progress < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const text = el.textContent;
+                    const num = parseFloat(text.replace(/[^0-9.]/g, ""));
+                    const suffix = text.replace(/[\d\s]/g, "");
+                    if (!isNaN(num) && num >= 5) {
+                        animateCounter(el, num, suffix);
+                    }
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.6 });
+
+        document.querySelectorAll(".hero-stats strong, .about-company-year").forEach((el) => {
+            counterObserver.observe(el);
+        });
+    }
 });
