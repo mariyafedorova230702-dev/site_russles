@@ -751,16 +751,16 @@ def build_price_workbook(products: list[dict]) -> BytesIO:
             row_number += 1
 
     thin_border = Border(bottom=Side(style="thin", color="DFE7DF"))
-    for row in sheet.iter_rows(min_row=header_row, max_row=max(header_row, row_number - 1), min_col=1, max_col=13):
+    for row in sheet.iter_rows(min_row=header_row, max_row=max(header_row, row_number - 1), min_col=1, max_col=12):
         for cell in row:
             cell.border = thin_border
 
-    widths = [9, 20, 42, 22, 18, 12, 14, 14, 14, 16, 13, 16, 28]
+    widths = [9, 20, 42, 22, 18, 12, 14, 14, 14, 16, 16, 28]
     for index, width in enumerate(widths, start=1):
         sheet.column_dimensions[chr(64 + index)].width = width
 
     sheet.freeze_panes = "A5"
-    sheet.auto_filter.ref = f"A4:M{max(header_row, row_number - 1)}"
+    sheet.auto_filter.ref = f"A4:L{max(header_row, row_number - 1)}"
     sheet.sheet_view.showGridLines = False
 
     output = BytesIO()
