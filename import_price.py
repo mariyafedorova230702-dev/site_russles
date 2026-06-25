@@ -12,7 +12,7 @@ except ImportError as exc:
     raise SystemExit("Нужен пакет openpyxl: pip install openpyxl") from exc
 
 
-PRICE_FILE_NAME = "прайс 13.05.2026.xlsx"
+PRICE_FILE_NAME = "прайс_русский_лес_25_06_26.xlsx"
 SHEET_NAME = "Лист1"
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_PATH = BASE_DIR / "data" / "products.json"
