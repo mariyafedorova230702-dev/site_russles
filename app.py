@@ -673,14 +673,14 @@ def build_price_workbook(products: list[dict]) -> BytesIO:
     sheet.title = "Прайс"
     generated_date = date.today().strftime("%d.%m.%Y")
 
-    sheet.merge_cells("A1:M1")
+    sheet.merge_cells("A1:L1")
     sheet["A1"] = "Русский Лес — прайс пиломатериалов"
     sheet["A1"].font = Font(size=18, bold=True, color="FFFFFF")
     sheet["A1"].fill = PatternFill("solid", fgColor="102719")
     sheet["A1"].alignment = Alignment(horizontal="left", vertical="center")
     sheet.row_dimensions[1].height = 30
 
-    sheet.merge_cells("A2:M2")
+    sheet.merge_cells("A2:L2")
     sheet["A2"] = (
         f"Сформировано: {generated_date} · Склад: {WAREHOUSE_ADDRESS} · "
         "Перед покупкой уточняйте наличие и актуальную цену."
@@ -700,7 +700,6 @@ def build_price_workbook(products: list[dict]) -> BytesIO:
         "Ширина",
         "Длина",
         "Цена, ₸",
-        "Единица",
         "Наличие",
         "Примечание",
     ]
@@ -738,7 +737,6 @@ def build_price_workbook(products: list[dict]) -> BytesIO:
                 product.get("width", ""),
                 product.get("length", ""),
                 variant.get("price", product.get("base_price", 0)),
-                product.get("unit", ""),
                 product.get("availability", "уточнить"),
                 product.get("note", ""),
             ]
