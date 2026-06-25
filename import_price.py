@@ -477,10 +477,10 @@ def product_from_row(row_values: list, row_number: int, section: str, mode: str)
         price = parse_price(row_values[5] if len(row_values) > 5 else None)
         if price is None:
             return None
-        unit = normalize_unit(row_values[1] if len(row_values) > 1 else "")
-        thickness = format_mm(row_values[2] if len(row_values) > 2 else "")
-        width = format_mm(row_values[3] if len(row_values) > 3 else "")
-        length = format_length(row_values[4] if len(row_values) > 4 else "")
+        thickness = format_mm(row_values[1] if len(row_values) > 1 else "")
+        width = format_mm(row_values[2] if len(row_values) > 2 else "")
+        length = format_length(row_values[3] if len(row_values) > 3 else "")
+        unit = normalize_unit(row_values[4] if len(row_values) > 4 else "")
         note = clean_text(row_values[6] if len(row_values) > 6 else "")
 
     category = detect_category(name, section)
