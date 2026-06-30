@@ -377,15 +377,15 @@ DIMENSIONS_IN_NAME_PATTERN = re.compile(
 )
 
 CATEGORIES = [
-    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.PNG"},
-    {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.PNG"},
     {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.jpg"},
-    {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.png"},
     {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.jpg"},
     {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.PNG"},
     {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.jpg"},
-    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.jpg"},
+    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.PNG"},
+    {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.PNG"},
+    {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.png"},
     {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/akvateks-balzam.png"},
+    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.jpg"},
 ]
 
 CATEGORY_PAGES = [
