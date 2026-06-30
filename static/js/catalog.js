@@ -275,6 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    applyView(getSavedView() || (window.matchMedia("(max-width: 520px)").matches ? "list" : "grid"));
+    const isMobile = window.matchMedia("(max-width: 520px)").matches;
+    applyView(isMobile ? "grid" : (getSavedView() || "grid"));
     applyFilters();
 });
