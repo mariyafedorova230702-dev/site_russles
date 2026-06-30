@@ -3927,42 +3927,128 @@ footer[id] {
     }
 
     .catalog-view-switcher {
-        display: none;
+        width: 100%;
+    }
+
+    .catalog-view-button {
+        flex: 1;
+        justify-content: center;
+        padding: 0 6px;
     }
 
     .catalog-select-filters {
         grid-template-columns: 1fr;
     }
 
+    /* Compact: 2 columns marketplace style (like Kaspi) */
     .catalog-grid--compact {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .catalog-grid--compact .catalog-card {
+        border-radius: 14px;
+    }
+
+    .catalog-grid--compact .catalog-card-image {
+        height: 156px;
+    }
+
+    .catalog-grid--compact .catalog-card-body {
+        padding: 10px;
+    }
+
+    .catalog-grid--compact .catalog-card-category {
+        display: none;
+    }
+
+    .catalog-grid--compact .catalog-card h2 {
+        margin: 0 0 4px;
+        font-size: 13px;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .catalog-grid--compact .catalog-card-size {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+
+    .catalog-grid--compact .catalog-card p {
+        display: none;
+    }
+
+    .catalog-grid--compact .catalog-card-bottom {
+        padding-top: 8px;
+    }
+
+    .catalog-grid--compact .catalog-card-bottom strong {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .catalog-grid--compact .catalog-card-actions {
         grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .catalog-grid--compact .catalog-card-button {
+        display: none;
+    }
+
+    .catalog-grid--compact .catalog-whatsapp-button {
+        min-height: 34px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    /* List: no photo, clean text rows */
+    .catalog-grid--list {
+        gap: 8px;
     }
 
     .catalog-grid--list .catalog-card:not([hidden]) {
-        grid-template-columns: 112px minmax(0, 1fr);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 14px;
+        gap: 0;
     }
 
     .catalog-grid--list .catalog-card-image {
-        min-height: 100%;
+        display: none;
     }
 
     .catalog-grid--list .catalog-card-body {
-        padding: 14px;
+        padding: 12px 14px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 
     .catalog-grid--list .catalog-card-category {
-        padding: 5px 8px;
-        font-size: 10px;
+        display: none;
     }
 
     .catalog-grid--list .catalog-card h2 {
-        margin: 9px 0 6px;
-        font-size: 17px;
+        margin: 0 0 2px;
+        font-size: 14px;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        overflow: hidden;
     }
 
     .catalog-grid--list .catalog-card-size {
-        margin-top: 6px;
-        font-size: 14px;
+        font-size: 12px;
+        margin-top: 2px;
     }
 
     .catalog-grid--list .catalog-card p {
@@ -3970,24 +4056,36 @@ footer[id] {
     }
 
     .catalog-grid--list .catalog-card-bottom {
-        display: block;
-        padding-top: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 8px;
+        gap: 8px;
     }
 
     .catalog-grid--list .catalog-card-bottom strong {
-        margin-bottom: 9px;
-        font-size: 15px;
+        font-size: 16px;
+        margin-bottom: 0;
+        white-space: nowrap;
     }
 
     .catalog-grid--list .catalog-card-actions {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
+        grid-template-columns: 1fr;
+        gap: 0;
+        flex-shrink: 0;
     }
 
-    .catalog-grid--list .catalog-card-button,
+    .catalog-grid--list .catalog-card-button {
+        display: none;
+    }
+
     .catalog-grid--list .catalog-whatsapp-button {
-        min-height: 36px;
-        font-size: 11px;
+        min-height: 34px;
+        font-size: 12px;
+        padding: 0 12px;
+        border-radius: 10px;
+        white-space: nowrap;
     }
 
     .product-detail-image {
