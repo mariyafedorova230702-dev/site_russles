@@ -957,7 +957,53 @@ footer[id] {
 }
 
 .catalog-mobile-filter-toggle {
-    display: none;
+    display: flex;
+    width: 100%;
+    min-height: 46px;
+    border: 1.5px solid rgba(31, 95, 53, 0.2);
+    border-radius: 14px;
+    background: rgba(31, 95, 53, 0.06);
+    color: var(--green-dark);
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0 16px;
+    transition: background 0.15s, border-color 0.15s;
+    margin-bottom: 2px;
+}
+
+.catalog-mobile-filter-toggle:hover {
+    border-color: rgba(31, 95, 53, 0.4);
+    background: rgba(31, 95, 53, 0.1);
+}
+
+.catalog-mobile-filter-toggle strong {
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green);
+    background: rgba(31, 95, 53, 0.1);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.catalog-filter-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: max-height 0.32s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
+}
+
+.catalog-filter-panel.is-open {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 16px;
 }
 
 .catalog-reset-button {
@@ -3486,21 +3532,6 @@ footer[id] {
         background: rgba(255, 255, 255, 0.14);
         padding: 7px 11px;
         font-size: 12px;
-    }
-
-    .catalog-filter-panel {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transform: translateY(-6px);
-        transition: max-height 0.32s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
-    }
-
-    .catalog-filter-panel.is-open {
-        max-height: 1250px;
-        opacity: 1;
-        transform: translateY(0);
-        padding-top: 16px;
     }
 
     .catalog-filters {
