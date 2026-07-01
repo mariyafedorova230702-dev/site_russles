@@ -276,10 +276,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     applyView(getSavedView() || "grid");
-
-    if (window.matchMedia("(min-width: 1101px)").matches) {
-        setFilterPanelOpen(true);
-    }
-
     applyFilters();
 });
