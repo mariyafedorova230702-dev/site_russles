@@ -965,6 +965,25 @@ def build_product_jsonld(product: dict) -> dict:
     }
 
 
+def build_website_jsonld() -> dict:
+    base = absolute_url(url_for("home"))
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Русский Лес",
+        "alternateName": "Русский Лес Алматы — склад пиломатериалов",
+        "url": base,
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": f"{absolute_url(url_for('catalog'))}?q={{search_term_string}}",
+            },
+            "query-input": "required name=search_term_string",
+        },
+    }
+
+
 @app.template_filter("card_image")
 def card_image(image_path: str) -> str:
     fallback = "images/hero.png"
@@ -1001,6 +1020,7 @@ def inject_navigation_data():
         "canonical_url": absolute_url(request.path) if seo_indexable else "",
         "google_site_verification": GOOGLE_SITE_VERIFICATION,
         "local_business_jsonld": build_local_business_jsonld() if seo_indexable else None,
+        "website_jsonld": build_website_jsonld() if seo_indexable else None,
         "og_image": absolute_url(url_for("static", filename="images/hero.png")),
     }
 

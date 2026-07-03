@@ -34,6 +34,9 @@
     {% if local_business_jsonld %}
     <script type="application/ld+json">{{ local_business_jsonld|tojson }}</script>
     {% endif %}
+    {% if website_jsonld %}
+    <script type="application/ld+json">{{ website_jsonld|tojson }}</script>
+    {% endif %}
     {% block structured_data %}{% endblock %}
 </head>
 <body class="page-{{ request.endpoint|default('unknown', true)|replace('_', '-') }}">
