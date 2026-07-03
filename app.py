@@ -1037,6 +1037,11 @@ def set_language(language):
     return redirect(target)
 
 
+@app.route("/google9b72330d023937c6.html")
+def google_search_console_verify():
+    return Response("google-site-verification: google9b72330d023937c6.html", mimetype="text/html")
+
+
 @app.route("/sitemap.xml")
 def sitemap():
     ElementTree.register_namespace("", SITEMAP_NAMESPACE)
