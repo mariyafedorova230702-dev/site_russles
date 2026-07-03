@@ -17,7 +17,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 90 мм × 4-6 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 3500,
     "unit": "м²",
@@ -34,7 +34,8 @@
     },
     "id": 1,
     "slug": "vagonka-evro-sosna-s-c-12-5-mm-90-mm-4-6-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Вагонка евро сосна С 12.5 мм × 90 мм × 4-6 м"
   },
   {
     "source_row": 7,
@@ -54,7 +55,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 90 мм × 2-6 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 5500,
     "unit": "м²",
@@ -71,7 +72,8 @@
     },
     "id": 2,
     "slug": "vagonka-evro-sosna-av-ab-12-5-mm-90-mm-2-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВ 12.5 мм × 90 мм × 2-6 м"
   },
   {
     "source_row": 8,
@@ -91,7 +93,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 96 мм × 2-2.5 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 3800,
     "unit": "м²",
@@ -108,7 +110,8 @@
     },
     "id": 3,
     "slug": "vagonka-evro-sosna-s-10-sht-c-12-5-mm-96-mm-2-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна С 10 шт 12.5 мм × 96 мм × 2-2.5 м"
   },
   {
     "source_row": 9,
@@ -128,7 +131,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 96 мм × 2.5 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 5200,
     "unit": "м²",
@@ -145,7 +148,8 @@
     },
     "id": 4,
     "slug": "vagonka-evro-sosna-av-10-sht-ab-12-5-mm-96-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВ 10 шт 12.5 мм × 96 мм × 2.5 м"
   },
   {
     "source_row": 10,
@@ -165,7 +169,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 11 мм × 118 мм × 2.98 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4500,
     "unit": "м²",
@@ -182,7 +186,8 @@
     },
     "id": 5,
     "slug": "vagonka-shtil-sosna-av-10-sht-ab-11-mm-118-mm-2-98-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 10 шт 11 мм × 118 мм × 2.98 м"
   },
   {
     "source_row": 11,
@@ -202,7 +207,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 11.5 мм × 118 мм × 4 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4800,
     "unit": "м²",
@@ -219,7 +224,8 @@
     },
     "id": 6,
     "slug": "vagonka-shtil-sosna-avs-10-sht-ab-11-5-mm-118-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВС 10 шт 11.5 мм × 118 мм × 4 м"
   },
   {
     "source_row": 12,
@@ -239,7 +245,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 96 мм × 4 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 5500,
     "unit": "м²",
@@ -256,7 +262,8 @@
     },
     "id": 7,
     "slug": "vagonka-evro-sosna-av-10-sht-ab-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВ 10 шт 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 13,
@@ -276,7 +283,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 96 мм × 4 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 4000,
     "unit": "м²",
@@ -293,7 +300,8 @@
     },
     "id": 8,
     "slug": "vagonka-evro-sosna-s-10-sht-c-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна С 10 шт 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 14,
@@ -313,7 +321,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 90 мм × 2.7 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4500,
     "unit": "м²",
@@ -330,7 +338,8 @@
     },
     "id": 9,
     "slug": "vagonka-shtil-sosna-s-c-14-mm-90-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна С 14 мм × 90 мм × 2.7 м"
   },
   {
     "source_row": 15,
@@ -350,7 +359,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 96 мм × 4 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/evro_vagonka.jpg",
     "base_price": 3800,
     "unit": "м²",
@@ -367,7 +376,8 @@
     },
     "id": 10,
     "slug": "vagonka-evro-sosna-avs-10-sht-ab-12-5-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка евро сосна АВС 10 шт 12.5 мм × 96 мм × 4 м"
   },
   {
     "source_row": 16,
@@ -387,7 +397,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 110 мм × 2.5 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 6600,
     "unit": "м²",
@@ -404,7 +414,8 @@
     },
     "id": 11,
     "slug": "vagonka-shtil-sosna-av-10-sht-ab-12-5-mm-110-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 10 шт 12.5 мм × 110 мм × 2.5 м"
   },
   {
     "source_row": 17,
@@ -424,7 +435,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 121 мм × 3 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4000,
     "unit": "м²",
@@ -441,7 +452,8 @@
     },
     "id": 12,
     "slug": "vagonka-shtil-sosna-s-c-12-5-mm-121-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна С 12.5 мм × 121 мм × 3 м"
   },
   {
     "source_row": 18,
@@ -461,7 +473,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 12.5 мм × 121 мм × 4 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 5500,
     "unit": "м²",
@@ -478,7 +490,8 @@
     },
     "id": 13,
     "slug": "vagonka-shtil-sosna-av-ab-12-5-mm-121-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 12.5 мм × 121 мм × 4 м"
   },
   {
     "source_row": 19,
@@ -498,7 +511,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 120 мм × 3 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 5800,
     "unit": "м²",
@@ -515,7 +528,8 @@
     },
     "id": 14,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 20,
@@ -535,7 +549,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 120 мм × 3 м. Сорт BC. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4500,
     "unit": "м²",
@@ -552,7 +566,8 @@
     },
     "id": 15,
     "slug": "vagonka-shtil-sosna-vs-bc-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна ВС 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 21,
@@ -572,7 +587,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 120 мм × 4 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4500,
     "unit": "м²",
@@ -589,7 +604,8 @@
     },
     "id": 16,
     "slug": "vagonka-soft-layn-sosna-s-c-14-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка софт лайн сосна С 14 мм × 120 мм × 4 м"
   },
   {
     "source_row": 22,
@@ -609,7 +625,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 146 мм × 4 м. Сорт C. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 4500,
     "unit": "м²",
@@ -626,7 +642,8 @@
     },
     "id": 17,
     "slug": "vagonka-shtil-sosna-s-c-14-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна С 14 мм × 146 мм × 4 м"
   },
   {
     "source_row": 23,
@@ -646,7 +663,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 146 мм × 2-4 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 5800,
     "unit": "м²",
@@ -663,7 +680,8 @@
     },
     "id": 18,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-146-mm-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 14 мм × 146 мм × 2-4 м"
   },
   {
     "source_row": 24,
@@ -683,7 +701,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 145 мм × 3 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 5800,
     "unit": "м²",
@@ -700,7 +718,8 @@
     },
     "id": 19,
     "slug": "vagonka-shtil-sosna-av-ab-14-mm-145-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна АВ 14 мм × 145 мм × 3 м"
   },
   {
     "source_row": 25,
@@ -720,7 +739,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 90 мм × 3 м. Сорт A. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 10500,
     "unit": "м²",
@@ -737,7 +756,8 @@
     },
     "id": 20,
     "slug": "vagonka-shtil-sosna-a-a-14-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна А 14 мм × 90 мм × 3 м"
   },
   {
     "source_row": 26,
@@ -757,7 +777,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 90 мм × 3 м. Сорт Экстра. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 11100,
     "unit": "м²",
@@ -774,7 +794,8 @@
     },
     "id": 21,
     "slug": "vagonka-shtil-sosna-ekstra-ekstra-14-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна экстра 14 мм × 90 мм × 3 м"
   },
   {
     "source_row": 27,
@@ -794,7 +815,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из сосны для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из сосны 14 мм × 120 мм × 3 м. Сорт A. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 10500,
     "unit": "м²",
@@ -811,7 +832,8 @@
     },
     "id": 22,
     "slug": "vagonka-shtil-sosna-a-a-14-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль сосна А 14 мм × 120 мм × 3 м"
   },
   {
     "source_row": 29,
@@ -831,7 +853,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из осины для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из осины 15 мм × 90 мм × 1.8 м. Сорт Экстра. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 10000,
     "unit": "м²",
@@ -848,7 +870,8 @@
     },
     "id": 23,
     "slug": "vagonka-osina-sort-e-10-sht-ekstra-15-mm-90-mm-1-8-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка осина сорт Э 10 шт 15 мм × 90 мм × 1.8 м"
   },
   {
     "source_row": 30,
@@ -868,7 +891,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из осины для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из осины 15 мм × 90 мм × 2-3 м. Сорт Экстра. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 13000,
     "unit": "м²",
@@ -885,7 +908,8 @@
     },
     "id": 24,
     "slug": "vagonka-osina-sort-e-10-sht-ekstra-15-mm-90-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка осина сорт Э 10 шт 15 мм × 90 мм × 2-3 м"
   },
   {
     "source_row": 31,
@@ -905,7 +929,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из осины для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из осины 15 мм × 90 мм × 2-3 м. Сорт B. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 11500,
     "unit": "м²",
@@ -922,7 +946,8 @@
     },
     "id": 25,
     "slug": "vagonka-osina-sort-v-10-sht-b-15-mm-90-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка осина сорт В 10 шт 15 мм × 90 мм × 2-3 м"
   },
   {
     "source_row": 33,
@@ -942,7 +967,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из лиственницы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из лиственницы 14 мм × 90 мм × 4 м. Сорт A. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 13500,
     "unit": "м²",
@@ -959,7 +984,8 @@
     },
     "id": 26,
     "slug": "vagonka-shtil-listvennica-a-6-sht-a-14-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль лиственница А 6 шт 14 мм × 90 мм × 4 м"
   },
   {
     "source_row": 34,
@@ -979,7 +1005,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из лиственницы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из лиственницы 14 мм × 90 мм × 3 м. Сорт B. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 8000,
     "unit": "м²",
@@ -996,7 +1022,8 @@
     },
     "id": 27,
     "slug": "vagonka-shtil-listvennica-v-8-sht-b-14-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль лиственница В 8 шт 14 мм × 90 мм × 3 м"
   },
   {
     "source_row": 36,
@@ -1016,7 +1043,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из кедра для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из кедра 12.5 мм × 110 мм × 2.2-3 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 7500,
     "unit": "м²",
@@ -1033,7 +1060,8 @@
     },
     "id": 28,
     "slug": "vagonka-shtil-kedr-av-10-sht-ab-12-5-mm-110-mm-2-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль кедр АВ 10 шт 12.5 мм × 110 мм × 2.2-3 м"
   },
   {
     "source_row": 37,
@@ -1053,7 +1081,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из кедра для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из кедра 12.5 мм × 110 мм × 2-3 м. Сорт B. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 6500,
     "unit": "м²",
@@ -1070,7 +1098,8 @@
     },
     "id": 29,
     "slug": "vagonka-shtil-kedr-v-10-sht-b-12-5-mm-110-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка штиль кедр В 10 шт 12.5 мм × 110 мм × 2-3 м"
   },
   {
     "source_row": 38,
@@ -1090,7 +1119,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из кедра для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из кедра 28 мм × 90 мм × 3 м. Сорт AB. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/vagonka.PNG",
     "base_price": 1500,
     "unit": "п/м",
@@ -1107,7 +1136,8 @@
     },
     "id": 30,
     "slug": "polok-kedr-av-ab-28-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок кедр АВ 28 мм × 90 мм × 3 м"
   },
   {
     "source_row": 40,
@@ -1127,7 +1157,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из липы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из липы 15 мм × 96 мм × 2.4-2.9 м. Сорт A. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/lipa_vagonka.jpg",
     "base_price": 15600,
     "unit": "м²",
@@ -1144,7 +1174,8 @@
     },
     "id": 31,
     "slug": "vagonka-lipa-sort-a-10-sht-a-15-mm-96-mm-2-4-2-9-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка липа сорт А 10 шт 15 мм × 96 мм × 2.4-2.9 м"
   },
   {
     "source_row": 41,
@@ -1164,7 +1195,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из липы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из липы 15 мм × 96 мм × 2-2.7 м. Сорт Экстра. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/lipa_vagonka.jpg",
     "base_price": 17000,
     "unit": "м²",
@@ -1181,7 +1212,8 @@
     },
     "id": 32,
     "slug": "vagonka-lipa-sort-e-10-sht-ekstra-15-mm-96-mm-2-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Вагонка липа сорт Э 10 шт 15 мм × 96 мм × 2-2.7 м"
   },
   {
     "source_row": 42,
@@ -1201,7 +1233,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из липы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из липы 15 мм × 70 мм × 2.7 м. Сорт Экстра. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/lipa_vagonka.jpg",
     "base_price": 1900,
     "unit": "п/м",
@@ -1218,7 +1250,8 @@
     },
     "id": 33,
     "slug": "nalichnik-lipa-e-ekstra-15-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа Э 15 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 43,
@@ -1238,7 +1271,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из липы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из липы 15 мм × 35 мм × 2.5 м. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/lipa_vagonka.jpg",
     "base_price": 950,
     "unit": "п/м",
@@ -1254,7 +1287,8 @@
     },
     "id": 34,
     "slug": "galtel-lipa-15-mm-35-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа 15 мм × 35 мм × 2.5 м"
   },
   {
     "source_row": 44,
@@ -1274,7 +1308,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Деревянная вагонка из липы для внутренней отделки стен, потолка и бани.",
+    "description": "Вагонка из липы 25 мм × 25 мм × 2.5 м. Для отделки стен, потолка, бани и сауны в Алматы.",
     "image": "images/lipa_vagonka.jpg",
     "base_price": 1500,
     "unit": "п/м",
@@ -1290,7 +1324,8 @@
     },
     "id": 35,
     "slug": "ugolok-lipa-25-mm-25-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа 25 мм × 25 мм × 2.5 м"
   },
   {
     "source_row": 46,
@@ -1309,7 +1344,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 16 мм × 145 мм × 6 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 6000,
     "unit": "м²",
@@ -1326,7 +1361,8 @@
     },
     "id": 36,
     "slug": "imitaciya-brusa-s-sosna-c-16-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса С сосна 16 мм × 145 мм × 6 м"
   },
   {
     "source_row": 47,
@@ -1345,7 +1381,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 16 мм × 145 мм × 5.4-6 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 7000,
     "unit": "м²",
@@ -1362,7 +1398,8 @@
     },
     "id": 37,
     "slug": "imitaciya-brusa-av-sosna-ab-16-mm-145-mm-5-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса АВ сосна 16 мм × 145 мм × 5.4-6 м"
   },
   {
     "source_row": 48,
@@ -1381,7 +1418,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 16 мм × 146 мм × 3 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 7000,
     "unit": "м²",
@@ -1398,7 +1435,8 @@
     },
     "id": 38,
     "slug": "imitaciya-brusa-av-sosna-ab-16-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса АВ сосна 16 мм × 146 мм × 3 м"
   },
   {
     "source_row": 49,
@@ -1417,7 +1455,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из лиственницы для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из лиственницы 18 мм × 130 мм × 3 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 9000,
     "unit": "м²",
@@ -1434,7 +1472,8 @@
     },
     "id": 39,
     "slug": "imitaciya-brusa-v-listvennica-b-18-mm-130-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса В лиственница 18 мм × 130 мм × 3 м"
   },
   {
     "source_row": 50,
@@ -1453,7 +1492,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 20 мм × 145 мм × 5.4-6 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 8200,
     "unit": "м²",
@@ -1470,7 +1509,8 @@
     },
     "id": 40,
     "slug": "imitaciya-brusa-av-sosna-ab-20-mm-145-mm-5-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса АВ сосна 20 мм × 145 мм × 5.4-6 м"
   },
   {
     "source_row": 51,
@@ -1489,7 +1529,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 20 мм × 145 мм × 6 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 7000,
     "unit": "м²",
@@ -1506,7 +1546,8 @@
     },
     "id": 41,
     "slug": "imitaciya-brusa-s-sosna-c-20-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса С сосна 20 мм × 145 мм × 6 м"
   },
   {
     "source_row": 52,
@@ -1525,7 +1566,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 20 мм × 116 мм × 4 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 7000,
     "unit": "м²",
@@ -1542,7 +1583,8 @@
     },
     "id": 42,
     "slug": "imitaciya-brusa-vs-sosna-bc-20-mm-116-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса ВС сосна 20 мм × 116 мм × 4 м"
   },
   {
     "source_row": 53,
@@ -1561,7 +1603,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Имитация бруса из сосны для отделки стен и создания фактуры деревянного дома.",
+    "description": "Имитация бруса из сосны 20 мм × 146 мм × 4 м. Для отделки стен снаружи и внутри. Склад Алматы.",
     "image": "images/imitaciya-brusa.jpg",
     "base_price": 8000,
     "unit": "м²",
@@ -1578,7 +1620,8 @@
     },
     "id": 43,
     "slug": "imitaciya-brusa-vs-sosna-bc-20-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Имитация бруса ВС сосна 20 мм × 146 мм × 4 м"
   },
   {
     "source_row": 55,
@@ -1597,7 +1640,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Блок-хаус для фасадной и интерьерной отделки.",
+    "description": "Блок-хаус 28 мм × 146 мм × 4 м. Для фасадной и интерьерной отделки. Склад в Алматы.",
     "image": "images/blok-haus.jpg",
     "base_price": 11000,
     "unit": "м²",
@@ -1613,7 +1656,8 @@
     },
     "id": 44,
     "slug": "blok-haus-av-ab-28-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус АВ 28 мм × 146 мм × 4 м"
   },
   {
     "source_row": 56,
@@ -1632,7 +1676,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Блок-хаус для фасадной и интерьерной отделки.",
+    "description": "Блок-хаус 30 мм × 120 мм × 3 м. Для фасадной и интерьерной отделки. Склад в Алматы.",
     "image": "images/blok-haus.jpg",
     "base_price": 10500,
     "unit": "м²",
@@ -1648,7 +1692,8 @@
     },
     "id": 45,
     "slug": "blok-haus-v-b-30-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус В 30 мм × 120 мм × 3 м"
   },
   {
     "source_row": 57,
@@ -1667,7 +1712,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Блок-хаус для фасадной и интерьерной отделки.",
+    "description": "Блок-хаус 30 мм × 120 мм × 3 м. Для фасадной и интерьерной отделки. Склад в Алматы.",
     "image": "images/blok-haus.jpg",
     "base_price": 9500,
     "unit": "м²",
@@ -1683,7 +1728,8 @@
     },
     "id": 46,
     "slug": "blok-haus-s-c-30-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Блок хаус С 30 мм × 120 мм × 3 м"
   },
   {
     "source_row": 59,
@@ -1701,7 +1747,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 14 мм × 96 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 700,
     "unit": "п/м",
@@ -1718,7 +1764,8 @@
     },
     "id": 47,
     "slug": "planken-sosna-av-ab-14-mm-96-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Планкен сосна АВ 14 мм × 96 мм × 4 м"
   },
   {
     "source_row": 60,
@@ -1736,7 +1783,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 20 мм × 95 мм × 2-4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 820,
     "unit": "п/м",
@@ -1753,7 +1800,8 @@
     },
     "id": 48,
     "slug": "planken-sosna-av-ab-20-mm-95-mm-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен сосна АВ 20 мм × 95 мм × 2-4 м"
   },
   {
     "source_row": 61,
@@ -1771,7 +1819,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 20 мм × 120 мм × 3-6 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1100,
     "unit": "п/м",
@@ -1788,7 +1836,8 @@
     },
     "id": 49,
     "slug": "planken-sosna-av-ab-20-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен сосна АВ 20 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 62,
@@ -1806,7 +1855,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 12 мм × 120 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1300,
     "unit": "п/м",
@@ -1823,7 +1872,8 @@
     },
     "id": 50,
     "slug": "planken-termo-sosna-velvet-s-c-12-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна вельвет С 12 мм × 120 мм × 4 м"
   },
   {
     "source_row": 63,
@@ -1841,7 +1891,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 20 мм × 120 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1450,
     "unit": "п/м",
@@ -1858,7 +1908,8 @@
     },
     "id": 51,
     "slug": "planken-termo-sosna-vs-bc-20-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна ВС 20 мм × 120 мм × 4 м"
   },
   {
     "source_row": 64,
@@ -1876,7 +1927,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 20 мм × 145 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1900,
     "unit": "п/м",
@@ -1892,7 +1943,8 @@
     },
     "id": 52,
     "slug": "planken-termo-sosna-20-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна 20 мм × 145 мм × 4 м"
   },
   {
     "source_row": 65,
@@ -1910,7 +1962,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 20 мм × 145 мм × 2-6 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1270,
     "unit": "п/м",
@@ -1927,7 +1979,8 @@
     },
     "id": 53,
     "slug": "planken-skoshennyy-sosna-av-ab-20-mm-145-mm-2-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный сосна АВ 20 мм × 145 мм × 2-6 м"
   },
   {
     "source_row": 66,
@@ -1945,7 +1998,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 28 мм × 68 мм × 2 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 600,
     "unit": "п/м",
@@ -1962,7 +2015,8 @@
     },
     "id": 54,
     "slug": "planken-skoshennyy-sosna-av-ab-28-mm-68-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный сосна АВ 28 мм × 68 мм × 2 м"
   },
   {
     "source_row": 67,
@@ -1980,7 +2034,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из сосны для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из сосны 30 мм × 100 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/hero.png",
     "base_price": 1450,
     "unit": "п/м",
@@ -1996,7 +2050,8 @@
     },
     "id": 55,
     "slug": "planken-termo-sosna-30-mm-100-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен термо сосна 30 мм × 100 мм × 4 м"
   },
   {
     "source_row": 69,
@@ -2014,7 +2069,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 145 мм × 1-1.5 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1600,
     "unit": "п/м",
@@ -2031,7 +2086,8 @@
     },
     "id": 56,
     "slug": "planken-skoshennyy-listvennica-av-ab-20-mm-145-mm-1-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен скошенный лиственница АВ 20 мм × 145 мм × 1-1.5 м"
   },
   {
     "source_row": 70,
@@ -2049,7 +2105,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 90 мм × 2.7-4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 950,
     "unit": "п/м",
@@ -2066,7 +2122,8 @@
     },
     "id": 57,
     "slug": "planken-listvennica-v-b-20-mm-90-mm-2-7-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В 20 мм × 90 мм × 2.7-4 м"
   },
   {
     "source_row": 71,
@@ -2084,7 +2141,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 96 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 950,
     "unit": "п/м",
@@ -2101,7 +2158,8 @@
     },
     "id": 58,
     "slug": "planken-listvennica-s-c-20-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница С 20 мм × 96 мм × 4 м"
   },
   {
     "source_row": 72,
@@ -2119,7 +2177,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 100 мм × 3 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 900,
     "unit": "п/м",
@@ -2136,7 +2194,8 @@
     },
     "id": 59,
     "slug": "planken-listvennica-s-c-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница С 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 73,
@@ -2154,7 +2213,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 100 мм × 3 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1250,
     "unit": "п/м",
@@ -2171,7 +2230,8 @@
     },
     "id": 60,
     "slug": "planken-listvennica-v-b-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 74,
@@ -2189,7 +2249,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 110 мм × 4 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1450,
     "unit": "п/м",
@@ -2206,7 +2266,8 @@
     },
     "id": 61,
     "slug": "planken-listvennica-av-ab-20-mm-110-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ 20 мм × 110 мм × 4 м"
   },
   {
     "source_row": 75,
@@ -2224,7 +2285,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 115 мм × 2.7 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1350,
     "unit": "п/м",
@@ -2241,7 +2302,8 @@
     },
     "id": 62,
     "slug": "planken-listvennica-v-b-20-mm-115-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В 20 мм × 115 мм × 2.7 м"
   },
   {
     "source_row": 76,
@@ -2259,7 +2321,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 120 мм × 3 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1530,
     "unit": "п/м",
@@ -2276,7 +2338,8 @@
     },
     "id": 63,
     "slug": "planken-listvennica-av-ab-20-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ 20 мм × 120 мм × 3 м"
   },
   {
     "source_row": 77,
@@ -2294,7 +2357,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 140 мм × 3 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1500,
     "unit": "п/м",
@@ -2311,7 +2374,8 @@
     },
     "id": 64,
     "slug": "planken-listvennica-v-b-20-mm-140-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница В 20 мм × 140 мм × 3 м"
   },
   {
     "source_row": 78,
@@ -2329,7 +2393,7 @@
       "для фасада"
     ],
     "availability": "уточнить",
-    "description": "Планкен из лиственницы для фасада, ограждений и декоративной отделки.",
+    "description": "Планкен из лиственницы 20 мм × 140 мм × 3 м. Для фасадной отделки, заборов и террас в Алматы.",
     "image": "images/planken_listvinica.jpg",
     "base_price": 1700,
     "unit": "п/м",
@@ -2346,7 +2410,8 @@
     },
     "id": 65,
     "slug": "planken-listvennica-av-ab-20-mm-140-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Планкен лиственница АВ 20 мм × 140 мм × 3 м"
   },
   {
     "source_row": 80,
@@ -2364,7 +2429,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из осины для бани, сауны и парной.",
+    "description": "Полок для бани из осины 28 мм × 90 мм × 4 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 1000,
     "unit": "п/м",
@@ -2381,7 +2446,8 @@
     },
     "id": 66,
     "slug": "polok-osina-s-c-28-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок осина С 28 мм × 90 мм × 4 м"
   },
   {
     "source_row": 81,
@@ -2399,7 +2465,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из осины для бани, сауны и парной.",
+    "description": "Полок для бани из осины 26 мм × 90 мм × 1-1.8 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 1800,
     "unit": "п/м",
@@ -2416,7 +2482,8 @@
     },
     "id": 67,
     "slug": "polok-osina-a-a-26-mm-90-mm-1-1-8-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок осина А 26 мм × 90 мм × 1-1.8 м"
   },
   {
     "source_row": 82,
@@ -2434,7 +2501,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из осины для бани, сауны и парной.",
+    "description": "Полок для бани из осины 26 мм × 90 мм × 2-2.7 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 2000,
     "unit": "п/м",
@@ -2451,7 +2518,8 @@
     },
     "id": 68,
     "slug": "polok-osina-a-a-26-mm-90-mm-2-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок осина А 26 мм × 90 мм × 2-2.7 м"
   },
   {
     "source_row": 83,
@@ -2469,7 +2537,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 1-1.5 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 1900,
     "unit": "п/м",
@@ -2486,7 +2554,8 @@
     },
     "id": 69,
     "slug": "polok-lipa-v-b-26-mm-90-mm-1-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа В 26 мм × 90 мм × 1-1.5 м"
   },
   {
     "source_row": 84,
@@ -2504,7 +2573,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 1.9-2.5 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 2500,
     "unit": "п/м",
@@ -2521,7 +2590,8 @@
     },
     "id": 70,
     "slug": "polok-lipa-v-b-26-mm-90-mm-1-9-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа В 26 мм × 90 мм × 1.9-2.5 м"
   },
   {
     "source_row": 85,
@@ -2539,7 +2609,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 1.9-2.4 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 2700,
     "unit": "п/м",
@@ -2556,7 +2626,8 @@
     },
     "id": 71,
     "slug": "polok-lipa-av-ab-26-mm-90-mm-1-9-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа АВ 26 мм × 90 мм × 1.9-2.4 м"
   },
   {
     "source_row": 86,
@@ -2574,7 +2645,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 2.1-2.7 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 3000,
     "unit": "п/м",
@@ -2591,7 +2662,8 @@
     },
     "id": 72,
     "slug": "polok-lipa-a-a-26-mm-90-mm-2-1-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа А 26 мм × 90 мм × 2.1-2.7 м"
   },
   {
     "source_row": 87,
@@ -2609,7 +2681,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 2.6-2.7 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 3250,
     "unit": "п/м",
@@ -2626,7 +2698,8 @@
     },
     "id": 73,
     "slug": "polok-lipa-e-ekstra-26-mm-90-mm-2-6-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа Э 26 мм × 90 мм × 2.6-2.7 м"
   },
   {
     "source_row": 88,
@@ -2644,7 +2717,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из липы для бани, сауны и парной.",
+    "description": "Полок для бани из липы 26 мм × 90 мм × 2.2 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 3500,
     "unit": "п/м",
@@ -2660,7 +2733,8 @@
     },
     "id": 74,
     "slug": "polok-lipa-termo-26-mm-90-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок липа термо 26 мм × 90 мм × 2.2 м"
   },
   {
     "source_row": 89,
@@ -2678,7 +2752,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из лиственницы для бани, сауны и парной.",
+    "description": "Полок для бани из лиственницы 28 мм × 68 мм × 4 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 850,
     "unit": "п/м",
@@ -2695,7 +2769,8 @@
     },
     "id": 75,
     "slug": "polok-listvennica-v-b-28-mm-68-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок лиственница В 28 мм × 68 мм × 4 м"
   },
   {
     "source_row": 90,
@@ -2713,7 +2788,7 @@
       "для бани"
     ],
     "availability": "уточнить",
-    "description": "Полок из кедра для бани, сауны и парной.",
+    "description": "Полок для бани из кедра 28 мм × 90 мм × 3 м. Без смол, устойчив к влаге и пару. Склад в Алматы.",
     "image": "images/hero.png",
     "base_price": 1500,
     "unit": "п/м",
@@ -2730,7 +2805,8 @@
     },
     "id": 76,
     "slug": "polok-kedr-av-ab-28-mm-90-mm-3-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Полок кедр АВ 28 мм × 90 мм × 3 м"
   },
   {
     "source_row": 92,
@@ -2748,7 +2824,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 24 мм × 96 мм × 4 м. Сорт C. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 7600,
     "unit": "м²",
@@ -2765,7 +2841,8 @@
     },
     "id": 77,
     "slug": "polovoy-shpunt-sosna-s-c-24-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна С 24 мм × 96 мм × 4 м"
   },
   {
     "source_row": 93,
@@ -2783,7 +2860,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 27 мм × 100 мм × 3 м. Сорт B. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 9500,
     "unit": "м²",
@@ -2800,7 +2877,8 @@
     },
     "id": 78,
     "slug": "polovoy-shpunt-sosna-v-b-27-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна В 27 мм × 100 мм × 3 м"
   },
   {
     "source_row": 94,
@@ -2818,7 +2896,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 28 мм × 146 мм × 4-6 м. Сорт AB. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 11000,
     "unit": "м²",
@@ -2835,7 +2913,8 @@
     },
     "id": 79,
     "slug": "polovoy-shpunt-sosna-av-ab-28-mm-146-mm-4-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна АВ 28 мм × 146 мм × 4-6 м"
   },
   {
     "source_row": 95,
@@ -2853,7 +2932,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 28 мм × 146 мм × 3 м. Сорт C. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 8300,
     "unit": "м²",
@@ -2870,7 +2949,8 @@
     },
     "id": 80,
     "slug": "polovoy-shpunt-sosna-s-c-28-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна С 28 мм × 146 мм × 3 м"
   },
   {
     "source_row": 96,
@@ -2888,7 +2968,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 36 мм × 135 мм × 6 м. Сорт C. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 11000,
     "unit": "м²",
@@ -2905,7 +2985,8 @@
     },
     "id": 81,
     "slug": "polovoy-shpunt-sosna-s-c-36-mm-135-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна С 36 мм × 135 мм × 6 м"
   },
   {
     "source_row": 97,
@@ -2923,7 +3004,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 36 мм × 146 мм × 4 м. Сорт C. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 11000,
     "unit": "м²",
@@ -2940,7 +3021,8 @@
     },
     "id": 82,
     "slug": "polovoy-shpunt-sosna-s-c-36-mm-146-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна С 36 мм × 146 мм × 4 м"
   },
   {
     "source_row": 98,
@@ -2958,7 +3040,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 35 мм × 125 мм × 6 м. Сорт AB. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 14300,
     "unit": "м²",
@@ -2975,7 +3057,8 @@
     },
     "id": 83,
     "slug": "polovoy-shpunt-sosna-av-ab-35-mm-125-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна АВ 35 мм × 125 мм × 6 м"
   },
   {
     "source_row": 99,
@@ -2993,7 +3076,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 35 мм × 145 мм × 4-5.4 м. Сорт AB. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 14300,
     "unit": "м²",
@@ -3010,7 +3093,8 @@
     },
     "id": 84,
     "slug": "polovoy-shpunt-sosna-av-ab-35-mm-145-mm-4-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна АВ 35 мм × 145 мм × 4-5.4 м"
   },
   {
     "source_row": 100,
@@ -3028,7 +3112,7 @@
       "для пола"
     ],
     "availability": "уточнить",
-    "description": "Доска пола из сосны для устройства деревянного пола.",
+    "description": "Половая доска из сосны 40 мм × 146 мм × 3 м. Сорт C. Для чистового пола и отделки в Алматы.",
     "image": "images/hero.png",
     "base_price": 14800,
     "unit": "м²",
@@ -3045,7 +3129,8 @@
     },
     "id": 85,
     "slug": "polovoy-shpunt-sosna-s-c-40-mm-146-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Половой шпунт сосна С 40 мм × 146 мм × 3 м"
   },
   {
     "source_row": 102,
@@ -3063,7 +3148,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 20 мм × 120 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 7400,
     "unit": "м²",
@@ -3080,7 +3165,8 @@
     },
     "id": 86,
     "slug": "terrasnaya-doska-velvet-sosna-s-c-20-mm-120-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Террасная доска вельвет сосна С 20 мм × 120 мм × 4 м"
   },
   {
     "source_row": 103,
@@ -3098,7 +3184,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 27 мм × 140 мм × 6 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 10100,
     "unit": "м²",
@@ -3115,7 +3201,8 @@
     },
     "id": 87,
     "slug": "terrasnaya-doska-palubnaya-sosna-vs-bc-27-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная сосна ВС 27 мм × 140 мм × 6 м"
   },
   {
     "source_row": 104,
@@ -3133,7 +3220,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 26 мм × 140 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 7200,
     "unit": "м²",
@@ -3150,7 +3237,8 @@
     },
     "id": 88,
     "slug": "terrasnaya-doska-palubnaya-sosna-s-c-26-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная сосна С 26 мм × 140 мм × 4 м"
   },
   {
     "source_row": 105,
@@ -3168,7 +3256,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 26 мм × 140 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 14000,
     "unit": "м²",
@@ -3185,7 +3273,8 @@
     },
     "id": 89,
     "slug": "terrasnaya-doska-palubnaya-termo-sosna-s-c-26-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная термо сосна С 26 мм × 140 мм × 4 м"
   },
   {
     "source_row": 106,
@@ -3203,7 +3292,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 28 мм × 145 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 11150,
     "unit": "м²",
@@ -3220,7 +3309,8 @@
     },
     "id": 90,
     "slug": "terrasnaya-doska-vilvet-sosna-s-c-28-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска вильвет сосна С 28 мм × 145 мм × 4 м"
   },
   {
     "source_row": 107,
@@ -3238,7 +3328,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 30 мм × 100 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 14500,
     "unit": "м²",
@@ -3255,7 +3345,8 @@
     },
     "id": 91,
     "slug": "terrasnaya-doska-palubnaya-termo-sosna-av-ab-30-mm-100-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная термо сосна АВ 30 мм × 100 мм × 4 м"
   },
   {
     "source_row": 108,
@@ -3273,7 +3364,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 35 мм × 145 мм × 5.1-5.4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 14500,
     "unit": "м²",
@@ -3290,7 +3381,8 @@
     },
     "id": 92,
     "slug": "terrasnaya-doska-palubnaya-sosna-av-ab-35-mm-145-mm-5-1-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска палубная сосна АВ 35 мм × 145 мм × 5.1-5.4 м"
   },
   {
     "source_row": 110,
@@ -3308,7 +3400,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 142 мм × 3 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 11000,
     "unit": "м²",
@@ -3325,7 +3417,8 @@
     },
     "id": 93,
     "slug": "terrasnaya-doska-listvennica-s-c-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница С 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 111,
@@ -3343,7 +3436,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 142 мм × 2.7-3 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 12500,
     "unit": "м²",
@@ -3360,7 +3453,8 @@
     },
     "id": 94,
     "slug": "terrasnaya-doska-listvennica-v-b-27-mm-142-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница В 27 мм × 142 мм × 2.7-3 м"
   },
   {
     "source_row": 112,
@@ -3378,7 +3472,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 142 мм × 5.1 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 15500,
     "unit": "м²",
@@ -3395,7 +3489,8 @@
     },
     "id": 95,
     "slug": "terrasnaya-doska-listvennica-av-ab-27-mm-142-mm-5-1-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 27 мм × 142 мм × 5.1 м"
   },
   {
     "source_row": 113,
@@ -3413,7 +3508,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 142 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 16500,
     "unit": "м²",
@@ -3430,7 +3525,8 @@
     },
     "id": 96,
     "slug": "terrasnaya-doska-listvennica-av-ab-27-mm-142-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 27 мм × 142 мм × 4 м"
   },
   {
     "source_row": 114,
@@ -3448,7 +3544,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 145 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 15500,
     "unit": "м²",
@@ -3465,7 +3561,8 @@
     },
     "id": 97,
     "slug": "terrasnaya-doska-listvennica-a-a-27-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница А 27 мм × 145 мм × 4 м"
   },
   {
     "source_row": 115,
@@ -3483,7 +3580,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 27 мм × 142 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 16500,
     "unit": "м²",
@@ -3500,7 +3597,8 @@
     },
     "id": 98,
     "slug": "terrasnaya-doska-listvennica-a-a-27-mm-142-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница А 27 мм × 142 мм × 4 м"
   },
   {
     "source_row": 116,
@@ -3518,7 +3616,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 28 мм × 95 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 17500,
     "unit": "м²",
@@ -3535,7 +3633,8 @@
     },
     "id": 99,
     "slug": "terrasnaya-doska-listvennica-av-ab-28-mm-95-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 28 мм × 95 мм × 4 м"
   },
   {
     "source_row": 117,
@@ -3553,7 +3652,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 28 мм × 120 мм × 3-4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 17500,
     "unit": "м²",
@@ -3570,7 +3669,8 @@
     },
     "id": 100,
     "slug": "terrasnaya-doska-listvennica-av-ab-28-mm-120-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 28 мм × 120 мм × 3-4 м"
   },
   {
     "source_row": 118,
@@ -3588,7 +3688,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из сосны для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из сосны 42 мм × 140 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 21500,
     "unit": "м²",
@@ -3604,7 +3704,8 @@
     },
     "id": 101,
     "slug": "terrasnaya-doska-termo-sosna-42-mm-140-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска термо сосна 42 мм × 140 мм × 4 м"
   },
   {
     "source_row": 119,
@@ -3622,7 +3723,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 45 мм × 120 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 29500,
     "unit": "м²",
@@ -3639,7 +3740,8 @@
     },
     "id": 102,
     "slug": "terrasnaya-doska-listvennica-av-ab-45-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 45 мм × 120 мм × 4 м"
   },
   {
     "source_row": 120,
@@ -3657,7 +3759,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 45 мм × 142 мм × 4 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 29200,
     "unit": "м²",
@@ -3674,7 +3776,8 @@
     },
     "id": 103,
     "slug": "terrasnaya-doska-listvennica-av-ab-45-mm-142-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 45 мм × 142 мм × 4 м"
   },
   {
     "source_row": 121,
@@ -3692,7 +3795,7 @@
       "для террасы"
     ],
     "availability": "уточнить",
-    "description": "Террасная доска из лиственницы для настилов, крыльца и открытых зон.",
+    "description": "Террасная доска из лиственницы 45 мм × 142 мм × 6 м. Для настилов, крыльца и открытых зон. Устойчива к влаге.",
     "image": "images/terrasnaya-doska.jpg",
     "base_price": 29500,
     "unit": "м²",
@@ -3709,7 +3812,8 @@
     },
     "id": 104,
     "slug": "terrasnaya-doska-listvennica-av-ab-45-mm-142-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Террасная доска лиственница АВ 45 мм × 142 мм × 6 м"
   },
   {
     "source_row": 123,
@@ -3728,7 +3832,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 14 мм × 96 мм × 4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 700,
     "unit": "п/м",
@@ -3744,7 +3848,8 @@
     },
     "id": 105,
     "slug": "strogannaya-doshchechka-sosna-profil-14-mm-96-mm-4-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Строганная дощечка сосна профил 14 мм × 96 мм × 4 м"
   },
   {
     "source_row": 124,
@@ -3763,7 +3868,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 16 мм × 94 мм × 3 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 650,
     "unit": "п/м",
@@ -3780,7 +3885,8 @@
     },
     "id": 106,
     "slug": "strogannaya-doshchechka-av-ab-16-mm-94-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 16 мм × 94 мм × 3 м"
   },
   {
     "source_row": 125,
@@ -3799,7 +3905,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 90 мм × 4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 850,
     "unit": "п/м",
@@ -3815,7 +3921,8 @@
     },
     "id": 107,
     "slug": "strogannaya-doshchechka-osina-profil-20-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка осина профил 20 мм × 90 мм × 4 м"
   },
   {
     "source_row": 126,
@@ -3834,7 +3941,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 95 мм × 3 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 700,
     "unit": "п/м",
@@ -3851,7 +3958,8 @@
     },
     "id": 108,
     "slug": "strogannaya-doshchechka-v-b-20-mm-95-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка В 20 мм × 95 мм × 3 м"
   },
   {
     "source_row": 127,
@@ -3870,7 +3978,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 95 мм × 2-4 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 820,
     "unit": "п/м",
@@ -3887,7 +3995,8 @@
     },
     "id": 109,
     "slug": "strogannaya-doshchechka-av-ab-20-mm-95-mm-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 20 мм × 95 мм × 2-4 м"
   },
   {
     "source_row": 128,
@@ -3906,7 +4015,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 120 мм × 4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1450,
     "unit": "п/м",
@@ -3922,7 +4031,8 @@
     },
     "id": 110,
     "slug": "strogannaya-doshchechka-termo-sosna-20-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка термо сосна 20 мм × 120 мм × 4 м"
   },
   {
     "source_row": 129,
@@ -3941,7 +4051,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 145 мм × 4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1850,
     "unit": "п/м",
@@ -3957,7 +4067,8 @@
     },
     "id": 111,
     "slug": "strogannaya-doshchechka-termo-sosna-20-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка термо сосна 20 мм × 145 мм × 4 м"
   },
   {
     "source_row": 130,
@@ -3976,7 +4087,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 18 мм × 130 мм × 2 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 900,
     "unit": "п/м",
@@ -3992,7 +4103,8 @@
     },
     "id": 112,
     "slug": "strogannaya-doshchechka-18-mm-130-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка 18 мм × 130 мм × 2 м"
   },
   {
     "source_row": 131,
@@ -4011,7 +4123,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 120 мм × 3-6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1100,
     "unit": "п/м",
@@ -4028,7 +4140,8 @@
     },
     "id": 113,
     "slug": "strogannaya-doshchechka-profil-av-ab-20-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил АВ 20 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 132,
@@ -4047,7 +4160,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 146 мм × 3-4 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1200,
     "unit": "п/м",
@@ -4064,7 +4177,8 @@
     },
     "id": 114,
     "slug": "strogannaya-doshchechka-v-b-20-mm-146-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка В 20 мм × 146 мм × 3-4 м"
   },
   {
     "source_row": 133,
@@ -4083,7 +4197,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 20 мм × 155 мм × 3 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1400,
     "unit": "п/м",
@@ -4100,7 +4214,8 @@
     },
     "id": 115,
     "slug": "strogannaya-doshchechka-profil-av-ab-20-mm-155-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил АВ 20 мм × 155 мм × 3 м"
   },
   {
     "source_row": 134,
@@ -4119,7 +4234,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 27 мм × 95 мм × 2.98 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1100,
     "unit": "п/м",
@@ -4136,7 +4251,8 @@
     },
     "id": 116,
     "slug": "strogannaya-doshchechka-av-ab-27-mm-95-mm-2-98-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 27 мм × 95 мм × 2.98 м"
   },
   {
     "source_row": 135,
@@ -4155,7 +4271,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 28 мм × 90 мм × 4 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1000,
     "unit": "п/м",
@@ -4172,7 +4288,8 @@
     },
     "id": 117,
     "slug": "strogannaya-doshchechka-osina-s-c-28-mm-90-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка осина С 28 мм × 90 мм × 4 м"
   },
   {
     "source_row": 136,
@@ -4191,7 +4308,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 30 мм × 105 мм × 4 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1100,
     "unit": "п/м",
@@ -4208,7 +4325,8 @@
     },
     "id": 118,
     "slug": "strogannaya-doshchechka-s-c-30-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка С 30 мм × 105 мм × 4 м"
   },
   {
     "source_row": 137,
@@ -4227,7 +4345,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 30 мм × 105 мм × 4 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1350,
     "unit": "п/м",
@@ -4244,7 +4362,8 @@
     },
     "id": 119,
     "slug": "strogannaya-doshchechka-av-ab-30-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 30 мм × 105 мм × 4 м"
   },
   {
     "source_row": 138,
@@ -4263,7 +4382,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 30 мм × 105 мм × 3 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1600,
     "unit": "п/м",
@@ -4280,7 +4399,8 @@
     },
     "id": 120,
     "slug": "strogannaya-doshchechka-kleenosloist-av-ab-30-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка клеенослоист. АВ 30 мм × 105 мм × 3 м"
   },
   {
     "source_row": 139,
@@ -4299,7 +4419,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 30 мм × 110 мм × 3 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1325,
     "unit": "п/м",
@@ -4316,7 +4436,8 @@
     },
     "id": 121,
     "slug": "strogannaya-doshchechka-s-c-30-mm-110-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка С 30 мм × 110 мм × 3 м"
   },
   {
     "source_row": 140,
@@ -4335,7 +4456,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 30 мм × 120 мм × 4 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1500,
     "unit": "п/м",
@@ -4352,7 +4473,8 @@
     },
     "id": 122,
     "slug": "strogannaya-doshchechka-av-ab-30-mm-120-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 30 мм × 120 мм × 4 м"
   },
   {
     "source_row": 141,
@@ -4371,7 +4493,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 35 мм × 145 мм × 3 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2120,
     "unit": "п/м",
@@ -4388,7 +4510,8 @@
     },
     "id": 123,
     "slug": "strogannaya-doshchechka-profil-avs-ab-35-mm-145-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил АВС 35 мм × 145 мм × 3 м"
   },
   {
     "source_row": 142,
@@ -4407,7 +4530,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 35 мм × 145 мм × 5.1-6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2120,
     "unit": "п/м",
@@ -4424,7 +4547,8 @@
     },
     "id": 124,
     "slug": "strogannaya-doshchechka-profil-av-ab-35-mm-145-mm-5-1-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил АВ 35 мм × 145 мм × 5.1-6 м"
   },
   {
     "source_row": 143,
@@ -4443,7 +4567,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 40 мм × 96 мм × 3-6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1700,
     "unit": "п/м",
@@ -4459,7 +4583,8 @@
     },
     "id": 125,
     "slug": "strogannaya-doshchechka-profil-40-mm-96-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил 40 мм × 96 мм × 3-6 м"
   },
   {
     "source_row": 144,
@@ -4478,7 +4603,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 40 мм × 120 мм × 3-4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2000,
     "unit": "п/м",
@@ -4494,7 +4619,8 @@
     },
     "id": 126,
     "slug": "strogannaya-doshchechka-profil-40-mm-120-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил 40 мм × 120 мм × 3-4 м"
   },
   {
     "source_row": 145,
@@ -4513,7 +4639,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 40 мм × 146 мм × 3-4 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2500,
     "unit": "п/м",
@@ -4529,7 +4655,8 @@
     },
     "id": 127,
     "slug": "strogannaya-doshchechka-profil-40-mm-146-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка профил 40 мм × 146 мм × 3-4 м"
   },
   {
     "source_row": 146,
@@ -4548,7 +4675,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 95 мм × 5.4 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1800,
     "unit": "п/м",
@@ -4565,7 +4692,8 @@
     },
     "id": 128,
     "slug": "strogannaya-doshchechka-av-ab-45-mm-95-mm-5-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 45 мм × 95 мм × 5.4 м"
   },
   {
     "source_row": 147,
@@ -4584,7 +4712,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 105 мм × 3 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1900,
     "unit": "п/м",
@@ -4601,7 +4729,8 @@
     },
     "id": 129,
     "slug": "strogannaya-doshchechka-s-c-45-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка С 45 мм × 105 мм × 3 м"
   },
   {
     "source_row": 148,
@@ -4620,7 +4749,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 105 мм × 2.85 м. Сорт A. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2300,
     "unit": "п/м",
@@ -4637,7 +4766,8 @@
     },
     "id": 130,
     "slug": "strogannaya-doshchechka-sosna-a-a-45-mm-105-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка сосна А 45 мм × 105 мм × 2.85 м"
   },
   {
     "source_row": 149,
@@ -4656,7 +4786,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 120 мм × 3-6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2350,
     "unit": "п/м",
@@ -4673,7 +4803,8 @@
     },
     "id": 131,
     "slug": "strogannaya-doshchechka-sosna-av-ab-45-mm-120-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка сосна АВ 45 мм × 120 мм × 3-6 м"
   },
   {
     "source_row": 150,
@@ -4692,7 +4823,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 120 мм × 3 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2500,
     "unit": "п/м",
@@ -4708,7 +4839,8 @@
     },
     "id": 132,
     "slug": "strogannaya-doshchechka-klen-bereza-45-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка клён береза 45 мм × 120 мм × 3 м"
   },
   {
     "source_row": 151,
@@ -4727,7 +4859,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 145 мм × 6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2800,
     "unit": "п/м",
@@ -4744,7 +4876,8 @@
     },
     "id": 133,
     "slug": "strogannaya-doshchechka-av-ab-45-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 45 мм × 145 мм × 6 м"
   },
   {
     "source_row": 152,
@@ -4763,7 +4896,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 48 мм × 170 мм × 3 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 3500,
     "unit": "п/м",
@@ -4779,7 +4912,8 @@
     },
     "id": 134,
     "slug": "strogannaya-doshchechka-48-mm-170-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка 48 мм × 170 мм × 3 м"
   },
   {
     "source_row": 153,
@@ -4798,7 +4932,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из сосны для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из сосны 45 мм × 190 мм × 6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 3900,
     "unit": "п/м",
@@ -4815,7 +4949,8 @@
     },
     "id": 135,
     "slug": "strogannaya-doshchechka-av-ab-45-mm-190-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Строганная дощечка АВ 45 мм × 190 мм × 6 м"
   },
   {
     "source_row": 155,
@@ -4834,7 +4969,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 20 мм × 90 мм × 3-4 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 950,
     "unit": "п/м",
@@ -4851,7 +4986,8 @@
     },
     "id": 136,
     "slug": "listvennica-profil-v-b-20-mm-90-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница профил В 20 мм × 90 мм × 3-4 м"
   },
   {
     "source_row": 156,
@@ -4870,7 +5006,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 20 мм × 96 мм × 4 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 950,
     "unit": "п/м",
@@ -4887,7 +5023,8 @@
     },
     "id": 137,
     "slug": "listvennica-s-c-20-mm-96-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница С 20 мм × 96 мм × 4 м"
   },
   {
     "source_row": 157,
@@ -4906,7 +5043,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 20 мм × 100 мм × 3 м. Сорт BC. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1250,
     "unit": "п/м",
@@ -4923,7 +5060,8 @@
     },
     "id": 138,
     "slug": "listvennica-profil-vs-bc-20-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница профил ВС 20 мм × 100 мм × 3 м"
   },
   {
     "source_row": 158,
@@ -4942,7 +5080,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 20 мм × 140 мм × 3 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1500,
     "unit": "п/м",
@@ -4959,7 +5097,8 @@
     },
     "id": 139,
     "slug": "listvennica-profil-v-b-20-mm-140-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница профил В 20 мм × 140 мм × 3 м"
   },
   {
     "source_row": 159,
@@ -4978,7 +5117,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 30 мм × 105 мм × 2.7-3 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1800,
     "unit": "п/м",
@@ -4995,7 +5134,8 @@
     },
     "id": 140,
     "slug": "listvennica-kleenosloist-v-b-30-mm-105-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница клеенослоист. В 30 мм × 105 мм × 2.7-3 м"
   },
   {
     "source_row": 160,
@@ -5014,7 +5154,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 27 мм × 142 мм × 3 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1560,
     "unit": "п/м",
@@ -5031,7 +5171,8 @@
     },
     "id": 141,
     "slug": "listvennica-s-c-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница С 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 161,
@@ -5050,7 +5191,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 27 мм × 142 мм × 3 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1775,
     "unit": "п/м",
@@ -5067,7 +5208,8 @@
     },
     "id": 142,
     "slug": "listvennica-v-b-27-mm-142-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница В 27 мм × 142 мм × 3 м"
   },
   {
     "source_row": 162,
@@ -5086,7 +5228,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 27 мм × 145 мм × 4 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2600,
     "unit": "п/м",
@@ -5103,7 +5245,8 @@
     },
     "id": 143,
     "slug": "listvennica-av-ab-27-mm-145-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница АВ 27 мм × 145 мм × 4 м"
   },
   {
     "source_row": 163,
@@ -5122,7 +5265,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 105 мм × 3 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2800,
     "unit": "п/м",
@@ -5139,7 +5282,8 @@
     },
     "id": 144,
     "slug": "listvennica-kleenosloist-av-ab-45-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница клеенослоист. АВ 45 мм × 105 мм × 3 м"
   },
   {
     "source_row": 164,
@@ -5158,7 +5302,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 105 мм × 4 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2500,
     "unit": "п/м",
@@ -5175,7 +5319,8 @@
     },
     "id": 145,
     "slug": "listvennica-v-b-45-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница В 45 мм × 105 мм × 4 м"
   },
   {
     "source_row": 165,
@@ -5194,7 +5339,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 105 мм × 3 м. Сорт B. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2700,
     "unit": "п/м",
@@ -5211,7 +5356,8 @@
     },
     "id": 146,
     "slug": "listvennica-kleennaya-v-b-45-mm-105-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница клеенная В 45 мм × 105 мм × 3 м"
   },
   {
     "source_row": 166,
@@ -5230,7 +5376,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 145 мм × 3.6 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 3400,
     "unit": "п/м",
@@ -5247,7 +5393,8 @@
     },
     "id": 147,
     "slug": "listvennica-s-c-45-mm-145-mm-3-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница С 45 мм × 145 мм × 3.6 м"
   },
   {
     "source_row": 167,
@@ -5266,7 +5413,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 155 мм × 2.7 м. Сорт C. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 3700,
     "unit": "п/м",
@@ -5283,7 +5430,8 @@
     },
     "id": 148,
     "slug": "listvennica-s-c-45-mm-155-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница С 45 мм × 155 мм × 2.7 м"
   },
   {
     "source_row": 168,
@@ -5302,7 +5450,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 140 мм × 6 м. Сорт AB. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 4190,
     "unit": "п/м",
@@ -5319,7 +5467,8 @@
     },
     "id": 149,
     "slug": "listvennica-av-ab-45-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница АВ 45 мм × 140 мм × 6 м"
   },
   {
     "source_row": 169,
@@ -5338,7 +5487,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска из лиственницы для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска из лиственницы 45 мм × 140 мм × 1.5 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 3400,
     "unit": "п/м",
@@ -5354,7 +5503,8 @@
     },
     "id": 150,
     "slug": "listvennica-45-mm-140-mm-1-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Лиственница 45 мм × 140 мм × 1.5 м"
   },
   {
     "source_row": 171,
@@ -5373,7 +5523,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 10 мм × 30 мм × 2.7-3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 130,
     "unit": "п/м",
@@ -5389,7 +5539,8 @@
     },
     "id": 151,
     "slug": "brusok-strogannyy-10-mm-30-mm-2-7-3-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Брусок строганный 10 мм × 30 мм × 2.7-3 м"
   },
   {
     "source_row": 172,
@@ -5408,7 +5559,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 10 мм × 45 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 190,
     "unit": "п/м",
@@ -5424,7 +5575,8 @@
     },
     "id": 152,
     "slug": "brusok-strogannyy-10-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 10 мм × 45 мм × 3 м"
   },
   {
     "source_row": 173,
@@ -5443,7 +5595,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 15 мм × 30 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 180,
     "unit": "п/м",
@@ -5459,7 +5611,8 @@
     },
     "id": 153,
     "slug": "brusok-strogannyy-15-mm-30-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 15 мм × 30 мм × 3 м"
   },
   {
     "source_row": 174,
@@ -5478,7 +5631,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 20 мм × 30 мм × 2 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 250,
     "unit": "п/м",
@@ -5494,7 +5647,8 @@
     },
     "id": 154,
     "slug": "brusok-strogannyy-20-mm-30-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 20 мм × 30 мм × 2 м"
   },
   {
     "source_row": 175,
@@ -5513,7 +5667,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 16 мм × 45 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 300,
     "unit": "п/м",
@@ -5529,7 +5683,8 @@
     },
     "id": 155,
     "slug": "brusok-strogannyy-16-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 16 мм × 45 мм × 3 м"
   },
   {
     "source_row": 176,
@@ -5548,7 +5703,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 18 мм × 70 мм × 2.7 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 500,
     "unit": "п/м",
@@ -5564,7 +5719,8 @@
     },
     "id": 156,
     "slug": "brusok-strogannyy-18-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 18 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 177,
@@ -5583,7 +5739,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 21 мм × 45 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 350,
     "unit": "п/м",
@@ -5599,7 +5755,8 @@
     },
     "id": 157,
     "slug": "brusok-strogannyy-21-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 21 мм × 45 мм × 3 м"
   },
   {
     "source_row": 178,
@@ -5618,7 +5775,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 20 мм × 45 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 350,
     "unit": "п/м",
@@ -5634,7 +5791,8 @@
     },
     "id": 158,
     "slug": "brusok-strogannyy-20-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 20 мм × 45 мм × 3 м"
   },
   {
     "source_row": 179,
@@ -5653,7 +5811,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 24 мм × 48 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 550,
     "unit": "п/м",
@@ -5669,7 +5827,8 @@
     },
     "id": 159,
     "slug": "brusok-strogannyy-24-mm-48-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 24 мм × 48 мм × 3 м"
   },
   {
     "source_row": 180,
@@ -5688,7 +5847,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 28 мм × 68 мм × 2 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 550,
     "unit": "п/м",
@@ -5704,7 +5863,8 @@
     },
     "id": 160,
     "slug": "brusok-rombovidnyy-1-sort-28-mm-68-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок ромбовидный 1 сорт 28 мм × 68 мм × 2 м"
   },
   {
     "source_row": 181,
@@ -5723,7 +5883,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 30 мм × 30 мм × 3-4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 350,
     "unit": "п/м",
@@ -5739,7 +5899,8 @@
     },
     "id": 161,
     "slug": "brusok-strogannyy-n-k-30-mm-30-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный н/к 30 мм × 30 мм × 3-4 м"
   },
   {
     "source_row": 182,
@@ -5758,7 +5919,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 30 мм × 40 мм × 3-4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 350,
     "unit": "п/м",
@@ -5774,7 +5935,8 @@
     },
     "id": 162,
     "slug": "brusok-strogannyy-3-sort-30-mm-40-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 3 сорт 30 мм × 40 мм × 3-4 м"
   },
   {
     "source_row": 183,
@@ -5793,7 +5955,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 30 мм × 40 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 460,
     "unit": "п/м",
@@ -5809,7 +5971,8 @@
     },
     "id": 163,
     "slug": "brusok-strogannyy-2-sort-30-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 2 сорт 30 мм × 40 мм × 3 м"
   },
   {
     "source_row": 184,
@@ -5828,7 +5991,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 30 мм × 40 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 480,
     "unit": "п/м",
@@ -5844,7 +6007,8 @@
     },
     "id": 164,
     "slug": "brusok-strogannyy-1-sort-30-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 1 сорт 30 мм × 40 мм × 3 м"
   },
   {
     "source_row": 185,
@@ -5863,7 +6027,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 35 мм × 45 мм × 3 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 530,
     "unit": "п/м",
@@ -5880,7 +6044,8 @@
     },
     "id": 165,
     "slug": "brusok-strogannyy-av-ab-35-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 35 мм × 45 мм × 3 м"
   },
   {
     "source_row": 186,
@@ -5899,7 +6064,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 40 мм × 2-6 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 650,
     "unit": "п/м",
@@ -5916,7 +6081,8 @@
     },
     "id": 166,
     "slug": "brusok-strogannyy-av-ab-40-mm-40-mm-2-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 40 мм × 40 мм × 2-6 м"
   },
   {
     "source_row": 187,
@@ -5935,7 +6101,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 40 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 650,
     "unit": "п/м",
@@ -5951,7 +6117,8 @@
     },
     "id": 167,
     "slug": "brusok-kleenyy-40-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок клеёный 40 мм × 40 мм × 3 м"
   },
   {
     "source_row": 188,
@@ -5970,7 +6137,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 50 мм × 3 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 700,
     "unit": "п/м",
@@ -5987,7 +6154,8 @@
     },
     "id": 168,
     "slug": "brusok-strogannyy-av-ab-40-mm-50-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 40 мм × 50 мм × 3 м"
   },
   {
     "source_row": 189,
@@ -6006,7 +6174,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 60 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 500,
     "unit": "п/м",
@@ -6022,7 +6190,8 @@
     },
     "id": 169,
     "slug": "brusok-strogannyy-n-k-40-mm-60-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный н/к 40 мм × 60 мм × 3 м"
   },
   {
     "source_row": 190,
@@ -6041,7 +6210,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 60 мм × 3-4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 700,
     "unit": "п/м",
@@ -6057,7 +6226,8 @@
     },
     "id": 170,
     "slug": "brusok-strogannyy-3-sort-40-mm-60-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный 3 сорт 40 мм × 60 мм × 3-4 м"
   },
   {
     "source_row": 191,
@@ -6076,7 +6246,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 60 мм × 2-3 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 900,
     "unit": "п/м",
@@ -6093,7 +6263,8 @@
     },
     "id": 171,
     "slug": "brusok-strogannyy-av-ab-40-mm-60-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 40 мм × 60 мм × 2-3 м"
   },
   {
     "source_row": 192,
@@ -6112,7 +6283,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 40 мм × 60 мм × 2-3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1350,
     "unit": "п/м",
@@ -6128,7 +6299,8 @@
     },
     "id": 172,
     "slug": "brusok-termo-40-mm-60-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок термо 40 мм × 60 мм × 2-3 м"
   },
   {
     "source_row": 193,
@@ -6147,7 +6319,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 45 мм × 45 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 450,
     "unit": "п/м",
@@ -6163,7 +6335,8 @@
     },
     "id": 173,
     "slug": "brusok-strogannyy-n-k-45-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный н/к 45 мм × 45 мм × 3 м"
   },
   {
     "source_row": 194,
@@ -6182,7 +6355,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 45 мм × 45 мм × 2.5-3 м. Сорт C. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 720,
     "unit": "п/м",
@@ -6199,7 +6372,8 @@
     },
     "id": 174,
     "slug": "brusok-strogannyy-s-c-45-mm-45-mm-2-5-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный С 45 мм × 45 мм × 2.5-3 м"
   },
   {
     "source_row": 195,
@@ -6218,7 +6392,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 45 мм × 45 мм × 3 м. Сорт B. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 780,
     "unit": "п/м",
@@ -6235,7 +6409,8 @@
     },
     "id": 175,
     "slug": "brusok-strogannyy-v-b-45-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный В 45 мм × 45 мм × 3 м"
   },
   {
     "source_row": 196,
@@ -6254,7 +6429,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 45 мм × 45 мм × 3-4 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 795,
     "unit": "п/м",
@@ -6271,7 +6446,8 @@
     },
     "id": 176,
     "slug": "brusok-strogannyy-av-ab-45-mm-45-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 45 мм × 45 мм × 3-4 м"
   },
   {
     "source_row": 197,
@@ -6290,7 +6466,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 45 мм × 60 мм × 4 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1050,
     "unit": "п/м",
@@ -6307,7 +6483,8 @@
     },
     "id": 177,
     "slug": "brusok-strogannyy-av-ab-45-mm-60-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 45 мм × 60 мм × 4 м"
   },
   {
     "source_row": 198,
@@ -6326,7 +6503,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 50 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 450,
     "unit": "п/м",
@@ -6342,7 +6519,8 @@
     },
     "id": 178,
     "slug": "brusok-strogannyy-n-k-50-mm-50-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный н/к 50 мм × 50 мм × 4 м"
   },
   {
     "source_row": 199,
@@ -6361,7 +6539,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 50 мм × 3 м. Сорт C. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 750,
     "unit": "п/м",
@@ -6378,7 +6556,8 @@
     },
     "id": 179,
     "slug": "brusok-strogannyy-s-c-50-mm-50-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный С 50 мм × 50 мм × 3 м"
   },
   {
     "source_row": 200,
@@ -6397,7 +6576,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 50 мм × 2-3 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 980,
     "unit": "п/м",
@@ -6414,7 +6593,8 @@
     },
     "id": 180,
     "slug": "brusok-strogannyy-av-ab-50-mm-50-mm-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 50 мм × 50 мм × 2-3 м"
   },
   {
     "source_row": 201,
@@ -6433,7 +6613,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 65 мм × 3-4 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1400,
     "unit": "п/м",
@@ -6450,7 +6630,8 @@
     },
     "id": 181,
     "slug": "brusok-strogannyy-av-ab-50-mm-65-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 50 мм × 65 мм × 3-4 м"
   },
   {
     "source_row": 202,
@@ -6469,7 +6650,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 70 мм × 2-4 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1550,
     "unit": "п/м",
@@ -6486,7 +6667,8 @@
     },
     "id": 182,
     "slug": "brusok-strogannyy-profil-av-ab-50-mm-70-mm-2-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный профил АВ 50 мм × 70 мм × 2-4 м"
   },
   {
     "source_row": 203,
@@ -6505,7 +6687,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 50 мм × 80 мм × 3-4 м. Сорт AB. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1750,
     "unit": "п/м",
@@ -6522,7 +6704,8 @@
     },
     "id": 183,
     "slug": "brusok-strogannyy-av-ab-50-mm-80-mm-3-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный АВ 50 мм × 80 мм × 3-4 м"
   },
   {
     "source_row": 204,
@@ -6541,7 +6724,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из сосны для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из сосны 75 мм × 75 мм × 2.85 м. Сорт C. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 1350,
     "unit": "п/м",
@@ -6558,7 +6741,8 @@
     },
     "id": 184,
     "slug": "brusok-strogannyy-s-c-75-mm-75-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок строганный С 75 мм × 75 мм × 2.85 м"
   },
   {
     "source_row": 206,
@@ -6577,7 +6761,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 85 мм × 90 мм × 2.5 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 4400,
     "unit": "п/м",
@@ -6593,7 +6777,8 @@
     },
     "id": 185,
     "slug": "brus-kleenyy-sort-a-a-85-mm-90-mm-2-5-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Брус клеёный сорт А 85 мм × 90 мм × 2.5 м"
   },
   {
     "source_row": 207,
@@ -6612,7 +6797,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 80 мм × 100 мм × 3 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 4500,
     "unit": "п/м",
@@ -6627,7 +6812,8 @@
     },
     "id": 186,
     "slug": "brus-kleenyy-80-mm-100-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный 80 мм × 100 мм × 3 м"
   },
   {
     "source_row": 208,
@@ -6646,7 +6832,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 90 мм × 90 мм × 2.7-3 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 4700,
     "unit": "п/м",
@@ -6662,7 +6848,8 @@
     },
     "id": 187,
     "slug": "brus-kleenyy-s-c-90-mm-90-mm-2-7-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный С 90 мм × 90 мм × 2.7-3 м"
   },
   {
     "source_row": 209,
@@ -6681,7 +6868,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 100 мм × 100 мм × 4 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 5700,
     "unit": "п/м",
@@ -6697,7 +6884,8 @@
     },
     "id": 188,
     "slug": "brus-kleenyy-v-b-100-mm-100-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный В 100 мм × 100 мм × 4 м"
   },
   {
     "source_row": 210,
@@ -6716,7 +6904,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 105 мм × 105 мм × 2.85-3 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 5900,
     "unit": "п/м",
@@ -6732,7 +6920,8 @@
     },
     "id": 189,
     "slug": "brus-kleenyy-a-a-105-mm-105-mm-2-85-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный А 105 мм × 105 мм × 2.85-3 м"
   },
   {
     "source_row": 211,
@@ -6751,7 +6940,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 105 мм × 120 мм × 3.65 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 6900,
     "unit": "п/м",
@@ -6767,7 +6956,8 @@
     },
     "id": 190,
     "slug": "brus-kleenyy-s-c-105-mm-120-mm-3-65-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный С 105 мм × 120 мм × 3.65 м"
   },
   {
     "source_row": 212,
@@ -6786,7 +6976,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 135 мм × 190 мм × 3 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 11600,
     "unit": "п/м",
@@ -6802,7 +6992,8 @@
     },
     "id": 191,
     "slug": "brus-kleenyy-s-c-135-mm-190-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный С 135 мм × 190 мм × 3 м"
   },
   {
     "source_row": 213,
@@ -6821,7 +7012,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 120 мм × 120 мм × 2.85 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 7500,
     "unit": "п/м",
@@ -6837,7 +7028,8 @@
     },
     "id": 192,
     "slug": "brus-kleenyy-v-b-120-mm-120-mm-2-85-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный В 120 мм × 120 мм × 2.85 м"
   },
   {
     "source_row": 214,
@@ -6856,7 +7048,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 85 мм × 145 мм × 6 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 6200,
     "unit": "п/м",
@@ -6872,7 +7064,8 @@
     },
     "id": 193,
     "slug": "brus-kleenyy-v-b-85-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный В 85 мм × 145 мм × 6 м"
   },
   {
     "source_row": 215,
@@ -6891,7 +7084,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 90 мм × 145 мм × 6 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 6500,
     "unit": "п/м",
@@ -6907,7 +7100,8 @@
     },
     "id": 194,
     "slug": "brus-kleenyy-v-b-90-mm-145-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный В 90 мм × 145 мм × 6 м"
   },
   {
     "source_row": 216,
@@ -6926,7 +7120,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный клееный брус для конструкций, столярных работ и интерьера.",
+    "description": "Клееный брус 90 мм × 195 мм × 6 м. Для конструкций, столярных работ и интерьера в Алматы.",
     "image": "images/kleenyy-brus.png",
     "base_price": 9800,
     "unit": "п/м",
@@ -6942,7 +7136,8 @@
     },
     "id": 195,
     "slug": "brus-kleenyy-v-b-90-mm-195-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный В 90 мм × 195 мм × 6 м"
   },
   {
     "source_row": 218,
@@ -6961,7 +7156,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 16 мм × 40 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 265,
     "unit": "п/м",
@@ -6977,7 +7172,8 @@
     },
     "id": 196,
     "slug": "brusok-listvennica-16-mm-40-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок лиственница 16 мм × 40 мм × 3 м"
   },
   {
     "source_row": 219,
@@ -6996,7 +7192,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 18 мм × 45 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 320,
     "unit": "п/м",
@@ -7012,7 +7208,8 @@
     },
     "id": 197,
     "slug": "brusok-listvennica-18-mm-45-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок лиственница 18 мм × 45 мм × 4 м"
   },
   {
     "source_row": 220,
@@ -7031,7 +7228,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 18 мм × 60 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 530,
     "unit": "п/м",
@@ -7047,7 +7244,8 @@
     },
     "id": 198,
     "slug": "brusok-listvennica-18-mm-60-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок лиственница 18 мм × 60 мм × 4 м"
   },
   {
     "source_row": 221,
@@ -7066,7 +7264,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 24 мм × 48 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 580,
     "unit": "п/м",
@@ -7082,7 +7280,8 @@
     },
     "id": 199,
     "slug": "brusok-listvennica-24-mm-48-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брусок лиственница 24 мм × 48 мм × 4 м"
   },
   {
     "source_row": 222,
@@ -7101,7 +7300,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 45 мм × 51 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 850,
     "unit": "п/м",
@@ -7117,7 +7316,8 @@
     },
     "id": 200,
     "slug": "brus-listvennica-45-mm-51-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус лиственница 45 мм × 51 мм × 4 м"
   },
   {
     "source_row": 223,
@@ -7136,7 +7336,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 45 мм × 105 мм × 4 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 2500,
     "unit": "п/м",
@@ -7152,7 +7352,8 @@
     },
     "id": 201,
     "slug": "brus-listvennica-45-mm-105-mm-4-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус лиственница 45 мм × 105 мм × 4 м"
   },
   {
     "source_row": 224,
@@ -7171,7 +7372,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Строганный брусок из лиственницы для каркаса, обрешётки и столярных работ.",
+    "description": "Строганый брусок из лиственницы 120 мм × 120 мм × 3 м. Для обрешётки, каркасов и столярных работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 8500,
     "unit": "п/м",
@@ -7187,7 +7388,8 @@
     },
     "id": 202,
     "slug": "brus-kleenyy-listvennica-120-mm-120-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Брус клеёный лиственница 120 мм × 120 мм × 3 м"
   },
   {
     "source_row": 226,
@@ -7205,7 +7407,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 270,
     "unit": "п/м",
@@ -7220,7 +7422,8 @@
     },
     "id": 203,
     "slug": "shpatik-10x10-10-mm-10-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Шпатик 10×10 10 мм × 10 мм × 2.5 м"
   },
   {
     "source_row": 227,
@@ -7238,7 +7441,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 370,
     "unit": "п/м",
@@ -7254,7 +7457,8 @@
     },
     "id": 204,
     "slug": "nashchelnik-sosna-gribok-10-mm-30-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник сосна грибок 10 мм × 30 мм × 2.5 м"
   },
   {
     "source_row": 228,
@@ -7272,7 +7476,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 450,
     "unit": "п/м",
@@ -7288,7 +7492,8 @@
     },
     "id": 205,
     "slug": "nashchelnik-sosna-10-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник сосна 10 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 229,
@@ -7306,7 +7511,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 350,
     "unit": "п/м",
@@ -7321,7 +7526,8 @@
     },
     "id": 206,
     "slug": "nashchelnik-ploskiy-10-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Нащельник плоский 10 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 230,
@@ -7339,7 +7545,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 480,
     "unit": "п/м",
@@ -7355,7 +7561,8 @@
     },
     "id": 207,
     "slug": "galtel-sosna-treugolnik-13-mm-25-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель сосна треугольник 13 мм × 25 мм × 2.5 м"
   },
   {
     "source_row": 231,
@@ -7373,7 +7580,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из осины для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из осины. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 450,
     "unit": "п/м",
@@ -7389,7 +7596,8 @@
     },
     "id": 208,
     "slug": "galtel-osina-13-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель осина 13 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 232,
@@ -7407,7 +7615,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 450,
     "unit": "п/м",
@@ -7423,7 +7631,8 @@
     },
     "id": 209,
     "slug": "galtel-sosna-13-mm-30-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель сосна 13 мм × 30 мм × 2.2 м"
   },
   {
     "source_row": 233,
@@ -7441,7 +7650,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 480,
     "unit": "п/м",
@@ -7457,7 +7666,8 @@
     },
     "id": 210,
     "slug": "galtel-sosna-13-mm-31-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель сосна 13 мм × 31 мм × 2.5 м"
   },
   {
     "source_row": 234,
@@ -7475,7 +7685,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 650,
     "unit": "п/м",
@@ -7491,7 +7701,8 @@
     },
     "id": 211,
     "slug": "galtel-plintus-sosna-13-mm-45-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель плинтус сосна 13 мм × 45 мм × 3 м"
   },
   {
     "source_row": 235,
@@ -7509,7 +7720,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 750,
     "unit": "п/м",
@@ -7525,7 +7736,8 @@
     },
     "id": 212,
     "slug": "galtel-plintus-sosna-13-mm-55-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель плинтус сосна 13 мм × 55 мм × 3 м"
   },
   {
     "source_row": 236,
@@ -7543,7 +7755,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 950,
     "unit": "п/м",
@@ -7559,7 +7771,8 @@
     },
     "id": 213,
     "slug": "galtel-lipa-25-mm-35-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа 25 мм × 35 мм × 2.5 м"
   },
   {
     "source_row": 237,
@@ -7577,7 +7790,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1500,
     "unit": "п/м",
@@ -7593,7 +7806,8 @@
     },
     "id": 214,
     "slug": "galtel-lipa-termo-14-mm-30-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа термо 14 мм × 30 мм × 2.5 м"
   },
   {
     "source_row": 238,
@@ -7611,7 +7825,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1500,
     "unit": "п/м",
@@ -7627,7 +7841,8 @@
     },
     "id": 215,
     "slug": "galtel-lipa-termo-14-mm-45-mm-1-8-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Галтель липа термо 14 мм × 45 мм × 1.8 м"
   },
   {
     "source_row": 239,
@@ -7645,7 +7860,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1800,
     "unit": "п/м",
@@ -7661,7 +7876,8 @@
     },
     "id": 216,
     "slug": "ugolok-lipa-termo-22-mm-22-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа термо 22 мм × 22 мм × 2.5 м"
   },
   {
     "source_row": 240,
@@ -7679,7 +7895,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1500,
     "unit": "п/м",
@@ -7695,7 +7911,8 @@
     },
     "id": 217,
     "slug": "ugolok-lipa-25-mm-25-mm-2-5-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок липа 25 мм × 25 мм × 2.5 м"
   },
   {
     "source_row": 241,
@@ -7713,7 +7930,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 750,
     "unit": "п/м",
@@ -7729,7 +7946,8 @@
     },
     "id": 218,
     "slug": "ugolok-sosna-30-mm-30-mm-2-5-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна 30 мм × 30 мм × 2.5-3 м"
   },
   {
     "source_row": 242,
@@ -7747,7 +7965,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 850,
     "unit": "п/м",
@@ -7763,7 +7981,8 @@
     },
     "id": 219,
     "slug": "ugolok-sosna-40-mm-40-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна 40 мм × 40 мм × 2.5 м"
   },
   {
     "source_row": 243,
@@ -7781,7 +8000,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1500,
     "unit": "п/м",
@@ -7797,7 +8016,8 @@
     },
     "id": 220,
     "slug": "ugolok-sosna-40-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна 40 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 244,
@@ -7815,7 +8035,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1550,
     "unit": "п/м",
@@ -7831,7 +8051,8 @@
     },
     "id": 221,
     "slug": "ugolok-sosna-60-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Уголок сосна 60 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 245,
@@ -7849,7 +8070,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 900,
     "unit": "п/м",
@@ -7864,7 +8085,8 @@
     },
     "id": 222,
     "slug": "plintus-volna-60mm-13-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус волна 60мм 13 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 246,
@@ -7882,7 +8104,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 900,
     "unit": "п/м",
@@ -7898,7 +8120,8 @@
     },
     "id": 223,
     "slug": "plintus-evro-60mm-s-vystupom-c-13-mm-60-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус евро 60мм с выступом 13 мм × 60 мм × 2.5 м"
   },
   {
     "source_row": 247,
@@ -7916,7 +8139,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 950,
     "unit": "п/м",
@@ -7932,7 +8155,8 @@
     },
     "id": 224,
     "slug": "plintus-sosna-evro-18-mm-65-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус сосна евро 18 мм × 65 мм × 3 м"
   },
   {
     "source_row": 248,
@@ -7950,7 +8174,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1350,
     "unit": "п/м",
@@ -7966,7 +8190,8 @@
     },
     "id": 225,
     "slug": "plintus-sosna-evro-18-mm-90-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Плинтус сосна евро 18 мм × 90 мм × 3 м"
   },
   {
     "source_row": 249,
@@ -7984,7 +8209,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 850,
     "unit": "п/м",
@@ -8000,7 +8225,8 @@
     },
     "id": 226,
     "slug": "nalichnik-sosna-70mm-13-mm-70-mm-2-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник сосна 70мм 13 мм × 70 мм × 2.2 м"
   },
   {
     "source_row": 250,
@@ -8018,7 +8244,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из сосны для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из сосны. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1100,
     "unit": "п/м",
@@ -8034,7 +8260,8 @@
     },
     "id": 227,
     "slug": "nalichnik-sosna-90mm-13-mm-90-mm-2-2-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник сосна 90мм 13 мм × 90 мм × 2.2-3 м"
   },
   {
     "source_row": 251,
@@ -8052,7 +8279,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 2300,
     "unit": "п/м",
@@ -8068,7 +8295,8 @@
     },
     "id": 228,
     "slug": "nalichnik-lipa-termo-14-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа термо 14 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 252,
@@ -8086,7 +8314,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Погонаж из липы для аккуратной отделки стыков, углов и проёмов.",
+    "description": "Погонажные изделия из липы. Для отделки стыков, углов, откосов и дверных проёмов.",
     "image": "images/hero.png",
     "base_price": 1900,
     "unit": "п/м",
@@ -8102,7 +8330,8 @@
     },
     "id": 229,
     "slug": "nalichnik-lipa-70mm-15-mm-70-mm-2-7-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Наличник липа 70мм 15 мм × 70 мм × 2.7 м"
   },
   {
     "source_row": 254,
@@ -8121,7 +8350,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 600 мм × 2 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 17000,
     "unit": "м²",
@@ -8138,7 +8367,8 @@
     },
     "id": 230,
     "slug": "shchit-celnolamel-sosna-av-ab-18-mm-600-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. сосна АВ 18 мм × 600 мм × 2 м"
   },
   {
     "source_row": 255,
@@ -8157,7 +8387,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 600 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 25000,
     "unit": "м²",
@@ -8174,7 +8404,8 @@
     },
     "id": 231,
     "slug": "shchit-celnolamel-sosna-v-b-18-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. сосна В 18 мм × 600 мм × 3 м"
   },
   {
     "source_row": 256,
@@ -8193,7 +8424,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из лиственницы 18 мм × 600 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 37000,
     "unit": "м²",
@@ -8210,7 +8441,8 @@
     },
     "id": 232,
     "slug": "shchit-srashchennyy-listvennica-a-a-18-mm-600-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный лиственница А 18 мм × 600 мм × 2.5 м"
   },
   {
     "source_row": 257,
@@ -8229,7 +8461,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 600 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 25000,
     "unit": "м²",
@@ -8246,7 +8478,8 @@
     },
     "id": 233,
     "slug": "shchit-srashchennyy-sosna-av-ab-18-mm-600-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 18 мм × 600 мм × 3 м"
   },
   {
     "source_row": 258,
@@ -8265,7 +8498,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 600 мм × 3.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 30000,
     "unit": "м²",
@@ -8282,7 +8515,8 @@
     },
     "id": 234,
     "slug": "shchit-srashchennyy-sosna-av-ab-18-mm-600-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 18 мм × 600 мм × 3.5 м"
   },
   {
     "source_row": 259,
@@ -8301,7 +8535,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 18 мм × 800 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 27000,
     "unit": "м²",
@@ -8317,7 +8551,8 @@
     },
     "id": 235,
     "slug": "shchit-celnolamel-av-ab-18-mm-800-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 18 мм × 800 мм × 2.5 м"
   },
   {
     "source_row": 260,
@@ -8336,7 +8571,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 800 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 33000,
     "unit": "м²",
@@ -8353,7 +8588,8 @@
     },
     "id": 236,
     "slug": "shchit-srashchennyy-sosna-av-ab-18-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 18 мм × 800 мм × 3 м"
   },
   {
     "source_row": 261,
@@ -8372,7 +8608,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 18 мм × 800 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 33000,
     "unit": "м²",
@@ -8388,7 +8624,8 @@
     },
     "id": 237,
     "slug": "shchit-celnolamel-av-ab-18-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 18 мм × 800 мм × 3 м"
   },
   {
     "source_row": 262,
@@ -8407,7 +8644,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 800 мм × 3.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 48000,
     "unit": "м²",
@@ -8424,7 +8661,8 @@
     },
     "id": 238,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-18-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 18 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 263,
@@ -8443,7 +8681,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 18 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 40000,
     "unit": "м²",
@@ -8459,7 +8697,8 @@
     },
     "id": 239,
     "slug": "shchit-celnolamel-av-ab-18-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 18 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 264,
@@ -8478,7 +8717,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 18 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 53000,
     "unit": "м²",
@@ -8495,7 +8734,8 @@
     },
     "id": 240,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-18-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 18 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 265,
@@ -8514,7 +8754,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 28 мм × 800 мм × 3.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 74000,
     "unit": "м²",
@@ -8531,7 +8771,8 @@
     },
     "id": 241,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-28-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 28 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 266,
@@ -8550,7 +8791,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 28 мм × 800 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 45000,
     "unit": "м²",
@@ -8566,7 +8807,8 @@
     },
     "id": 242,
     "slug": "shchit-celnolamel-v-b-28-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. В 28 мм × 800 мм × 3 м"
   },
   {
     "source_row": 267,
@@ -8585,7 +8827,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 28 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 65000,
     "unit": "м²",
@@ -8602,7 +8844,8 @@
     },
     "id": 243,
     "slug": "shchit-srashchennyy-sosna-av-ab-28-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 28 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 268,
@@ -8621,7 +8864,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 28 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 69000,
     "unit": "м²",
@@ -8637,7 +8880,8 @@
     },
     "id": 244,
     "slug": "shchit-celnolamel-av-ab-28-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 28 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 269,
@@ -8656,7 +8900,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 40 мм × 800 мм × 2 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 48000,
     "unit": "м²",
@@ -8672,7 +8916,8 @@
     },
     "id": 245,
     "slug": "shchit-celnolamel-av-ab-40-mm-800-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 40 мм × 800 мм × 2 м"
   },
   {
     "source_row": 270,
@@ -8691,7 +8936,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 800 мм × 2 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 60000,
     "unit": "м²",
@@ -8708,7 +8953,8 @@
     },
     "id": 246,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-40-mm-800-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 40 мм × 800 мм × 2 м"
   },
   {
     "source_row": 271,
@@ -8727,7 +8973,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 800 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 90000,
     "unit": "м²",
@@ -8744,7 +8990,8 @@
     },
     "id": 247,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-40-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 40 мм × 800 мм × 3 м"
   },
   {
     "source_row": 272,
@@ -8763,7 +9010,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 40 мм × 800 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 73000,
     "unit": "м²",
@@ -8779,7 +9026,8 @@
     },
     "id": 248,
     "slug": "shchit-celnolamel-av-ab-40-mm-800-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 40 мм × 800 мм × 3 м"
   },
   {
     "source_row": 273,
@@ -8798,7 +9046,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 800 мм × 3.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 85000,
     "unit": "м²",
@@ -8815,7 +9063,8 @@
     },
     "id": 249,
     "slug": "shchit-srashchennyy-sosna-av-ab-40-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 40 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 274,
@@ -8834,7 +9083,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 800 мм × 3.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 105000,
     "unit": "м²",
@@ -8851,7 +9100,8 @@
     },
     "id": 250,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-40-mm-800-mm-3-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 40 мм × 800 мм × 3.5 м"
   },
   {
     "source_row": 275,
@@ -8870,7 +9120,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 40 мм × 1220 мм × 2 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 75000,
     "unit": "м²",
@@ -8886,7 +9136,8 @@
     },
     "id": 251,
     "slug": "shchit-celnolamel-av-ab-40-mm-1220-mm-2-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 40 мм × 1220 мм × 2 м"
   },
   {
     "source_row": 276,
@@ -8905,7 +9156,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 40 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 92000,
     "unit": "м²",
@@ -8921,7 +9172,8 @@
     },
     "id": 252,
     "slug": "shchit-celnolamel-av-ab-40-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 40 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 277,
@@ -8940,7 +9192,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит 40 мм × 1220 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 111000,
     "unit": "м²",
@@ -8956,7 +9208,8 @@
     },
     "id": 253,
     "slug": "shchit-celnolamel-av-ab-40-mm-1220-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит цельноламел. АВ 40 мм × 1220 мм × 3 м"
   },
   {
     "source_row": 278,
@@ -8975,7 +9228,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 1220 мм × 3 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 111000,
     "unit": "м²",
@@ -8992,7 +9245,8 @@
     },
     "id": 254,
     "slug": "shchit-srashchennyy-sosna-av-ab-40-mm-1220-mm-3-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна АВ 40 мм × 1220 мм × 3 м"
   },
   {
     "source_row": 279,
@@ -9011,7 +9265,7 @@
       "для столешницы"
     ],
     "availability": "уточнить",
-    "description": "Мебельный щит для мебели, столешниц, ступеней и столярных изделий.",
+    "description": "Мебельный щит из сосны 40 мм × 1220 мм × 2.5 м. Для столешниц, ступеней, полок и мебели. Склад Алматы.",
     "image": "images/hero.png",
     "base_price": 117000,
     "unit": "м²",
@@ -9028,7 +9282,8 @@
     },
     "id": 255,
     "slug": "shchit-srashchennyy-sosna-e-ekstra-40-mm-1220-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Щит сращенный сосна Э 40 мм × 1220 мм × 2.5 м"
   },
   {
     "source_row": 281,
@@ -9048,7 +9303,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 2.7 мм × 1700 мм × 2.75 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 3500,
     "unit": "м²",
@@ -9063,7 +9318,8 @@
     },
     "id": 256,
     "slug": "dvp-2-7-mm-1700-mm-2-75-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "ДВП 2.7 мм × 1700 мм × 2.75 м"
   },
   {
     "source_row": 282,
@@ -9083,7 +9339,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 6 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 4950,
     "unit": "м²",
@@ -9099,7 +9355,8 @@
     },
     "id": 257,
     "slug": "osb-3-e1-nsh-6-mm-1250-mm-2-5-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "OSB 3 Е1 НШ 6 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 283,
@@ -9119,7 +9376,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 8 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 6050,
     "unit": "м²",
@@ -9135,7 +9392,8 @@
     },
     "id": 258,
     "slug": "osb-3-e1-nsh-8-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3 Е1 НШ 8 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 284,
@@ -9155,7 +9413,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 12 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 7300,
     "unit": "м²",
@@ -9171,7 +9429,8 @@
     },
     "id": 259,
     "slug": "osb-3-e1-nsh-12-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3 Е1 НШ 12 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 285,
@@ -9191,7 +9450,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 15 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 9350,
     "unit": "м²",
@@ -9207,7 +9466,8 @@
     },
     "id": 260,
     "slug": "osb-3-e1-nsh-15-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB 3 Е1 НШ 15 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 286,
@@ -9227,7 +9487,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 12 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 7700,
     "unit": "м²",
@@ -9243,7 +9503,8 @@
     },
     "id": 261,
     "slug": "osb-vlagostoykaya-12-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB влагостойкая 12 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 287,
@@ -9263,7 +9524,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 15 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 8800,
     "unit": "м²",
@@ -9279,7 +9540,8 @@
     },
     "id": 262,
     "slug": "osb-vlagostoykaya-15-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB влагостойкая 15 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 288,
@@ -9299,7 +9561,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "OSB-плита для пола, стен, кровли, обшивки и каркасных работ.",
+    "description": "OSB-плита 18 мм × 1250 мм × 2.5 м. Для пола, стен, кровли и каркасных конструкций. Склад в Алматы.",
     "image": "images/OSB.PNG",
     "base_price": 10600,
     "unit": "м²",
@@ -9315,7 +9577,8 @@
     },
     "id": 263,
     "slug": "osb-vlagostoykaya-18-mm-1250-mm-2-5-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "OSB влагостойкая 18 мм × 1250 мм × 2.5 м"
   },
   {
     "source_row": 289,
@@ -9335,7 +9598,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 15 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 17300,
     "unit": "м²",
@@ -9350,7 +9613,8 @@
     },
     "id": 264,
     "slug": "fanera-lamin-f-f-15-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера ламин. F|F 15 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 290,
@@ -9370,7 +9634,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 18 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 19000,
     "unit": "м²",
@@ -9386,7 +9650,8 @@
     },
     "id": 265,
     "slug": "fanera-bereza-lbff-fsf-sort-1-1-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ЛБФФ ФСФ сорт 1/1 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 291,
@@ -9406,7 +9671,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 21 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 24500,
     "unit": "м²",
@@ -9422,7 +9687,8 @@
     },
     "id": 266,
     "slug": "fanera-bereza-lbff-fsf-sort-1-1-21-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ЛБФФ ФСФ сорт 1/1 21 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 292,
@@ -9442,7 +9708,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 6 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 8700,
     "unit": "м²",
@@ -9459,7 +9725,8 @@
     },
     "id": 267,
     "slug": "fsf-bereza-sort-1-2-v-vv-1-2-6-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза сорт 1/2 В/ВВ 6 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 293,
@@ -9479,7 +9746,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 9 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 11000,
     "unit": "м²",
@@ -9496,7 +9763,8 @@
     },
     "id": 268,
     "slug": "fsf-bereza-sort-1-2-v-vv-1-2-9-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза сорт 1/2 В/ВВ 9 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 294,
@@ -9516,7 +9784,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 12 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 13000,
     "unit": "м²",
@@ -9533,7 +9801,8 @@
     },
     "id": 269,
     "slug": "fsf-bereza-sort-1-2-v-vv-1-2-12-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза сорт 1/2 В/ВВ 12 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 295,
@@ -9553,7 +9822,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 15 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 14600,
     "unit": "м²",
@@ -9569,7 +9838,8 @@
     },
     "id": 270,
     "slug": "fsf-bereza-sort-2-4-15-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза сорт 2/4 15 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 296,
@@ -9589,7 +9859,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 18 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 15500,
     "unit": "м²",
@@ -9605,7 +9875,8 @@
     },
     "id": 271,
     "slug": "fanera-bereza-fsf-sort-iii-iv-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ФСФ сорт III/IV 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 297,
@@ -9625,7 +9896,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 18 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 16900,
     "unit": "м²",
@@ -9641,7 +9912,8 @@
     },
     "id": 272,
     "slug": "fsf-bereza-bb-c-sort-2-4-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "ФСФ береза BB/C сорт 2/4 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 298,
@@ -9661,7 +9933,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 8 мм × 1525 мм × 1.52 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 7200,
     "unit": "м²",
@@ -9677,7 +9949,8 @@
     },
     "id": 273,
     "slug": "fanera-fk-sort-2-4-e1-8-mm-1525-mm-1-52-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера ФК сорт 2/4 Е1 8 мм × 1525 мм × 1.52 м"
   },
   {
     "source_row": 299,
@@ -9697,7 +9970,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 12 мм × 1525 мм × 1.52 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 8600,
     "unit": "м²",
@@ -9713,7 +9986,8 @@
     },
     "id": 274,
     "slug": "fanera-bereza-fk-sort-3-4-12-mm-1525-mm-1-52-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ФК сорт 3/4 12 мм × 1525 мм × 1.52 м"
   },
   {
     "source_row": 300,
@@ -9733,7 +10007,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 12 мм × 1525 мм × 1.52 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 9100,
     "unit": "м²",
@@ -9749,7 +10023,8 @@
     },
     "id": 275,
     "slug": "fanera-bereza-fk-sort-2-4-12-mm-1525-mm-1-52-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ФК сорт 2/4 12 мм × 1525 мм × 1.52 м"
   },
   {
     "source_row": 301,
@@ -9769,7 +10044,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 15 мм × 1525 мм × 1.52 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 12700,
     "unit": "м²",
@@ -9785,7 +10060,8 @@
     },
     "id": 276,
     "slug": "fanera-bereza-fk-sort-2-4-15-mm-1525-mm-1-52-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера береза ФК сорт 2/4 15 мм × 1525 мм × 1.52 м"
   },
   {
     "source_row": 302,
@@ -9805,7 +10081,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 15 мм × 1525 мм × 1.52 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 11000,
     "unit": "м²",
@@ -9821,7 +10097,8 @@
     },
     "id": 277,
     "slug": "fanera-fk-sort-3-5-e1-15-mm-1525-mm-1-52-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера ФК сорт 3/5 Е1 15 мм × 1525 мм × 1.52 м"
   },
   {
     "source_row": 303,
@@ -9841,7 +10118,7 @@
       "для каркаса"
     ],
     "availability": "уточнить",
-    "description": "Листовая фанера для черновых работ, опалубки, мебели и строительных задач.",
+    "description": "Фанера 18 мм × 1220 мм × 2.44 м. Для черновых работ, опалубки, мебели и полов. Склад в Алматы.",
     "image": "images/fanera.PNG",
     "base_price": 17000,
     "unit": "м²",
@@ -9856,7 +10133,8 @@
     },
     "id": 278,
     "slug": "fanera-hvoynaya-sort-1-3-18-mm-1220-mm-2-44-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Фанера хвойная сорт 1/3 18 мм × 1220 мм × 2.44 м"
   },
   {
     "source_row": 305,
@@ -9875,7 +10153,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 9000,
     "unit": "м²",
@@ -9889,7 +10167,8 @@
     },
     "id": 279,
     "slug": "stupen-sosna-av-ab",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ"
   },
   {
     "source_row": 306,
@@ -9908,7 +10187,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 10500,
     "unit": "м²",
@@ -9922,7 +10201,8 @@
     },
     "id": 280,
     "slug": "stupen-sosna-v-b",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна В"
   },
   {
     "source_row": 307,
@@ -9941,7 +10221,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 10500,
     "unit": "м²",
@@ -9955,7 +10235,8 @@
     },
     "id": 281,
     "slug": "stupen-bereza-av-ab",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень береза АВ"
   },
   {
     "source_row": 308,
@@ -9974,7 +10255,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 13000,
     "unit": "м²",
@@ -9988,7 +10269,8 @@
     },
     "id": 282,
     "slug": "stupen-sosna-av-srashchennaya-ab",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ сращенная"
   },
   {
     "source_row": 309,
@@ -10007,7 +10289,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 14500,
     "unit": "м²",
@@ -10021,7 +10303,8 @@
     },
     "id": 283,
     "slug": "stupen-sosna-av-srashchennaya-ab-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Ступень сосна АВ сращенная"
   },
   {
     "source_row": 310,
@@ -10040,7 +10323,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 22000,
     "unit": "м²",
@@ -10053,7 +10336,8 @@
     },
     "id": 284,
     "slug": "stoleshnica-kruglaya-bereza-termo-800mm",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница круглая береза термо ø800мм"
   },
   {
     "source_row": 311,
@@ -10072,7 +10356,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 25000,
     "unit": "м²",
@@ -10085,7 +10369,8 @@
     },
     "id": 285,
     "slug": "stoleshnica-kruglaya-bereza-1000mm",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница круглая береза ø1000мм"
   },
   {
     "source_row": 312,
@@ -10104,7 +10389,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 38000,
     "unit": "м²",
@@ -10117,7 +10402,8 @@
     },
     "id": 286,
     "slug": "stoleshnica-pryamoug-bereza-termo-700x1500",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница прямоуг. береза термо 700×1500"
   },
   {
     "source_row": 313,
@@ -10136,7 +10422,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Готовые элементы из дерева для дома, участка и интерьера.",
+    "description": "Изделие из натурального дерева под заказ. Изготовим в Алматы по вашим размерам.",
     "image": "images/hero.png",
     "base_price": 27000,
     "unit": "м²",
@@ -10149,7 +10435,8 @@
     },
     "id": 287,
     "slug": "stoleshnica-oval-bereza-800x1600",
-    "popular": false
+    "popular": false,
+    "seo_name": "Столешница овал береза 800×1600"
   },
   {
     "source_row": 315,
@@ -10168,7 +10455,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 23 мм × 200 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10183,7 +10470,8 @@
     },
     "id": 288,
     "slug": "pilomaterial-obreznoy-doska-23x200x6000-1-2s-vl-16-18-23-mm-200-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 23×200×6000 1 2с, вл 16 18% 23 мм × 200 мм × 6 м"
   },
   {
     "source_row": 316,
@@ -10202,7 +10490,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 23 мм × 100 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10217,7 +10505,8 @@
     },
     "id": 289,
     "slug": "pilomaterial-obreznoy-doska-23x100x6000-1-2s-vl-16-18-23-mm-100-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 23×100×6000 1 2с, вл 16 18% 23 мм × 100 мм × 6 м"
   },
   {
     "source_row": 317,
@@ -10236,7 +10525,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 25 мм × 100 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10251,7 +10540,8 @@
     },
     "id": 290,
     "slug": "pilomaterial-obreznoy-doska-25x100x6000-est-vlazhnost-25-mm-100-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 25×100×6000 ест. влажность 25 мм × 100 мм × 6 м"
   },
   {
     "source_row": 318,
@@ -10270,7 +10560,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 23 мм × 140 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10285,7 +10575,8 @@
     },
     "id": 291,
     "slug": "pilomaterial-obreznoy-doska-23x140x6000-23-mm-140-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 23×140×6000 23 мм × 140 мм × 6 м"
   },
   {
     "source_row": 319,
@@ -10304,7 +10595,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 23 мм × 200 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10319,7 +10610,8 @@
     },
     "id": 292,
     "slug": "pilomaterial-obreznoy-doska-23x200x6000-1-2s-vl-16-18-23-mm-200-mm-6-m-2",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 23×200×6000 1 2с, вл 16 18% 23 мм × 200 мм × 6 м"
   },
   {
     "source_row": 320,
@@ -10338,7 +10630,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 25 мм × 150 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10353,7 +10645,8 @@
     },
     "id": 293,
     "slug": "pilomaterial-obreznoy-doska-25x150x6000-est-vlazhnost-25-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 25×150×6000 ест. влажность 25 мм × 150 мм × 6 м"
   },
   {
     "source_row": 321,
@@ -10372,7 +10665,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 50 мм × 100 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10387,7 +10680,8 @@
     },
     "id": 294,
     "slug": "pilomaterial-obreznoy-doska-50x100x6000-1-2-sort-50-mm-100-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 50×100×6000 1 2 сорт 50 мм × 100 мм × 6 м"
   },
   {
     "source_row": 322,
@@ -10406,7 +10700,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 50 мм × 150 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10421,7 +10715,8 @@
     },
     "id": 295,
     "slug": "pilomaterial-obreznoy-doska-50x150x6000-2-3-sort-50-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 50×150×6000 2 3 сорт 50 мм × 150 мм × 6 м"
   },
   {
     "source_row": 323,
@@ -10440,7 +10735,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 50 мм × 150 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10455,7 +10750,8 @@
     },
     "id": 296,
     "slug": "pilomaterial-obreznoy-doska-50x150x6000-1-2-sort-50-mm-150-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 50×150×6000 1 2 сорт 50 мм × 150 мм × 6 м"
   },
   {
     "source_row": 324,
@@ -10474,7 +10770,7 @@
       "для отделки"
     ],
     "availability": "уточнить",
-    "description": "Доска для строительства, отделки и черновых работ.",
+    "description": "Обрезная доска 50 мм × 200 мм × 6 м. Для строительства, перекрытий и черновых работ в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10489,7 +10785,8 @@
     },
     "id": 297,
     "slug": "pilomaterial-obreznoy-doska-50x200x6000-1-2-sort-50-mm-200-mm-6-m",
-    "popular": false
+    "popular": false,
+    "seo_name": "Пиломатериал обрезной Доска 50×200×6000 1 2 сорт 50 мм × 200 мм × 6 м"
   },
   {
     "source_row": 325,
@@ -10508,7 +10805,7 @@
       "для обрешётки"
     ],
     "availability": "уточнить",
-    "description": "Брус для каркасов, стоек, балок и строительных конструкций.",
+    "description": "Пиломатериал обрезной Брус 90×90×6000 1 3 сорт. В наличии на складе в Алматы.",
     "image": "images/Brusok-sosna.jpg",
     "base_price": 6000,
     "unit": "шт",
@@ -10523,13 +10820,14 @@
     },
     "id": 298,
     "slug": "pilomaterial-obreznoy-brus-90x90x6000-1-3-sort-90-mm-90-mm-6-m",
-    "popular": true
+    "popular": true,
+    "seo_name": "Пиломатериал обрезной Брус 90×90×6000 1 3 сорт 90 мм × 90 мм × 6 м"
   },
   {
     "id": 299,
     "name": "2 в 1 Акватекс",
     "category": "покрытия",
-    "description": "Декоративная пропитка и защита древесины. Придаёт цвет и защищает от влаги, плесени и УФ-излучения.",
+    "description": "Защитное покрытие для дерева. Пропитка от влаги, гниения и УФ-излучения. Алматы.",
     "image": "images/akvateks-2v1.png",
     "base_price": 5000,
     "unit": "шт",
@@ -10589,13 +10887,14 @@
       }
     ],
     "shade_reference_image": "images/akvateks-2v1-ottenki.png",
-    "popular": true
+    "popular": true,
+    "seo_name": "2 в 1 Акватекс"
   },
   {
     "id": 300,
     "name": "Бальзам Акватекс",
     "category": "покрытия",
-    "description": "Натуральное масло для защиты древесины от атмосферных воздействий, плесени и грибков.",
+    "description": "Защитное покрытие для дерева. Пропитка от влаги, гниения и УФ-излучения. Алматы.",
     "image": "images/akvateks-balzam.png",
     "base_price": 9000,
     "unit": "шт",
@@ -10643,6 +10942,7 @@
       }
     ],
     "shade_reference_image": "images/akvateks-balzam-ottenki.jpg",
-    "popular": true
+    "popular": true,
+    "seo_name": "Бальзам Акватекс"
   }
 ]
