@@ -13,6 +13,18 @@
     {% else %}
     <meta name="robots" content="noindex, nofollow">
     {% endif %}
+
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:description" content="{{ self.meta_description() }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:site_name" content="Русский Лес">
+    <meta property="og:locale" content="{{ 'kk_KZ' if lang == 'kk' else 'ru_RU' }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ self.title() }}">
+    <meta name="twitter:description" content="{{ self.meta_description() }}">
+    <meta name="twitter:image" content="{{ og_image }}">
     {% if google_site_verification %}
     <meta name="google-site-verification" content="{{ google_site_verification }}">
     {% endif %}

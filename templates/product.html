@@ -2,6 +2,7 @@
 
 {% block title %}{{ product.seo_name }} — Русский Лес{% endblock %}
 {% block meta_description %}{{ product.seo_name }}. {{ product.description }} Цена от {{ product.base_price }} ₸ / {{ product.unit }}. Уточните наличие на складе в Алматы.{% endblock %}
+{% block og_type %}product{% endblock %}
 {% block structured_data %}
 <script type="application/ld+json">{{ product_jsonld|tojson }}</script>
 <script type="application/ld+json">{{ breadcrumb_jsonld|tojson }}</script>

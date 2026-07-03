@@ -875,19 +875,33 @@ def availability_schema_url(product: dict) -> str:
 def build_local_business_jsonld() -> dict:
     return {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "Store"],
         "name": "Русский Лес",
+        "description": (
+            "Склад пиломатериалов в Алматы. Доска, вагонка, фанера, OSB, брусок, планкен, "
+            "клееный брус и покрытия — более 300 позиций в наличии. Самовывоз или доставка по Алматы."
+        ),
         "url": absolute_url(url_for("home")),
         "logo": absolute_url(url_for("static", filename="images/logo.png")),
         "image": absolute_url(url_for("static", filename="images/hero.png")),
         "telephone": "+7 777 200 27 42",
         "email": "russianwood@inbox.ru",
+        "priceRange": "₸₸",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": WAREHOUSE_ADDRESS,
             "addressLocality": "Алматы",
+            "addressRegion": "Алматы",
+            "postalCode": "050000",
             "addressCountry": "KZ",
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "43.2591",
+            "longitude": "76.8796",
+        },
+        "hasMap": WAREHOUSE_MAP_URL,
+        "areaServed": {"@type": "City", "name": "Алматы"},
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
@@ -937,6 +951,7 @@ def build_product_jsonld(product: dict) -> dict:
         "image": [absolute_url(url_for("static", filename=product["image"]))],
         "sku": str(product.get("id", product["slug"])),
         "category": product.get("category", ""),
+        "brand": {"@type": "Brand", "name": "Русский Лес"},
         "offers": {
             "@type": "Offer",
             "url": absolute_url(url_for("product", slug=product["slug"])),
@@ -944,6 +959,8 @@ def build_product_jsonld(product: dict) -> dict:
             "price": product_price(product),
             "availability": availability_schema_url(product),
             "itemCondition": "https://schema.org/NewCondition",
+            "seller": {"@type": "Organization", "name": "Русский Лес"},
+            "areaServed": {"@type": "City", "name": "Алматы"},
         },
     }
 
@@ -984,6 +1001,7 @@ def inject_navigation_data():
         "canonical_url": absolute_url(request.path) if seo_indexable else "",
         "google_site_verification": GOOGLE_SITE_VERIFICATION,
         "local_business_jsonld": build_local_business_jsonld() if seo_indexable else None,
+        "og_image": absolute_url(url_for("static", filename="images/hero.png")),
     }
 
 
@@ -1003,15 +1021,22 @@ def set_language(language):
 def sitemap():
     ElementTree.register_namespace("", SITEMAP_NAMESPACE)
     urlset = ElementTree.Element(f"{{{SITEMAP_NAMESPACE}}}urlset")
-    paths = [url_for("home"), url_for("catalog")]
-    paths.extend(url_for("category_page", category_slug=item["slug"]) for item in CATEGORY_PAGES)
-    paths.extend(url_for("product", slug=product["slug"]) for product in load_products())
-    paths.extend(url_for("information_page", page_slug=slug) for slug in INFORMATION_PAGES)
 
-    for path in paths:
+    today = date.today().isoformat()
+    pages = [
+        (url_for("home"), "weekly", "1.0"),
+        (url_for("catalog"), "daily", "0.9"),
+    ]
+    pages += [(url_for("category_page", category_slug=item["slug"]), "weekly", "0.8") for item in CATEGORY_PAGES]
+    pages += [(url_for("product", slug=p["slug"]), "monthly", "0.7") for p in load_products()]
+    pages += [(url_for("information_page", page_slug=slug), "monthly", "0.5") for slug in INFORMATION_PAGES]
+
+    for path, changefreq, priority in pages:
         url_element = ElementTree.SubElement(urlset, f"{{{SITEMAP_NAMESPACE}}}url")
-        location = ElementTree.SubElement(url_element, f"{{{SITEMAP_NAMESPACE}}}loc")
-        location.text = absolute_url(path)
+        ElementTree.SubElement(url_element, f"{{{SITEMAP_NAMESPACE}}}loc").text = absolute_url(path)
+        ElementTree.SubElement(url_element, f"{{{SITEMAP_NAMESPACE}}}lastmod").text = today
+        ElementTree.SubElement(url_element, f"{{{SITEMAP_NAMESPACE}}}changefreq").text = changefreq
+        ElementTree.SubElement(url_element, f"{{{SITEMAP_NAMESPACE}}}priority").text = priority
 
     xml = ElementTree.tostring(urlset, encoding="utf-8", xml_declaration=True)
     return Response(xml, mimetype="application/xml")
@@ -1101,6 +1126,7 @@ def product(slug):
         product=item,
         product_jsonld=build_product_jsonld(item),
         breadcrumb_jsonld=build_breadcrumb_jsonld(breadcrumbs),
+        og_image=absolute_url(url_for("static", filename=item.get("image", "images/hero.png"))),
     )
 
 
