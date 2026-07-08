@@ -12,12 +12,49 @@
                 <h1>Товары</h1>
                 <p>Изменения сохраняются напрямую в <code>data/products.json</code>.</p>
             </div>
-
             <a href="{{ url_for('admin_logout') }}" class="admin-secondary-button">Выйти</a>
         </div>
 
+        <!-- Поиск и фильтры -->
+        <div class="admin-controls">
+            <div class="admin-search-wrap">
+                <svg class="admin-search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input
+                    id="admin-search"
+                    class="admin-search-input"
+                    type="text"
+                    placeholder="Поиск по названию, категории, ID…"
+                    autocomplete="off"
+                >
+                <button class="admin-search-clear" id="admin-search-clear" type="button" aria-label="Очистить">✕</button>
+            </div>
+
+            <div class="admin-filters">
+                <select id="filter-category" class="admin-select">
+                    <option value="">Все категории</option>
+                    {% set categories = products | map(attribute='category') | select | unique | sort %}
+                    {% for cat in categories %}
+                    <option value="{{ cat }}">{{ cat }}</option>
+                    {% endfor %}
+                </select>
+
+                <select id="filter-availability" class="admin-select">
+                    <option value="">Любое наличие</option>
+                    <option value="в наличии">В наличии</option>
+                    <option value="уточнить">Уточнить</option>
+                    <option value="под заказ">Под заказ</option>
+                </select>
+
+                <button class="admin-reset-btn" id="admin-reset" type="button">Сбросить</button>
+            </div>
+
+            <p class="admin-count" id="admin-count">
+                Показано: <strong id="admin-count-shown">{{ products|length }}</strong> из {{ products|length }}
+            </p>
+        </div>
+
         <div class="admin-table-wrap">
-            <table class="admin-table">
+            <table class="admin-table" id="admin-products-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -30,10 +67,16 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="admin-table-body">
                     {% for product in products %}
-                    <tr>
-                        <td>{{ product.id }}</td>
+                    <tr
+                        class="admin-product-row"
+                        data-name="{{ product.name | lower }}"
+                        data-category="{{ product.category | lower }}"
+                        data-id="{{ product.id | lower }}"
+                        data-availability="{{ product.availability | default('уточнить') | lower }}"
+                    >
+                        <td class="admin-td-id">{{ product.id }}</td>
                         <td>
                             <img
                                 class="admin-product-thumb"
@@ -45,16 +88,30 @@
                         </td>
                         <td>
                             <strong>{{ product.name }}</strong>
-                            <span>{{ product.slug }}</span>
+                            <span class="admin-slug">{{ product.slug }}</span>
                         </td>
                         <td>{{ product.category }}</td>
                         <td>{{ "{:,}".format(product.base_price).replace(",", " ") }} ₸</td>
                         <td>{{ product.unit }}</td>
-                        <td>{{ product.availability|default("уточнить", true) }}</td>
                         <td>
-                            <a href="{{ url_for('admin_edit_product', slug=product.slug) }}" class="admin-small-button">
-                                Изменить
-                            </a>
+                            <span class="admin-badge admin-badge--{{ 'green' if product.availability == 'в наличии' else ('yellow' if product.availability == 'под заказ' else 'gray') }}">
+                                {{ product.availability | default("уточнить") }}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="admin-td-actions">
+                                <a href="{{ url_for('admin_edit_product', slug=product.slug) }}" class="admin-small-button">
+                                    Изменить
+                                </a>
+                                <button
+                                    class="admin-delete-btn"
+                                    type="button"
+                                    data-slug="{{ product.slug }}"
+                                    data-name="{{ product.name }}"
+                                >
+                                    Удалить
+                                </button>
+                            </div>
                         </td>
                     </tr>
                     {% endfor %}
@@ -62,10 +119,325 @@
             </table>
         </div>
 
+        <p class="admin-empty" id="admin-empty" style="display:none;">
+            Ничего не найдено. Попробуйте изменить поиск или фильтры.
+        </p>
+
         {% if not products %}
         <p class="admin-empty">Товаров пока нет. Проверьте файл <code>data/products.json</code>.</p>
         {% endif %}
     </div>
 </section>
+
+<!-- Модальное окно подтверждения удаления -->
+<div class="admin-modal-overlay" id="delete-modal" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title">
+    <div class="admin-modal">
+        <h2 class="admin-modal-title" id="delete-modal-title">Удалить товар?</h2>
+        <p class="admin-modal-text" id="delete-modal-text">Это действие нельзя отменить.</p>
+        <div class="admin-modal-actions">
+            <button class="admin-secondary-button" id="delete-cancel">Отмена</button>
+            <form id="delete-form" method="POST" action="">
+                <button class="admin-danger-button" type="submit">Удалить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+/* ── Контролы (поиск + фильтры) ── */
+.admin-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1 1 280px;
+    min-width: 200px;
+}
+
+.admin-search-icon {
+    position: absolute;
+    left: 12px;
+    color: #888;
+    pointer-events: none;
+}
+
+.admin-search-input {
+    width: 100%;
+    padding: 10px 36px 10px 40px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color .15s;
+    background: #fff;
+}
+
+.admin-search-input:focus {
+    border-color: #4a7c59;
+}
+
+.admin-search-clear {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #aaa;
+    display: none;
+    line-height: 1;
+    padding: 2px 4px;
+}
+
+.admin-search-clear:hover { color: #555; }
+
+.admin-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.admin-select {
+    padding: 9px 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color .15s;
+}
+
+.admin-select:focus { border-color: #4a7c59; }
+
+.admin-reset-btn {
+    padding: 9px 16px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    color: #555;
+    transition: all .15s;
+    white-space: nowrap;
+}
+
+.admin-reset-btn:hover {
+    border-color: #4a7c59;
+    color: #4a7c59;
+}
+
+.admin-count {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* ── Таблица ── */
+.admin-td-id {
+    font-family: monospace;
+    font-size: 12px;
+    color: #888;
+    white-space: nowrap;
+}
+
+.admin-slug {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    font-family: monospace;
+}
+
+.admin-td-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* ── Badge наличия ── */
+.admin-table td span.admin-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.admin-badge--green { background: #e8f5e9; color: #2e7d32; }
+.admin-badge--yellow { background: #fff8e1; color: #f57f17; }
+.admin-badge--gray { background: #f5f5f5; color: #757575; }
+
+/* ── Кнопка удаления ── */
+.admin-delete-btn {
+    padding: 6px 12px;
+    border: 1.5px solid #e57373;
+    border-radius: 6px;
+    font-size: 13px;
+    background: transparent;
+    color: #e53935;
+    cursor: pointer;
+    transition: all .15s;
+    font-family: inherit;
+}
+
+.admin-delete-btn:hover {
+    background: #e53935;
+    color: #fff;
+    border-color: #e53935;
+}
+
+/* ── Модальное окно ── */
+.admin-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-modal-overlay.is-open {
+    display: flex;
+}
+
+.admin-modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 36px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,.18);
+}
+
+.admin-modal-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.admin-modal-text {
+    margin: 0 0 24px;
+    color: #555;
+    font-size: 15px;
+}
+
+.admin-modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.admin-danger-button {
+    padding: 10px 20px;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background .15s;
+}
+
+.admin-danger-button:hover { background: #c62828; }
+</style>
+
+<script>
+(function () {
+    const searchInput = document.getElementById('admin-search');
+    const searchClear = document.getElementById('admin-search-clear');
+    const filterCategory = document.getElementById('filter-category');
+    const filterAvailability = document.getElementById('filter-availability');
+    const resetBtn = document.getElementById('admin-reset');
+    const rows = document.querySelectorAll('.admin-product-row');
+    const countShown = document.getElementById('admin-count-shown');
+    const emptyMsg = document.getElementById('admin-empty');
+
+    function applyFilters() {
+        const q = searchInput.value.trim().toLowerCase();
+        const cat = filterCategory.value.toLowerCase();
+        const avail = filterAvailability.value.toLowerCase();
+
+        let shown = 0;
+        rows.forEach(row => {
+            const name = row.dataset.name || '';
+            const category = row.dataset.category || '';
+            const id = row.dataset.id || '';
+            const availability = row.dataset.availability || '';
+
+            const matchSearch = !q || name.includes(q) || category.includes(q) || id.includes(q);
+            const matchCat = !cat || category === cat;
+            const matchAvail = !avail || availability === avail;
+
+            if (matchSearch && matchCat && matchAvail) {
+                row.style.display = '';
+                shown++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        countShown.textContent = shown;
+        emptyMsg.style.display = shown === 0 ? '' : 'none';
+        searchClear.style.display = q ? 'block' : 'none';
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    filterCategory.addEventListener('change', applyFilters);
+    filterAvailability.addEventListener('change', applyFilters);
+
+    searchClear.addEventListener('click', function () {
+        searchInput.value = '';
+        applyFilters();
+        searchInput.focus();
+    });
+
+    resetBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        filterCategory.value = '';
+        filterAvailability.value = '';
+        applyFilters();
+    });
+
+    // ── Модальное удаление ──
+    const modal = document.getElementById('delete-modal');
+    const deleteForm = document.getElementById('delete-form');
+    const deleteText = document.getElementById('delete-modal-text');
+    const cancelBtn = document.getElementById('delete-cancel');
+
+    document.querySelectorAll('.admin-delete-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const slug = this.dataset.slug;
+            const name = this.dataset.name;
+            deleteText.textContent = '«' + name + '» будет удалён навсегда. Это действие нельзя отменить.';
+            deleteForm.action = '/admin/product/' + slug + '/delete';
+            modal.classList.add('is-open');
+        });
+    });
+
+    cancelBtn.addEventListener('click', function () {
+        modal.classList.remove('is-open');
+    });
+
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) modal.classList.remove('is-open');
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') modal.classList.remove('is-open');
+    });
+})();
+</script>
 
 {% endblock %}
