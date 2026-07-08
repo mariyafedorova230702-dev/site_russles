@@ -1,9 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}{{ category_meta.title }} — Русский Лес{% endblock %}
-{% block meta_description %}{{ category_meta.description }} Узнайте наличие, размеры и актуальные цены на складе Русский Лес в Алматы.{% endblock %}
+{% block title %}{{ category_meta.title }} — цены, размеры | Русский Лес{% endblock %}
+{% block meta_description %}{{ category_meta.description }} Узнайте наличие, размеры и актуальные цены на складе Русский Лес в Алматы. Самовывоз или доставка. Тел: +7 777 200 27 42.{% endblock %}
 {% block structured_data %}
 <script type="application/ld+json">{{ breadcrumb_jsonld|tojson }}</script>
+{% if category_meta.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in category_meta.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q|tojson }},
+      "acceptedAnswer": {"@type": "Answer", "text": {{ item.a|tojson }}}
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -138,6 +155,31 @@
         <p class="catalog-empty">
             В этой категории пока нет товаров в JSON. Запустите импорт прайса или выберите другую категорию.
         </p>
+        {% endif %}
+
+        {% if category_meta.seo_text or category_meta.faq %}
+        <div class="category-seo-section">
+            {% if category_meta.seo_text %}
+            <div class="category-seo-text">
+                <h2>{{ category_meta.title }} — всё о материале</h2>
+                <p>{{ category_meta.seo_text }}</p>
+            </div>
+            {% endif %}
+
+            {% if category_meta.faq %}
+            <div class="category-faq">
+                <h2>Вопросы и ответы</h2>
+                <div class="faq-list">
+                    {% for item in category_meta.faq %}
+                    <details class="faq-item">
+                        <summary>{{ item.q }}</summary>
+                        <p>{{ item.a }}</p>
+                    </details>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
         {% endif %}
 
         <div class="category-order-panel">
