@@ -191,7 +191,7 @@
             >
                 <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-image">
                     <img
-                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)|card_image) }}"
+                        src="{{ url_for('static', filename=product.image|default('images/hero.webp', true)|card_image) }}"
                         alt="{{ product.display_name }}"
                         loading="lazy"
                         decoding="async"

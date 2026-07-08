@@ -359,16 +359,16 @@ TRANSLATIONS = {
 }
 
 CARD_IMAGE_MAP = {
-    "images/hero.png": "images/cards/hero.jpg",
-    "images/Brusok-sosna.jpg": "images/cards/Brusok-sosna.jpg",
-    "images/blok-haus.jpg": "images/cards/blok-haus.jpg",
-    "images/imitaciya-brusa.jpg": "images/cards/imitaciya-brusa.jpg",
-    "images/terrasnaya-doska.jpg": "images/cards/terrasnaya-doska.jpg",
-    "images/vagonka.PNG": "images/cards/vagonka.jpg",
-    "images/lipa_vagonka.jpg": "images/cards/lipa_vagonka.jpg",
-    "images/evro_vagonka.jpg": "images/cards/evro_vagonka.jpg",
-    "images/planken_listvinica.jpg": "images/cards/planken_listvinica.jpg",
-    "images/fanera.PNG": "images/cards/fanera.jpg",
+    "images/hero.webp": "images/cards/hero.webp",
+    "images/Brusok-sosna.webp": "images/cards/Brusok-sosna.webp",
+    "images/blok-haus.webp": "images/cards/blok-haus.webp",
+    "images/imitaciya-brusa.webp": "images/cards/imitaciya-brusa.webp",
+    "images/terrasnaya-doska.webp": "images/cards/terrasnaya-doska.webp",
+    "images/vagonka.webp": "images/cards/vagonka.webp",
+    "images/lipa_vagonka.webp": "images/cards/lipa_vagonka.webp",
+    "images/evro_vagonka.webp": "images/cards/evro_vagonka.webp",
+    "images/planken_listvinica.webp": "images/cards/planken_listvinica.webp",
+    "images/fanera.webp": "images/cards/fanera.webp",
 }
 
 DIMENSIONS_IN_NAME_PATTERN = re.compile(
@@ -377,15 +377,15 @@ DIMENSIONS_IN_NAME_PATTERN = re.compile(
 )
 
 CATEGORIES = [
-    {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.jpg"},
-    {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.jpg"},
-    {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.PNG"},
-    {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.jpg"},
-    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.PNG"},
-    {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.PNG"},
-    {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.png"},
-    {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/akvateks-balzam.png"},
-    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.jpg"},
+    {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.webp"},
+    {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.webp"},
+    {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.webp"},
+    {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.webp"},
+    {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.webp"},
+    {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.webp"},
+    {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.webp"},
+    {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/akvateks-balzam.webp"},
+    {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.webp"},
 ]
 
 CATEGORY_PAGES = [
@@ -394,91 +394,91 @@ CATEGORY_PAGES = [
         "category": "OSB",
         "title": "Купить OSB в Алматы",
         "description": "OSB-плиты 9мм, 12мм, 15мм — в наличии на складе. Для пола, стен, кровли и каркасных конструкций. Крупный формат 1220×2440мм.",
-        "image": "images/OSB.PNG",
+        "image": "images/OSB.webp",
     },
     {
         "slug": "vagonka",
         "category": "вагонка",
         "title": "Купить вагонку в Алматы",
         "description": "Вагонка из сосны, липы, кедра и лиственницы — в наличии. Для стен, потолка, бани и сауны. Сорта А, В, С. Самовывоз или доставка по Алматы.",
-        "image": "images/vagonka.PNG",
+        "image": "images/vagonka.webp",
     },
     {
         "slug": "fanera",
         "category": "фанера",
         "title": "Купить фанеру в Алматы",
         "description": "Фанера берёзовая и хвойная ФК и ФСФ. Для черновых работ, опалубки, мебели и полов. Толщина 4–18мм. Лист 1525×1525мм и 1220×2440мм.",
-        "image": "images/fanera.PNG",
+        "image": "images/fanera.webp",
     },
     {
         "slug": "brus",
         "category": "клееный брус",
         "title": "Купить клееный брус в Алматы",
         "description": "Клееный строганый брус из сосны и лиственницы. Для конструкций, столярных работ и интерьера. Разные сечения в наличии на складе.",
-        "image": "images/kleenyy-brus.png",
+        "image": "images/kleenyy-brus.webp",
     },
     {
         "slug": "brusok",
         "category": "брусок",
         "title": "Купить брусок в Алматы",
         "description": "Строганый и обрезной брусок из сосны. Для обрешётки, каркасов, отделки и столярных работ. Размеры 25×40, 40×40, 50×50мм и другие.",
-        "image": "images/Brusok-sosna.jpg",
+        "image": "images/Brusok-sosna.webp",
     },
     {
         "slug": "doska",
         "category": "доска",
         "title": "Купить доску в Алматы",
         "description": "Обрезная доска из сосны и лиственницы. Для строительства, перекрытий, опалубки и чистового пола. Толщина 25мм, 32мм, 40мм, 50мм. В наличии на складе.",
-        "image": "images/Brusok-sosna.jpg",
+        "image": "images/Brusok-sosna.webp",
     },
     {
         "slug": "planken",
         "category": "планкен",
         "title": "Купить планкен в Алматы",
         "description": "Планкен из лиственницы и сосны — прямой и скошенный. Для фасадной отделки, заборов, террас и ограждений. В наличии на складе.",
-        "image": "images/planken_listvinica.jpg",
+        "image": "images/planken_listvinica.webp",
     },
     {
         "slug": "imitaciya-brusa",
         "category": "имитация бруса",
         "title": "Купить имитацию бруса в Алматы",
         "description": "Имитация бруса из сосны и лиственницы для отделки стен снаружи и внутри. Создаёт вид деревянного сруба. В наличии на складе.",
-        "image": "images/imitaciya-brusa.jpg",
+        "image": "images/imitaciya-brusa.webp",
     },
     {
         "slug": "blok-haus",
         "category": "блок-хаус",
         "title": "Купить блок-хаус в Алматы",
         "description": "Блок-хаус из сосны и лиственницы для фасадной и интерьерной отделки. Имитирует оцилиндрованное бревно. В наличии на складе.",
-        "image": "images/blok-haus.jpg",
+        "image": "images/blok-haus.webp",
     },
     {
         "slug": "terrasnaya-doska",
         "category": "террасная доска",
         "title": "Купить террасную доску в Алматы",
         "description": "Террасная доска из лиственницы и сосны. Для настилов, крыльца, веранд и садовых зон. Устойчива к влаге. В наличии на складе.",
-        "image": "images/terrasnaya-doska.jpg",
+        "image": "images/terrasnaya-doska.webp",
     },
     {
         "slug": "mebelnyy-shchit",
         "category": "мебельный щит",
         "title": "Купить мебельный щит в Алматы",
         "description": "Мебельный щит из сосны и берёзы. Для столешниц, ступеней, полок и мебели. Склеенный и цельный. В наличии на складе.",
-        "image": "images/hero.png",
+        "image": "images/hero.webp",
     },
     {
         "slug": "polok",
         "category": "полок для бани",
         "title": "Купить полок для бани в Алматы",
         "description": "Полок для бани и сауны из осины, липы и кедра. Влагостойкий, без смол. В наличии на складе Русский Лес.",
-        "image": "images/hero.png",
+        "image": "images/hero.webp",
     },
     {
         "slug": "pogonazh",
         "category": "погонаж",
         "title": "Погонаж в Алматы",
         "description": "Погонажные изделия: наличник, плинтус, уголок, раскладка. Для отделки стыков, углов, откосов и дверных проёмов. В наличии на складе.",
-        "image": "images/hero.png",
+        "image": "images/hero.webp",
     },
 ]
 
@@ -602,7 +602,7 @@ def load_products() -> list[dict]:
             continue
 
         product.setdefault("description", "")
-        product.setdefault("image", "images/hero.png")
+        product.setdefault("image", "images/hero.webp")
         product.setdefault("base_price", 0)
         product.setdefault("unit", "шт")
         product.setdefault("variants", [])
@@ -883,7 +883,7 @@ def build_local_business_jsonld() -> dict:
         ),
         "url": absolute_url(url_for("home")),
         "logo": absolute_url(url_for("static", filename="images/logo.png")),
-        "image": absolute_url(url_for("static", filename="images/hero.png")),
+        "image": absolute_url(url_for("static", filename="images/hero.webp")),
         "telephone": "+7 777 200 27 42",
         "email": "russianwood@inbox.ru",
         "priceRange": "₸₸",
@@ -986,7 +986,7 @@ def build_website_jsonld() -> dict:
 
 @app.template_filter("card_image")
 def card_image(image_path: str) -> str:
-    fallback = "images/hero.png"
+    fallback = "images/hero.webp"
     image_path = image_path or fallback
     return CARD_IMAGE_MAP.get(image_path, image_path)
 
@@ -1021,7 +1021,7 @@ def inject_navigation_data():
         "google_site_verification": GOOGLE_SITE_VERIFICATION,
         "local_business_jsonld": build_local_business_jsonld() if seo_indexable else None,
         "website_jsonld": build_website_jsonld() if seo_indexable else None,
-        "og_image": absolute_url(url_for("static", filename="images/hero.png")),
+        "og_image": absolute_url(url_for("static", filename="images/hero.webp")),
     }
 
 
@@ -1151,7 +1151,7 @@ def product(slug):
         product=item,
         product_jsonld=build_product_jsonld(item),
         breadcrumb_jsonld=build_breadcrumb_jsonld(breadcrumbs),
-        og_image=absolute_url(url_for("static", filename=item.get("image", "images/hero.png"))),
+        og_image=absolute_url(url_for("static", filename=item.get("image", "images/hero.webp"))),
     )
 
 

@@ -25,7 +25,7 @@
                 <div class="admin-image-preview">
                     <img
                         id="adminImagePreview"
-                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)) }}"
+                        src="{{ url_for('static', filename=product.image|default('images/hero.webp', true)) }}"
                         alt="Текущее фото товара"
                     >
                 </div>
@@ -49,7 +49,7 @@
 
                     <label>
                         Путь к текущему фото
-                        <input type="text" name="image" value="{{ product.image|default('images/hero.png', true) }}">
+                        <input type="text" name="image" value="{{ product.image|default('images/hero.webp', true) }}">
                     </label>
 
                     <p class="admin-upload-note">

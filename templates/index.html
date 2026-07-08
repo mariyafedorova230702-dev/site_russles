@@ -109,7 +109,7 @@
         <div class="hero-visual">
             <div class="hero-image-main">
                 <img
-                    src="{{ url_for('static', filename='images/hero.png') }}"
+                    src="{{ url_for('static', filename='images/hero.webp') }}"
                     alt="Склад пиломатериалов Русский Лес"
                     loading="eager"
                     decoding="async"
@@ -152,7 +152,7 @@
             <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}" class="home-category-card">
                 <span class="home-category-thumb">
                     <img
-                        src="{{ url_for('static', filename=category.image|default('images/hero.png', true)|card_image) }}"
+                        src="{{ url_for('static', filename=category.image|default('images/hero.webp', true)|card_image) }}"
                         alt="{{ category.name }}"
                         loading="lazy"
                         decoding="async"
@@ -217,7 +217,7 @@
             <article class="catalog-card">
                 <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-image">
                     <img
-                        src="{{ url_for('static', filename=product.image|default('images/hero.png', true)|card_image) }}"
+                        src="{{ url_for('static', filename=product.image|default('images/hero.webp', true)|card_image) }}"
                         alt="{{ product.display_name }}"
                         loading="lazy"
                         decoding="async"
@@ -261,31 +261,31 @@
         <div class="custom-carousel" data-carousel aria-label="Примеры изделий из дерева">
             <div class="custom-carousel-stage" data-carousel-stage>
                 <figure class="custom-carousel-slide active" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка17.jpg') }}" alt="Беседка из дерева под заказ" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка17.webp') }}" alt="Беседка из дерева под заказ" loading="lazy" decoding="async">
                     <figcaption>Беседки для участка и зоны отдыха</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка.jpg') }}" alt="Деревянная беседка для участка" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка.webp') }}" alt="Деревянная беседка для участка" loading="lazy" decoding="async">
                     <figcaption>Открытые деревянные беседки</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка1.jpg') }}" alt="Беседка для зоны отдыха" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка1.webp') }}" alt="Беседка для зоны отдыха" loading="lazy" decoding="async">
                     <figcaption>Беседки по индивидуальному проекту</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Будка6.jpg') }}" alt="Деревянная будка под заказ" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Будка6.webp') }}" alt="Деревянная будка под заказ" loading="lazy" decoding="async">
                     <figcaption>Будки из дерева под заказ</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/будка22.jpg') }}" alt="Будка из дерева для участка" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/будка22.webp') }}" alt="Будка из дерева для участка" loading="lazy" decoding="async">
                     <figcaption>Практичные изделия для участка</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Туалет15.jpg') }}" alt="Деревянный туалет для дачи" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Туалет15.webp') }}" alt="Деревянный туалет для дачи" loading="lazy" decoding="async">
                     <figcaption>Хозяйственные постройки из дерева</figcaption>
                 </figure>
                 <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Туалет6.jpeg') }}" alt="Уличный туалет из дерева" loading="lazy" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Туалет6.webp') }}" alt="Уличный туалет из дерева" loading="lazy" decoding="async">
                     <figcaption>Дачные конструкции под заказ</figcaption>
                 </figure>
 
@@ -298,25 +298,25 @@
 
             <div class="custom-carousel-thumbs" aria-label="Выбор фотографии">
                 <button type="button" class="active" data-carousel-thumb aria-label="Показать фото 1">
-                    <img src="{{ url_for('static', filename='images/беседка17.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка17.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 2">
-                    <img src="{{ url_for('static', filename='images/беседка.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 3">
-                    <img src="{{ url_for('static', filename='images/беседка1.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/беседка1.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 4">
-                    <img src="{{ url_for('static', filename='images/Будка6.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Будка6.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 5">
-                    <img src="{{ url_for('static', filename='images/будка22.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/будка22.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 6">
-                    <img src="{{ url_for('static', filename='images/Туалет15.jpg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Туалет15.webp') }}" alt="" decoding="async">
                 </button>
                 <button type="button" data-carousel-thumb aria-label="Показать фото 7">
-                    <img src="{{ url_for('static', filename='images/Туалет6.jpeg') }}" alt="" decoding="async">
+                    <img src="{{ url_for('static', filename='images/Туалет6.webp') }}" alt="" decoding="async">
                 </button>
             </div>
         </div>
