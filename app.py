@@ -1132,6 +1132,52 @@ def sitemap():
     return Response(xml, mimetype="application/xml")
 
 
+@app.route("/feed.xml")
+def merchant_feed():
+    G = "http://base.google.com/ns/1.0"
+    ElementTree.register_namespace("g", G)
+
+    rss = ElementTree.Element("rss", {"version": "2.0", "xmlns:g": G})
+    channel = ElementTree.SubElement(rss, "channel")
+    ElementTree.SubElement(channel, "title").text = "Русский Лес — пиломатериалы в Алматы"
+    ElementTree.SubElement(channel, "link").text = absolute_url("/")
+    ElementTree.SubElement(channel, "description").text = "Склад пиломатериалов в Алматы. Более 300 позиций в наличии."
+
+    products = load_products()
+    for p in products:
+        price = p.get("base_price") or 0
+        if not price:
+            continue
+
+        seo_name = p.get("seo_name") or p.get("display_name") or p.get("name", "")
+        description = p.get("description") or seo_name
+        image = p.get("image", "images/hero.webp")
+        unit = p.get("unit", "м²")
+
+        title = f"Купить {seo_name} в Алматы"[:150]
+
+        item = ElementTree.SubElement(channel, "item")
+        ElementTree.SubElement(item, f"{{{G}}}id").text = p["slug"]
+        ElementTree.SubElement(item, f"{{{G}}}title").text = title
+        ElementTree.SubElement(item, f"{{{G}}}description").text = description
+        ElementTree.SubElement(item, f"{{{G}}}link").text = absolute_url(url_for("product", slug=p["slug"]))
+        ElementTree.SubElement(item, f"{{{G}}}image_link").text = absolute_url(url_for("static", filename=image))
+        ElementTree.SubElement(item, f"{{{G}}}price").text = f"{price} KZT"
+        ElementTree.SubElement(item, f"{{{G}}}availability").text = "in stock"
+        ElementTree.SubElement(item, f"{{{G}}}condition").text = "new"
+        ElementTree.SubElement(item, f"{{{G}}}brand").text = "Русский Лес"
+        ElementTree.SubElement(item, f"{{{G}}}google_product_category").text = "2814"
+        ElementTree.SubElement(item, f"{{{G}}}product_type").text = p.get("category", "Пиломатериалы")
+        if p.get("wood_type"):
+            ElementTree.SubElement(item, f"{{{G}}}material").text = p["wood_type"]
+        # unit pricing so Google shows price per m² / шт / м³
+        ElementTree.SubElement(item, f"{{{G}}}unit_pricing_measure").text = f"1 {unit}"
+        ElementTree.SubElement(item, f"{{{G}}}unit_pricing_base_measure").text = f"1 {unit}"
+
+    xml = ElementTree.tostring(rss, encoding="utf-8", xml_declaration=True)
+    return Response(xml, mimetype="application/xml")
+
+
 @app.route("/robots.txt")
 def robots():
     content = "\n".join(
