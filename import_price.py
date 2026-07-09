@@ -333,29 +333,29 @@ def detect_availability(note) -> str:
 
 def image_for_product(name: str, category: str, wood_type: str = "") -> str:
     category_images = {
-        "блок-хаус": "images/blok-haus.jpg",
-        "имитация бруса": "images/imitaciya-brusa.jpg",
-        "террасная доска": "images/terrasnaya-doska.jpg",
+        "блок-хаус": "images/blok-haus.webp",
+        "имитация бруса": "images/imitaciya-brusa.webp",
+        "террасная доска": "images/terrasnaya-doska.webp",
     }
     if category == "вагонка":
         if wood_type == "липа":
-            return "images/lipa_vagonka.jpg"
+            return "images/lipa_vagonka.webp"
         if "евро" in name.lower():
-            return "images/evro_vagonka.jpg"
-        return "images/vagonka.PNG"
+            return "images/evro_vagonka.webp"
+        return "images/vagonka.webp"
     if category == "OSB":
-        return "images/OSB.PNG"
+        return "images/OSB.webp"
     if category == "фанера":
-        return "images/fanera.PNG"
+        return "images/fanera.webp"
     if category == "клееный брус":
-        return "images/kleenyy-brus.png"
+        return "images/kleenyy-brus.webp"
     if category == "планкен" and wood_type == "лиственница":
-        return "images/planken_listvinica.jpg"
+        return "images/planken_listvinica.webp"
     if category in category_images:
         return category_images[category]
     if category in {"брус", "клееный брус", "брусок", "доска"}:
-        return "images/Brusok-sosna.jpg"
-    return "images/hero.png"
+        return "images/Brusok-sosna.webp"
+    return "images/hero.webp"
 
 
 def clean_name(value) -> str:

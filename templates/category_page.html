@@ -161,8 +161,7 @@
         <div class="category-seo-section">
             {% if category_meta.seo_text %}
             <div class="category-seo-text">
-                <h2>{{ category_meta.title }} — всё о материале</h2>
-                <p>{{ category_meta.seo_text }}</p>
+                {{ category_meta.seo_text | safe }}
             </div>
             {% endif %}
 
