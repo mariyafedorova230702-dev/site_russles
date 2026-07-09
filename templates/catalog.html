@@ -26,6 +26,16 @@
             </a>
         </div>
 
+        <div class="catalog-category-links">
+            {% for category in navigation_categories %}
+            {% if category.slug in category_page_slugs %}
+            <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="catalog-category-link">
+                {{ category.name }} →
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+
         <div class="catalog-controls">
             <div class="catalog-search">
                 <label for="catalogSearch">{{ t('catalog.search') }}</label>

@@ -4481,3 +4481,29 @@ h1, h2, h3 {
         padding: 14px 18px 16px;
     }
 }
+
+.catalog-category-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.catalog-category-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 14px;
+    border: 1.5px solid rgba(31, 95, 53, 0.25);
+    border-radius: 20px;
+    background: rgba(31, 95, 53, 0.05);
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.catalog-category-link:hover {
+    background: rgba(31, 95, 53, 0.12);
+    border-color: var(--green);
+}

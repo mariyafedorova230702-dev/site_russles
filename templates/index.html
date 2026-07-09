@@ -134,7 +134,11 @@
     <div class="container">
         <div class="quick-categories-grid">
             {% for category in categories %}
+            {% if category.slug in category_page_slugs %}
+            <a href="{{ url_for('category_page', category_slug=category.slug) }}">{{ category.name }}</a>
+            {% else %}
             <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}">{{ category.name }}</a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -149,7 +153,11 @@
 
         <div class="home-categories-grid reveal-stagger">
             {% for category in categories %}
+            {% if category.slug in category_page_slugs %}
+            <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="home-category-card">
+            {% else %}
             <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}" class="home-category-card">
+            {% endif %}
                 <span class="home-category-thumb">
                     <img
                         src="{{ url_for('static', filename=category.image|default('images/hero.webp', true)|card_image) }}"

@@ -1086,6 +1086,7 @@ def inject_navigation_data():
         "local_business_jsonld": build_local_business_jsonld() if seo_indexable else None,
         "website_jsonld": build_website_jsonld() if seo_indexable else None,
         "og_image": absolute_url(url_for("static", filename="images/hero.webp")),
+        "category_page_slugs": {item["slug"] for item in CATEGORY_PAGES},
     }
 
 
