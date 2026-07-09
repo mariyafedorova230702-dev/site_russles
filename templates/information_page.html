@@ -12,6 +12,9 @@
     <div class="container information-layout">
         <aside class="information-nav">
             <p>{{ t('footer.customers') }}</p>
+            <a href="{{ url_for('information_page', page_slug='about') }}" {% if page_slug == 'about' %}class="active"{% endif %}>
+                О компании
+            </a>
             <a href="{{ url_for('information_page', page_slug='delivery') }}" {% if page_slug == 'delivery' %}class="active"{% endif %}>
                 {{ t('footer.delivery') }}
             </a>
@@ -30,7 +33,69 @@
                 <p>{{ page.description }}</p>
             </header>
 
-            {% if page_slug == "delivery" %}
+            {% if page_slug == "about" %}
+            <section class="information-highlight">
+                <strong>«Русский Лес» — склад пиломатериалов в Алматы. Работаем более 20 лет.</strong>
+                <span>Более 300 позиций в наличии. Прямые поставки из России.</span>
+            </section>
+
+            <section class="information-section">
+                <h2>О компании</h2>
+                <p>
+                    Компания «Русский Лес» работает в Алматы более двух десятилетий. Мы напрямую закупаем
+                    пиломатериалы у проверенных российских производителей и реализуем их через собственный склад.
+                    Нас знают мастера, строительные бригады и компании ещё со времён базы на ул. Ташкентской–Мира.
+                </p>
+                <p>
+                    В наличии всегда более 300 позиций: вагонка, обрезная доска, брусок, клееный брус,
+                    фанера, OSB, планкен, имитация бруса, блок-хаус, террасная доска, мебельный щит,
+                    полок для бани, погонаж и покрытия по дереву.
+                </p>
+            </section>
+
+            <section class="information-section">
+                <h2>Реквизиты и контакты</h2>
+                <address>
+                    <strong>Русский Лес</strong><br>
+                    г. Алматы, {{ warehouse_address }}<br><br>
+                    Телефон: <a href="tel:+77273290656">+7 727 329 06 56</a><br>
+                    Телефон: <a href="tel:+77273819337">+7 727 381 93 37</a><br>
+                    Мобильный / WhatsApp: <a href="tel:+77772002742">+7 777 200 27 42</a><br>
+                    Мобильный: <a href="tel:+77766546565">+7 776 654 65 65</a><br>
+                    Мобильный: <a href="tel:+77004666066">+7 700 466 60 66</a><br>
+                    E-mail: <a href="mailto:russianwood@inbox.ru">russianwood@inbox.ru</a>
+                </address>
+            </section>
+
+            <section class="information-section">
+                <h2>Режим работы</h2>
+                <ul>
+                    <li>Понедельник – Пятница: 08:00 – 17:00</li>
+                    <li>Суббота: 08:00 – 14:00</li>
+                    <li>Воскресенье: выходной</li>
+                </ul>
+            </section>
+
+            <section class="information-section">
+                <h2>Почему выбирают нас</h2>
+                <ul>
+                    <li>Прямые поставки от производителей из северных регионов России — без посредников</li>
+                    <li>Более 300 позиций в наличии — всегда большой выбор размеров и пород</li>
+                    <li>Материал можно осмотреть до покупки — склад открыт для приезда</li>
+                    <li>Правильное хранение: следим, чтобы материал сохранял форму и качество</li>
+                    <li>Помощь в подборе — консультируем по породам, сортам и размерам</li>
+                    <li>Быстрая погрузка силами сотрудников склада</li>
+                </ul>
+            </section>
+
+            <section class="information-action">
+                <div>
+                    <strong>Приезжайте или напишите в WhatsApp</strong>
+                    <span>Поможем выбрать материал и уточним наличие нужного объёма.</span>
+                </div>
+                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener">Написать в WhatsApp</a>
+            </section>
+            {% elif page_slug == "delivery" %}
             <section class="information-highlight">
                 <strong>Все товары, представленные на сайте, находятся в наличии на складе в Алматы.</strong>
                 <span>Перед приездом рекомендуем уточнить у менеджера наличие необходимого объёма.</span>

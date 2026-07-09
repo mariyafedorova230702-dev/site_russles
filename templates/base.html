@@ -64,7 +64,7 @@
                 <a href="{{ url_for('home') }}">{{ t('nav.home') }}</a>
                 <a href="{{ url_for('catalog') }}">{{ t('nav.catalog') }}</a>
                 <a href="{{ url_for('home') }}#wood-products">{{ t('nav.wood_products') }}</a>
-                <a href="{{ url_for('home') }}#about">{{ t('nav.about') }}</a>
+                <a href="{{ url_for('information_page', page_slug='about') }}">{{ t('nav.about') }}</a>
                 <a href="#contacts">{{ t('nav.contacts') }}</a>
             </nav>
 
@@ -180,6 +180,7 @@
 
         <nav class="footer-information-links" aria-label="{{ t('footer.customers') }}">
             <strong>{{ t('footer.customers') }}</strong>
+            <a href="{{ url_for('information_page', page_slug='about') }}">О компании</a>
             <a href="{{ url_for('information_page', page_slug='delivery') }}">{{ t('footer.delivery') }}</a>
             <a href="{{ url_for('information_page', page_slug='returns') }}">{{ t('footer.returns') }}</a>
             <a href="{{ url_for('information_page', page_slug='privacy') }}">{{ t('footer.privacy') }}</a>

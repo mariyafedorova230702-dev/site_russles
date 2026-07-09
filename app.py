@@ -555,6 +555,10 @@ CATEGORY_PAGE_ALIASES = {
 }
 
 INFORMATION_PAGES = {
+    "about": {
+        "title": "О компании Русский Лес",
+        "description": "Склад пиломатериалов в Алматы. Работаем более 20 лет. Более 300 позиций в наличии. Адрес: ул. Волочаевская, 387а.",
+    },
     "delivery": {
         "title": "Доставка и самовывоз",
         "description": "Условия самовывоза, доставки и погрузки пиломатериалов со склада Русский Лес в Алматы.",
@@ -570,7 +574,8 @@ INFORMATION_PAGES = {
 }
 
 LEGACY_REDIRECTS = {
-    "about-us": ("home", {"_anchor": "about"}),
+    "about-us": ("information_page", {"page_slug": "about"}),
+    "about": ("information_page", {"page_slug": "about"}),
     "contacts": ("home", {"_anchor": "contacts"}),
     "projects": ("home", {"_anchor": "wood-products"}),
     "услуги": ("home", {"_anchor": "wood-products"}),
