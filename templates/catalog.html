@@ -32,6 +32,10 @@
             <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="catalog-category-link">
                 {{ category.name }} →
             </a>
+            {% else %}
+            <a href="{{ url_for('catalog') }}?category={{ category.category|urlencode }}" class="catalog-category-link">
+                {{ category.name }} →
+            </a>
             {% endif %}
             {% endfor %}
         </div>

@@ -4420,6 +4420,11 @@ h1, h2, h3 {
     background: #f8faf8;
 }
 
+.faq-section .section-heading {
+    max-width: 780px;
+    margin: 0 auto 38px;
+}
+
 .faq-list {
     max-width: 780px;
     margin: 0 auto;

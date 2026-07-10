@@ -385,6 +385,12 @@ CATEGORIES = [
     {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.webp"},
     {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.webp"},
     {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.webp"},
+    {"name": "Блок-хаус", "slug": "blok-haus", "category": "блок-хаус", "description": "Имитация бревна для фасада и интерьера", "image": "images/blok-haus.webp"},
+    {"name": "Имитация бруса", "slug": "imitaciya-brusa", "category": "имитация бруса", "description": "Отделочная доска под брус", "image": "images/imitaciya-brusa.webp"},
+    {"name": "Террасная доска", "slug": "terrasnaya-doska", "category": "террасная доска", "description": "Доска для террас и открытых площадок", "image": "images/terrasnaya-doska.webp"},
+    {"name": "Погонаж", "slug": "pogonazh", "category": "погонаж", "description": "Плинтусы, наличники, уголки и раскладки", "image": "images/ugolok.webp"},
+    {"name": "Полок для бани", "slug": "polok", "category": "полок для бани", "description": "Полки для бань и саун", "image": "images/lipa_vagonka.webp"},
+    {"name": "Мебельный щит", "slug": "mebelnyy-shchit", "category": "мебельный щит", "description": "Щиты для мебели и столешниц", "image": "images/hero.webp"},
     {"name": "Покрытия", "slug": "pokrytiya", "category": "покрытия", "description": "Защита и уход за древесиной", "image": "images/akvateks-balzam.webp"},
     {"name": "Изделия из дерева", "slug": "izdeliya-iz-dereva", "category": "изделия из дерева", "description": "Готовые изделия и элементы под заказ", "image": "images/izdelie_pod_zakaz.webp"},
 ]
