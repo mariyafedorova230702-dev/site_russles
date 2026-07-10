@@ -1249,6 +1249,14 @@ footer[id] {
     margin-bottom: 16px;
 }
 
+.catalog-card-bottom strong.price-on-request {
+    color: #888;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
 .catalog-card-actions {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -10950,5 +10950,60 @@
     "catalog_name": "Бальзам Акватекс",
     "dimension_label": "",
     "display_name": "Бальзам Акватекс"
+  },
+  {
+    "slug": "besedka-3x3-m",
+    "name": "Беседка",
+    "catalog_name": "Беседка",
+    "display_name": "Беседка 3×3 м",
+    "category": "изделия из дерева",
+    "description": "Деревянная беседка под заказ. Изготовим по вашим размерам и проекту.",
+    "base_price": 0,
+    "unit": "шт",
+    "image": "images/беседка17.webp",
+    "variants": [],
+    "dimension_label": "3 × 3 м",
+    "availability": "под заказ"
+  },
+  {
+    "slug": "besedka-4x4-m",
+    "name": "Беседка",
+    "catalog_name": "Беседка",
+    "display_name": "Беседка 4×4 м",
+    "category": "изделия из дерева",
+    "description": "Деревянная беседка под заказ. Изготовим по вашим размерам и проекту.",
+    "base_price": 0,
+    "unit": "шт",
+    "image": "images/беседка.webp",
+    "variants": [],
+    "dimension_label": "4 × 4 м",
+    "availability": "под заказ"
+  },
+  {
+    "slug": "besedka-5x5-m",
+    "name": "Беседка",
+    "catalog_name": "Беседка",
+    "display_name": "Беседка 5×5 м",
+    "category": "изделия из дерева",
+    "description": "Просторная деревянная беседка под заказ. Изготовим по вашим размерам и проекту.",
+    "base_price": 0,
+    "unit": "шт",
+    "image": "images/беседка1.webp",
+    "variants": [],
+    "dimension_label": "5 × 5 м",
+    "availability": "под заказ"
+  },
+  {
+    "slug": "besedka-pod-zakaz",
+    "name": "Беседка под заказ",
+    "catalog_name": "Беседка под заказ",
+    "display_name": "Беседка по индивидуальному проекту",
+    "category": "изделия из дерева",
+    "description": "Беседки любой формы и размера по вашему проекту. Расчёт стоимости бесплатно.",
+    "base_price": 0,
+    "unit": "шт",
+    "image": "images/беседка17.webp",
+    "variants": [],
+    "availability": "под заказ"
   }
 ]

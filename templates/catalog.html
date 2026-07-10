@@ -180,7 +180,7 @@
 {% set whatsapp_message %}Здравствуйте! Хочу узнать наличие и цену:
 {{ product.display_name }}
 Вариант: {{ card_variant }}
-Цена на сайте: {{ card_price }} ₸{% endset %}
+Цена на сайте: {% if card_price %}{{ card_price }} ₸{% else %}уточняется{% endif %}{% endset %}
 
             <article
                 class="catalog-card"
@@ -219,7 +219,11 @@
                     <p>{{ product.description }}</p>
 
                     <div class="catalog-card-bottom">
+                        {% if card_price %}
                         <strong>{{ t('product.from') }} {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
+                        {% else %}
+                        <strong class="price-on-request">Уточните цену</strong>
+                        {% endif %}
                         <div class="catalog-card-actions">
                             <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">
                                 {{ t('product.details') }}
