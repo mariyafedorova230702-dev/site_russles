@@ -200,6 +200,14 @@
                     <strong>{{ t('purpose.walls') }}</strong>
                     <span>{{ t('purpose.walls_text') }}</span>
                 </a>
+                <a href="{{ url_for('catalog') }}?category={{ 'ступени'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.stairs') }}</strong>
+                    <span>{{ t('purpose.stairs_text') }}</span>
+                </a>
+                <a href="{{ url_for('catalog') }}?materials={{ 'доска|брус|фанера|OSB'|urlencode }}" class="material-help-link">
+                    <strong>{{ t('purpose.construction') }}</strong>
+                    <span>{{ t('purpose.construction_text') }}</span>
+                </a>
             </div>
         </div>
     </div>
