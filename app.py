@@ -1172,7 +1172,7 @@ def merchant_feed():
         title = _html.escape(f"Купить {seo_name} в Алматы"[:150])
         product_url = _html.escape(absolute_url(url_for("product", slug=p["slug"])))
         image_url = _html.escape(absolute_url(url_for("static", filename=image)))
-        item_id = _html.escape(p["slug"])
+        item_id = f"rl-{p.get('id', p['slug'])}"
         desc_esc = _html.escape(description)
         category = _html.escape(p.get("category", "Пиломатериалы"))
 
