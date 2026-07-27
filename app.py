@@ -1157,16 +1157,10 @@ def sitemap():
 
 @app.route("/feed.xml")
 def merchant_feed():
-    G = "http://base.google.com/ns/1.0"
-    ElementTree.register_namespace("g", G)
-
-    rss = ElementTree.Element("rss", {"version": "2.0"})
-    channel = ElementTree.SubElement(rss, "channel")
-    ElementTree.SubElement(channel, "title").text = "Русский Лес — пиломатериалы в Алматы"
-    ElementTree.SubElement(channel, "link").text = absolute_url("/")
-    ElementTree.SubElement(channel, "description").text = "Склад пиломатериалов в Алматы. Более 300 позиций в наличии."
+    import html as _html
 
     products = load_products()
+    items_parts = []
     for p in products:
         price = p.get("base_price") or 0
         if not price:
@@ -1175,29 +1169,44 @@ def merchant_feed():
         seo_name = p.get("seo_name") or p.get("display_name") or p.get("name", "")
         description = p.get("description") or seo_name
         image = p.get("image", "images/hero.webp")
-        title = f"Купить {seo_name} в Алматы"[:150]
-        product_url = absolute_url(url_for("product", slug=p["slug"]))
+        title = _html.escape(f"Купить {seo_name} в Алматы"[:150])
+        product_url = _html.escape(absolute_url(url_for("product", slug=p["slug"])))
+        image_url = _html.escape(absolute_url(url_for("static", filename=image)))
+        item_id = _html.escape(p["slug"])
+        desc_esc = _html.escape(description)
+        category = _html.escape(p.get("category", "Пиломатериалы"))
 
-        item = ElementTree.SubElement(channel, "item")
-        # Standard RSS elements (required by Google without g: prefix)
-        ElementTree.SubElement(item, "title").text = title
-        ElementTree.SubElement(item, "description").text = description
-        ElementTree.SubElement(item, "link").text = product_url
-        # Google-specific attributes
-        ElementTree.SubElement(item, f"{{{G}}}id").text = p["slug"]
-        ElementTree.SubElement(item, f"{{{G}}}image_link").text = absolute_url(url_for("static", filename=image))
-        ElementTree.SubElement(item, f"{{{G}}}price").text = f"{float(price):.2f} KZT"
-        ElementTree.SubElement(item, f"{{{G}}}availability").text = "in stock"
-        ElementTree.SubElement(item, f"{{{G}}}condition").text = "new"
-        ElementTree.SubElement(item, f"{{{G}}}identifier_exists").text = "no"
-        ElementTree.SubElement(item, f"{{{G}}}brand").text = "Русский Лес"
-        ElementTree.SubElement(item, f"{{{G}}}google_product_category").text = "2814"
-        ElementTree.SubElement(item, f"{{{G}}}product_type").text = p.get("category", "Пиломатериалы")
+        material_line = ""
         if p.get("wood_type"):
-            ElementTree.SubElement(item, f"{{{G}}}material").text = p["wood_type"]
+            material_line = f"\n      <g:material>{_html.escape(p['wood_type'])}</g:material>"
 
-    xml = ElementTree.tostring(rss, encoding="utf-8", xml_declaration=True)
-    return Response(xml, mimetype="application/xml")
+        items_parts.append(f"""    <item>
+      <title>{title}</title>
+      <description>{desc_esc}</description>
+      <link>{product_url}</link>
+      <g:id>{item_id}</g:id>
+      <g:image_link>{image_url}</g:image_link>
+      <g:price>{float(price):.2f} KZT</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:brand>Русский Лес</g:brand>
+      <g:google_product_category>2814</g:google_product_category>
+      <g:product_type>{category}</g:product_type>{material_line}
+    </item>""")
+
+    site_url = _html.escape(absolute_url("/"))
+    all_items = "\n".join(items_parts)
+    body = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Русский Лес — пиломатериалы в Алматы</title>
+    <link>{site_url}</link>
+    <description>Склад пиломатериалов в Алматы. Более 300 позиций в наличии.</description>
+{all_items}
+  </channel>
+</rss>"""
+    return Response(body.encode("utf-8"), mimetype="application/xml")
 
 
 @app.route("/yandex.yml")
