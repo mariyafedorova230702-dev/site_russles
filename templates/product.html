@@ -2,7 +2,7 @@
 
 {% set seo_title = product.seo_name if product.seo_name else product.display_name %}
 {% block title %}Купить {{ seo_title }} в Алматы | Русский Лес{% endblock %}
-{% block meta_description %}{{ seo_title }} — {{ product.description }} Цена от {{ "{:,}".format(product.base_price).replace(",", " ") }} ₸/{{ product.unit }}. В наличии на складе. Самовывоз или доставка по Алматы. Тел: +7 777 200 27 42.{% endblock %}
+{% block meta_description %}{{ seo_title }} — {{ product.description }} Цена от {{ "{:,}".format(product.base_price).replace(",", " ") }} ₸/{{ product.unit }}. В наличии на складе. Самовывоз со склада. Доставка — по согласованию. Тел: +7 777 200 27 42.{% endblock %}
 {% block og_type %}product{% endblock %}
 {% block structured_data %}
 <script type="application/ld+json">{{ product_jsonld|tojson }}</script>
