@@ -1160,7 +1160,7 @@ def merchant_feed():
     G = "http://base.google.com/ns/1.0"
     ElementTree.register_namespace("g", G)
 
-    rss = ElementTree.Element("rss", {"version": "2.0", "xmlns:g": G})
+    rss = ElementTree.Element("rss", {"version": "2.0"})
     channel = ElementTree.SubElement(rss, "channel")
     ElementTree.SubElement(channel, "title").text = "Русский Лес — пиломатериалы в Алматы"
     ElementTree.SubElement(channel, "link").text = absolute_url("/")
@@ -1175,14 +1175,16 @@ def merchant_feed():
         seo_name = p.get("seo_name") or p.get("display_name") or p.get("name", "")
         description = p.get("description") or seo_name
         image = p.get("image", "images/hero.webp")
-
         title = f"Купить {seo_name} в Алматы"[:150]
+        product_url = absolute_url(url_for("product", slug=p["slug"]))
 
         item = ElementTree.SubElement(channel, "item")
+        # Standard RSS elements (required by Google without g: prefix)
+        ElementTree.SubElement(item, "title").text = title
+        ElementTree.SubElement(item, "description").text = description
+        ElementTree.SubElement(item, "link").text = product_url
+        # Google-specific attributes
         ElementTree.SubElement(item, f"{{{G}}}id").text = p["slug"]
-        ElementTree.SubElement(item, f"{{{G}}}title").text = title
-        ElementTree.SubElement(item, f"{{{G}}}description").text = description
-        ElementTree.SubElement(item, f"{{{G}}}link").text = absolute_url(url_for("product", slug=p["slug"]))
         ElementTree.SubElement(item, f"{{{G}}}image_link").text = absolute_url(url_for("static", filename=image))
         ElementTree.SubElement(item, f"{{{G}}}price").text = f"{float(price):.2f} KZT"
         ElementTree.SubElement(item, f"{{{G}}}availability").text = "in stock"
