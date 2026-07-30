@@ -134,8 +134,12 @@
     {% block content %}{% endblock %}
 </main>
 
-<a class="social whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">W</a>
-<a class="social instagram" href="https://www.instagram.com/russian__wood/" target="_blank" rel="noopener">I</a>
+<a class="social whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">
+    <img src="{{ url_for('static', filename='images/icon-whatsapp.webp') }}" alt="WhatsApp" width="40" height="40">
+</a>
+<a class="social instagram" href="https://www.instagram.com/russian__wood/" target="_blank" rel="noopener">
+    <img src="{{ url_for('static', filename='images/icon-instagram.webp') }}" alt="Instagram" width="40" height="40">
+</a>
 
 <a class="chat-button" href="{{ whatsapp_url }}" target="_blank" rel="noopener">
     {{ t('chat.write') }}
