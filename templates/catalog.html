@@ -26,17 +26,19 @@
             </a>
         </div>
 
-        <div class="catalog-category-links">
+        <div class="catalog-category-grid">
             {% for category in navigation_categories %}
             {% if category.slug in category_page_slugs %}
-            <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="catalog-category-link">
-                {{ category.name }} →
-            </a>
+            <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="cat-card">
             {% else %}
-            <a href="{{ url_for('catalog') }}?category={{ category.category|urlencode }}" class="catalog-category-link">
-                {{ category.name }} →
-            </a>
+            <a href="{{ url_for('catalog') }}?category={{ category.category|urlencode }}" class="cat-card">
             {% endif %}
+                <div class="cat-card-img" data-bg="{{ url_for('static', filename=category.image) }}"></div>
+                <div class="cat-card-body">
+                    <span class="cat-card-name">{{ category.name }}</span>
+                    <span class="cat-card-arrow">→</span>
+                </div>
+            </a>
             {% endfor %}
         </div>
 
@@ -257,4 +259,5 @@
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/catalog.js') }}"></script>
+<script>document.querySelectorAll('.cat-card-img[data-bg]').forEach(el=>{el.style.backgroundImage='url('+el.dataset.bg+')'});</script>
 {% endblock %}
