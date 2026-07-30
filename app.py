@@ -394,7 +394,7 @@ CATEGORIES = [
     {"name": "Блок-хаус", "slug": "blok-haus", "category": "блок-хаус", "description": "Имитация бревна для фасада и интерьера", "image": "images/blok-haus.webp"},
     {"name": "Имитация бруса", "slug": "imitaciya-brusa", "category": "имитация бруса", "description": "Отделочная доска под брус", "image": "images/imitaciya-brusa.webp"},
     {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.webp"},
-    {"name": "Доска пола (шпунт)", "slug": "doska-pola", "category": "доска пола", "description": "Шпунтованная доска для чистового пола", "image": "images/hero.webp"},
+    {"name": "Доска пола (шпунт)", "slug": "doska-pola", "category": "доска пола", "description": "Шпунтованная доска для чистового пола", "image": "images/doska-pola-shpunt.webp"},
     {"name": "Террасная доска", "slug": "terrasnaya-doska", "category": "террасная доска", "description": "Доска для террас и открытых площадок", "image": "images/terrasnaya-doska.webp"},
     {"name": "Ступени", "slug": "stupeni", "category": "ступени", "description": "Деревянные ступени для лестниц", "image": "images/stupeni-sosna-40-mm.webp"},
     {"name": "Столешницы", "slug": "stoleshnicy", "category": "столешницы", "description": "Деревянные столешницы из берёзы и термодерева", "image": "images/hero.webp"},
