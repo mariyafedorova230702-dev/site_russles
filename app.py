@@ -633,6 +633,12 @@ LEGACY_REDIRECTS = {
     "osb.html": ("category_page", {"category_slug": "osb"}),
     "catalog.html": ("catalog", {}),
     "index.html": ("home", {}),
+    "bondarka.html": ("catalog", {}),
+    "pogonazh.html": ("category_page", {"category_slug": "pogonazh"}),
+    "mebelnyy-shchit.html": ("category_page", {"category_slug": "mebelnyy-shchit"}),
+    "polok.html": ("category_page", {"category_slug": "polok"}),
+    "pokrytiya.html": ("catalog", {}),
+    "board.html": ("category_page", {"category_slug": "doska"}),
 }
 
 
