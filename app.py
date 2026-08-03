@@ -1273,6 +1273,15 @@ def yandex_feed():
     return Response(body.encode("utf-8"), mimetype="application/xml")
 
 
+@app.route("/yandex_6c2ee2336c138f3f.html")
+def yandex_verification():
+    return Response(
+        '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>'
+        "<body>Verification: 6c2ee2336c138f3f</body></html>",
+        mimetype="text/html",
+    )
+
+
 @app.route("/robots.txt")
 def robots():
     content = "\n".join(
