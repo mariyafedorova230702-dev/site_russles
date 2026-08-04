@@ -184,23 +184,23 @@
             </div>
 
             <div class="material-help-grid reveal-stagger">
-                <a href="{{ url_for('catalog') }}?materials={{ 'вагонка|полок|уголок'|urlencode }}&woods={{ 'осина|липа|кедр'|urlencode }}" class="material-help-link">
+                <a href="{{ url_for('category_page', category_slug='polok') }}" class="material-help-link">
                     <strong>{{ t('purpose.bath') }}</strong>
                     <span>{{ t('purpose.bath_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?materials={{ 'планкен|блок-хаус|блок хаус|имитация бруса'|urlencode }}" class="material-help-link">
+                <a href="{{ url_for('category_page', category_slug='planken') }}" class="material-help-link">
                     <strong>{{ t('purpose.facade') }}</strong>
                     <span>{{ t('purpose.facade_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?materials={{ 'половой шпунт|террасная доска|планкен|доска пола'|urlencode }}" class="material-help-link">
+                <a href="{{ url_for('category_page', category_slug='doska-pola') }}" class="material-help-link">
                     <strong>{{ t('purpose.floor') }}</strong>
                     <span>{{ t('purpose.floor_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?materials={{ 'имитация бруса|вагонка'|urlencode }}" class="material-help-link">
+                <a href="{{ url_for('category_page', category_slug='vagonka') }}" class="material-help-link">
                     <strong>{{ t('purpose.walls') }}</strong>
                     <span>{{ t('purpose.walls_text') }}</span>
                 </a>
-                <a href="{{ url_for('catalog') }}?category={{ 'ступени'|urlencode }}" class="material-help-link">
+                <a href="{{ url_for('category_page', category_slug='stupeni') }}" class="material-help-link">
                     <strong>{{ t('purpose.stairs') }}</strong>
                     <span>{{ t('purpose.stairs_text') }}</span>
                 </a>
