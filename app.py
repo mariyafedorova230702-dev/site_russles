@@ -1161,6 +1161,50 @@ def sitemap():
     return Response(xml, mimetype="application/xml")
 
 
+@app.route("/feed.csv")
+def product_feed_csv():
+    import csv
+    import io
+
+    products = load_products()
+    output = io.StringIO()
+    writer = csv.writer(output, quoting=csv.QUOTE_ALL)
+    writer.writerow([
+        "ID", "Item title", "Item description", "Category",
+        "Item Vendor", "Price", "Currency", "Availability",
+        "Image URL", "Final URL",
+    ])
+    for p in products:
+        price = p.get("base_price") or 0
+        if not price:
+            continue
+        seo_name = p.get("seo_name") or p.get("display_name") or p.get("name", "")
+        title = f"Купить {seo_name} в Алматы"
+        description = p.get("description") or seo_name
+        category = p.get("category", "Пиломатериалы")
+        image = p.get("image", "images/hero.webp")
+        availability = p.get("availability", "в наличии")
+        writer.writerow([
+            f"rl-{p.get('id', p['slug'])}",
+            title,
+            description,
+            category,
+            "Русский Лес",
+            price,
+            "KZT",
+            availability,
+            absolute_url(url_for("static", filename=image)),
+            absolute_url(url_for("product", slug=p["slug"])),
+        ])
+
+    csv_bytes = output.getvalue().encode("utf-8-sig")
+    return Response(
+        csv_bytes,
+        mimetype="text/csv",
+        headers={"Content-Disposition": "attachment; filename=russles-feed.csv"},
+    )
+
+
 @app.route("/feed.xml")
 def merchant_feed():
     import html as _html
