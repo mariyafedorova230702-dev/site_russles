@@ -73,9 +73,7 @@
             <div class="category-purpose-list">
                 {% if ns.purposes %}
                     {% for purpose in ns.purposes %}
-                    <a href="{{ url_for('catalog') }}?purpose={{ purpose|urlencode }}" class="category-purpose-chip">
-                        {{ purpose }}
-                    </a>
+                    <span class="category-purpose-chip">{{ purpose }}</span>
                     {% endfor %}
                 {% else %}
                 <span class="category-purpose-chip">для строительства</span>
