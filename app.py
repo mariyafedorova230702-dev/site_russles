@@ -26,7 +26,7 @@ ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "12345").strip()
 SITE_URL = os.getenv("SITE_URL", "").rstrip("/")
 GOOGLE_SITE_VERIFICATION = os.getenv("GOOGLE_SITE_VERIFICATION", "").strip()
 SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
-WHATSAPP_NUMBER = "77772002742"
+WHATSAPP_NUMBER = "77004666066"
 WAREHOUSE_ADDRESS = "ул. Волочаевская, 387а / ул. Айша-Биби, 387а"
 WAREHOUSE_MAP_QUERY = "Улица Волочаевская, 387а · улица Айша-Биби, 387а"
 WAREHOUSE_MAP_URL = f"https://2gis.kz/almaty/search/{quote(WAREHOUSE_MAP_QUERY, safe='')}"
