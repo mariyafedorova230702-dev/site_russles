@@ -3299,13 +3299,7 @@ footer[id] {
         color: white;
     }
 
-    .page-catalog .info-strip,
-    .page-product .info-strip,
-    .page-category-page .info-strip,
-    .page-information-page .info-strip,
-    .page-admin .info-strip,
-    .page-admin-login .info-strip,
-    .page-admin-edit-product .info-strip {
+    .info-strip {
         display: none;
     }
 
