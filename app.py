@@ -1122,7 +1122,7 @@ def build_product_jsonld(product: dict) -> dict:
 def build_itemlist_jsonld(products: list, category_meta: dict) -> dict:
     return {
         "@context": "https://schema.org",
-        "@type": "ItemList",
+        "@type": "OfferCatalog",
         "name": category_meta["title"],
         "url": absolute_url(url_for("category_page", category_slug=category_meta["slug"])),
         "numberOfItems": len(products),
