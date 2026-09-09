@@ -15,6 +15,45 @@
             <a href="{{ url_for('admin_logout') }}" class="admin-secondary-button">Выйти</a>
         </div>
 
+        {# ── Flash messages ── #}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, msg in messages %}
+        <div class="admin-flash admin-flash--{{ category }}">{{ msg }}</div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {# ── Price upload changes table ── #}
+        {% if session.get('price_changes') %}
+        <div class="admin-price-result">
+            <strong>Изменённые цены:</strong>
+            <table class="admin-price-table">
+                <thead><tr><th>Товар</th><th>Было</th><th>Стало</th></tr></thead>
+                <tbody>
+                {% for ch in session['price_changes'] %}
+                <tr>
+                    <td>{{ ch.name }}</td>
+                    <td>{{ "{:,}".format(ch.old).replace(",", " ") }} ₸</td>
+                    <td><strong>{{ "{:,}".format(ch.new).replace(",", " ") }} ₸</strong></td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% do session.pop('price_changes', None) %}
+        {% endif %}
+
+        {# ── Upload price list ── #}
+        <div class="admin-upload-block">
+            <strong>Загрузить новый прайс-лист (.xlsx)</strong>
+            <p>Цены обновятся автоматически. Товары которых нет в прайсе — останутся без изменений.</p>
+            <form method="post" action="{{ url_for('admin_upload_price') }}" enctype="multipart/form-data" class="admin-upload-form">
+                <input type="file" name="price_file" accept=".xlsx" required class="admin-upload-input">
+                <button type="submit" class="primary-button">Обновить цены</button>
+            </form>
+        </div>
+
         <!-- Поиск и фильтры -->
         <div class="admin-controls">
             <div class="admin-search-wrap">

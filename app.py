@@ -9,8 +9,8 @@ from urllib.parse import quote
 from uuid import uuid4
 from xml.etree import ElementTree
 
-from flask import Flask, Response, abort, redirect, render_template, request, send_file, session, url_for
-from openpyxl import Workbook
+from flask import Flask, Response, abort, flash, redirect, render_template, request, send_file, session, url_for
+from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from werkzeug.utils import secure_filename
 
@@ -1646,6 +1646,134 @@ def admin_edit_product(slug):
         return redirect(url_for("admin"))
 
     return render_template("admin_edit_product.html", product=product_item, upload_error=upload_error)
+
+
+# ─── PRICE LIST UPLOAD ────────────────────────────────────────────────────────
+
+_GRADE_MAP = [
+    ("АВС", "ABC"), ("АВ", "AB"), ("ВС", "BC"),
+    ("Экстра", "Экстра"), ("Э", "Экстра"),
+    ("А", "A"), ("В", "B"), ("С", "C"),
+]
+_WOOD_MAP = [
+    ("лиственниц", "лиственница"), ("листв", "лиственница"), ("лист-ц", "лиственница"),
+    ("берез", "береза"), ("осин", "осина"), ("кедр", "кедр"),
+    ("липа", "липа"), ("липы", "липа"),
+    ("сосна", "сосна"), ("сосны", "сосна"),
+]
+
+
+def _extract_grade(name):
+    for cyr, lat in _GRADE_MAP:
+        if re.search(r"(?<![А-Яа-я])" + cyr + r"(?![А-Яа-я])", name, re.IGNORECASE):
+            return lat
+    return None
+
+
+def _extract_wood(name):
+    low = name.lower()
+    for kw, wood in _WOOD_MAP:
+        if kw in low:
+            return wood
+    return None
+
+
+def _pf(val):
+    if val is None:
+        return None
+    try:
+        return float(str(val).replace(",", ".").strip())
+    except (ValueError, TypeError):
+        return None
+
+
+def parse_price_excel(file_obj) -> list[dict]:
+    """Parse uploaded .xlsx price list → list of {th, wd, unit, price, name}."""
+    wb = load_workbook(file_obj, data_only=True)
+    ws = wb.active
+    UNITS = {"м2", "п/м", "шт", "м³", "м3"}
+    rows = []
+    for row in ws.iter_rows(values_only=True):
+        cells = [c for c in row]
+        if len(cells) < 5:
+            continue
+        name = str(cells[0]).strip() if cells[0] else ""
+        unit_raw = str(cells[1]).strip() if cells[1] else ""
+        unit = unit_raw.replace("м2", "м2").strip()
+        # Normalise п/м variations
+        if "п" in unit and "м" in unit:
+            unit = "п/м"
+        if unit not in UNITS:
+            continue
+        th = _pf(cells[2])
+        wd = _pf(cells[3])
+        price_val = _pf(cells[5]) if len(cells) > 5 else _pf(cells[4])
+        if th is None or wd is None or price_val is None or price_val <= 0:
+            continue
+        rows.append({"name": name, "unit": unit, "th": th, "wd": wd, "price": int(price_val)})
+    return rows
+
+
+def apply_price_updates_from_excel(products: list, price_rows: list) -> list[dict]:
+    """Match Excel rows to products and update base_price. Returns list of change dicts."""
+    changes = []
+    for row in price_rows:
+        t, w, unit, new_price = row["th"], row["wd"], row["unit"], row["price"]
+        grade = _extract_grade(row["name"])
+        wood  = _extract_wood(row["name"])
+
+        matched = []
+        for p in products:
+            pt = _pf(p.get("thickness"))
+            pw = _pf(p.get("width"))
+            pu = (p.get("unit") or "").strip()
+            pg = (p.get("grade") or "").strip()
+            pw_type = (p.get("wood_type") or "").lower()
+
+            if pt != t or pw != w:
+                continue
+            if pu and unit and pu != unit:
+                continue
+            if grade and pg and pg != grade:
+                continue
+            if wood and pw_type and wood not in pw_type:
+                continue
+            matched.append(p)
+
+        for p in matched:
+            if p["base_price"] != new_price:
+                changes.append({
+                    "name": p.get("display_name", p.get("name", "")),
+                    "old": p["base_price"],
+                    "new": new_price,
+                })
+                p["base_price"] = new_price
+
+    return changes
+
+
+@app.route("/admin/upload-price", methods=["POST"])
+def admin_upload_price():
+    if not admin_required():
+        return redirect_to_login()
+
+    file = request.files.get("price_file")
+    if not file or not file.filename.lower().endswith(".xlsx"):
+        flash("Ошибка: загрузите файл в формате .xlsx", "error")
+        return redirect(url_for("admin"))
+
+    try:
+        price_rows = parse_price_excel(BytesIO(file.read()))
+        products = load_products()
+        changes = apply_price_updates_from_excel(products, price_rows)
+        if changes:
+            save_products(products)
+        flash(f"Готово! Обновлено {len(changes)} цен из {len(price_rows)} строк прайса.", "success")
+        session["price_changes"] = changes[:50]  # store for display
+    except Exception as e:
+        flash(f"Ошибка при разборе файла: {e}", "error")
+
+    return redirect(url_for("admin"))
 
 
 @app.route("/admin/product/<slug>/delete", methods=["POST"])
