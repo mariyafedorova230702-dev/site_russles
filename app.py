@@ -1020,9 +1020,10 @@ def product_price(product: dict) -> int:
 
 
 def availability_schema_url(product: dict) -> str:
-    if normalize_category(product.get("availability")) == "в наличии":
-        return "https://schema.org/InStock"
-    return "https://schema.org/LimitedAvailability"
+    av = normalize_category(product.get("availability", ""))
+    if av == "под заказ":
+        return "https://schema.org/PreOrder"
+    return "https://schema.org/InStock"
 
 
 def build_local_business_jsonld() -> dict:
@@ -1115,6 +1116,25 @@ def build_product_jsonld(product: dict) -> dict:
             "seller": {"@type": "Organization", "name": "Русский Лес"},
             "areaServed": {"@type": "City", "name": "Алматы"},
         },
+    }
+
+
+def build_itemlist_jsonld(products: list, category_meta: dict) -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": category_meta["title"],
+        "url": absolute_url(url_for("category_page", category_slug=category_meta["slug"])),
+        "numberOfItems": len(products),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i + 1,
+                "url": absolute_url(url_for("product", slug=p["slug"])),
+                "name": p["display_name"],
+            }
+            for i, p in enumerate(products)
+        ],
     }
 
 
@@ -1503,6 +1523,7 @@ def category_page(category_slug):
                 (category_meta["title"], url_for("category_page", category_slug=category_meta["slug"])),
             ]
         ),
+        itemlist_jsonld=build_itemlist_jsonld(products, category_meta),
     )
 
 
