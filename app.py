@@ -1115,6 +1115,24 @@ def build_product_jsonld(product: dict) -> dict:
             "itemCondition": "https://schema.org/NewCondition",
             "seller": {"@type": "Organization", "name": "Русский Лес"},
             "areaServed": {"@type": "City", "name": "Алматы"},
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {"@type": "MonetaryAmount", "currency": "KZT", "value": "0"},
+                "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "KZ"},
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"},
+                    "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+                },
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "KZ",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 14,
+                "returnMethod": "https://schema.org/ReturnInStore",
+                "returnFees": "https://schema.org/FreeReturn",
+            },
         },
     }
 
