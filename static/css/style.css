@@ -1519,6 +1519,40 @@ footer[id] {
     padding: 0 18px;
 }
 
+.shape-picker-wrap {
+    margin-bottom: 4px;
+}
+
+.shape-picker-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.shape-opt-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: #fffdf8;
+    color: var(--green-dark);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+    font-family: inherit;
+}
+
+.shape-opt-btn:hover {
+    border-color: var(--green);
+}
+
+.shape-opt-btn.active {
+    border-color: var(--green);
+    background: var(--green);
+    color: #fff;
+}
+
 .product-shades {
     margin-top: 20px;
     padding: 18px;

@@ -248,3 +248,63 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateProductState();
 });
+
+// ── Shape + size picker (for products with shape_variants) ──
+(function () {
+    const picker = document.getElementById('shapePicker');
+    if (!picker) return;
+
+    const shapeVariants = JSON.parse(picker.dataset.shapeVariants || '{}');
+    const shapeButtons  = document.getElementById('shapeButtons');
+    const sizePicker    = document.getElementById('sizePicker');
+    const sizeButtons   = document.getElementById('sizeButtons');
+    const priceEl       = document.getElementById('productPrice');
+    const variantDiv    = document.getElementById('productVariant');
+
+    let activeShape = null;
+    let activeSize  = null;
+
+    function renderSizes(shape) {
+        sizeButtons.innerHTML = '';
+        const sizes = shapeVariants[shape] || [];
+        sizes.forEach(function (item) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'shape-opt-btn';
+            btn.dataset.price = item.price;
+            btn.dataset.size  = item.size;
+            const noteStr = item.note ? ' (' + item.note + ')' : '';
+            btn.textContent = item.size + noteStr;
+            btn.addEventListener('click', function () {
+                sizeButtons.querySelectorAll('.shape-opt-btn').forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                activeSize = item.size + noteStr;
+                updatePrice(item.price);
+            });
+            sizeButtons.appendChild(btn);
+        });
+        sizePicker.style.display = '';
+        activeSize = null;
+    }
+
+    function updatePrice(price) {
+        if (!priceEl) return;
+        priceEl.textContent = price.toLocaleString('ru-RU') + ' ₸';
+        if (variantDiv) {
+            const label = (activeShape || '') + (activeSize ? ' • ' + activeSize : '');
+            variantDiv.dataset.defaultVariant = label;
+            variantDiv.dataset.defaultPrice   = price;
+        }
+        // trigger whatsapp button update if function exists
+        if (typeof updateProductState === 'function') updateProductState();
+    }
+
+    shapeButtons.querySelectorAll('.shape-opt-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            shapeButtons.querySelectorAll('.shape-opt-btn').forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            activeShape = btn.dataset.shape;
+            renderSizes(activeShape);
+        });
+    });
+})();

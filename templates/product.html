@@ -72,6 +72,35 @@
                 </option>
                 {% endfor %}
             </select>
+            {% elif product.shape_variants %}
+            {# ── Shape + size picker ── #}
+            <div class="shape-picker-wrap"
+                 id="shapePicker"
+                 data-shape-variants="{{ product.shape_variants | tojson }}"
+                 data-default-price="{{ initial_price }}">
+
+                <label class="variant-label">Форма</label>
+                <div class="shape-picker-row" id="shapeButtons">
+                    {% for shape in product.shape_variants %}
+                    <button type="button" class="shape-opt-btn" data-shape="{{ shape }}">{{ shape }}</button>
+                    {% endfor %}
+                </div>
+
+                <div id="sizePicker" style="display:none">
+                    <label class="variant-label">Размер</label>
+                    <div class="shape-picker-row" id="sizeButtons"></div>
+                </div>
+            </div>
+            <div
+                id="productVariant"
+                data-product-name="{{ product.display_name }}"
+                data-default-variant="выберите форму"
+                data-default-price="{{ initial_price }}"
+                data-product-unit="{{ product.unit }}"
+                data-product-category="{{ product.category|lower }}"
+                data-product-width=""
+                data-product-length=""
+            ></div>
             {% else %}
             <div
                 id="productVariant"
