@@ -299,11 +299,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (typeof updateProductState === 'function') updateProductState();
     }
 
+    const mainImg    = document.getElementById('productMainImage');
+    const shapeImages = mainImg && mainImg.dataset.shapeImages
+        ? JSON.parse(mainImg.dataset.shapeImages) : {};
+    const defaultSrc = mainImg ? mainImg.src : null;
+
+    function switchImage(shape) {
+        if (!mainImg) return;
+        const path = shapeImages[shape];
+        mainImg.src = path ? '/static/' + path : defaultSrc;
+    }
+
     shapeButtons.querySelectorAll('.shape-opt-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
             shapeButtons.querySelectorAll('.shape-opt-btn').forEach(function (b) { b.classList.remove('active'); });
             btn.classList.add('active');
             activeShape = btn.dataset.shape;
+            switchImage(activeShape);
             renderSizes(activeShape);
         });
     });

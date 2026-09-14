@@ -19,11 +19,13 @@
     <div class="container product-detail-grid">
         <div class="product-detail-image{% if product.category == 'покрытия' %} product-detail-image--contain{% endif %}">
             <img
+                id="productMainImage"
                 src="{{ url_for('static', filename=product.image) }}"
                 alt="{{ product.display_name }}"
                 loading="eager"
                 decoding="async"
                 fetchpriority="high"
+                {% if product.shape_images %}data-shape-images="{{ product.shape_images | tojson }}"{% endif %}
             >
         </div>
 
