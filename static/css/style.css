@@ -2148,6 +2148,13 @@ footer[id] {
     font-weight: 800;
     line-height: 1.35;
     padding: 10px 13px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.custom-carousel-slide.active figcaption {
+    opacity: 1;
+    transition: opacity 0.2s ease 0.3s;
 }
 
 .custom-carousel-controls {
@@ -4861,3 +4868,252 @@ input[type="text"]:focus {
     outline: none;
 }
 
+
+
+/* ===== Fasad Page ===== */
+.fasad-hero {
+    padding: 60px 0 48px;
+    background: #f4f7f4;
+    border-bottom: 1px solid var(--border);
+}
+
+.fasad-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--green-dark);
+    margin: 8px 0 18px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.fasad-hero-sub {
+    max-width: 680px;
+    color: #444;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.fasad-hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.fasad-anchors {
+    background: var(--green-dark);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.fasad-anchors .container {
+    display: flex;
+    gap: 0;
+}
+
+.fasad-anchors a {
+    display: block;
+    padding: 14px 24px;
+    color: rgba(255,255,255,0.78);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.2s, color 0.2s;
+}
+
+.fasad-anchors a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.fasad-material {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--border);
+}
+
+.fasad-material--alt {
+    background: #f8faf8;
+}
+
+.fasad-material-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.fasad-material-header--rev {
+    direction: rtl;
+}
+
+.fasad-material-header--rev > * {
+    direction: ltr;
+}
+
+.fasad-material-img img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(16,39,25,0.12);
+}
+
+.fasad-material-copy h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 900;
+    color: var(--green-dark);
+    margin: 8px 0 16px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.fasad-material-copy p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 28px;
+}
+
+.fasad-material-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.fasad-table-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: white;
+}
+
+.fasad-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.fasad-table th {
+    background: #f0f4f0;
+    color: var(--green-dark);
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 14px;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--border);
+}
+
+.fasad-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    color: #333;
+}
+
+.fasad-table tr:last-child td {
+    border-bottom: none;
+}
+
+.fasad-table tr:hover td {
+    background: #f8faf8;
+}
+
+.fasad-table a {
+    color: var(--green-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.fasad-table a:hover {
+    text-decoration: underline;
+}
+
+.fasad-badge-avail {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #e6f4ec;
+    color: #1a6b38;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fasad-badge-ask {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fasad-price-request {
+    color: #888;
+    font-style: italic;
+}
+
+.fasad-wa-btn {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: #25d366;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.fasad-wa-btn:hover {
+    background: #1fbb58;
+}
+
+.fasad-cta {
+    padding: 72px 0;
+    background: var(--green-dark);
+    color: white;
+    text-align: center;
+}
+
+.fasad-cta h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.fasad-cta p {
+    font-size: 17px;
+    opacity: 0.82;
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .fasad-material-header,
+    .fasad-material-header--rev {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        direction: ltr;
+    }
+
+    .fasad-anchors a {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+
+    .fasad-hero-actions,
+    .fasad-material-actions {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+
+{% block title %}Материалы для фасада в Алматы — планкен, имитация бруса, блок-хаус | Русский Лес{% endblock %}
+{% block meta_description %}Планкен, имитация бруса и блок-хаус для наружной отделки домов, бань, беседок. Сосна, лиственница. Все размеры и сорта в наличии на складе Русский Лес в Алматы.{% endblock %}
+
+{% block content %}
+
+{# ── HERO ── #}
+<section class="fasad-hero">
+    <div class="container">
+        <p class="eyebrow">Наружная отделка</p>
+        <h1>Материалы для фасада в Алматы</h1>
+        <p class="fasad-hero-sub">
+            Для наружной отделки зданий, коттеджей, домов, бань, беседок и других построек.
+            Выберите вариант: планкен, имитация бруса или блок-хаус.
+            Ниже можно посмотреть породу древесины, размеры, сорта и актуальные цены.
+        </p>
+        <div class="fasad-hero-actions">
+            <a href="{{ whatsapp_fasad_url }}" target="_blank" rel="noopener" class="primary-button">
+                Уточнить наличие → WhatsApp
+            </a>
+            <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener" class="ghost-button">
+                Приехать на склад ↗
+            </a>
+        </div>
+    </div>
+</section>
+
+{# ── НАВИГАЦИЯ ПО БЛОКАМ ── #}
+<nav class="fasad-anchors">
+    <div class="container">
+        <a href="#planken">Планкен</a>
+        <a href="#imitaciya-brusa">Имитация бруса</a>
+        <a href="#blok-haus">Блок-хаус</a>
+    </div>
+</nav>
+
+{# ════════════════════════════════════
+   ПЛАНКЕН
+   ════════════════════════════════════ #}
+<section class="fasad-material" id="planken">
+    <div class="container">
+        <div class="fasad-material-header">
+            <div class="fasad-material-copy">
+                <p class="eyebrow">Фасадная доска</p>
+                <h2>Планкен</h2>
+                <p>Современный вариант фасадной отделки. Подходит для домов, бань, беседок, заборов и декоративных элементов фасада. Профиль прямой или скошенный — монтируется горизонтально, вертикально или диагонально.</p>
+                <div class="fasad-material-actions">
+                    <a href="{{ url_for('category_page', category_slug='planken') }}" class="primary-button">Смотреть весь планкен</a>
+                    <a href="{{ whatsapp_fasad_url }}" target="_blank" rel="noopener" class="ghost-button">Уточнить наличие</a>
+                </div>
+            </div>
+            <div class="fasad-material-img">
+                <img src="{{ url_for('static', filename='images/planken_listvinica.webp') }}" alt="Планкен фасадный" loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <div class="fasad-table-wrap">
+            <table class="fasad-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Порода</th>
+                        <th>Профиль</th>
+                        <th>Размер (мм × мм × м)</th>
+                        <th>Сорт</th>
+                        <th>Цена</th>
+                        <th>Наличие</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in planken %}
+                {% set card_price = p.variants[0].price if p.variants else p.base_price %}
+                <tr>
+                    <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
+                    <td>{{ p.wood_type|default('—') }}</td>
+                    <td>{% if 'skosh' in p.slug or 'скош' in p.slug %}скошенный{% elif 'termo' in p.slug or 'терм' in p.slug %}термо{% else %}прямой{% endif %}</td>
+                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td>{{ p.grade|default('—') }}</td>
+                    <td>
+                        {% if card_price %}
+                            от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
+                        {% else %}
+                            <span class="fasad-price-request">Уточните</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
+                            <span class="fasad-badge-avail">{{ p.availability }}</span>
+                        {% else %}
+                            <span class="fasad-badge-ask">Уточнить</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
+                        <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{# ════════════════════════════════════
+   ИМИТАЦИЯ БРУСА
+   ════════════════════════════════════ #}
+<section class="fasad-material fasad-material--alt" id="imitaciya-brusa">
+    <div class="container">
+        <div class="fasad-material-header fasad-material-header--rev">
+            <div class="fasad-material-img">
+                <img src="{{ url_for('static', filename='images/imitaciya-brusa.webp') }}" alt="Имитация бруса фасад" loading="lazy" decoding="async">
+            </div>
+            <div class="fasad-material-copy">
+                <p class="eyebrow">Фасадная доска</p>
+                <h2>Имитация бруса</h2>
+                <p>Профилированная доска для фасада. После монтажа создаёт внешний вид стены из бруса — ровная поверхность с характерным профилем. Подходит для домов, бань и хозяйственных построек.</p>
+                <div class="fasad-material-actions">
+                    <a href="{{ url_for('category_page', category_slug='imitaciya-brusa') }}" class="primary-button">Смотреть имитацию бруса</a>
+                    <a href="{{ whatsapp_fasad_url }}" target="_blank" rel="noopener" class="ghost-button">Уточнить наличие</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fasad-table-wrap">
+            <table class="fasad-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Порода</th>
+                        <th>Размер (мм × мм × м)</th>
+                        <th>Сорт</th>
+                        <th>Цена</th>
+                        <th>Наличие</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in imitaciya %}
+                {% set card_price = p.variants[0].price if p.variants else p.base_price %}
+                <tr>
+                    <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
+                    <td>{{ p.wood_type|default('—') }}</td>
+                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td>{{ p.grade|default('—') }}</td>
+                    <td>
+                        {% if card_price %}
+                            от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
+                        {% else %}
+                            <span class="fasad-price-request">Уточните</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
+                            <span class="fasad-badge-avail">{{ p.availability }}</span>
+                        {% else %}
+                            <span class="fasad-badge-ask">Уточнить</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
+                        <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{# ════════════════════════════════════
+   БЛОК-ХАУ
+   ════════════════════════════════════ #}
+<section class="fasad-material" id="blok-haus">
+    <div class="container">
+        <div class="fasad-material-header">
+            <div class="fasad-material-copy">
+                <p class="eyebrow">Фасадная доска</p>
+                <h2>Блок-хаус</h2>
+                <p>Фасадная доска с округлой лицевой стороной. После монтажа создаёт эффект стены из бревна — фактурный и тёплый внешний вид. Популярен для деревянных домов, бань и беседок в классическом стиле.</p>
+                <div class="fasad-material-actions">
+                    <a href="{{ url_for('category_page', category_slug='blok-haus') }}" class="primary-button">Смотреть блок-хаус</a>
+                    <a href="{{ whatsapp_fasad_url }}" target="_blank" rel="noopener" class="ghost-button">Уточнить наличие</a>
+                </div>
+            </div>
+            <div class="fasad-material-img">
+                <img src="{{ url_for('static', filename='images/blok-haus.webp') }}" alt="Блок-хаус фасад" loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <div class="fasad-table-wrap">
+            <table class="fasad-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Порода</th>
+                        <th>Размер (мм × мм × м)</th>
+                        <th>Сорт</th>
+                        <th>Цена</th>
+                        <th>Наличие</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in blok_haus %}
+                {% set card_price = p.variants[0].price if p.variants else p.base_price %}
+                <tr>
+                    <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
+                    <td>{{ p.wood_type|default('сосна') }}</td>
+                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td>{{ p.grade|default('—') }}</td>
+                    <td>
+                        {% if card_price %}
+                            от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
+                        {% else %}
+                            <span class="fasad-price-request">Уточните</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
+                            <span class="fasad-badge-avail">{{ p.availability }}</span>
+                        {% else %}
+                            <span class="fasad-badge-ask">Уточнить</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
+                        <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{# ── CTA ── #}
+<section class="fasad-cta">
+    <div class="container">
+        <h2>Не знаете, что выбрать для вашего проекта?</h2>
+        <p>Напишите нам в WhatsApp — расскажите задачу, мы подберём материал, сорт и размер под ваш бюджет.</p>
+        <a href="{{ whatsapp_fasad_url }}" target="_blank" rel="noopener" class="primary-button">Написать в WhatsApp</a>
+    </div>
+</section>
+
+{% endblock %}

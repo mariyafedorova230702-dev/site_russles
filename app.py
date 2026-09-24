@@ -397,7 +397,7 @@ CATEGORIES = [
     {"name": "Доска пола (шпунт)", "slug": "doska-pola", "category": "доска пола", "description": "Шпунтованная доска для чистового пола", "image": "images/doska-pola-shpunt.webp"},
     {"name": "Террасная доска", "slug": "terrasnaya-doska", "category": "террасная доска", "description": "Доска для террас и открытых площадок", "image": "images/terrasnaya-doska.webp"},
     {"name": "Ступени", "slug": "stupeni", "category": "ступени", "description": "Деревянные ступени для лестниц", "image": "images/stupeni-sosna-40-mm.webp"},
-    {"name": "Столешницы", "slug": "stoleshnicy", "category": "столешницы", "description": "Деревянные столешницы из берёзы и термодерева", "image": "images/hero.webp"},
+    {"name": "Столешницы", "slug": "stoleshnicy", "category": "столешницы", "description": "Деревянные столешницы из берёзы и термодерева", "image": "images/stolesnica-vse-vidy.PNG"},
     {"name": "Фанера", "slug": "fanera", "category": "фанера", "description": "Листы для черновых и отделочных работ", "image": "images/fanera.webp"},
     {"name": "OSB", "slug": "osb", "category": "OSB", "description": "Плиты для пола, стен и каркаса", "image": "images/OSB.webp"},
     {"name": "Мебельный щит", "slug": "mebelnyy-shchit", "category": "мебельный щит", "description": "Щиты для мебели и столешниц", "image": "images/mebelnyy-shchit-28-800-2000-mm-sosna-almaty.webp"},
@@ -1809,6 +1809,22 @@ def admin_delete_product(slug):
 def legacy_product_page(legacy_slug):
     search_query = re.sub(r"[-_]+", " ", legacy_slug).strip()
     return redirect(url_for("catalog", q=search_query), code=301)
+
+
+@app.route("/fasad")
+def fasad_page():
+    products = load_products()
+    planken   = [p for p in products if p.get("category", "").lower() == "планкен"]
+    imitaciya = [p for p in products if p.get("category", "").lower() == "имитация бруса"]
+    blok_haus = [p for p in products if p.get("category", "").lower() == "блок-хаус"]
+    whatsapp_msg = quote("Здравствуйте! Хочу уточнить наличие материалов для фасада.", safe="")
+    return render_template(
+        "fasad.html",
+        planken=planken,
+        imitaciya=imitaciya,
+        blok_haus=blok_haus,
+        whatsapp_fasad_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={whatsapp_msg}",
+    )
 
 
 @app.route("/<path:legacy_path>")

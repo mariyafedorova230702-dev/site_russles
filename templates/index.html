@@ -188,7 +188,7 @@
                     <strong>{{ t('purpose.bath') }}</strong>
                     <span>{{ t('purpose.bath_text') }}</span>
                 </a>
-                <a href="{{ url_for('category_page', category_slug='planken') }}" class="material-help-link">
+                <a href="{{ url_for('catalog') }}?purpose={{ 'для фасада'|urlencode }}" class="material-help-link">
                     <strong>{{ t('purpose.facade') }}</strong>
                     <span>{{ t('purpose.facade_text') }}</span>
                 </a>
