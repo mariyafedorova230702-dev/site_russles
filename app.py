@@ -1827,6 +1827,230 @@ def fasad_page():
     )
 
 
+@app.route("/banya")
+def banya_page():
+    products = load_products()
+    vagonka  = [p for p in products if p.get("category", "").lower() == "вагонка"]
+    polok    = [p for p in products if p.get("category", "").lower() == "полок для бани"]
+    pogonazh = [p for p in products if p.get("category", "").lower() == "погонаж"]
+    sections = [
+        {
+            "id": "vagonka-banya",
+            "eyebrow": "Отделочная доска",
+            "title": "Вагонка",
+            "description": "Самый популярный материал для внутренней отделки бани. Липа, осина, кедр — без смол, не обжигают при нагреве. Сосна — для предбанника и раздевалки.",
+            "image": "images/lipa_vagonka.webp",
+            "catalog_url": url_for("category_page", category_slug="vagonka"),
+            "products": vagonka,
+            "show_wood": True,
+        },
+        {
+            "id": "polok",
+            "eyebrow": "Для полков и лавок",
+            "title": "Полок для бани",
+            "description": "Абаш и липа — лучшие породы для полков: быстро нагреваются и не обжигают кожу. Специальный профиль с канавками отводит воду и не скользит.",
+            "image": "images/vagonka.webp",
+            "catalog_url": url_for("category_page", category_slug="polok"),
+            "products": polok,
+            "show_wood": True,
+        },
+        {
+            "id": "pogonazh",
+            "eyebrow": "Молдинги и плинтусы",
+            "title": "Погонаж",
+            "description": "Уголки, галтели, наличники, плинтусы — для аккуратной отделки стыков и переходов в бане и парной. Сосна, лиственница, липа.",
+            "image": "images/galtel.webp",
+            "catalog_url": url_for("catalog") + "?category=%D0%BF%D0%BE%D0%B3%D0%BE%D0%BD%D0%B0%D0%B6",
+            "products": pogonazh,
+            "show_wood": True,
+        },
+    ]
+    wa_msg = quote("Здравствуйте! Хочу уточнить наличие материалов для бани.", safe="")
+    return render_template(
+        "purpose_page.html",
+        page_title="Материалы для бани в Алматы",
+        page_eyebrow="Баня и сауна",
+        page_description="Всё для внутренней отделки бани и парной: вагонка, полок, погонаж. Липа, осина, абаш, кедр — в наличии на складе в Алматы.",
+        sections=sections,
+        whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
+    )
+
+
+@app.route("/pol")
+def pol_page():
+    products = load_products()
+    doska_pola   = [p for p in products if p.get("category", "").lower() == "доска пола"]
+    terrasnaya   = [p for p in products if p.get("category", "").lower() == "террасная доска"]
+    sections = [
+        {
+            "id": "doska-pola",
+            "eyebrow": "Половая доска",
+            "title": "Доска пола",
+            "description": "Шпунтованная доска для чистового пола в доме, на даче, в бане. Сосна, лиственница. После укладки шлифуется и покрывается маслом или лаком.",
+            "image": "images/doska-pola-shpunt.webp",
+            "catalog_url": url_for("category_page", category_slug="doska-pola"),
+            "products": doska_pola,
+            "show_wood": True,
+        },
+        {
+            "id": "terrasnaya-doska",
+            "eyebrow": "Для улицы и террас",
+            "title": "Террасная доска",
+            "description": "Профилированная доска для открытых террас, площадок, беседок и причалов. Лиственница и сосна — с продольными бороздками для отвода воды.",
+            "image": "images/terrasnaya-doska.webp",
+            "catalog_url": url_for("category_page", category_slug="terrasnaya-doska"),
+            "products": terrasnaya,
+            "show_wood": True,
+        },
+    ]
+    wa_msg = quote("Здравствуйте! Хочу уточнить наличие доски для пола и террасы.", safe="")
+    return render_template(
+        "purpose_page.html",
+        page_title="Доска для пола и террасы в Алматы",
+        page_eyebrow="Пол и терраса",
+        page_description="Шпунтованная половая доска и террасная доска в наличии. Сосна, лиственница. Самовывоз со склада в Алматы или доставка.",
+        sections=sections,
+        whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
+    )
+
+
+@app.route("/steny")
+def steny_page():
+    products  = load_products()
+    vagonka   = [p for p in products if p.get("category", "").lower() == "вагонка"]
+    imitaciya = [p for p in products if p.get("category", "").lower() == "имитация бруса"]
+    blok_haus = [p for p in products if p.get("category", "").lower() == "блок-хаус"]
+    sections = [
+        {
+            "id": "vagonka-steny",
+            "eyebrow": "Классическая вагонка",
+            "title": "Вагонка",
+            "description": "Лёгкий монтаж, красивый вид, хорошая термоизоляция. Сосна и лиственница — для жилых комнат, прихожих, веранд. Липа — для бани.",
+            "image": "images/vagonka.webp",
+            "catalog_url": url_for("category_page", category_slug="vagonka"),
+            "products": vagonka,
+            "show_wood": True,
+        },
+        {
+            "id": "imitaciya-brusa",
+            "eyebrow": "Профилированная доска",
+            "title": "Имитация бруса",
+            "description": "Создаёт вид стены из бруса при простом монтаже. Популярна для деревянных домов, каркасных коттеджей и интерьеров в стиле шале.",
+            "image": "images/imitaciya-brusa.webp",
+            "catalog_url": url_for("category_page", category_slug="imitaciya-brusa"),
+            "products": imitaciya,
+            "show_wood": True,
+        },
+        {
+            "id": "blok-haus-steny",
+            "eyebrow": "Округлый профиль",
+            "title": "Блок-хаус",
+            "description": "Доска с округлой лицевой стороной — эффект бревенчатой стены. Для деревенского и классического интерьерного стиля.",
+            "image": "images/blok-haus.webp",
+            "catalog_url": url_for("category_page", category_slug="blok-haus"),
+            "products": blok_haus,
+            "show_wood": True,
+        },
+    ]
+    wa_msg = quote("Здравствуйте! Хочу уточнить наличие материалов для отделки стен.", safe="")
+    return render_template(
+        "purpose_page.html",
+        page_title="Материалы для отделки стен в Алматы",
+        page_eyebrow="Внутренняя отделка",
+        page_description="Вагонка, имитация бруса, блок-хаус — для внутренней отделки стен и потолков. Сосна, лиственница, липа. Склад в Алматы.",
+        sections=sections,
+        whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
+    )
+
+
+@app.route("/lestnicy")
+def lestnicy_page():
+    products = load_products()
+    stupeni  = [p for p in products if p.get("category", "").lower() == "ступени"]
+    sections = [
+        {
+            "id": "stupeni",
+            "eyebrow": "Для лестниц",
+            "title": "Ступени",
+            "description": "Готовые деревянные ступени для лестниц: сосна, берёза, дуб. Шлифованные, под покраску или под масло. Разные размеры в наличии.",
+            "image": "images/stupeni-bereza.webp",
+            "catalog_url": url_for("category_page", category_slug="stupeni"),
+            "products": stupeni,
+            "show_wood": True,
+        },
+    ]
+    wa_msg = quote("Здравствуйте! Хочу уточнить наличие ступеней для лестницы.", safe="")
+    return render_template(
+        "purpose_page.html",
+        page_title="Ступени для лестниц в Алматы",
+        page_eyebrow="Лестницы",
+        page_description="Деревянные ступени для лестниц из сосны, берёзы и дуба. Готовые изделия в наличии на складе в Алматы.",
+        sections=sections,
+        whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
+    )
+
+
+@app.route("/stroitelstvo")
+def stroitelstvo_page():
+    products  = load_products()
+    doska     = [p for p in products if p.get("category", "").lower() == "доска"]
+    brusok    = [p for p in products if p.get("category", "").lower() == "брусок"]
+    kl_brus   = [p for p in products if p.get("category", "").lower() == "клееный брус"]
+    fanera    = [p for p in products if p.get("category", "").lower() == "фанера"]
+    osb       = [p for p in products if p.get("category", "").lower() == "osb"]
+    sections = [
+        {
+            "id": "doska-stroitelstvo",
+            "eyebrow": "Обрезная и строганая",
+            "title": "Доска",
+            "description": "Обрезная доска из сосны — основной материал для стропил, обрешётки, опалубки, перекрытий и заборов. Большой ассортимент сечений и длин.",
+            "image": "images/Brusok-sosna.webp",
+            "catalog_url": url_for("catalog") + "?category=%D0%B4%D0%BE%D1%81%D0%BA%D0%B0",
+            "products": doska,
+            "show_wood": False,
+        },
+        {
+            "id": "brusok-stroitelstvo",
+            "eyebrow": "Брусок строганый",
+            "title": "Брусок",
+            "description": "Строганый брусок из сосны для обрешётки, каркасов, контробрешётки и столярных работ. Сечения 25×40, 40×40, 50×50мм и другие.",
+            "image": "images/Brusok-sosna.webp",
+            "catalog_url": url_for("category_page", category_slug="brusok"),
+            "products": brusok,
+            "show_wood": False,
+        },
+        {
+            "id": "kleenyy-brus",
+            "eyebrow": "Конструкционный",
+            "title": "Клееный брус",
+            "description": "Стабильный, не трескается и не крутит. Для несущих балок, стропил, лестничных тетив и интерьерных балок. Сосна и лиственница.",
+            "image": "images/kleenyy-brus.webp",
+            "catalog_url": url_for("category_page", category_slug="brus"),
+            "products": kl_brus,
+            "show_wood": True,
+        },
+        {
+            "id": "fanera-stroitelstvo",
+            "eyebrow": "Листовой материал",
+            "title": "Фанера и OSB",
+            "description": "Фанера ФК и ФСФ, OSB-3 — для чернового пола, опалубки, стен каркасных домов, кровли и мебели. Форматы 1525×1525 и 1220×2440мм.",
+            "image": "images/fanera.webp",
+            "catalog_url": url_for("category_page", category_slug="fanera"),
+            "products": fanera + osb,
+            "show_wood": False,
+        },
+    ]
+    wa_msg = quote("Здравствуйте! Хочу уточнить наличие строительных материалов.", safe="")
+    return render_template(
+        "purpose_page.html",
+        page_title="Строительные материалы из дерева в Алматы",
+        page_eyebrow="Строительство",
+        page_description="Доска, брусок, клееный брус, фанера и OSB — для строительства домов, бань, хозпостроек. Склад в Алматы, самовывоз или доставка.",
+        sections=sections,
+        whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
+    )
+
+
 @app.route("/<path:legacy_path>")
 def legacy_page_redirect(legacy_path):
     redirect_config = LEGACY_REDIRECTS.get(legacy_path.strip("/"))

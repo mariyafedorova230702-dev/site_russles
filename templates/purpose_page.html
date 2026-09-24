@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }} в Алматы | Русский Лес{% endblock %}
+{% block meta_description %}{{ page_description }} Склад Русский Лес в Алматы. Самовывоз или доставка. Тел: +7 777 200 27 42.{% endblock %}
+
+{% block content %}
+
+{# ── HERO ── #}
+<section class="fasad-hero">
+    <div class="container">
+        <p class="eyebrow">{{ page_eyebrow }}</p>
+        <h1>{{ page_title }}</h1>
+        <p class="fasad-hero-sub">{{ page_description }}</p>
+        <div class="fasad-hero-actions">
+            <a href="{{ whatsapp_page_url }}" target="_blank" rel="noopener" class="primary-button">
+                Уточнить наличие → WhatsApp
+            </a>
+            <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener" class="ghost-button">
+                Приехать на склад ↗
+            </a>
+        </div>
+    </div>
+</section>
+
+{# ── НАВИГАЦИЯ ── #}
+<nav class="fasad-anchors">
+    <div class="container">
+        {% for s in sections %}
+        <a href="#{{ s.id }}">{{ s.title }}</a>
+        {% endfor %}
+    </div>
+</nav>
+
+{# ── СЕКЦИИ ── #}
+{% for s in sections %}
+<section class="fasad-material{% if loop.index is even %} fasad-material--alt{% endif %}" id="{{ s.id }}">
+    <div class="container">
+        <div class="fasad-material-header{% if loop.index is even %} fasad-material-header--rev{% endif %}">
+            {% if loop.index is even %}
+            <div class="fasad-material-img">
+                <img src="{{ url_for('static', filename=s.image) }}" alt="{{ s.title }}" loading="lazy" decoding="async">
+            </div>
+            {% endif %}
+            <div class="fasad-material-copy">
+                <p class="eyebrow">{{ s.eyebrow }}</p>
+                <h2>{{ s.title }}</h2>
+                <p>{{ s.description }}</p>
+                <div class="fasad-material-actions">
+                    <a href="{{ s.catalog_url }}" class="primary-button">Смотреть все {{ s.title|lower }}</a>
+                    <a href="{{ whatsapp_page_url }}" target="_blank" rel="noopener" class="ghost-button">Уточнить наличие</a>
+                </div>
+            </div>
+            {% if loop.index is odd %}
+            <div class="fasad-material-img">
+                <img src="{{ url_for('static', filename=s.image) }}" alt="{{ s.title }}" loading="lazy" decoding="async">
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="fasad-table-wrap">
+            <table class="fasad-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        {% if s.show_wood %}<th>Порода</th>{% endif %}
+                        <th>Размер</th>
+                        <th>Сорт</th>
+                        <th>Цена</th>
+                        <th>Наличие</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in s.products %}
+                {% set card_price = p.variants[0].price if p.variants else p.base_price %}
+                <tr>
+                    <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
+                    {% if s.show_wood %}<td>{{ p.wood_type|default('—') }}</td>{% endif %}
+                    <td>{{ p.thickness|default('') }}{% if p.thickness and p.width %} × {% endif %}{{ p.width|default('') }}{% if p.width and p.length %} × {% endif %}{{ p.length|default('—') }}</td>
+                    <td>{{ p.grade|default('—') }}</td>
+                    <td>
+                        {% if card_price %}
+                            от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
+                        {% else %}
+                            <span class="fasad-price-request">Уточните</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
+                            <span class="fasad-badge-avail">{{ p.availability }}</span>
+                        {% else %}
+                            <span class="fasad-badge-ask">Уточнить</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
+                        <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn">WA</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+{# ── CTA ── #}
+<section class="fasad-cta">
+    <div class="container">
+        <h2>Не знаете, что выбрать?</h2>
+        <p>Напишите нам в WhatsApp — расскажите задачу, подберём материал, размер и сорт под ваш бюджет.</p>
+        <a href="{{ whatsapp_page_url }}" target="_blank" rel="noopener" class="primary-button">Написать в WhatsApp</a>
+    </div>
+</section>
+
+{% endblock %}
