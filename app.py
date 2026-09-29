@@ -1922,7 +1922,7 @@ def steny_page():
     blok_haus = [p for p in products if p.get("category", "").lower() == "блок-хаус"]
     sections = [
         {
-            "id": "vagonka-steny",
+            "id": "vagonka-dlya-interiera",
             "eyebrow": "Классическая вагонка",
             "title": "Вагонка для интерьера",
             "description": "Лёгкий монтаж, красивый вид, хорошая термоизоляция. Сосна и лиственница — для жилых комнат, прихожих, веранд. Липа — для бани.",
