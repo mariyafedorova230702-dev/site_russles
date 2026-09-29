@@ -31,6 +31,21 @@
     </div>
 </nav>
 
+{# ── ФИЛЬТР ПО ПОРОДЕ ── #}
+{% if filter_woods %}
+<div class="wood-filter" id="wood-filter">
+    <div class="container">
+        <span class="wood-filter-label">Порода:</span>
+        <div class="wood-filter-btns">
+            <button class="wood-filter-btn active" data-wood="all">Все</button>
+            {% for wood in filter_woods %}
+            <button class="wood-filter-btn" data-wood="{{ wood|lower }}">{{ wood }}</button>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
 {# ── СЕКЦИИ ── #}
 {% for s in sections %}
 <section class="fasad-material{% if loop.index is even %} fasad-material--alt{% endif %}" id="{{ s.id }}">
@@ -73,7 +88,7 @@
                 <tbody>
                 {% for p in s.products %}
                 {% set card_price = p.variants[0].price if p.variants else p.base_price %}
-                <tr>
+                <tr data-wood="{{ p.wood_type|lower|default('') }}">
                     <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
                     {% if s.show_wood %}<td data-label="Порода">{{ p.wood_type|default('—') }}</td>{% endif %}
                     <td data-label="Размер">{{ p.thickness|default('') }}{% if p.thickness and p.width %} × {% endif %}{{ p.width|default('') }}{% if p.width and p.length %} × {% endif %}{{ p.length|default('—') }}</td>
@@ -100,6 +115,9 @@
                 {% endfor %}
                 </tbody>
             </table>
+            <p class="wood-filter-empty" style="display:none; padding:16px; color:#888; text-align:center;">
+                Нет товаров с выбранной породой в этом разделе
+            </p>
         </div>
     </div>
 </section>
@@ -113,5 +131,31 @@
         <a href="{{ whatsapp_page_url }}" target="_blank" rel="noopener" class="primary-button">Написать в WhatsApp</a>
     </div>
 </section>
+
+{% if filter_woods %}
+<script>
+(function () {
+    var btns = document.querySelectorAll('.wood-filter-btn');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            btns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var wood = btn.dataset.wood;
+            document.querySelectorAll('.fasad-table tbody').forEach(function (tbody) {
+                var rows = tbody.querySelectorAll('tr');
+                var visible = 0;
+                rows.forEach(function (row) {
+                    var match = wood === 'all' || row.dataset.wood === wood;
+                    row.style.display = match ? '' : 'none';
+                    if (match) visible++;
+                });
+                var empty = tbody.closest('.fasad-table-wrap').querySelector('.wood-filter-empty');
+                if (empty) empty.style.display = visible === 0 ? 'block' : 'none';
+            });
+        });
+    });
+})();
+</script>
+{% endif %}
 
 {% endblock %}

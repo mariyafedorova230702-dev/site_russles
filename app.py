@@ -1952,6 +1952,14 @@ def steny_page():
             "show_wood": True,
         },
     ]
+    all_steny = vagonka + imitaciya + blok_haus
+    seen, filter_woods = set(), []
+    for p in all_steny:
+        w = (p.get("wood_type") or "").strip()
+        if w and w.lower() not in seen:
+            seen.add(w.lower())
+            filter_woods.append(w.capitalize())
+    filter_woods = sorted(filter_woods)
     wa_msg = quote("Здравствуйте! Хочу уточнить наличие материалов для отделки стен.", safe="")
     return render_template(
         "purpose_page.html",
@@ -1959,6 +1967,7 @@ def steny_page():
         page_eyebrow="Внутренняя отделка",
         page_description="Вагонка, имитация бруса, блок-хаус — для внутренней отделки стен и потолков. Сосна, лиственница, липа. Склад в Алматы.",
         sections=sections,
+        filter_woods=filter_woods,
         whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
     )
 
