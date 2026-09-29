@@ -1924,7 +1924,7 @@ def steny_page():
         {
             "id": "vagonka-steny",
             "eyebrow": "Классическая вагонка",
-            "title": "Вагонка",
+            "title": "Вагонка для интерьера",
             "description": "Лёгкий монтаж, красивый вид, хорошая термоизоляция. Сосна и лиственница — для жилых комнат, прихожих, веранд. Липа — для бани.",
             "image": "images/vagonka.webp",
             "catalog_url": url_for("category_page", category_slug="vagonka"),
