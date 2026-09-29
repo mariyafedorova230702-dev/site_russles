@@ -74,25 +74,25 @@
                 {% set card_price = p.variants[0].price if p.variants else p.base_price %}
                 <tr>
                     <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
-                    <td>{{ p.wood_type|default('—') }}</td>
-                    <td>{% if 'skosh' in p.slug or 'скош' in p.slug %}скошенный{% elif 'termo' in p.slug or 'терм' in p.slug %}термо{% else %}прямой{% endif %}</td>
-                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
-                    <td>{{ p.grade|default('—') }}</td>
-                    <td>
+                    <td data-label="Порода">{{ p.wood_type|default('—') }}</td>
+                    <td data-label="Профиль">{% if 'skosh' in p.slug or 'скош' in p.slug %}скошенный{% elif 'termo' in p.slug or 'терм' in p.slug %}термо{% else %}прямой{% endif %}</td>
+                    <td data-label="Размер">{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td data-label="Сорт">{{ p.grade|default('—') }}</td>
+                    <td data-label="Цена">
                         {% if card_price %}
                             от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
                         {% else %}
                             <span class="fasad-price-request">Уточните</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="Наличие">
                         {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
                             <span class="fasad-badge-avail">{{ p.availability }}</span>
                         {% else %}
                             <span class="fasad-badge-ask">Уточнить</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="">
                         {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
                         <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
                     </td>
@@ -142,24 +142,24 @@
                 {% set card_price = p.variants[0].price if p.variants else p.base_price %}
                 <tr>
                     <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
-                    <td>{{ p.wood_type|default('—') }}</td>
-                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
-                    <td>{{ p.grade|default('—') }}</td>
-                    <td>
+                    <td data-label="Порода">{{ p.wood_type|default('—') }}</td>
+                    <td data-label="Размер">{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td data-label="Сорт">{{ p.grade|default('—') }}</td>
+                    <td data-label="Цена">
                         {% if card_price %}
                             от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
                         {% else %}
                             <span class="fasad-price-request">Уточните</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="Наличие">
                         {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
                             <span class="fasad-badge-avail">{{ p.availability }}</span>
                         {% else %}
                             <span class="fasad-badge-ask">Уточнить</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="">
                         {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
                         <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
                     </td>
@@ -209,24 +209,24 @@
                 {% set card_price = p.variants[0].price if p.variants else p.base_price %}
                 <tr>
                     <td><a href="{{ url_for('product', slug=p.slug) }}">{{ p.catalog_name }}</a></td>
-                    <td>{{ p.wood_type|default('сосна') }}</td>
-                    <td>{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
-                    <td>{{ p.grade|default('—') }}</td>
-                    <td>
+                    <td data-label="Порода">{{ p.wood_type|default('сосна') }}</td>
+                    <td data-label="Размер">{{ p.thickness|default('—') }} × {{ p.width|default('—') }} × {{ p.length|default('—') }}</td>
+                    <td data-label="Сорт">{{ p.grade|default('—') }}</td>
+                    <td data-label="Цена">
                         {% if card_price %}
                             от {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ p.unit }}
                         {% else %}
                             <span class="fasad-price-request">Уточните</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="Наличие">
                         {% if p.availability and p.availability|lower not in ['уточнить', ''] %}
                             <span class="fasad-badge-avail">{{ p.availability }}</span>
                         {% else %}
                             <span class="fasad-badge-ask">Уточнить</span>
                         {% endif %}
                     </td>
-                    <td>
+                    <td data-label="">
                         {% set wa_msg = "Здравствуйте! Хочу уточнить наличие и цену: " ~ p.display_name %}
                         <a href="https://wa.me/{{ whatsapp_number }}?text={{ wa_msg|urlencode }}" target="_blank" rel="noopener" class="fasad-wa-btn" title="WhatsApp">WA</a>
                     </td>
