@@ -1914,8 +1914,8 @@ def pol_page():
     )
 
 
-@app.route("/steny")
-def steny_page():
+@app.route("/otdelka")
+def otdelka_page():
     products  = load_products()
     vagonka   = [p for p in products if p.get("category", "").lower() == "вагонка"]
     imitaciya = [p for p in products if p.get("category", "").lower() == "имитация бруса"]
