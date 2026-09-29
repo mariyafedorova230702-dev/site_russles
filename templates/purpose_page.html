@@ -35,11 +35,17 @@
 {% if filter_woods %}
 <div class="wood-filter" id="wood-filter">
     <div class="container">
-        <span class="wood-filter-label">Порода:</span>
+        <p class="wood-filter-title">Выберите породу дерева</p>
         <div class="wood-filter-btns">
-            <button class="wood-filter-btn active" data-wood="all">Все</button>
+            <button class="wood-filter-btn active" data-wood="all">
+                <span class="wood-swatch wood-swatch--all"></span>
+                <span class="wood-filter-name">Все породы</span>
+            </button>
             {% for wood in filter_woods %}
-            <button class="wood-filter-btn" data-wood="{{ wood|lower }}">{{ wood }}</button>
+            <button class="wood-filter-btn" data-wood="{{ wood|lower }}">
+                <span class="wood-swatch wood-swatch--{{ wood|lower }}"></span>
+                <span class="wood-filter-name">{{ wood }}</span>
+            </button>
             {% endfor %}
         </div>
     </div>

@@ -5139,64 +5139,96 @@ input[type="text"]:focus {
 }
 
 .wood-filter {
-    background: var(--bg-light, #f8faf7);
-    border-bottom: 1px solid var(--border);
-    padding: 14px 0;
-    position: sticky;
-    top: 60px;
-    z-index: 90;
+    padding: 44px 0 40px;
+    background: #f4f7f4;
+    border-top: 1px solid #e4ece3;
+    border-bottom: 1px solid #e4ece3;
 }
 
-.wood-filter .container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.wood-filter-label {
-    font-size: 13px;
+.wood-filter-title {
+    font-size: 12px;
     font-weight: 700;
-    color: var(--green-dark);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
+    letter-spacing: 0.1em;
+    color: var(--green-dark);
+    margin: 0 0 18px;
 }
 
 .wood-filter-btns {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
 }
 
 .wood-filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     background: white;
-    border: 1.5px solid var(--border);
-    border-radius: 20px;
-    padding: 6px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #444;
+    border: 2px solid #dde8db;
+    border-radius: 14px;
+    padding: 12px 22px 12px 14px;
     cursor: pointer;
-    transition: background 0.15s, border-color 0.15s, color 0.15s;
-    line-height: 1.3;
+    transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+    font-family: inherit;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
 .wood-filter-btn:hover {
     border-color: var(--green-dark);
-    color: var(--green-dark);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+    transform: translateY(-2px);
 }
 
 .wood-filter-btn.active {
-    background: var(--green-dark);
     border-color: var(--green-dark);
-    color: white;
+    background: #eef5ec;
+    box-shadow: 0 2px 10px rgba(30,100,50,0.12);
+}
+
+.wood-filter-btn.active .wood-filter-name {
+    color: var(--green-dark);
+}
+
+.wood-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid rgba(0,0,0,0.10);
+}
+
+.wood-swatch--all {
+    background: conic-gradient(#c8843a 0% 33%, #8b5e3c 33% 66%, #e8d5a0 66% 100%);
+}
+.wood-swatch--сосна      { background: radial-gradient(circle at 40% 40%, #e0a060, #b86820); }
+.wood-swatch--липа       { background: radial-gradient(circle at 40% 40%, #f0e0a0, #c8b870); }
+.wood-swatch--лиственница { background: radial-gradient(circle at 40% 40%, #d4903a, #9a5c1e); }
+.wood-swatch--осина      { background: radial-gradient(circle at 40% 40%, #e8d8b8, #c0aa88); }
+.wood-swatch--кедр       { background: radial-gradient(circle at 40% 40%, #a06040, #6a3820); }
+
+.wood-filter-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .wood-filter { padding: 28px 0 24px; }
+    .wood-filter-btns { gap: 8px; }
+    .wood-filter-btn { padding: 10px 16px 10px 12px; gap: 10px; border-radius: 12px; }
+    .wood-swatch { width: 22px; height: 22px; }
+    .wood-filter-name { font-size: 14px; }
 }
 
 @media (prefers-color-scheme: dark) {
-    .wood-filter { background: #1e2820; }
-    .wood-filter-btn { background: #2a3430; border-color: #3a4a3e; color: #ccc; }
-    .wood-filter-btn.active { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+    .wood-filter { background: #1a221a; border-color: #2a3a2a; }
+    .wood-filter-btn { background: #22302a; border-color: #334433; box-shadow: none; }
+    .wood-filter-btn.active { background: #1e3828; border-color: var(--green-dark); }
+    .wood-filter-btn.active .wood-filter-name { color: #7dcf8a; }
+    .wood-filter-name { color: #ccc; }
 }
 
 .fasad-cta {
