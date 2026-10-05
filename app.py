@@ -1243,6 +1243,12 @@ def sitemap():
     pages = [
         (url_for("home"), "weekly", "1.0"),
         (url_for("catalog"), "daily", "0.9"),
+        (url_for("fasad_page"), "weekly", "0.8"),
+        (url_for("banya_page"), "weekly", "0.8"),
+        (url_for("pol_page"), "weekly", "0.8"),
+        (url_for("otdelka_page"), "weekly", "0.8"),
+        (url_for("lestnicy_page"), "weekly", "0.8"),
+        (url_for("stroitelstvo_page"), "weekly", "0.8"),
     ]
     pages += [(url_for("category_page", category_slug=item["slug"]), "weekly", "0.8") for item in CATEGORY_PAGES]
     pages += [(url_for("product", slug=p["slug"]), "monthly", "0.7") for p in load_products()]
