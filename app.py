@@ -1430,6 +1430,15 @@ def yandex_verification():
     )
 
 
+@app.route("/yandex_abb4fb059e7faa81.html")
+def yandex_verification_2():
+    return Response(
+        '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>'
+        "<body>Verification: abb4fb059e7faa81</body></html>",
+        mimetype="text/html",
+    )
+
+
 @app.route("/robots.txt")
 def robots():
     content = "\n".join(
