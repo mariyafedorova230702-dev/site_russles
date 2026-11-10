@@ -9,6 +9,7 @@ from urllib.parse import quote
 from uuid import uuid4
 from xml.etree import ElementTree
 
+import anthropic
 from flask import Flask, Response, abort, flash, redirect, render_template, request, send_file, session, url_for
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
@@ -28,6 +29,43 @@ GOOGLE_SITE_VERIFICATION = os.getenv("GOOGLE_SITE_VERIFICATION", "").strip()
 SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
 WHATSAPP_NUMBER = "77004666066"
 WAREHOUSE_ADDRESS = "ул. Волочаевская, 387а / ул. Айша-Биби, 387а"
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+
+CHAT_SYSTEM_PROMPT = """Ты — помощник-консультант интернет-магазина «Русский Лес» в Алматы.
+Отвечай коротко, дружелюбно и по делу. Пиши на русском языке.
+
+О компании:
+- Склад пиломатериалов «Русский Лес», работаем 24 года
+- Адрес: ул. Волочаевская, 387а / ул. Айша-Биби, 387а, Алматы
+- Телефон и WhatsApp: +7 700 466 60 66
+- Режим работы: Пн–Пт 08:00–17:00, Сб 08:00–14:00, обед 12:00–13:00, Вс — выходной
+- Основной способ получения: самовывоз. Доставка по Алматы — за доп. плату, уточнять индивидуально.
+
+Ассортимент (более 300 позиций):
+- Вагонка: сосна, липа, кедр, лиственница, осина. Для бань, стен, потолков. Сорта А, АВ, В, С.
+- Планкен: лиственница, сосна. Прямой и скошенный профиль. Для фасада.
+- Имитация бруса и блок-хаус: для фасада и интерьера.
+- Доска пола (шпунтованная): сосна, лиственница.
+- Террасная доска: лиственница, сосна.
+- Доска обрезная и строганая: сосна. Разные сечения.
+- Брусок строганый: сосна. 25×40, 40×40, 50×50 и другие.
+- Клееный брус: сосна, лиственница. Для конструкций и интерьера.
+- Фанера ФК и ФСФ: берёза, хвоя. Толщина 4–21 мм.
+- OSB: 9, 12, 15, 18 мм. Формат 1220×2440.
+- Мебельный щит: сосна, берёза.
+- Погонаж: уголки, галтели, наличники, плинтусы.
+- Полок для бани: абаш, липа.
+- Ступени деревянные: сосна, берёза.
+- Столешницы деревянные.
+
+Цены: уточняются в каталоге на сайте или по WhatsApp. Цены могут меняться — всегда предлагай уточнить актуальную цену в WhatsApp.
+
+Правила ответов:
+- Если спрашивают про конкретный товар — опиши кратко что есть.
+- Если спрашивают цену — скажи что точные цены в каталоге или в WhatsApp: +7 700 466 60 66.
+- Если вопрос не по теме строительных материалов — вежливо скажи что помогаешь только с вопросами о продукции и складе.
+- В конце ответа, если уместно, предложи написать в WhatsApp для уточнения деталей.
+- Не придумывай цены, которых не знаешь точно."""
 WAREHOUSE_MAP_QUERY = "Улица Волочаевская, 387а · улица Айша-Биби, 387а"
 WAREHOUSE_MAP_URL = f"https://2gis.kz/almaty/search/{quote(WAREHOUSE_MAP_QUERY, safe='')}"
 WHATSAPP_BASIC_MESSAGE = (
@@ -2073,6 +2111,35 @@ def stroitelstvo_page():
         sections=sections,
         whatsapp_page_url=f"https://wa.me/{WHATSAPP_NUMBER}?text={wa_msg}",
     )
+
+
+@app.route("/api/chat", methods=["POST"])
+def chat_api():
+    if not ANTHROPIC_API_KEY:
+        return Response(json.dumps({"error": "API key not configured"}, ensure_ascii=False), status=503, mimetype="application/json")
+    data = request.get_json(silent=True) or {}
+    messages = data.get("messages", [])
+    if not messages or not isinstance(messages, list):
+        return Response(json.dumps({"error": "No messages"}, ensure_ascii=False), status=400, mimetype="application/json")
+    # Keep last 10 messages to limit context
+    messages = messages[-10:]
+    # Validate structure
+    cleaned = [{"role": m["role"], "content": str(m["content"])[:2000]}
+               for m in messages if m.get("role") in ("user", "assistant") and m.get("content")]
+    if not cleaned:
+        return Response(json.dumps({"error": "Invalid messages"}, ensure_ascii=False), status=400, mimetype="application/json")
+    try:
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=512,
+            system=CHAT_SYSTEM_PROMPT,
+            messages=cleaned,
+        )
+        reply = response.content[0].text
+        return Response(json.dumps({"reply": reply}, ensure_ascii=False), mimetype="application/json")
+    except Exception as e:
+        return Response(json.dumps({"error": str(e)}, ensure_ascii=False), status=500, mimetype="application/json")
 
 
 @app.route("/<path:legacy_path>")
