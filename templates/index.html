@@ -64,285 +64,123 @@
 
 {% block content %}
 
-<section class="hero-new">
-    <div class="container hero-new-grid">
-        <div class="hero-new-text">
-            <p class="eyebrow">Русский Лес</p>
-            <h1>{{ t('hero.title') }}</h1>
-            <p class="hero-new-description">{{ t('hero.description') }}</p>
+{# ══════════════════════════════
+   1. ГЕРОЙ
+══════════════════════════════ #}
+<section class="hl-hero">
+    <div class="container hl-hero-inner">
+        <div class="hl-hero-text">
+            <p class="eyebrow">Русский Лес · Алматы · 24 года</p>
+            <h1>Склад<br>пиломатериалов</h1>
+            <p class="hl-hero-sub">Доска, вагонка, брус, фанера, OSB — более 300 позиций. Приезжайте смотреть и забирать.</p>
 
-            <div class="hero-conversion">
-                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="hero-primary-action">
-                    <span>
-                        <small>{{ t('hero.whatsapp_hint') }}</small>
-                        <strong>{{ t('hero.price') }}</strong>
-                    </span>
-                    <b aria-hidden="true">→</b>
+            <div class="hl-hero-actions">
+                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="hl-wa-btn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.86L.057 23.428a.5.5 0 0 0 .609.61l5.692-1.46A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 0 1-5.032-1.388l-.36-.214-3.733.958.986-3.634-.234-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                    Написать в WhatsApp
                 </a>
-
-                <div class="hero-secondary-actions">
-                    <a href="{{ url_for('catalog') }}">
-                        {{ t('hero.catalog') }} <span aria-hidden="true">→</span>
-                    </a>
-                    <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener">
-                        {{ t('hero.map') }} <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
+                <a href="{{ url_for('catalog') }}" class="hl-catalog-btn">Смотреть каталог →</a>
             </div>
 
-            <div class="hero-stats">
-                <div>
-                    <strong>300+</strong>
-                    <span>{{ t('hero.positions') }}</span>
-                </div>
-                <div>
-                    <strong>{{ t('hero.fast') }}</strong>
-                    <span>{{ t('hero.loading') }}</span>
-                </div>
-                <div>
-                    <strong>м² · м³ · п/м · шт</strong>
-                    <span>{{ t('hero.units') }}</span>
-                </div>
+            <div class="hl-hero-meta">
+                <span>📍 ул. Волочаевская, 387а</span>
+                <span>⏰ Пн–Пт 08:00–17:00 · Сб до 14:00</span>
+                <a href="tel:+77772002742">📞 +7 777 200 27 42</a>
             </div>
         </div>
 
-        <div class="hero-visual">
-            <div class="hero-image-main">
-                <img
-                    src="{{ url_for('static', filename='images/hero.webp') }}"
-                    alt="Склад пиломатериалов Русский Лес"
-                    loading="eager"
-                    decoding="async"
-                    fetchpriority="high"
-                >
-            </div>
-
-            <div class="floating-card top-card">
-                <span>{{ t('hero.available') }}</span>
-                <strong>Брус, доска, вагонка, OSB и фанера</strong>
-            </div>
-
-            <div class="floating-card bottom-card">
-                <span>{{ t('hero.address') }}</span>
-                <strong>{{ warehouse_address }}</strong>
-            </div>
+        <div class="hl-hero-img">
+            <img
+                src="{{ url_for('static', filename='images/hero.webp') }}"
+                alt="Склад пиломатериалов Русский Лес в Алматы"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+            >
         </div>
     </div>
 </section>
 
-<section class="quick-categories">
+{# ══════════════════════════════
+   2. ЧТО ВАМ НУЖНО
+══════════════════════════════ #}
+<section class="hl-purpose">
     <div class="container">
-        <div class="quick-categories-grid">
-            {% for category in categories %}
-            {% if category.slug in category_page_slugs %}
-            <a href="{{ url_for('category_page', category_slug=category.slug) }}">{{ category.name }}</a>
-            {% else %}
-            <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}">{{ category.name }}</a>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="home-categories-section">
-    <div class="container">
-        <div class="section-heading">
-            <p>{{ t('section.categories') }}</p>
-            <h2>{{ t('section.categories_title') }}</h2>
+        <div class="hl-purpose-head">
+            <h2>Что вам нужно?</h2>
+            <p>Выберите задачу — покажем подходящие материалы и цены</p>
         </div>
 
-        <div class="home-categories-grid reveal-stagger">
-            {% for category in categories %}
-            {% if category.slug in category_page_slugs %}
-            <a href="{{ url_for('category_page', category_slug=category.slug) }}" class="home-category-card">
-            {% else %}
-            <a href="{{ url_for('catalog') }}?category={{ category.name|lower|urlencode }}" class="home-category-card">
-            {% endif %}
-                <span class="home-category-thumb">
-                    <img
-                        src="{{ url_for('static', filename=category.image|default('images/hero.webp', true)|card_image) }}"
-                        alt="{{ category.name }}"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </span>
-                <strong>{{ category.name }}</strong>
-                <span>{{ category.description }}</span>
+        <div class="hl-purpose-grid">
+            <a href="{{ url_for('banya_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">♨</span>
+                <strong>Для бани</strong>
+                <span>Вагонка, полок, погонаж</span>
             </a>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="material-help-section">
-    <div class="container">
-        <div class="material-help-card">
-            <div class="section-heading">
-                <p>{{ t('section.selection') }}</p>
-                <h2>{{ t('section.selection_title') }}</h2>
-                <span>{{ t('section.selection_text') }}</span>
-            </div>
-
-            <div class="material-help-grid reveal-stagger">
-                <a href="{{ url_for('banya_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.bath') }}</strong>
-                    <span>{{ t('purpose.bath_text') }}</span>
-                </a>
-                <a href="{{ url_for('fasad_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.facade') }}</strong>
-                    <span>{{ t('purpose.facade_text') }}</span>
-                </a>
-                <a href="{{ url_for('pol_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.floor') }}</strong>
-                    <span>{{ t('purpose.floor_text') }}</span>
-                </a>
-                <a href="{{ url_for('otdelka_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.walls') }}</strong>
-                    <span>{{ t('purpose.walls_text') }}</span>
-                </a>
-                <a href="{{ url_for('lestnicy_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.stairs') }}</strong>
-                    <span>{{ t('purpose.stairs_text') }}</span>
-                </a>
-                <a href="{{ url_for('stroitelstvo_page') }}" class="material-help-link">
-                    <strong>{{ t('purpose.construction') }}</strong>
-                    <span>{{ t('purpose.construction_text') }}</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="featured-section">
-    <div class="container">
-        <div class="section-heading">
-            <p>{{ t('section.popular') }}</p>
-            <h2>{{ t('section.popular_title') }}</h2>
-        </div>
-
-        <div class="catalog-grid home-products-grid">
-            {% for product in popular_products %}
-            {% set first_variant = product.variants[0] if product.variants else none %}
-            {% set card_price = first_variant.price if first_variant else product.base_price %}
-{% set card_variant = first_variant.name if first_variant else "Стандарт" %}
-{% set whatsapp_message %}Здравствуйте! Хочу узнать наличие и цену:
-{{ product.display_name }}
-Вариант: {{ card_variant }}
-Цена на сайте: {% if card_price %}{{ card_price }} ₸{% else %}уточняется{% endif %}{% endset %}
-
-            <article class="catalog-card">
-                <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-image">
-                    <img
-                        src="{{ url_for('static', filename=product.image|default('images/hero.webp', true)|card_image) }}"
-                        alt="{{ product.display_name }}"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </a>
-                <div class="catalog-card-body">
-                    <span class="catalog-card-category">{{ product.category }}</span>
-                    <h2>
-                        {{ product.catalog_name }}
-                        {% if product.dimension_label %}
-                        <span class="catalog-card-size">{{ product.dimension_label }}</span>
-                        {% endif %}
-                    </h2>
-                    <p>{{ product.description }}</p>
-                    <div class="catalog-card-bottom">
-                        {% if card_price %}
-                        <strong>{{ t('product.from') }} {{ "{:,}".format(card_price).replace(",", " ") }} ₸ / {{ product.unit }}</strong>
-                        {% else %}
-                        <strong class="price-on-request">Уточните цену</strong>
-                        {% endif %}
-                        <div class="catalog-card-actions">
-                            <a href="{{ url_for('product', slug=product.slug) }}" class="catalog-card-button">{{ t('product.details') }}</a>
-                            <a href="https://wa.me/{{ whatsapp_number }}?text={{ whatsapp_message|urlencode }}" target="_blank" rel="noopener" class="catalog-whatsapp-button">WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="custom-section" id="wood-products">
-    <div class="container custom-grid">
-        <div class="custom-text">
-            <p class="eyebrow">{{ t('custom.eyebrow') }}</p>
-            <h2>{{ t('custom.title') }}</h2>
-            <p>{{ t('custom.text') }}</p>
-
-            <a href="{{ whatsapp_custom_order_url }}" target="_blank" rel="noopener" class="primary-button">
-                {{ t('custom.action') }}
+            <a href="{{ url_for('fasad_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">🏠</span>
+                <strong>Для фасада</strong>
+                <span>Планкен, имитация бруса, блок-хаус</span>
+            </a>
+            <a href="{{ url_for('pol_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">🪵</span>
+                <strong>Для пола и террасы</strong>
+                <span>Доска пола, террасная доска</span>
+            </a>
+            <a href="{{ url_for('otdelka_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">🧱</span>
+                <strong>Для отделки стен</strong>
+                <span>Вагонка, имитация бруса, блок-хаус</span>
+            </a>
+            <a href="{{ url_for('lestnicy_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">🪜</span>
+                <strong>Для лестниц</strong>
+                <span>Ступени из дерева</span>
+            </a>
+            <a href="{{ url_for('stroitelstvo_page') }}" class="hl-purpose-card">
+                <span class="hl-purpose-icon">🔨</span>
+                <strong>Для строительства</strong>
+                <span>Доска, брус, фанера, OSB</span>
             </a>
         </div>
 
-        <div class="custom-carousel" data-carousel aria-label="Примеры изделий из дерева">
-            <div class="custom-carousel-stage" data-carousel-stage>
-                <figure class="custom-carousel-slide active" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка17.webp') }}" alt="Беседка из дерева под заказ" loading="lazy" decoding="async">
-                    <figcaption>Беседки для участка и зоны отдыха</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка.webp') }}" alt="Деревянная беседка для участка" loading="lazy" decoding="async">
-                    <figcaption>Открытые деревянные беседки</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/беседка1.webp') }}" alt="Беседка для зоны отдыха" loading="lazy" decoding="async">
-                    <figcaption>Беседки по индивидуальному проекту</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Будка6.webp') }}" alt="Деревянная будка под заказ" loading="lazy" decoding="async">
-                    <figcaption>Будки из дерева под заказ</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/будка22.webp') }}" alt="Будка из дерева для участка" loading="lazy" decoding="async">
-                    <figcaption>Практичные изделия для участка</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Туалет15.webp') }}" alt="Деревянный туалет для дачи" loading="lazy" decoding="async">
-                    <figcaption>Хозяйственные постройки из дерева</figcaption>
-                </figure>
-                <figure class="custom-carousel-slide" data-carousel-slide>
-                    <img src="{{ url_for('static', filename='images/Туалет6.webp') }}" alt="Уличный туалет из дерева" loading="lazy" decoding="async">
-                    <figcaption>Дачные конструкции под заказ</figcaption>
-                </figure>
+        <div class="hl-purpose-catalog">
+            <a href="{{ url_for('catalog') }}" class="ghost-button">Весь каталог — 300+ позиций →</a>
+        </div>
+    </div>
+</section>
 
-                <div class="custom-carousel-controls">
-                    <button type="button" data-carousel-prev aria-label="Предыдущее фото">←</button>
-                    <span><b data-carousel-current>1</b> / 7</span>
-                    <button type="button" data-carousel-next aria-label="Следующее фото">→</button>
-                </div>
+{# ══════════════════════════════
+   3. КОНТАКТЫ
+══════════════════════════════ #}
+<section class="hl-contact">
+    <div class="container">
+        <h2>Мы в Алматы</h2>
+        <div class="hl-contact-grid">
+            <div class="hl-contact-card">
+                <div class="hl-contact-icon">📍</div>
+                <strong>Адрес склада</strong>
+                <span>ул. Волочаевская, 387а<br>(ул. Айша-Биби, 387а)</span>
+                <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener" class="hl-contact-link">Показать на карте ↗</a>
             </div>
-
-            <div class="custom-carousel-thumbs" aria-label="Выбор фотографии">
-                <button type="button" class="active" data-carousel-thumb aria-label="Показать фото 1">
-                    <img src="{{ url_for('static', filename='images/беседка17.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 2">
-                    <img src="{{ url_for('static', filename='images/беседка.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 3">
-                    <img src="{{ url_for('static', filename='images/беседка1.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 4">
-                    <img src="{{ url_for('static', filename='images/Будка6.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 5">
-                    <img src="{{ url_for('static', filename='images/будка22.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 6">
-                    <img src="{{ url_for('static', filename='images/Туалет15.webp') }}" alt="" decoding="async">
-                </button>
-                <button type="button" data-carousel-thumb aria-label="Показать фото 7">
-                    <img src="{{ url_for('static', filename='images/Туалет6.webp') }}" alt="" decoding="async">
-                </button>
+            <div class="hl-contact-card">
+                <div class="hl-contact-icon">📞</div>
+                <strong>Телефон</strong>
+                <a href="tel:+77772002742" class="hl-contact-phone">+7 777 200 27 42</a>
+                <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="hl-contact-link">Написать в WhatsApp</a>
+            </div>
+            <div class="hl-contact-card">
+                <div class="hl-contact-icon">⏰</div>
+                <strong>Режим работы</strong>
+                <span>Пн–Пт: 08:00–17:00<br>Суббота: 08:00–14:00<br>Обед: 12:00–13:00<br>Воскресенье: выходной</span>
             </div>
         </div>
     </div>
 </section>
 
+{# ══════════════════════════════
+   4. КАК ЗАКАЗАТЬ
+══════════════════════════════ #}
 <section class="process-section">
     <div class="container">
         <div class="section-heading">
@@ -356,19 +194,16 @@
                 <h3>{{ t('process.one_title') }}</h3>
                 <p>{{ t('process.one_text') }}</p>
             </div>
-
             <div class="process-card">
                 <span>02</span>
                 <h3>{{ t('process.two_title') }}</h3>
                 <p>{{ t('process.two_text') }}</p>
             </div>
-
             <div class="process-card">
                 <span>03</span>
                 <h3>{{ t('process.three_title') }}</h3>
                 <p>{{ t('process.three_text') }}</p>
             </div>
-
             <div class="process-card">
                 <span>04</span>
                 <h3>{{ t('process.four_title') }}</h3>
@@ -378,81 +213,9 @@
     </div>
 </section>
 
-<section class="about-modern" id="about">
-    <div class="container">
-        <div class="about-modern-intro reveal">
-            <div>
-                <p class="eyebrow">{{ t('about.eyebrow') }}</p>
-                <h2>{{ t('about.title') }}</h2>
-            </div>
-
-            <p>{{ t('about.text') }}</p>
-        </div>
-
-        <div class="about-company-grid reveal">
-            <div class="about-company-story">
-                <span class="about-company-year">24</span>
-                <div>
-                    <strong>{{ t('about.years') }}</strong>
-                    <p>{{ t('about.history') }}</p>
-                </div>
-
-                <div class="about-company-stats">
-                    <div>
-                        <strong>300+</strong>
-                        <span>{{ t('about.stock') }}</span>
-                    </div>
-                    <div>
-                        <strong>{{ t('about.direct') }}</strong>
-                        <span>{{ t('about.regions') }}</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-proof-list">
-                <article>
-                    <span aria-hidden="true">✓</span>
-                    <div>
-                        <h3>{{ t('about.inspect') }}</h3>
-                        <p>{{ t('about.inspect_text') }}</p>
-                    </div>
-                </article>
-                <article>
-                    <span aria-hidden="true">✓</span>
-                    <div>
-                        <h3>{{ t('about.storage') }}</h3>
-                        <p>{{ t('about.storage_text') }}</p>
-                    </div>
-                </article>
-                <article>
-                    <span aria-hidden="true">✓</span>
-                    <div>
-                        <h3>{{ t('about.help') }}</h3>
-                        <p>{{ t('about.help_text') }}</p>
-                    </div>
-                </article>
-                <article>
-                    <span aria-hidden="true">✓</span>
-                    <div>
-                        <h3>{{ t('about.loading') }}</h3>
-                        <p>{{ t('about.loading_text') }}</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <div class="about-visit-strip">
-            <div>
-                <strong>{{ t('about.visit') }}</strong>
-                <span>{{ warehouse_address }} · Пн–Пт 08:00–17:00 · Сб до 14:00 · обед 12:00–13:00</span>
-            </div>
-            <a href="{{ warehouse_map_url }}" target="_blank" rel="noopener">
-                {{ t('about.map') }} <span aria-hidden="true">↗</span>
-            </a>
-        </div>
-    </div>
-</section>
-
+{# ══════════════════════════════
+   5. FAQ
+══════════════════════════════ #}
 <section class="faq-section">
     <div class="container">
         <div class="section-heading">
