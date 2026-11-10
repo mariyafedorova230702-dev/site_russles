@@ -478,6 +478,26 @@ footer[id] {
     line-height: 1.4;
 }
 
+.hl-purpose-card--hot {
+    border-color: var(--green-dark);
+    background: #eef5ec;
+    position: relative;
+}
+
+.hl-purpose-badge {
+    position: absolute;
+    top: -1px;
+    right: 14px;
+    background: var(--green-dark);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
 .hl-purpose-catalog {
     text-align: center;
 }

@@ -72,7 +72,7 @@
         <div class="hl-hero-text">
             <p class="eyebrow">Русский Лес · Алматы · 24 года</p>
             <h1>Склад<br>пиломатериалов</h1>
-            <p class="hl-hero-sub">Доска, вагонка, брус, фанера, OSB — более 300 позиций. Приезжайте смотреть и забирать.</p>
+            <p class="hl-hero-sub">Вагонка, доска, брус, фанера, OSB — более 300 позиций. Приезжайте смотреть и забирать.</p>
 
             <div class="hl-hero-actions">
                 <a href="{{ whatsapp_url }}" target="_blank" rel="noopener" class="hl-wa-btn">
@@ -112,10 +112,17 @@
         </div>
 
         <div class="hl-purpose-grid">
-            <a href="{{ url_for('banya_page') }}" class="hl-purpose-card">
+            <a href="{{ url_for('banya_page') }}" class="hl-purpose-card hl-purpose-card--hot">
+                <span class="hl-purpose-badge">Хит</span>
                 <span class="hl-purpose-icon">♨</span>
-                <strong>Для бани</strong>
-                <span>Вагонка, полок, погонаж</span>
+                <strong>Вагонка для бани</strong>
+                <span>Липа, кедр, осина, сосна</span>
+            </a>
+            <a href="{{ url_for('otdelka_page') }}" class="hl-purpose-card hl-purpose-card--hot">
+                <span class="hl-purpose-badge">Хит</span>
+                <span class="hl-purpose-icon">🧱</span>
+                <strong>Вагонка для стен</strong>
+                <span>Евровагонка, штиль, все породы</span>
             </a>
             <a href="{{ url_for('fasad_page') }}" class="hl-purpose-card">
                 <span class="hl-purpose-icon">🏠</span>
@@ -126,11 +133,6 @@
                 <span class="hl-purpose-icon">🪵</span>
                 <strong>Для пола и террасы</strong>
                 <span>Доска пола, террасная доска</span>
-            </a>
-            <a href="{{ url_for('otdelka_page') }}" class="hl-purpose-card">
-                <span class="hl-purpose-icon">🧱</span>
-                <strong>Для отделки стен</strong>
-                <span>Вагонка, имитация бруса, блок-хаус</span>
             </a>
             <a href="{{ url_for('lestnicy_page') }}" class="hl-purpose-card">
                 <span class="hl-purpose-icon">🪜</span>

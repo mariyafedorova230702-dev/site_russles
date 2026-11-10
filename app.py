@@ -386,11 +386,11 @@ DIMENSIONS_IN_NAME_PATTERN = re.compile(
 )
 
 CATEGORIES = [
+    {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.webp"},
     {"name": "Доска", "slug": "doska", "category": "доска", "description": "Обрезной и строганный пиломатериал", "image": "images/Brusok-sosna.webp"},
     {"name": "Брусок", "slug": "brusok", "category": "брусок", "description": "Строганный материал для отделки", "image": "images/Brusok-sosna.webp"},
     {"name": "Брус", "slug": "brus-pilomat", "category": "брус", "description": "Обрезной брус для строительства и каркаса", "image": "images/Brusok-sosna.webp"},
     {"name": "Клееный брус", "slug": "brus", "category": "клееный брус", "description": "Стабильный строганный брус для конструкций и столярных работ", "image": "images/kleenyy-brus.webp"},
-    {"name": "Вагонка", "slug": "vagonka", "category": "вагонка", "description": "Отделка для стен, потолков и бань", "image": "images/vagonka.webp"},
     {"name": "Блок-хаус", "slug": "blok-haus", "category": "блок-хаус", "description": "Имитация бревна для фасада и интерьера", "image": "images/blok-haus.webp"},
     {"name": "Имитация бруса", "slug": "imitaciya-brusa", "category": "имитация бруса", "description": "Отделочная доска под брус", "image": "images/imitaciya-brusa.webp"},
     {"name": "Планкен", "slug": "planken", "category": "планкен", "description": "Фасадная и интерьерная доска", "image": "images/planken_listvinica.webp"},
